@@ -46,7 +46,7 @@ Tiếp nhận đăng ký nhập học, kiểm tra giấy tờ, xác nhận kết
 | Danh sách trẻ chờ xếp lớp | Mã hoặc định danh hồ sơ, họ tên, ngày sinh hoặc nhóm tuổi, ngày dự kiến học | Nghiệp vụ 02 dùng để lập danh sách xếp lớp |
 | Thông tin cập nhật cần bàn giao | Liên hệ hiện hành, thông tin đưa đón và lưu ý chăm sóc phù hợp với nhiệm vụ | Giáo viên, văn phòng, y tế hoặc bếp theo phân công |
 
-**Bàn giao cho nghiệp vụ 02 và 07.** Theo phương án đề xuất, văn phòng đối chiếu điều kiện nhập học rồi ghi ngày được bắt đầu học và người xác nhận. Trẻ đã xếp lớp nhưng đang chờ xác nhận vẫn nằm trong danh sách xếp lớp dự kiến. Với lưu ý ăn uống, giáo viên hoặc văn phòng ghi nhận thông báo của phụ huynh. Nhân viên y tế hoặc người phụ trách được trường phân công xác nhận nội dung, thời điểm bắt đầu và thời điểm kết thúc nếu có. Nghiệp vụ 07 nhận lưu ý còn hiệu lực theo mã trẻ. Thông báo mới đang chờ xác nhận được chuyển ngay cho người phụ trách và bếp rà soát các bữa liên quan.
+**Bàn giao cho nghiệp vụ 02 và 07.** Theo phương án đề xuất, văn phòng đối chiếu điều kiện nhập học rồi ghi ngày được bắt đầu học và người xác nhận. Trẻ đã xếp lớp nhưng đang chờ xác nhận vẫn nằm trong danh sách xếp lớp dự kiến. Với lưu ý ăn uống, giáo viên hoặc văn phòng ghi nhận thông báo của phụ huynh. Nhân viên y tế hoặc người phụ trách được trường phân công xác nhận nội dung, thời điểm bắt đầu và thời điểm kết thúc nếu có. Giáo viên dùng lưu ý còn hiệu lực theo mã trẻ để đối chiếu với thực đơn tuần ở nghiệp vụ 07 và trao đổi với phụ huynh về bữa bị ảnh hưởng. Thông báo mới đang chờ xác nhận được chuyển ngay cho người phụ trách để rà soát các bữa liên quan.
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
