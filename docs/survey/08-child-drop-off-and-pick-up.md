@@ -1,6 +1,6 @@
 # 08. Đón trẻ, trả trẻ và tự động ghi nhận có mặt
 
-> Bản khảo sát sơ bộ. Giờ chốt, trạng thái và cách đón trả nhiều trẻ cùng lúc dưới đây là phương án đề xuất, chờ cơ sở khảo sát xác nhận.
+> Bản khảo sát sơ bộ. Giờ chốt, trạng thái và cách chọn trẻ để đón trả dưới đây là phương án đề xuất, chờ cơ sở khảo sát xác nhận.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -14,7 +14,7 @@ Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón tr
 
 | Đối tượng | Công việc |
 | --- | --- |
-| Giáo viên được phân công lớp trong ngày (nghiệp vụ 05) | Đón trẻ, trả trẻ, chọn nhiều trẻ để đón hoặc trả cùng lúc, xác minh trẻ vắng và chốt điểm danh. |
+| Giáo viên được phân công lớp trong ngày (nghiệp vụ 05) | Đón trẻ, trả trẻ bằng cách chọn trẻ rồi xác nhận, xác minh trẻ vắng và chốt điểm danh. |
 | Phụ huynh hoặc người được ủy quyền đón | Đưa trẻ đến, báo nghỉ, đón trẻ về. |
 | Văn phòng | Cập nhật danh sách người được đón trẻ (nghiệp vụ 01), xem tình hình đón trả toàn trường. |
 
@@ -66,7 +66,7 @@ Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón tr
 | Mã | Quy tắc cần xác nhận | Trường hợp cần thử |
 | --- | --- | --- |
 | QT-DT-01 | Đón trẻ là nguồn duy nhất tạo kết quả có mặt. Không có màn hình điểm danh có mặt riêng song song với đón trẻ. | Giáo viên đón trẻ xong, mở điểm danh thấy trẻ đã có mặt. |
-| QT-DT-02 | Chỉ trẻ ở trạng thái đã đón mới được trả. Trẻ vắng hoặc báo nghỉ không có trong danh sách trả và không thể ghi trả. | Thử trả một trẻ vắng: không có nút trả. |
+| QT-DT-02 | Chỉ trẻ ở trạng thái đã đón mới được trả. Trẻ vắng hoặc báo nghỉ không có trong danh sách trả và không thể ghi trả. | Thử trả một trẻ vắng: trẻ không có trong danh sách trả nên không chọn được. |
 | QT-DT-03 | Đón và trả trẻ chỉ thực hiện qua thao tác chọn trẻ rồi xác nhận, không có nút riêng trên từng dòng. Các trẻ đã chọn được ghi trong một lần xác nhận. Trẻ không hợp lệ được bỏ qua và liệt kê lại cho giáo viên. | Chọn 5 trẻ, trong đó 1 trẻ đã đón trước đó. Kết quả: đón 4 trẻ, báo 1 trẻ bị bỏ qua. |
 | QT-DT-04 | Người đón phải thuộc danh sách người được đón trẻ. Trường hợp khác cần xác nhận của phụ huynh hoặc người có thẩm quyền và được ghi chú. | Ông bà chưa đăng ký đến đón trẻ. |
 | QT-DT-05 | Chỉ giáo viên được phân công lớp trong ngày mới đón trả trẻ của lớp đó. | Giáo viên dạy thay đón trẻ lớp được giao dạy thay. |
