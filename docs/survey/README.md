@@ -109,7 +109,7 @@ Mỗi hệ thống con phục vụ **một bộ phận** và chỉ chứa nhữn
 
 | Có | Không có |
 | --- | --- |
-| Quản lý tài khoản và phân quyền người dùng. Khóa tài khoản khi nhân sự nghỉ việc (nghiệp vụ 04). | Nhập điểm danh, đón trả trẻ. |
+| Quản lý tài khoản và phân quyền người dùng. Khóa tài khoản khi nhân sự tạm nghỉ hoặc nghỉ việc và mở lại khi hết tạm nghỉ (nghiệp vụ 04). | Nhập điểm danh, đón trả trẻ. |
 | Danh mục dùng chung: năm học, nhóm tuổi, ca làm việc, định mức giáo viên theo nhóm tuổi (mục 6). | Lập bảng phải thu, ghi thu tiền, in biên lai. |
 | Duyệt: tiếp nhận hồ sơ trẻ, lưu ý chăm sóc của trẻ (phó hiệu trưởng chuyên môn xác nhận), phương án xếp lớp, phân công giáo viên, đơn nghỉ ngắn ngày của giáo viên, biểu phí và miễn giảm, thực đơn, biến động nhân sự. Cấp quyền trực giao nhận và quyền duyệt ngoại lệ NV08 theo lớp và thời gian. | Lập thực đơn, chốt suất ăn. Ghi hoặc sửa lưu ý chăm sóc. |
 | Duyệt hoặc từ chối yêu cầu nhận trẻ hộ đột xuất sau khi đối chiếu căn cứ xác minh (NV08). Có thể giao quyền duyệt ngoại lệ cho người được chỉ định. | Ghi lượt trả thuộc quyền giao nhận. |
@@ -205,14 +205,14 @@ Các dữ liệu dưới đây được nhiều nghiệp vụ dùng tới. Mỗi
 | Báo nghỉ của trẻ | Giáo viên lớp hoặc văn phòng (NV08) | — | 03 (căn cứ xác minh vắng), 07 (danh sách ăn dự kiến) |
 | Lượt đón | Giáo viên hoặc nhân sự trực được giao quyền (NV08) | Hủy khi ghi nhầm theo QT-DT-07 | 03 (nguồn duy nhất của kết quả `Có mặt`) |
 | Hồ sơ nhận trẻ hộ đột xuất và lượt trả | Giáo viên hoặc nhân sự trực được giao quyền (NV08) | Ban giám hiệu hoặc người được giao duyệt đối với yêu cầu nhận trẻ hộ đột xuất và việc hủy lượt trả | 07 (giờ về thực tế), NV09 dùng số liệu tổng hợp theo quyền |
-| Kết quả chuyên cần, bản bàn giao 08:30 và đề nghị điều chỉnh | Giáo viên (NV03) | Ban giám hiệu hoặc người được phân quyền duyệt điều chỉnh sau giờ khóa | 06 (ngày có mặt đã khóa), 07 (bản bàn giao), 09 |
+| Kết quả chuyên cần, danh sách có mặt tại giờ chốt bữa sáng, bản bàn giao 08:30 và đề nghị điều chỉnh | Giáo viên (NV03) | Ban giám hiệu hoặc người được phân quyền duyệt điều chỉnh sau giờ khóa | 06 (ngày có mặt đã khóa), 07 (danh sách có mặt lúc 07:30 cho bữa sáng, bản bàn giao 08:30 cho bữa trưa và bữa xế), 09 |
 | Danh sách ăn theo bữa, lịch về sớm do dị ứng và điều chỉnh suất | Giáo viên (NV07) | Bếp xác nhận điều chỉnh sau giờ chốt | Bếp (NV07), 09 |
 | Bảng phải thu, biên lai, công nợ | Kế toán (NV06) | Ban giám hiệu duyệt bảng phải thu, điều chỉnh và hoàn tiền | 09 |
 | Báo cáo bộ phận | Bộ phận lập (NV09) | Ban giám hiệu | Tổng hợp toàn trường (NV09) |
 
-Bữa sáng không có đăng ký riêng. Danh sách ăn sáng dự kiến lấy từ trẻ đã có mặt tại giờ chốt bữa sáng theo NV03 (xem NV07 §9).
+Bữa sáng không có đăng ký riêng. Danh sách ăn sáng dự kiến lấy từ trẻ đã có mặt tính đến hết giờ chốt bữa sáng theo NV03, gồm trẻ đến đúng giờ chốt (xem NV07 §9).
 
-**Tài khoản gắn với hồ sơ nhân sự.** Mỗi tài khoản thuộc một hồ sơ nhân sự ở nghiệp vụ 04. Khi nhân sự tạm nghỉ hoặc nghỉ việc có hiệu lực, Ban giám hiệu khóa tài khoản từ ngày hiệu lực. Hệ thống con được cấp theo vị trí công việc.
+**Tài khoản gắn với hồ sơ nhân sự.** Mỗi tài khoản thuộc một hồ sơ nhân sự ở nghiệp vụ 04. Khi nhân sự tạm nghỉ hoặc nghỉ việc có hiệu lực, Ban giám hiệu khóa tài khoản từ ngày hiệu lực. Khi hết tạm nghỉ, tài khoản được mở lại từ ngày kết thúc. Đơn nghỉ ngắn ngày ở NV05 không khóa tài khoản (QT-PC-06). Hệ thống con được cấp theo vị trí công việc.
 
 ## 7. Ma trận nghiệp vụ và hệ thống con
 
@@ -228,7 +228,7 @@ Ký hiệu: **T** tạo và sửa, **D** duyệt, **X** chỉ xem hoặc nhận 
 | 05 Phân công giáo viên | D (phân công, đơn nghỉ ngắn ngày) | T | X (lịch mình), T (đơn nghỉ ngắn ngày của mình) | — | — |
 | 06 Học phí | D (biểu phí, miễn giảm, điều chỉnh) | — | — | T | — |
 | 07 Suất ăn, thực đơn | D (thực đơn) | X (tổng hợp suất khi cần) | T (xác nhận suất lớp) | — | T |
-| 08 Đón trả trẻ | X, D (duyệt hoặc từ chối ngoại lệ) | X, T (báo nghỉ qua văn phòng) | T (giao nhận, xác minh và trình duyệt trong phạm vi lớp) | — | — |
+| 08 Đón trả trẻ | X, D (duyệt hoặc từ chối ngoại lệ, duyệt hủy lượt trả ghi nhầm) | X, T (báo nghỉ qua văn phòng) | T (giao nhận, xác minh và trình duyệt trong phạm vi lớp) | — | — |
 | 09 Báo cáo | Nhận, D | T, gửi | T, gửi | T, gửi | T, gửi |
 
 Quyền bổ sung tại NV08 được cấp theo nhiệm vụ. Nhân sự trực được giao quyền giao nhận chỉ thao tác trong phạm vi lớp và thời gian được giao. Người được giao duyệt ngoại lệ có quyền D trong phạm vi được giao. Hai quyền này được cấp riêng.
@@ -265,7 +265,7 @@ flowchart TD
 | --- | --- | --- |
 | F1.0 Quản trị hệ thống | F1.0.1 Quản lý tài khoản và vai trò. F1.0.2 Quản lý danh mục dùng chung. | Ban giám hiệu |
 | F1.4 Nhân sự | F1.4.1 Lập hồ sơ nhân sự. F1.4.2 Quản lý bằng cấp, chứng chỉ, giấy tờ. F1.4.3 Ghi nhận biến động nhân sự. F1.4.4 Tra cứu và xuất danh sách nhân sự. | Văn phòng, Ban giám hiệu duyệt |
-| F1.5 Phân công giáo viên | F1.5.1 Lập phương án phân công. F1.5.2 Duyệt phân công. F1.5.3 Báo nghỉ và phân công dạy thay. F1.5.4 Tra cứu lịch sử và tổng hợp ca. | Văn phòng, Ban giám hiệu, Giáo viên |
+| F1.5 Phân công giáo viên | F1.5.1 Lập phương án phân công. F1.5.2 Duyệt phân công. F1.5.3 Đơn nghỉ ngắn ngày và phân công dạy thay. F1.5.4 Tra cứu lịch sử và tổng hợp ca. | Văn phòng, Ban giám hiệu, Giáo viên |
 | F1.6 Học phí | F1.6.1 Quản lý biểu phí và miễn giảm. F1.6.2 Lập bảng phải thu. F1.6.3 Thu tiền và in biên lai. F1.6.4 Điều chỉnh và hoàn tiền. F1.6.5 Theo dõi công nợ. | Kế toán, Ban giám hiệu duyệt |
 | F1.8 Đón trả trẻ | F1.8.1 Ghi nhận báo nghỉ. F1.8.2 Đón trẻ và chuyển lượt đón sang NV03. F1.8.3 Xác minh và duyệt nhận trẻ hộ. F1.8.4 Trả trẻ. F1.8.5 Tra cứu đón trả. F1.8.6 Hủy lượt giao nhận ghi nhầm. | Giáo viên, Văn phòng, Ban giám hiệu và nhân sự có quyền NV08 |
 | F1.9 Báo cáo | F1.9.1 Lập và ghi chú báo cáo. F1.9.2 Gửi báo cáo. F1.9.3 Xem, phản hồi, duyệt. F1.9.4 Tổng hợp toàn trường. | Mọi hệ thống con, Ban giám hiệu duyệt |
@@ -330,7 +330,7 @@ Checklist yêu cầu ≥8 quy tắc cho cả nhóm, mỗi thành viên ≥4, tro
 | Mã | Nhóm | Yêu cầu | Căn cứ |
 | --- | --- | --- | --- |
 | NFR-01 | Phân quyền | Mỗi người dùng chỉ thấy và thao tác chức năng của hệ thống con được cấp, trong phạm vi lớp, ngày hoặc dữ liệu được giao. Quyền được kiểm tra ở tầng nghiệp vụ, không chỉ ẩn nút trên giao diện. Tối thiểu 3 vai trò. | Mục 4, 5, 7. Checklist 1.1, 3.3 |
-| NFR-02 | Bảo mật | Mật khẩu lưu dạng băm. Tài khoản gắn với hồ sơ nhân sự và bị khóa từ ngày tạm nghỉ hoặc nghỉ việc có hiệu lực. | YC-NS-05. Checklist 2.2 |
+| NFR-02 | Bảo mật | Mật khẩu lưu dạng băm. Tài khoản gắn với hồ sơ nhân sự, bị khóa từ ngày tạm nghỉ hoặc nghỉ việc có hiệu lực và được mở lại khi hết tạm nghỉ. | YC-NS-05. Checklist 2.2 |
 | NFR-03 | Riêng tư | Số CCCD được che trên danh sách và báo cáo thông thường. Thông tin nhân sự nhạy cảm chỉ người được phân quyền xem. | YC-HS-05, QT-NS-04 |
 | NFR-04 | Truy vết | Không xóa cứng hồ sơ, biên lai, lượt giao nhận và kết quả đã chốt. Mọi sửa đổi lưu giá trị trước và sau, lý do, người thực hiện, người duyệt và thời điểm. | QT-HS-04, QT-DD-03, QT-HP-04, QT-BC-03 |
 | NFR-05 | Toàn vẹn giao dịch | Các thao tác ghi nhiều bản ghi cùng lúc (chuyển lớp hai đầu, thay phân công, đón hoặc trả theo nhóm, lập bảng phải thu, phân bổ thanh toán) thành công trọn vẹn hoặc hoàn tác toàn bộ. | QT-XL-03, QT-PC-04, QT-DT-03, QT-HP-07. Checklist 2.2 |

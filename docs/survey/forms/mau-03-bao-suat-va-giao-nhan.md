@@ -30,7 +30,7 @@
 
 Tổng toàn trường ở mục 1 là **số sau điều chỉnh**. Mục 2 chỉ xác nhận giao nhận của lớp Mầm 1.
 
-Bữa sáng không có đăng ký riêng. Số sáng chốt là số trẻ đã có mặt tại giờ chốt 07:30. Mầm 1 chốt 21 suất sáng nhưng có 22 trẻ có mặt lúc 08:30, vì HS2026-001 đến lúc 07:45 (Mẫu 02), sau giờ chốt bữa sáng và không đề nghị bổ sung suất sáng.
+Bữa sáng không có đăng ký riêng. Số sáng chốt là số trẻ đã có mặt tính đến hết giờ chốt 07:30, gồm trẻ đến đúng 07:30 như HS2026-058. Mầm 1 chốt 21 suất sáng nhưng có 22 trẻ có mặt lúc 08:30, vì HS2026-001 đến lúc 07:45 (Mẫu 02), sau giờ chốt bữa sáng và không đề nghị bổ sung suất sáng.
 
 ## 3. Ví dụ riêng về thực đơn cần đối chiếu
 
