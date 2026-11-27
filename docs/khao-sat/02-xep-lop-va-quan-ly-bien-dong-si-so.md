@@ -69,6 +69,18 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | QT-XL-04 | Tính sĩ số theo danh sách đang học có hiệu lực. Nghỉ dài ngày vẫn thuộc lớp. Trẻ bảo lưu có thể ngừng tính vào danh sách đang học từ ngày hiệu lực nếu trường quy định, còn thôi học kết thúc xếp lớp. Chuyển lớp nội bộ giảm một ở lớp nguồn, tăng một ở lớp đích và giữ nguyên sĩ số toàn trường. | Trong cùng kỳ có một trẻ nghỉ dài ngày, một trẻ bảo lưu và một trẻ chuyển lớp. |
 | QT-XL-05 | Ghi riêng ngày hiệu lực và thời điểm nhập. Ghi hồi tố phải có lý do, người duyệt và danh sách ngày hoặc dữ liệu đã chốt cần đối chiếu. | Nhập ngày 18 một quyết định chuyển lớp hiệu lực ngày 15 khi ngày 15 đã chốt điểm danh. |
 
+**Phương án đề xuất để bàn giao danh sách theo ngày cho nghiệp vụ 03.** Văn phòng đối chiếu ngày được bắt đầu học do nghiệp vụ 01 xác nhận với ngày xếp lớp có hiệu lực. Danh sách điểm danh bắt đầu từ ngày học đầu tiên thỏa cả hai điều kiện.
+
+| Trạng thái tại ngày tra cứu | Tính vào sĩ số đang học | Thuộc diện điểm danh ngày có lịch học |
+| --- | --- | --- |
+| Đã xếp lớp, đang chờ đủ điều kiện bắt đầu học | Chưa, theo dõi ở danh sách dự kiến | Chưa |
+| Đang học | Có | Có |
+| Nghỉ dài ngày đã được xác nhận, vẫn thuộc lớp | Có | Có, ghi vắng theo căn cứ nghỉ đã xác nhận |
+| Bảo lưu đã có hiệu lực | Không, theo dõi ở danh sách bảo lưu | Không |
+| Thôi học đã có hiệu lực | Không, lưu lịch sử xếp lớp | Không |
+
+Khi trẻ quay lại sau bảo lưu, văn phòng xác nhận ngày trở lại và lớp có hiệu lực để đưa trẻ vào danh sách của kỳ học tiếp theo hoặc phần còn lại của kỳ hiện tại. Cách tính bảo lưu và nghỉ dài ngày trong bảng là phương án của đề tài, cần đối chiếu với trường.
+
 ## 8. Hạn chế của quy trình hiện tại
 
 - Khi giáo viên và văn phòng dùng các bản danh sách riêng, một trẻ có thể được giữ ở cả hai lớp sau khi chuyển hoặc tạm thời biến mất khỏi cả hai danh sách.
