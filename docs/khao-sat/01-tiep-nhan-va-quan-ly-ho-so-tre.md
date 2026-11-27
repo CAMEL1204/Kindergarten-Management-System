@@ -1,6 +1,6 @@
 # 01. Tiếp nhận và quản lý hồ sơ trẻ
 
-> Bản khảo sát sơ bộ để phỏng vấn. Quy trình dùng sổ giấy và bảng tính, tên các vai trò, biểu mẫu và quy tắc dưới đây là giả định làm việc, chờ cơ sở khảo sát xác nhận. Căn cứ lập hồ sơ khảo sát gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Bản khảo sát tổng hợp từ thông tin tham khảo tại một số cơ sở. Tên biểu mẫu và chính sách cụ thể cần đối chiếu khi chọn trường khảo sát. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -12,51 +12,47 @@ Tiếp nhận đăng ký nhập học, kiểm tra giấy tờ, xác nhận kết
 | --- | --- |
 | Phụ huynh hoặc người giám hộ | Nộp hồ sơ, bổ sung giấy tờ, thông báo thay đổi thông tin và nhận kết quả. |
 | Nhân viên văn phòng hoặc người phụ trách tuyển sinh | Nhận, đối chiếu và ghi nhận hồ sơ. Theo dõi giấy tờ còn thiếu, cập nhật thông tin và bàn giao danh sách đủ điều kiện. |
-| Ban giám hiệu hoặc người được phân quyền | Xác nhận kết quả tiếp nhận và xử lý trường hợp cần quyết định. |
-| Giáo viên phụ trách lớp | Sử dụng thông tin liên hệ và lưu ý chăm sóc cần thiết của trẻ được phân vào lớp mình. |
+| Ban giám hiệu | Duyệt tiếp nhận chính thức và kiểm soát các thay đổi thông tin nhân thân thuộc diện cần duyệt. |
+| Giáo viên chủ nhiệm, nhân viên y tế hoặc bếp | Giáo viên và y tế ghi nhận, cập nhật lưu ý chăm sóc theo phân công. Nhân viên bếp ghi nhận hoặc đề xuất cập nhật nội dung ăn uống theo quyền được giao. Mỗi bộ phận xem thông tin cần cho công việc. |
 
 ## 3. Quy trình nghiệp vụ hiện tại
 
 | Bước | Ai, ở đâu và khi nào | Công việc và cách thực hiện | Kết quả |
 | --- | --- | --- | --- |
-| 1. Nộp hồ sơ | Phụ huynh tại văn phòng hoặc qua kênh tiếp nhận của trường, trong đợt tuyển sinh hoặc khi có nhu cầu nhập học | Gửi phiếu đăng ký và các giấy tờ theo danh mục trường yêu cầu. | Bộ hồ sơ và thông tin liên hệ để phản hồi. |
-| 2. Kiểm tra | Nhân viên văn phòng tại nơi tiếp nhận, khi nhận hồ sơ hoặc giấy tờ bổ sung | Đối chiếu phiếu với giấy tờ, tra sổ hoặc bảng tính theo họ tên, ngày sinh và thông tin người giám hộ. Đánh dấu giấy tờ đã nhận. Nếu thiếu, báo nội dung cần bổ sung và ghi trạng thái chờ. Nếu nghi trùng, đối chiếu hồ sơ cũ trước khi lập mới. | Hồ sơ được ghi nhận, yêu cầu bổ sung hoặc kết quả đối chiếu trùng. |
-| 3. Xác nhận | Người có thẩm quyền tại trường, sau khi kiểm tra đủ căn cứ | Xem hồ sơ và ghi kết quả tiếp nhận. Văn phòng thông báo kết quả cho phụ huynh. Nếu trường có danh sách chờ hoặc trường hợp từ chối, ghi rõ lý do và cách phản hồi để đối chiếu. | Kết quả tiếp nhận có ngày xác nhận và người xác nhận. |
-| 4. Lưu và bàn giao | Văn phòng tại sổ hoặc tệp quản lý hồ sơ, sau khi xác nhận | Lưu hồ sơ giấy hoặc bản điện tử theo cách trường đang dùng. Gửi bộ phận xếp lớp danh sách trẻ đã được tiếp nhận, kèm nhóm tuổi và ngày dự kiến bắt đầu học. | Hồ sơ lưu và danh sách chờ xếp lớp. |
-| 5. Cập nhật | Phụ huynh và văn phòng, khi phát sinh thay đổi | Nhận đề nghị, kiểm tra thông tin, cập nhật trường dữ liệu liên quan. Nếu trẻ đã được xếp lớp, báo giáo viên về thay đổi có liên quan đến việc liên hệ hoặc chăm sóc. | Hồ sơ cập nhật và thông tin bàn giao cho người phụ trách. |
+| 1. Đăng ký hoặc giữ chỗ | Phụ huynh tại văn phòng hoặc qua kênh trực tuyến trong đợt tuyển sinh | Nộp phiếu đăng ký, thông tin liên hệ và bản sao, ảnh giấy khai sinh hoặc thông tin định danh để đối chiếu độ tuổi. Kênh trực tuyến có thể là biểu mẫu website, Zalo, fanpage hoặc cổng tuyển sinh. | Hồ sơ đăng ký ban đầu. |
+| 2. Kiểm tra và tra hồ sơ cũ | Văn phòng hoặc tuyển sinh khi nhận đăng ký và giấy tờ bổ sung | Kiểm tra thông tin và đánh dấu giấy tờ đã nhận, còn thiếu. Tra mã học sinh hoặc số định danh nếu có, kết hợp họ tên và ngày sinh của trẻ, họ tên và số điện thoại phụ huynh. Nếu trẻ quay lại hoặc nghi trùng, đối chiếu hồ sơ cũ trước khi ghi nhận. | Hồ sơ đã đối chiếu và danh sách giấy tờ cần bổ sung. |
+| 3. Duyệt tiếp nhận | Ban giám hiệu tại trường, sau khi văn phòng hoàn tất bước đối chiếu | Kiểm tra thông tin đăng ký và căn cứ tiếp nhận. Trường tư thục có thể dùng cam kết hoặc thỏa thuận nhập học. Trường công lập có thể đối chiếu chỉ tiêu và danh sách tiếp nhận. Văn phòng thông báo kết quả và lịch hẹn bổ sung nếu có. | Kết quả tiếp nhận và các mục còn phải hoàn thiện trước khi đi học. |
+| 4. Lưu, bàn giao và hoàn thiện hồ sơ | Văn phòng sau khi duyệt và trước ngày trẻ bắt đầu học | Lưu hồ sơ giấy, cập nhật Excel và phần mềm hoặc CSDL ngành nếu đã triển khai. Bàn giao danh sách trẻ được tiếp nhận cho người xếp lớp. Nhận bổ sung giấy tờ nhân thân, thông tin sức khỏe, người đưa đón và giấy tờ theo diện tuyển sinh nếu trường yêu cầu. | Hồ sơ lưu, tiến độ hoàn thiện và danh sách chờ xếp lớp. |
+| 5. Cập nhật trong thời gian theo học | Văn phòng, giáo viên hoặc bộ phận chăm sóc khi có thay đổi | Văn phòng đối chiếu giấy tờ khi sửa ngày sinh, người giám hộ và trình duyệt nếu thuộc diện kiểm soát. Giáo viên hoặc nhân viên được phân công cập nhật lưu ý ăn uống, dị ứng, giấc ngủ hoặc sức khỏe và thông báo cho bộ phận liên quan. | Thông tin hiện hành và thay đổi đã bàn giao. |
 
-**Câu hỏi xác minh khi phỏng vấn văn phòng và ban giám hiệu**
-
-- Hồ sơ hiện được nhận qua kênh nào? Trường lưu giấy, Excel hay phần mềm, và lấy bản nào làm căn cứ khi thông tin khác nhau?
-- Giấy tờ nào bắt buộc khi đăng ký, khi xác nhận tiếp nhận và khi trẻ bắt đầu đi học? Ai duyệt và ai được phép nhận bổ sung sau?
-- Trường nhận biết hồ sơ trùng hoặc trẻ quay lại học bằng thông tin nào? Ai được sửa ngày sinh, người giám hộ và lưu ý chăm sóc?
+**Đối chiếu giữa hồ sơ giấy và bản điện tử.** Khi thông tin nhân thân lệch, văn phòng thường dùng giấy tờ gốc được đối chiếu hoặc bản có xác nhận phù hợp làm căn cứ hiệu chỉnh. Bảng theo dõi hoặc phần mềm có thể phản ánh cập nhật vận hành sớm hơn nếu bản giấy đang chờ bổ sung. Cần xác nhận với trường nguồn đối chiếu cho từng loại thông tin, danh mục giấy tờ theo từng mốc và những thay đổi phải trình ban giám hiệu.
 
 ## 4. Dữ liệu đầu vào
 
 | Nhóm dữ liệu | Trường cần khảo sát | Nguồn |
 | --- | --- | --- |
-| Thông tin trẻ | Họ tên, ngày sinh, nhóm tuổi dự kiến, ngày dự kiến bắt đầu học | Phiếu đăng ký và giấy tờ đối chiếu theo yêu cầu của trường |
-| Người liên hệ | Họ tên, quan hệ với trẻ, số điện thoại, người liên hệ chính | Phụ huynh hoặc người giám hộ khai báo |
-| Giấy tờ hồ sơ | Loại giấy tờ, tình trạng đã nhận hoặc còn thiếu, ngày nhận, ghi chú đối chiếu | Bộ hồ sơ phụ huynh nộp |
-| Lưu ý chăm sóc | Dị ứng, chế độ ăn hoặc lưu ý sức khỏe cần thiết cho việc chăm sóc tại lớp, nếu có | Thông tin phụ huynh cung cấp |
+| Thông tin trẻ | Họ tên, ngày sinh, mã học sinh hoặc số định danh nếu có, ngày dự kiến bắt đầu học | Phiếu đăng ký, giấy tờ đối chiếu và hồ sơ cũ nếu trẻ quay lại |
+| Người liên hệ và người đưa đón | Họ tên, quan hệ với trẻ, số điện thoại, người liên hệ chính và thông tin người đưa đón theo yêu cầu | Phụ huynh hoặc người giám hộ khai báo |
+| Giấy tờ hồ sơ | Kênh và ngày nhận, loại giấy tờ, mốc yêu cầu, tình trạng, ngày hẹn bổ sung và căn cứ đối chiếu. Hồ sơ sức khỏe, tiêm chủng, cư trú hoặc ưu tiên tùy trường và diện tuyển sinh | Hồ sơ phụ huynh nộp và danh mục của trường |
+| Lưu ý chăm sóc | Dị ứng, chế độ ăn, giấc ngủ hoặc thông tin sức khỏe cần thiết | Phụ huynh, giáo viên và người phụ trách chăm sóc |
 | Yêu cầu cập nhật | Trẻ được cập nhật, nội dung thay đổi, ngày tiếp nhận và căn cứ xác nhận nếu trường yêu cầu | Thông báo hoặc phiếu cập nhật |
 
 ## 5. Dữ liệu đầu ra
 
 | Đầu ra | Nội dung chính | Nơi sử dụng |
 | --- | --- | --- |
-| Hồ sơ trẻ và kết quả tiếp nhận | Mã hồ sơ nếu trường sử dụng, thông tin trẻ và người liên hệ, giấy tờ, trạng thái, ngày và người xác nhận | Văn phòng và ban giám hiệu tra cứu |
+| Hồ sơ trẻ và kết quả tiếp nhận | Mã hồ sơ, thông tin đã đối chiếu, kết quả tiếp nhận, ngày và người duyệt, tình trạng hoàn thiện giấy tờ | Văn phòng và ban giám hiệu tra cứu |
 | Danh sách hồ sơ chờ bổ sung | Hồ sơ, giấy tờ còn thiếu, ngày yêu cầu bổ sung và tình trạng phản hồi | Văn phòng theo dõi và liên hệ phụ huynh |
 | Danh sách trẻ chờ xếp lớp | Mã hoặc định danh hồ sơ, họ tên, ngày sinh hoặc nhóm tuổi, ngày dự kiến học | Nghiệp vụ 02 dùng để lập danh sách xếp lớp |
-| Thông tin cập nhật cần bàn giao | Liên hệ hiện hành và lưu ý chăm sóc trong phạm vi công việc | Giáo viên có trách nhiệm với trẻ |
+| Thông tin cập nhật cần bàn giao | Liên hệ hiện hành, thông tin đưa đón và lưu ý chăm sóc phù hợp với nhiệm vụ | Giáo viên, văn phòng, y tế hoặc bếp theo phân công |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
-| HS-01 | Phiếu đăng ký nhập học | Trường thông tin về trẻ, người giám hộ, ngày dự kiến học, xác nhận của phụ huynh. |
+| HS-01 | Phiếu hoặc biểu mẫu đăng ký nhập học | Kênh đăng ký, trường dữ liệu về trẻ, người giám hộ, ngày dự kiến học và phần xác nhận. |
 | HS-02 | Sổ tiếp nhận hoặc bảng theo dõi hồ sơ | Cột ngày nhận, giấy tờ, trạng thái, người tiếp nhận và kết quả xử lý. |
-| HS-03 | Phiếu bổ sung hoặc mẫu thông báo kết quả tiếp nhận | Nội dung phản hồi, giấy tờ cần bổ sung và người xác nhận. |
+| HS-03 | Danh sách hoặc thông báo tiếp nhận, phiếu hẹn bổ sung | Căn cứ duyệt, kết quả, người duyệt, giấy tờ cần bổ sung và thời hạn. |
 | HS-04 | Phiếu hoặc sổ cập nhật thông tin trẻ | Thông tin thay đổi, thời điểm ghi nhận và người cập nhật. |
 
 Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân. Đối chiếu tên cột, người lập, người xác nhận và cách lưu thực tế theo từng mã.
@@ -65,14 +61,14 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 | Mã | Quy tắc cần xác nhận | Trường hợp cần thử |
 | --- | --- | --- |
-| QT-HS-01 | Hồ sơ thiếu giấy tờ bắt buộc được lưu ở trạng thái chờ bổ sung. Chỉ người được giao quyền mới xác nhận tiếp nhận khi đủ căn cứ theo quy định của cơ sở. | Đăng ký thiếu giấy tờ, bổ sung sau rồi xác nhận. |
-| QT-HS-02 | Khi họ tên, ngày sinh hoặc thông tin người giám hộ cho thấy khả năng trùng, văn phòng phải đối chiếu trước khi tạo hồ sơ mới. | Hai trẻ trùng họ tên và ngày sinh, hoặc một người giám hộ có nhiều con. |
-| QT-HS-03 | Chỉ hồ sơ đã được tiếp nhận mới được đưa vào luồng xếp lớp chính thức. Văn phòng chuyển kết quả bằng cùng định danh hồ sơ để đối chiếu. | Hồ sơ chờ bổ sung xuất hiện trong danh sách đề nghị xếp lớp. |
-| QT-HS-04 | Khi sửa thông tin quan trọng, lưu nội dung thay đổi, thời điểm và người cập nhật. Giáo viên xem thông tin phục vụ chăm sóc trong phạm vi lớp phụ trách. | Đổi số điện thoại người giám hộ sau khi trẻ đã vào lớp. |
+| QT-HS-01 | Kiểm tra giấy tờ theo từng mốc đăng ký, duyệt tiếp nhận và bắt đầu học. Ban giám hiệu duyệt khi đủ điều kiện của mốc tiếp nhận. Văn phòng theo dõi các giấy tờ mà trường cho bổ sung sau. | Hồ sơ đủ điều kiện tiếp nhận nhưng còn một giấy tờ phải bổ sung trước ngày đi học. |
+| QT-HS-02 | Văn phòng đối chiếu mã học sinh hoặc số định danh nếu có cùng dữ liệu trẻ và người giám hộ. Khi xác nhận trẻ quay lại, dùng cùng hồ sơ trẻ và ghi nhận đợt tiếp nhận mới nếu cần. | Hai trẻ trùng tên và ngày sinh, hoặc một trẻ quay lại với số liên hệ đã đổi. |
+| QT-HS-03 | Chuyển nghiệp vụ 02 các hồ sơ đã được duyệt tiếp nhận và đủ điều kiện xếp lớp theo chính sách trường. Dùng cùng mã hồ sơ khi bàn giao và theo dõi riêng giấy tờ còn hẹn bổ sung. | Trẻ đã được duyệt, còn giấy tờ được phép nộp sau và đã có ngày dự kiến học. |
+| QT-HS-04 | Văn phòng sửa ngày sinh và người giám hộ dựa trên căn cứ đối chiếu, trình duyệt theo chính sách. Người được giao nhiệm vụ cập nhật lưu ý chăm sóc. Ghi giá trị trước và sau, nguồn đối chiếu, người thực hiện, thời điểm và người duyệt nếu có. | Ngày sinh trong Excel lệch với giấy tờ đã đối chiếu, hoặc giáo viên bổ sung lưu ý dị ứng. |
 
 ## 8. Hạn chế của quy trình hiện tại
 
-- Nếu ghi ở cả sổ và bảng tính, tình trạng bổ sung giấy tờ có thể lệch giữa hai nơi, làm văn phòng phải đối chiếu lại khi xác nhận.
+- Hồ sơ giấy, Excel và phần mềm có thể lệch nhau do cập nhật ở các thời điểm khác nhau, khiến văn phòng phải tra lại căn cứ khi xác nhận.
 - Nếu dò hồ sơ bằng tên, nhân viên có thể bỏ sót hồ sơ cũ của trẻ quay lại hoặc nhầm giữa hai trẻ trùng tên.
 - Nếu bàn giao qua danh sách xuất riêng, giáo viên hoặc người xếp lớp có thể tiếp tục dùng thông tin cũ sau khi văn phòng đã cập nhật.
 
@@ -80,7 +76,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 | Mã | Yêu cầu đề xuất |
 | --- | --- |
-| YC-HS-01 | Lập và tra cứu hồ sơ theo mã, họ tên, ngày sinh hoặc trạng thái. Cảnh báo hồ sơ có dấu hiệu trùng để người tiếp nhận đối chiếu. |
-| YC-HS-02 | Trong một màn hình hồ sơ, quản lý danh sách giấy tờ chi tiết, trường hợp chờ bổ sung và kết quả xác nhận. Kiểm tra giấy tờ bắt buộc theo quy định đã khảo sát. |
-| YC-HS-03 | Cung cấp trực tiếp danh sách trẻ đã được tiếp nhận và còn chờ xếp lớp cho nghiệp vụ 02. Dùng cùng định danh hồ sơ khi bàn giao. |
-| YC-HS-04 | Phân quyền lập, duyệt và xem hồ sơ. Giới hạn thông tin chăm sóc theo phạm vi lớp. Lưu lịch sử thay đổi và cho phép lọc, xuất danh sách hồ sơ chờ bổ sung cho người có quyền. |
+| YC-HS-01 | Ghi kênh đăng ký, tra cứu hồ sơ theo mã, họ tên, ngày sinh hoặc trạng thái. Cảnh báo nghi trùng, hỗ trợ tìm lại hồ sơ của trẻ quay lại và lưu đợt tiếp nhận trên cùng mã trẻ. |
+| YC-HS-02 | Trong một màn hình hồ sơ, theo dõi giấy tờ theo từng mốc, tách kết quả duyệt khỏi tình trạng hoàn thiện, lưu hẹn bổ sung và cho phép lọc, xuất danh sách cần theo dõi. |
+| YC-HS-03 | Cung cấp trực tiếp danh sách trẻ đã được duyệt, đủ điều kiện và còn chờ xếp lớp cho nghiệp vụ 02. Dùng cùng định danh hồ sơ khi bàn giao. |
+| YC-HS-04 | Dùng hồ sơ điện tử đã xác nhận làm nguồn dữ liệu vận hành chung. Lưu căn cứ giấy tờ khi hiệu chỉnh, ghi lịch sử thay đổi và phân quyền lập, duyệt, cập nhật và xem theo loại thông tin và nhiệm vụ. |
