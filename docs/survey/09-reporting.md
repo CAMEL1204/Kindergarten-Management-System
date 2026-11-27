@@ -1,6 +1,6 @@
 # 09. Lập, ghi chú và gửi báo cáo
 
-> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, trừ nội dung có nhãn *(đề xuất)* hoặc được ghi rõ là phương án đề xuất. Cột **Loại** ở mục 7 ghi `Hiện trạng` khi trường đang làm như vậy trong kịch bản, `Hiện trạng có bổ sung` khi trường đang làm và hệ thống mới thêm kiểm tra, lưu vết hoặc tự động hóa, `Đề xuất` khi quy tắc chỉ có ở hệ thống mới. Mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -54,13 +54,15 @@ flowchart LR
 
 ## 5. Dữ liệu đầu ra
 
+Hiện trạng chỉ có tệp báo cáo của từng bộ phận và bảng tổng hợp toàn trường cộng tay (mục 3). Các đầu ra có nhãn *(đề xuất)* thuộc luồng báo cáo của hệ thống mới ở mục 9.
+
 | Đầu ra | Nội dung chính | Nơi sử dụng |
 | --- | --- | --- |
-| Báo cáo bộ phận | Thông tin chung, số liệu chụp tại lúc gửi, ghi chú, trạng thái, phiên bản | Ban giám hiệu xem và duyệt |
-| Hộp báo cáo nhận được | Danh sách báo cáo theo bộ phận, loại, kỳ, trạng thái, hạn gửi | Ban giám hiệu |
-| Lịch sử phản hồi và phiên bản | Các phiên bản đã gửi, phản hồi gắn với từng phiên bản | Người lập và ban giám hiệu đối chiếu |
-| Danh sách báo cáo trễ hạn | Bộ phận, loại, kỳ, hạn gửi, số ngày trễ | Ban giám hiệu nhắc |
-| Báo cáo tổng hợp toàn trường | Chỉ tiêu toàn trường ghép từ các báo cáo đã duyệt, đánh dấu kỳ chưa đầy đủ, xuất Excel hoặc PDF | Ban giám hiệu họp hoặc gửi cấp trên |
+| Báo cáo bộ phận | Hiện trạng: tệp Word hoặc Excel có số liệu và giải thích. *(Đề xuất)* Thông tin chung, số liệu chụp tại lúc gửi, ghi chú, trạng thái, phiên bản | Ban giám hiệu xem và duyệt |
+| Hộp báo cáo nhận được *(đề xuất)* | Danh sách báo cáo theo bộ phận, loại, kỳ, trạng thái, hạn gửi | Ban giám hiệu |
+| Lịch sử phản hồi và phiên bản *(đề xuất)* | Các phiên bản đã gửi, phản hồi gắn với từng phiên bản | Người lập và ban giám hiệu đối chiếu |
+| Danh sách báo cáo trễ hạn *(đề xuất)* | Bộ phận, loại, kỳ, hạn gửi, số ngày trễ | Ban giám hiệu nhắc |
+| Báo cáo tổng hợp toàn trường | Hiện trạng: bảng cộng tay từ các báo cáo. *(Đề xuất)* Chỉ tiêu toàn trường ghép từ các báo cáo đã duyệt, đánh dấu kỳ chưa đầy đủ, xuất Excel hoặc PDF | Ban giám hiệu họp hoặc gửi cấp trên |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
@@ -78,14 +80,14 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 ## 7. Quy tắc nghiệp vụ
 
-| Mã | Quy tắc cần xác nhận | Trường hợp cần thử |
-| --- | --- | --- |
-| QT-BC-01 | Ban giám hiệu chỉ thấy báo cáo ở trạng thái đã gửi trở đi. Báo cáo nháp chỉ người lập thấy. | Giáo viên lưu nháp, Ban giám hiệu không thấy trong hộp báo cáo. |
-| QT-BC-02 | Người lập chỉ lấy được số liệu trong phạm vi của mình. | Giáo viên lớp A không tạo được báo cáo chuyên cần lớp B. |
-| QT-BC-03 | Sau khi gửi, nội dung bị khóa. Muốn sửa phải được yêu cầu bổ sung và gửi lại thành phiên bản mới. Giữ đủ các phiên bản cũ và phản hồi. | Kế toán phát hiện sai sau khi gửi. |
-| QT-BC-04 | Số liệu được chụp tại lúc gửi. Nếu dữ liệu gốc thay đổi sau đó (ví dụ điều chỉnh điểm danh), báo cáo đã gửi hoặc đã duyệt không tự đổi; hệ thống cảnh báo người lập. Báo cáo đang ở `Đã gửi` được Ban giám hiệu xử lý như yêu cầu bổ sung nếu cần. Báo cáo đã duyệt chuyển sang `Cần cập nhật` để người lập gửi phiên bản mới từ số liệu hiện hành. | Điểm danh được sửa sau khi báo cáo chuyên cần đã gửi. Một quyết định chuyển lớp ghi hồi tố sau khi báo cáo sĩ số tháng đã duyệt. |
-| QT-BC-05 | Tổng hợp toàn trường chỉ dùng phiên bản đã duyệt mới nhất của từng báo cáo. Kỳ còn bộ phận chưa duyệt được đánh dấu chưa đầy đủ. Kỳ có báo cáo ở trạng thái `Cần cập nhật` được đánh dấu số liệu đang cập nhật cho tới khi phiên bản mới được duyệt. | Kế toán chưa gửi báo cáo tháng. Báo cáo chuyên cần lớp Mầm 1 đã duyệt nhưng có điều chỉnh được duyệt sau đó. |
-| QT-BC-06 | Mỗi bộ phận có tối đa một báo cáo cho mỗi loại, phạm vi và kỳ (trừ báo cáo đột xuất). Báo cáo gửi sau hạn vẫn được nhận nhưng được đánh dấu trễ hạn. | Văn phòng gửi báo cáo sĩ số tháng 10 vào ngày 8 tháng 11 khi hạn là ngày 5. |
+| Mã | Loại | Quy tắc cần xác nhận | Trường hợp cần thử |
+| --- | --- | --- | --- |
+| QT-BC-01 | Đề xuất | Ban giám hiệu chỉ thấy báo cáo ở trạng thái đã gửi trở đi. Báo cáo nháp chỉ người lập thấy. | Giáo viên lưu nháp, Ban giám hiệu không thấy trong hộp báo cáo. |
+| QT-BC-02 | Đề xuất | Người lập chỉ lấy được số liệu trong phạm vi của mình. | Giáo viên lớp A không tạo được báo cáo chuyên cần lớp B. |
+| QT-BC-03 | Đề xuất | Sau khi gửi, nội dung bị khóa. Muốn sửa phải được yêu cầu bổ sung và gửi lại thành phiên bản mới. Giữ đủ các phiên bản cũ và phản hồi. | Kế toán phát hiện sai sau khi gửi. |
+| QT-BC-04 | Đề xuất | Số liệu được chụp tại lúc gửi. Nếu dữ liệu gốc thay đổi sau đó (ví dụ điều chỉnh điểm danh), báo cáo đã gửi hoặc đã duyệt không tự đổi; hệ thống cảnh báo người lập. Báo cáo đang ở `Đã gửi` được Ban giám hiệu xử lý như yêu cầu bổ sung nếu cần. Báo cáo đã duyệt chuyển sang `Cần cập nhật` để người lập gửi phiên bản mới từ số liệu hiện hành. | Điểm danh được sửa sau khi báo cáo chuyên cần đã gửi. Một quyết định chuyển lớp ghi hồi tố sau khi báo cáo sĩ số tháng đã duyệt. |
+| QT-BC-05 | Đề xuất | Tổng hợp toàn trường chỉ dùng phiên bản đã duyệt mới nhất của từng báo cáo. Kỳ còn bộ phận chưa duyệt được đánh dấu chưa đầy đủ. Kỳ có báo cáo ở trạng thái `Cần cập nhật` được đánh dấu số liệu đang cập nhật cho tới khi phiên bản mới được duyệt. | Kế toán chưa gửi báo cáo tháng. Báo cáo chuyên cần lớp Mầm 1 đã duyệt nhưng có điều chỉnh được duyệt sau đó. |
+| QT-BC-06 | Đề xuất | Mỗi bộ phận có tối đa một báo cáo cho mỗi loại, phạm vi và kỳ (trừ báo cáo đột xuất). Báo cáo gửi sau hạn vẫn được nhận nhưng được đánh dấu trễ hạn. | Văn phòng gửi báo cáo sĩ số tháng 10 vào ngày 8 tháng 11 khi hạn là ngày 5. |
 
 ## 8. Hạn chế của quy trình hiện tại
 

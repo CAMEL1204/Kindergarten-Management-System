@@ -27,7 +27,7 @@
 | STT | Loại | Tên | Ngày cấp | Ngày hết hạn | Ghi chú của văn phòng |
 | ---: | --- | --- | --- | --- | --- |
 | 1 | Bằng | Cao đẳng Giáo dục mầm non | 20/06/2020 | — | Căn cứ xét điều kiện đứng lớp (QT-NS-02) |
-| 2 | Chứng chỉ | Bồi dưỡng sơ cấp cứu ban đầu | 10/12/2024 | 09/12/2026 | Đưa vào danh sách cần xử lý tháng 11/2026 để nhắc bổ sung |
+| 2 | Chứng chỉ | Bồi dưỡng sơ cấp cứu ban đầu | 10/12/2024 | 09/12/2026 | Đưa vào danh sách cần xử lý từ 09/11/2026 để nhắc bổ sung (QT-NS-05). Không ảnh hưởng điều kiện đứng lớp (QT-NS-02) |
 
 ## 3. Giấy tờ hồ sơ
 
@@ -42,7 +42,7 @@
 
 | Nội dung | Giá trị minh họa |
 | --- | --- |
-| Loại biến động | Tạm nghỉ, nghỉ ốm có giấy xác nhận |
+| Loại biến động | Tạm nghỉ, nghỉ ốm có giấy xác nhận. Nghỉ 10 ngày làm việc nên ghi tạm nghỉ tại NV04, không dùng đơn nghỉ ngắn ngày ở NV05 (QT-NS-03, QT-PC-06) |
 | Ngày nhận đơn | 15/10/2026 |
 | Ngày hiệu lực | 19/10/2026 |
 | Ngày trở lại làm việc | 02/11/2026, là ngày đầu tiên không còn tạm nghỉ theo quy ước ở README §3 |

@@ -1,6 +1,6 @@
 # 07. Quản lý suất ăn và chế độ ăn của trẻ
 
-> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, trừ nội dung có nhãn *(đề xuất)* hoặc được ghi rõ là phương án đề xuất. Cột **Loại** ở mục 7 ghi `Hiện trạng` khi trường đang làm như vậy trong kịch bản, `Hiện trạng có bổ sung` khi trường đang làm và hệ thống mới thêm kiểm tra, lưu vết hoặc tự động hóa, `Đề xuất` khi quy tắc chỉ có ở hệ thống mới. Mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -23,7 +23,7 @@ Xác định số suất ăn theo lớp và theo bữa, thông báo thực đơn
 | --- | --- | --- | --- | --- |
 | 1. Lập, duyệt thực đơn | Bếp trưởng và người duyệt | Tại bếp và văn phòng, trước kỳ áp dụng | Bếp trưởng lập thực đơn theo ngày, bữa. Người được giao duyệt xác nhận bản áp dụng và chuyển tới lớp, bếp. | Thực đơn đã duyệt |
 | 2. Thông báo thực đơn tuần | Nhà trường, giáo viên và phụ huynh | Đầu tuần, qua kênh liên lạc của trường | Giáo viên gửi thực đơn tuần theo ngày và bữa vào nhóm Zalo của lớp. Phụ huynh báo lại nếu thực đơn có món liên quan đến dị ứng của trẻ và thống nhất giờ nhận trẻ về với giáo viên trước bữa đó. | Phản hồi và lịch về sớm theo trẻ, ngày và bữa |
-| 3. Lập danh sách dự kiến | Giáo viên | Tại lớp, trước mỗi bữa | Nếu bữa sáng chốt trước điểm danh, dùng đăng ký ăn sáng và thông báo nghỉ đã nhận. Đối chiếu khi trẻ đến. Giáo viên dựa vào điểm danh và thông tin phát sinh trong ngày để xác nhận trẻ ăn từng bữa. Giáo viên đối chiếu phản hồi của phụ huynh với lưu ý trong hồ sơ và ghi nhận các bữa trẻ không ăn tại trường do được nhận về sớm. | Danh sách dự kiến |
+| 3. Lập danh sách dự kiến | Giáo viên | Tại lớp, trước mỗi bữa | Trường không có đăng ký ăn sáng riêng. Với bữa sáng, giáo viên đếm trẻ đã đến lớp tại giờ báo số bữa sáng. Trẻ đến sau giờ đó được báo bếp bổ sung nếu bếp còn kịp. Với bữa trưa và bữa xế, giáo viên dựa vào điểm danh và thông tin phát sinh trong ngày để xác nhận trẻ ăn từng bữa. Giáo viên đối chiếu phản hồi của phụ huynh với lưu ý trong hồ sơ và ghi nhận các bữa trẻ không ăn tại trường do được nhận về sớm. | Danh sách dự kiến |
 | 4. Chốt suất | Giáo viên | Tại lớp, theo giờ chốt từng bữa | Giáo viên xác nhận tổng số suất theo danh sách trẻ ăn bữa đó. Trường phục vụ ba bữa: sáng, trưa và xế. Giáo viên báo số bữa sáng khoảng **07:30** và số bữa trưa, bữa xế khoảng **08:30**. | Phiếu theo lớp và bữa |
 | 5. Chuyển phiếu | Giáo viên hoặc bếp trưởng | Từ lớp đến bếp, sau khi chốt | Giáo viên ghi số vào sổ báo cơm đặt tại bếp. Khi không kịp xuống bếp, giáo viên nhắn số vào nhóm Zalo của bếp rồi ghi bổ sung vào sổ. Bếp trưởng cộng số của các lớp. | Phiếu bếp tiếp nhận |
 | 6. Điều chỉnh | Giáo viên và bếp | Tại lớp và bếp, khi có thay đổi | Khi trẻ đến muộn, báo nghỉ hoặc được nhận về sớm làm thay đổi bữa ăn, giáo viên báo cho bếp qua điện thoại, tin nhắn hoặc trao đổi trực tiếp. Bếp xác nhận số suất còn có thể thêm hoặc bớt theo tiến độ chuẩn bị và ghi nhận thời điểm báo. | Điều chỉnh đã xác nhận |
@@ -36,10 +36,12 @@ Xác định số suất ăn theo lớp và theo bữa, thông báo thực đơn
 - Khi thực đơn có món trẻ bị dị ứng, bếp nấu suất thay thế hay phụ huynh nhận trẻ về trước bữa? Kịch bản đồ án dùng phương án ở QT-SA-03.
 - Ai cộng số suất của các lớp: bếp trưởng hay văn phòng? Số liệu được lưu ở sổ báo cơm hay bảng tính?
 - Sau giờ báo số, bếp còn nhận tăng hoặc giảm suất đến mấy giờ?
+- Trường có cho phụ huynh đăng ký hoặc hủy riêng bữa sáng không? Tiền ăn một ngày có tách theo bữa không? Kịch bản không có đăng ký riêng và không tách tiền ăn theo bữa (QT-HP-02).
 
 ## 4. Dữ liệu đầu vào
 
-- Thực đơn đã duyệt theo ngày và bữa, đăng ký ăn sáng và thông báo nghỉ nếu bữa sáng chốt trước điểm danh.
+- Thực đơn đã duyệt theo ngày và bữa.
+- Danh sách trẻ đã có mặt tại giờ chốt bữa sáng, dùng cho bữa sáng. Trường không có đăng ký ăn sáng riêng.
 - Danh sách trẻ theo lớp và kết quả điểm danh từ **nghiệp vụ 03 – Điểm danh và theo dõi chuyên cần**.
 - Thông tin dị ứng hoặc kiêng ăn từ **nghiệp vụ 01 – Tiếp nhận và quản lý hồ sơ trẻ** (chỉ xem). Gồm lưu ý đã được phó hiệu trưởng chuyên môn xác nhận và cảnh báo lưu ý đang chờ xác nhận theo QT-HS-06. Giáo viên và bếp không sửa lưu ý tại NV07. Thông tin mới từ phụ huynh được chuyển văn phòng cập nhật ở NV01.
 - Phản hồi của phụ huynh về thực đơn và lịch về sớm, gồm mã trẻ, ngày, bữa và giờ dự kiến nhận trẻ về.
@@ -67,15 +69,16 @@ Phụ lục mô phỏng: [Mẫu 03 · Phiếu báo suất ăn và giao nhận](f
 
 ## 7. Quy tắc nghiệp vụ
 
-- **QT-SA-01** Giáo viên phụ trách xác nhận danh sách ăn của từng bữa. Điểm danh là căn cứ lập danh sách dự kiến vì trẻ có mặt trong ngày có thể chỉ ăn một số bữa.
-- **QT-SA-02** Mỗi trẻ được tính một lần trong cùng một bữa. Tổng số suất đã chốt bằng số trẻ được xác nhận ăn tại trường trong bữa đó.
-- **QT-SA-03** Khi món ăn trong thực đơn liên quan đến dị ứng của trẻ, phụ huynh nhận trẻ về trước bữa đó. Giáo viên ghi trẻ không ăn tại trường cho bữa bị ảnh hưởng. Các bữa khác được xác nhận theo lịch thực tế của trẻ.
-- **QT-SA-04** Trước mốc chốt của từng bữa, giáo viên cập nhật danh sách dự kiến khi có báo nghỉ, đến muộn hoặc về sớm. Sau mốc chốt, lưu số chốt ban đầu và gửi yêu cầu điều chỉnh. Bếp xác nhận phần có thể tăng hoặc giảm theo tiến độ chuẩn bị. Số cần giao bằng số chốt ban đầu cộng các điều chỉnh đã xác nhận.
-- **QT-SA-05** Lưu riêng số chốt ban đầu, số cần giao, số bếp giao và số lớp thực nhận. Ghi lý do và người xác nhận cho điều chỉnh hoặc chênh lệch. Chốt 23, giảm 1 được bếp xác nhận và nhận đủ 22 là đã giao đủ theo số cần giao. Chốt 23, chưa có điều chỉnh và lớp chỉ nhận 22 là thiếu 1 suất cần đối chiếu. Số liệu này dùng cho vận hành và báo cáo NV09. NV06 tính tiền ăn theo ngày có mặt đã xác nhận của NV03.
+| Mã | Loại | Quy tắc cần xác nhận |
+| --- | --- | --- |
+| QT-SA-01 | Hiện trạng | Giáo viên phụ trách xác nhận danh sách ăn của từng bữa. Điểm danh là căn cứ lập danh sách dự kiến vì trẻ có mặt trong ngày có thể chỉ ăn một số bữa. |
+| QT-SA-02 | Hiện trạng | Mỗi trẻ được tính một lần trong cùng một bữa. Tổng số suất đã chốt bằng số trẻ được xác nhận ăn tại trường trong bữa đó. |
+| QT-SA-03 | Hiện trạng | Khi món ăn trong thực đơn liên quan đến dị ứng của trẻ, phụ huynh nhận trẻ về trước bữa đó. Giáo viên ghi trẻ không ăn tại trường cho bữa bị ảnh hưởng. Các bữa khác được xác nhận theo lịch thực tế của trẻ. |
+| QT-SA-04 | Hiện trạng có bổ sung | Trước mốc chốt của từng bữa, giáo viên cập nhật danh sách dự kiến khi có báo nghỉ, đến muộn hoặc về sớm. Sau mốc chốt, lưu số chốt ban đầu và gửi yêu cầu điều chỉnh. Bếp xác nhận phần có thể tăng hoặc giảm theo tiến độ chuẩn bị. Số cần giao bằng số chốt ban đầu cộng các điều chỉnh đã xác nhận. |
+| QT-SA-05 | Đề xuất | Lưu riêng số chốt ban đầu, số cần giao, số bếp giao và số lớp thực nhận. Ghi lý do và người xác nhận cho điều chỉnh hoặc chênh lệch. Chốt 23, giảm 1 được bếp xác nhận và nhận đủ 22 là đã giao đủ theo số cần giao. Chốt 23, chưa có điều chỉnh và lớp chỉ nhận 22 là thiếu 1 suất cần đối chiếu. Số liệu này dùng cho vận hành và báo cáo NV09. NV06 tính tiền ăn theo ngày có mặt đã xác nhận của NV03. |
+| QT-SA-06 | Hiện trạng có bổ sung | Nếu thực đơn hoặc thông tin dị ứng thay đổi sau thông báo đầu tuần, giáo viên liên hệ lại với phụ huynh của trẻ bị ảnh hưởng để xác nhận lịch về sớm trước bữa. Nếu bữa đã chốt, giáo viên gửi điều chỉnh cho bếp và giữ số chốt ban đầu để đối chiếu. |
 
-- **QT-SA-06** Nếu thực đơn hoặc thông tin dị ứng thay đổi sau thông báo đầu tuần, giáo viên liên hệ lại với phụ huynh của trẻ bị ảnh hưởng để xác nhận lịch về sớm trước bữa. Nếu bữa đã chốt, giáo viên gửi điều chỉnh cho bếp và giữ số chốt ban đầu để đối chiếu.
-
-**Ví dụ.** Lớp có 23 trẻ dự kiến ăn trưa. Một phụ huynh báo sẽ nhận trẻ về trước bữa trưa vì thực đơn có món liên quan đến dị ứng của trẻ. Nếu các đăng ký còn lại giữ nguyên, giáo viên chốt 22 suất trưa. Nghiệp vụ 03 vẫn ghi nhận trẻ có mặt trong ngày, NV08 ghi giờ về thực tế.
+**Ví dụ.** Lớp có 23 trẻ dự kiến ăn trưa. Một phụ huynh báo sẽ nhận trẻ về trước bữa trưa vì thực đơn có món liên quan đến dị ứng của trẻ. Nếu các trẻ còn lại giữ nguyên lịch ăn, giáo viên chốt 22 suất trưa. Nghiệp vụ 03 vẫn ghi nhận trẻ có mặt trong ngày, NV08 ghi giờ về thực tế.
 
 ## 8. Hạn chế của quy trình hiện tại
 
@@ -88,7 +91,7 @@ Trong kịch bản, trường dùng sổ báo cơm, tin nhắn và đối chiế
 
 ## 9. Yêu cầu đối với hệ thống mới
 
-NV07 dùng bản bàn giao buổi sáng của NV03 (mặc định 08:30) và thông tin phát sinh ảnh hưởng từng bữa từ giáo viên. Giờ chốt mặc định trong kịch bản là 07:30 cho bữa sáng và 08:30 cho bữa trưa, bữa xế. Bữa sáng dùng đăng ký và báo nghỉ nhận được trước mốc chốt. Hệ thống lưu riêng số liệu và cho phép cấu hình giờ chốt từng bữa. Bếp xác nhận điều chỉnh theo tình hình bữa ăn, kể cả khi NV03 đang chờ duyệt chuyên cần.
+NV07 dùng bản bàn giao buổi sáng của NV03 (mặc định 08:30) và thông tin phát sinh ảnh hưởng từng bữa từ giáo viên. Giờ chốt mặc định trong kịch bản là 07:30 cho bữa sáng và 08:30 cho bữa trưa, bữa xế. Bữa sáng dùng danh sách trẻ đã có mặt tại mốc chốt 07:30 theo NV03, vốn được tạo từ lượt đón NV08. Trẻ đến sau mốc được bổ sung suất sáng qua điều chỉnh theo QT-SA-04 nếu bếp còn kịp. Danh sách ăn theo bữa và lịch về sớm do dị ứng do giáo viên ghi tại NV07. Giờ về thực tế lấy từ lượt trả NV08 (README §6). Hệ thống lưu riêng số liệu và cho phép cấu hình giờ chốt từng bữa. Bếp xác nhận điều chỉnh theo tình hình bữa ăn, kể cả khi NV03 đang chờ duyệt chuyên cần.
 
 - **YC-SA-01** Ghi nhận thực đơn theo ngày và bữa. Lập danh sách ăn dự kiến từ điểm danh để giáo viên rà soát, xác nhận và chốt suất theo lớp.
 - **YC-SA-02** Hỗ trợ thông báo thực đơn đầu tuần cho phụ huynh, ghi lại phản hồi và lịch về sớm theo trẻ, ngày, bữa. Hiển thị cho giáo viên lưu ý dị ứng từ hồ sơ khi rà soát danh sách ăn.

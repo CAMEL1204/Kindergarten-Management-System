@@ -1,6 +1,6 @@
 # 08. Đón trẻ, trả trẻ và tự động ghi nhận có mặt
 
-> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Mục 9.3 ghi cách thao tác nhóm đã thống nhất, sẽ chuyển sang tài liệu thiết kế khi bắt đầu giai đoạn thiết kế. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, trừ nội dung có nhãn *(đề xuất)* hoặc được ghi rõ là phương án đề xuất. Cột **Loại** ở mục 7 ghi `Hiện trạng` khi trường đang làm như vậy trong kịch bản, `Hiện trạng có bổ sung` khi trường đang làm và hệ thống mới thêm kiểm tra, lưu vết hoặc tự động hóa, `Đề xuất` khi quy tắc chỉ có ở hệ thống mới. Mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Mục 9.3 ghi cách thao tác nhóm đã thống nhất, sẽ chuyển sang tài liệu thiết kế khi bắt đầu giai đoạn thiết kế. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -42,6 +42,8 @@ flowchart LR
 - Phụ huynh báo nghỉ qua những kênh nào? Ai ghi lại và ghi ở đâu?
 - Khi trả trẻ, giáo viên đối chiếu người nhận trẻ bằng cách nào? Có danh sách người được ủy quyền hay chỉ nhận mặt? Người nhận trẻ có phải ký sổ không?
 - Trẻ chưa có người nhận sau giờ trả thì xử lý thế nào? Có thu phí trông muộn không?
+- Khi giáo viên đánh dấu nhầm trẻ đã đón hoặc đã trả, ai được sửa và sửa đến lúc nào? Kịch bản dùng QT-DT-07.
+- Có trường hợp trẻ đã được nhận về rồi quay lại trường trong cùng ngày không, ví dụ đi khám rồi quay lại? Kịch bản giả định không có.
 
 ## 4. Dữ liệu đầu vào
 
@@ -52,18 +54,18 @@ flowchart LR
 | Báo nghỉ của phụ huynh | Trẻ, ngày hoặc khoảng nghỉ, lý do, kênh báo, thời điểm nhận, người ghi nhận | Phụ huynh báo, giáo viên hoặc văn phòng ghi |
 | Danh sách người có quyền nhận trẻ | Người giám hộ chính đã xác nhận, người được ủy quyền cố định, thông tin đối chiếu và thời hạn hiệu lực | NV01, tra cứu theo từng trẻ và thời điểm trả |
 | Yêu cầu nhận trẻ hộ đột xuất | Trẻ, người đến nhận, người giám hộ xác nhận, kênh và thời điểm báo, thông tin đối chiếu CCCD tại cổng hoặc lớp, người xác minh | Người giám hộ báo trước khi giao trẻ qua điện thoại hoặc tin nhắn có lưu vết. Giáo viên hoặc nhân sự trực được giao quyền tiếp nhận. |
-| Mốc vận hành | Khung đón chính, mốc bàn giao buổi sáng, giờ khóa chuyên cần, khung trả trẻ thông thường | Danh mục dùng chung do Ban giám hiệu quy định, xem NV03 §9 |
+| Mốc vận hành *(đề xuất)* | Khung đón chính, mốc bàn giao buổi sáng, giờ khóa chuyên cần, khung trả trẻ thông thường | Danh mục dùng chung do Ban giám hiệu quy định, xem NV03 §9 |
 
 ## 5. Dữ liệu đầu ra
 
 | Đầu ra | Nội dung chính | Nơi sử dụng |
 | --- | --- | --- |
-| Lượt đón | Trẻ, lớp, ngày, giờ đón, người ghi nhận, đến muộn hay không | NV03 cập nhật có mặt hoặc nhận đề nghị điều chỉnh theo mốc khóa |
-| Lượt trả | Trẻ, lớp, giờ giao thực tế của trẻ, người thực tế nhận, người giao và mã căn cứ ủy quyền hoặc mã duyệt ngoại lệ nếu có | Văn phòng tra cứu theo quyền |
-| Hồ sơ xác minh người nhận | Trẻ, danh tính người được đề nghị nhận, căn cứ người giám hộ xác nhận, kết quả đối chiếu CCCD, trạng thái, lý do, người và thời điểm xác minh, người và thời điểm duyệt hoặc từ chối | Giáo viên, nhân sự trực và người có quyền duyệt |
-| Căn cứ chuyên cần | Mã lượt đón hoặc trả, giờ thực tế, báo nghỉ và thời điểm ghi nhận | NV03 sở hữu kết quả chuyên cần, lưu bản bàn giao cho NV07 và tổng hợp kết quả chuyên cần theo kỳ |
-| Danh sách cảnh báo | Yêu cầu nhận trẻ còn chờ xác minh hoặc duyệt và trẻ chưa trả khi kết thúc khung trả | Giáo viên, người trực, văn phòng và Ban giám hiệu theo quyền |
-| Báo cáo đón trả | Số lượt đến muộn, số lượt trả theo ngoại lệ đã duyệt, số lượt trả muộn trong kỳ | Giáo viên đưa vào báo cáo lớp theo NV09 |
+| Lượt đón | Trẻ, lớp, ngày, giờ đón, người ghi nhận, đến muộn hay không. Nếu bị hủy do ghi nhầm: lý do, người hủy và thời điểm hủy | Hiện trạng: giáo viên đánh dấu sổ đón rồi điểm danh lại. *(Đề xuất)* NV03 cập nhật có mặt hoặc nhận đề nghị điều chỉnh theo mốc khóa |
+| Lượt trả | Trẻ, lớp, giờ giao thực tế của trẻ, người thực tế nhận, người giao và mã căn cứ ủy quyền hoặc mã duyệt ngoại lệ nếu có. Nếu bị hủy do ghi nhầm: lý do, người hủy và người duyệt | Văn phòng tra cứu theo quyền |
+| Hồ sơ xác minh người nhận *(đề xuất)* | Trẻ, danh tính người được đề nghị nhận, căn cứ người giám hộ xác nhận, kết quả đối chiếu CCCD, trạng thái, lý do, người và thời điểm xác minh, người và thời điểm duyệt hoặc từ chối | Giáo viên, nhân sự trực và người có quyền duyệt |
+| Căn cứ chuyên cần *(đề xuất)* | Mã lượt đón hoặc trả, giờ thực tế, báo nghỉ và thời điểm ghi nhận | NV03 sở hữu kết quả chuyên cần, lưu bản bàn giao cho NV07 và tổng hợp kết quả chuyên cần theo kỳ |
+| Danh sách cảnh báo *(đề xuất)* | Yêu cầu nhận trẻ còn chờ xác minh hoặc duyệt và trẻ chưa trả khi kết thúc khung trả | Giáo viên, người trực, văn phòng và Ban giám hiệu theo quyền |
+| Báo cáo đón trả *(đề xuất)* | Số lượt đến muộn, số lượt trả theo ngoại lệ đã duyệt, số lượt trả muộn trong kỳ | Giáo viên đưa vào báo cáo lớp theo NV09 |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
@@ -81,14 +83,15 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 ## 7. Quy tắc nghiệp vụ
 
-| Mã | Quy tắc cần xác nhận | Trường hợp cần thử |
-| --- | --- | --- |
-| QT-DT-01 | Lượt đón hợp lệ là nguồn duy nhất tạo kết quả có mặt ở NV03. Áp dụng QT-DD-05 để cập nhật trực tiếp hoặc đề nghị điều chỉnh theo mốc khóa. | Đón trước giờ khóa tạo kết quả có mặt. Đón từ giờ khóa tạo đề nghị điều chỉnh. |
-| QT-DT-02 | Danh sách trả gồm trẻ đã có lượt đón và chưa được trả. Trạng thái chuyên cần không quyết định trẻ có trong danh sách trả hay không. Nếu trẻ thực tế có mặt nhưng bị sót lượt đón, giáo viên xác minh và bổ sung lượt đón trước khi ghi trả theo quy trình thông thường. | Trẻ đến sau 09:00 hiện trong danh sách trả dù đề nghị điều chỉnh chuyên cần còn chờ duyệt. |
-| QT-DT-03 | Có thể xác nhận nhiều trẻ trong một lần. Khi trả, từng trẻ phải có người nhận thực tế được chọn và đối chiếu, căn cứ nhận còn hiệu lực và giờ giao thực tế. Hệ thống kiểm tra lại từng dòng khi lưu. Dòng đủ điều kiện được ghi trả, dòng còn thiếu điều kiện được báo rõ lý do và tiếp tục ở danh sách chưa trả. | Chọn 3 trẻ, 2 trẻ đã xác minh người nhận, 1 trẻ còn chờ. Chỉ ghi trả 2 trẻ. |
-| QT-DT-04 | Người giám hộ chính đã xác nhận hoặc người có ủy quyền cố định còn hiệu lực theo QT-HS-05 được nhận trẻ sau khi danh tính thực tế đã được đối chiếu. Người ngoài danh sách, có ủy quyền hết hạn hoặc bị thu hồi phải có xác nhận trước khi giao từ người giám hộ qua kênh đã đăng ký và có lưu vết, được đối chiếu CCCD tại cổng hoặc lớp, rồi được Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ. Duyệt chỉ có giá trị cho trẻ, người nhận và lượt trả đã xác minh. Thiếu bất kỳ điều kiện nào thì chặn hoàn tất lượt trả. | Cậu đến nhận sau khi hết hạn ủy quyền, chưa liên hệ được người giám hộ. Trẻ tiếp tục được trông tại trường, yêu cầu ở trạng thái chờ xác minh. |
-| QT-DT-05 | Giáo viên được phân công lớp hoặc nhân sự trực được cấp quyền NV08 thực hiện giao nhận trong phạm vi lớp và thời gian được giao. Quyền ghi giao nhận và quyền duyệt ngoại lệ được cấp riêng. | Nhân sự trực có quyền ghi trả và xác minh CCCD, còn ngoại lệ được chuyển đến người có quyền duyệt. |
-| QT-DT-06 | Ghi lượt đón khi trẻ thực tế vào trường, kể cả trẻ đã báo nghỉ hoặc đã xác nhận vắng. Giờ đến thực tế từ mốc bàn giao 08:30 được đánh dấu đến muộn. Ghi nhận từ mốc khóa 09:00 tạo đề nghị điều chỉnh theo QT-DD-03. Giữ báo nghỉ và căn cứ xác minh đã ghi. | Trẻ báo nghỉ rồi đến 08:50 vẫn được đón. Trẻ đến đúng 09:00 vẫn được đón và NV03 nhận đề nghị điều chỉnh. |
+| Mã | Loại | Quy tắc cần xác nhận | Trường hợp cần thử |
+| --- | --- | --- | --- |
+| QT-DT-01 | Đề xuất | Lượt đón hợp lệ là nguồn duy nhất tạo kết quả có mặt ở NV03. Áp dụng QT-DD-05 để cập nhật trực tiếp hoặc đề nghị điều chỉnh theo mốc khóa. | Đón trước giờ khóa tạo kết quả có mặt. Đón từ giờ khóa tạo đề nghị điều chỉnh. |
+| QT-DT-02 | Đề xuất | Danh sách trả gồm trẻ đã có lượt đón và chưa được trả. Trạng thái chuyên cần không quyết định trẻ có trong danh sách trả hay không. Nếu trẻ thực tế có mặt nhưng bị sót lượt đón, giáo viên xác minh và bổ sung lượt đón trước khi ghi trả theo quy trình thông thường. | Trẻ đến sau 09:00 hiện trong danh sách trả dù đề nghị điều chỉnh chuyên cần còn chờ duyệt. |
+| QT-DT-03 | Đề xuất | Có thể xác nhận nhiều trẻ trong một lần. Khi trả, từng trẻ phải có người nhận thực tế được chọn và đối chiếu, căn cứ nhận còn hiệu lực và giờ giao thực tế. Hệ thống kiểm tra lại từng dòng khi lưu. Dòng đủ điều kiện được ghi trả, dòng còn thiếu điều kiện được báo rõ lý do và tiếp tục ở danh sách chưa trả. | Chọn 3 trẻ, 2 trẻ đã xác minh người nhận, 1 trẻ còn chờ. Chỉ ghi trả 2 trẻ. |
+| QT-DT-04 | Hiện trạng có bổ sung | Người giám hộ chính đã xác nhận hoặc người có ủy quyền cố định còn hiệu lực theo QT-HS-05 được nhận trẻ sau khi danh tính thực tế đã được đối chiếu. Người ngoài danh sách, có ủy quyền hết hạn hoặc bị thu hồi phải có xác nhận trước khi giao từ người giám hộ qua kênh đã đăng ký và có lưu vết, được đối chiếu CCCD tại cổng hoặc lớp, rồi được Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ. Duyệt chỉ có giá trị cho trẻ, người nhận và lượt trả đã xác minh. Thiếu bất kỳ điều kiện nào thì chặn hoàn tất lượt trả. | Cậu đến nhận sau khi hết hạn ủy quyền, chưa liên hệ được người giám hộ. Trẻ tiếp tục được trông tại trường, yêu cầu ở trạng thái chờ xác minh. |
+| QT-DT-05 | Đề xuất | Giáo viên được phân công lớp hoặc nhân sự trực được cấp quyền NV08 thực hiện giao nhận trong phạm vi lớp và thời gian được giao. Quyền ghi giao nhận và quyền duyệt ngoại lệ được cấp riêng. | Nhân sự trực có quyền ghi trả và xác minh CCCD, còn ngoại lệ được chuyển đến người có quyền duyệt. |
+| QT-DT-06 | Đề xuất | Ghi lượt đón khi trẻ thực tế vào trường, kể cả trẻ đã báo nghỉ hoặc đã xác nhận vắng. Giờ đến thực tế từ mốc bàn giao 08:30 được đánh dấu đến muộn. Ghi nhận từ mốc khóa 09:00 tạo đề nghị điều chỉnh theo QT-DD-03. Giữ báo nghỉ và căn cứ xác minh đã ghi. | Trẻ báo nghỉ rồi đến 08:50 vẫn được đón. Trẻ đến đúng 09:00 vẫn được đón và NV03 nhận đề nghị điều chỉnh. |
+| QT-DT-07 | Đề xuất | Lượt đón hoặc lượt trả ghi nhầm không bị xóa mà được hủy, kèm lý do, người hủy và thời điểm hủy. Trước mốc khóa 09:00, giáo viên phụ trách lớp hoặc người đã ghi được hủy lượt đón. NV03 tính lại kết quả trong ngày từ các căn cứ còn lại như báo nghỉ và kết quả xác minh. Từ mốc khóa, hủy lượt đón tạo đề nghị điều chỉnh theo QT-DD-03, kết quả `Có mặt` giữ nguyên cho tới khi được duyệt. Không hủy lượt đón khi trẻ còn lượt trả chưa hủy. Lượt trả chỉ được hủy khi trẻ thực tế còn ở trường và phải được Ban giám hiệu hoặc người được giao quyền duyệt. Khi đó trẻ quay lại danh sách chưa trả. Bản bàn giao 08:30 không đổi. Thay đổi ảnh hưởng bữa ăn được chuyển NV07 theo QT-SA-04. | Lúc 07:40 giáo viên chọn nhầm một trẻ đã báo nghỉ khi đón theo nhóm, phát hiện lúc 08:05 và hủy lượt đón. NV03 đưa trẻ về kết quả theo báo nghỉ. Nếu phát hiện lúc 09:20, NV03 nhận đề nghị điều chỉnh. |
 
 ## 8. Hạn chế của quy trình hiện tại
 
@@ -125,13 +128,17 @@ Trong hệ thống mới, **đón trẻ và điểm danh là một luồng dữ 
 
 Hiển thị báo nghỉ và đến muộn dưới dạng nhãn theo dữ liệu đã ghi. Các nhãn này không thay đổi quy tắc chuyển trạng thái giao nhận.
 
+Lượt ghi nhầm được hủy theo QT-DT-07 và vẫn được lưu với trạng thái đã hủy. Hủy lượt đón đưa trẻ về `Chưa đón`. Hủy lượt trả có duyệt đưa trẻ về `Đã đón`. Kịch bản không có trường hợp trẻ đã trả quay lại trường trong cùng ngày (câu hỏi xác minh ở mục 3).
+
 Khi chưa đủ căn cứ giao trẻ, hồ sơ xác minh người nhận hiển thị `Chờ xác minh` hoặc `Chờ duyệt`. Trẻ vẫn ở trạng thái `Đã đón`, xuất hiện trong danh sách chưa trả và tiếp tục được người trực trông tại trường. Từ chối một yêu cầu nhận trẻ hộ cũng giữ trẻ trong danh sách này. Chỉ chuyển sang `Đã trả` khi giao trẻ thực tế cho người nhận đủ điều kiện.
 
 ```mermaid
 stateDiagram-v2
     [*] --> ChuaDon
     ChuaDon --> DaDon: ghi nhận lượt đón thực tế
+    DaDon --> ChuaDon: hủy lượt đón ghi nhầm (QT-DT-07)
     DaDon --> DaTra: xác nhận trả
+    DaTra --> DaDon: hủy lượt trả ghi nhầm, có duyệt (QT-DT-07)
     DaTra --> [*]
 ```
 
@@ -167,3 +174,4 @@ stateDiagram-v2
 | YC-DT-05 | Ghi nhận báo nghỉ của phụ huynh tại hệ thống con Giáo viên (lớp mình) và Văn phòng, lưu kênh báo, thời điểm và người ghi nhận. |
 | YC-DT-06 | Tra cứu lượt đón trả theo trẻ, lớp, ngày và người nhận thực tế. Lọc lượt trả theo ngoại lệ đã duyệt, ca đang chờ xử lý và lượt trả muộn. |
 | YC-DT-07 | Tra cứu quyền nhận trẻ từ NV01 tại thời điểm trả. Hỗ trợ xác minh, chuyển duyệt, từ chối và ghi lý do ngoại lệ. Chặn hoàn tất khi thiếu căn cứ hoặc quyền nhận đã hết hiệu lực. Chỉ người được cấp quyền đối chiếu mới xem thông tin định danh cần thiết. |
+| YC-DT-08 | Hủy lượt đón hoặc lượt trả ghi nhầm theo QT-DT-07, lưu lý do, người hủy, thời điểm và người duyệt nếu có. Chuyển kết quả hủy lượt đón cho NV03 theo mốc khóa. Không xóa cứng lượt giao nhận. |

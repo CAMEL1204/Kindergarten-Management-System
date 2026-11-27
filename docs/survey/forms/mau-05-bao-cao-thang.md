@@ -24,8 +24,8 @@
 | Nhà trẻ 1 | 19 | 1 | 0 | 20 | 395 | 375 | 94,9% |
 | Mầm 1 | 24 | 1 | 0 | 25 | 498 | 470 | 94,4% |
 | Mầm 2 | 25 | 1 | 1 | 25 | 500 | 455 | 91,0% |
-| Chồi 1 | 32 | 0 | 0 | 32 | 640 | 612 | 95,6% |
-| Lá 1 | 33 | 0 | 0 | 33 | 660 | 636 | 96,4% |
+| Chồi 1 | 30 | 0 | 0 | 30 | 600 | 573 | 95,5% |
+| Lá 1 | 35 | 0 | 0 | 35 | 700 | 675 | 96,4% |
 | **Toàn trường** | **133** | **3** | **1** | **135** | **2.693** | **2.548** | **94,6%** |
 
 Tỷ lệ toàn trường bằng 2.548 / 2.693, nhân 100 và làm tròn một chữ số thập phân. Kịch bản có 20 ngày học toàn trường trong tháng 09. Với Mầm 1, 24 trẻ học cả kỳ và HS2026-042 thuộc lớp từ 07/09, nên có 24 × 20 + 18 = 498 lượt phải điểm danh. Trong 18 lượt của Khôi có 16 lượt có mặt và 2 lượt vắng có phép, cùng căn cứ giảm trừ dùng ở mẫu 04. Mục này giả định không phát sinh chuyển lớp nội bộ.

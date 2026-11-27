@@ -15,8 +15,8 @@
 | Nhà trẻ 1 | 20 | 18 | 19 | 19 | — | 19 | 19 |
 | Mầm 1 | 25 | 21 | 22 | 22 | +1 trưa, +1 xế cho HS2026-042 đến lúc 08:50 | 23 | 23 |
 | Mầm 2 | 25 | 23 | 24 | 24 | −1 xế do một trẻ về sớm | 24 | 23 |
-| Chồi 1 | 32 | 30 | 30 | 30 | — | 30 | 30 |
-| Lá 1 | 33 | 31 | 32 | 32 | — | 32 | 32 |
+| Chồi 1 | 30 | 28 | 28 | 28 | — | 28 | 28 |
+| Lá 1 | 35 | 33 | 34 | 34 | — | 34 | 34 |
 | **Toàn trường** | **135** | **123** | **127** | **127** | **+1 trưa, 0 xế sau bù trừ** | **128** | **127** |
 
 ## 2. Điều chỉnh và giao nhận lớp Mầm 1
@@ -29,6 +29,8 @@
 | 14:30 | Xế | Bếp giao 23 suất, lớp nhận 23, chênh lệch 0. | Tổ trưởng bếp và giáo viên |
 
 Tổng toàn trường ở mục 1 là **số sau điều chỉnh**. Mục 2 chỉ xác nhận giao nhận của lớp Mầm 1.
+
+Bữa sáng không có đăng ký riêng. Số sáng chốt là số trẻ đã có mặt tại giờ chốt 07:30. Mầm 1 chốt 21 suất sáng nhưng có 22 trẻ có mặt lúc 08:30, vì HS2026-001 đến lúc 07:45 (Mẫu 02), sau giờ chốt bữa sáng và không đề nghị bổ sung suất sáng.
 
 ## 3. Ví dụ riêng về thực đơn cần đối chiếu
 
