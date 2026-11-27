@@ -48,7 +48,8 @@ Lập và duy trì hồ sơ của giáo viên và nhân viên trong suốt thờ
 | Hồ sơ nhân sự | Mã nhân sự, thông tin cá nhân, vị trí, trình độ, chứng chỉ, trạng thái, người và ngày xác nhận | Văn phòng và ban giám hiệu tra cứu theo quyền |
 | Danh sách giáo viên đủ điều kiện đứng lớp | Mã, họ tên, vị trí, trình độ, trạng thái làm việc tại ngày tra cứu | Nghiệp vụ 05 dùng để phân công |
 | Danh sách cần xử lý | Hồ sơ thiếu giấy tờ, chứng chỉ sắp hoặc đã hết hạn | Văn phòng theo dõi và nhắc nhân sự |
-| Lịch sử biến động nhân sự | Loại biến động, giá trị trước và sau, ngày hiệu lực, người xác nhận | Ban giám hiệu đối chiếu và báo cáo |
+| Lịch sử biến động nhân sự | Loại biến động, giá trị trước và sau, ngày hiệu lực, người xác nhận | Ban giám hiệu đối chiếu |
+| Báo cáo nhân sự | Nhân sự vào làm, nghỉ việc, chứng chỉ sắp hết hạn trong kỳ, kèm ghi chú của văn phòng | Văn phòng lập và gửi Ban giám hiệu theo nghiệp vụ 09 |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 

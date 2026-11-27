@@ -38,7 +38,8 @@ Lập các khoản phải thu của từng trẻ theo kỳ thu (thường là th
 | --- | --- | --- |
 | Biểu phí | Khoản thu, đơn giá, đơn vị tính (tháng, ngày, lần), nhóm tuổi hoặc lớp áp dụng, ngày hiệu lực | Quyết định của ban giám hiệu |
 | Danh sách trẻ theo kỳ | Định danh trẻ, lớp, ngày bắt đầu và kết thúc thuộc lớp trong kỳ | Nghiệp vụ 02 |
-| Chuyên cần đã chốt | Trẻ, kỳ, số ngày có mặt, số ngày vắng theo loại | Nghiệp vụ 03 |
+| Chuyên cần đã chốt | Trẻ, kỳ, số ngày có mặt, số ngày vắng theo loại. Chỉ nhận con số đã chốt, kế toán không có màn hình điểm danh | Nghiệp vụ 03, có mặt được ghi tự động từ đón trẻ ở nghiệp vụ 08 |
+| Suất ăn đã chốt | Trẻ hoặc lớp, kỳ, số suất đã giao. Kế toán không có màn hình thực đơn | Nghiệp vụ 07, nếu trường tính tiền ăn theo suất |
 | Miễn giảm | Trẻ, loại miễn giảm, mức giảm theo số tiền hoặc tỷ lệ, kỳ áp dụng, người duyệt | Đơn đề nghị và quyết định duyệt |
 | Thông tin thu tiền | Trẻ, kỳ, số tiền, ngày thu, hình thức, mã giao dịch nếu chuyển khoản, người thu | Phụ huynh nộp, sao kê ngân hàng |
 
@@ -49,7 +50,8 @@ Lập các khoản phải thu của từng trẻ theo kỳ thu (thường là th
 | Bảng phải thu theo kỳ | Trẻ, lớp, từng khoản, miễn giảm, nợ kỳ trước, tổng phải thu | Kế toán và ban giám hiệu |
 | Thông báo học phí | Trẻ, kỳ, chi tiết khoản thu, tổng tiền, hạn nộp, cách nộp | Phụ huynh |
 | Biên lai hoặc phiếu thu | Số biên lai, trẻ, kỳ, số tiền, ngày thu, hình thức, người thu | Phụ huynh và kế toán lưu |
-| Báo cáo công nợ và thu | Theo trẻ, lớp và kỳ: phải thu, đã thu, còn nợ, quá hạn | Kế toán nhắc nợ, ban giám hiệu theo dõi |
+| Danh sách công nợ | Theo trẻ, lớp và kỳ: phải thu, đã thu, còn nợ, quá hạn | Kế toán nhắc nợ |
+| Báo cáo thu học phí | Phải thu, đã thu, còn nợ, miễn giảm và hoàn tiền trong kỳ, kèm ghi chú của kế toán | Kế toán lập và gửi Ban giám hiệu theo nghiệp vụ 09 |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
@@ -85,4 +87,5 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | YC-HP-01 | Quản lý biểu phí theo khoản thu, đơn giá, nhóm áp dụng và ngày hiệu lực. Quản lý danh mục và quyết định miễn giảm. |
 | YC-HP-02 | Tự lập bảng phải thu theo kỳ từ danh sách lớp của nghiệp vụ 02, chuyên cần đã chốt của nghiệp vụ 03, biểu phí và miễn giảm. Cảnh báo trẻ có ngày chưa chốt trước khi lập. |
 | YC-HP-03 | Ghi nhận thu tiền theo nhiều hình thức, cho phép nộp thiếu hoặc nộp gộp, in biên lai. Hỗ trợ mã nội dung chuyển khoản theo trẻ và kỳ để đối chiếu. |
-| YC-HP-04 | Theo dõi công nợ theo trẻ, lớp và kỳ. Xuất danh sách nhắc nợ và báo cáo phải thu, đã thu, còn nợ. Lưu lịch sử điều chỉnh và hoàn tiền kèm người duyệt. |
+| YC-HP-04 | Theo dõi công nợ theo trẻ, lớp và kỳ. Xuất danh sách nhắc nợ. Lập báo cáo phải thu, đã thu, còn nợ, thêm ghi chú và gửi Ban giám hiệu theo nghiệp vụ 09. Lưu lịch sử điều chỉnh và hoàn tiền kèm người duyệt. |
+| YC-HP-05 | Hệ thống con Kế toán chỉ gồm chức năng thu phí và công nợ. Không có thực đơn, suất ăn, điểm danh hay hồ sơ trẻ. Dữ liệu từ các nghiệp vụ đó chỉ được nhận ở dạng số liệu đã chốt. |

@@ -47,8 +47,9 @@ Phân công giáo viên phụ trách từng lớp theo năm học và khoảng t
 | --- | --- | --- |
 | Bảng phân công theo lớp | Lớp, giáo viên, vai trò (chủ nhiệm, phụ, dạy thay), ca, ngày bắt đầu và kết thúc | Giáo viên, văn phòng và ban giám hiệu |
 | Lịch làm việc của giáo viên | Giáo viên, lớp, ca theo ngày hoặc tuần | Giáo viên tra cứu lịch của mình |
-| Danh sách giáo viên phụ trách lớp theo ngày | Lớp, ngày, giáo viên có quyền điểm danh | Nghiệp vụ 03 kiểm tra quyền điểm danh |
-| Cảnh báo và tổng hợp | Lớp thiếu giáo viên, giáo viên bị trùng ca, tổng số ca đứng lớp và dạy thay theo tháng | Ban giám hiệu điều chỉnh và đối chiếu chấm công |
+| Danh sách giáo viên phụ trách lớp theo ngày | Lớp, ngày, giáo viên có quyền đón trả trẻ và điểm danh | Nghiệp vụ 08 và 03 kiểm tra quyền của giáo viên |
+| Cảnh báo | Lớp thiếu giáo viên, giáo viên bị trùng ca | Người phân công xử lý trước khi trình duyệt |
+| Báo cáo phân công | Tổng số ca đứng lớp và dạy thay theo giáo viên và tháng, kèm ghi chú | Người phân công lập và gửi Ban giám hiệu theo nghiệp vụ 09 |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
