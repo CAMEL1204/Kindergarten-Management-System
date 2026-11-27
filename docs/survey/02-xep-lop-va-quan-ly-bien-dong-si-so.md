@@ -50,6 +50,8 @@ Phân trẻ vào lớp phù hợp với nhóm tuổi và khả năng tiếp nh�
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
+Phụ lục mô phỏng: [Mẫu 01](forms/mau-01-ho-so-tre.md) minh họa đầu vào từ NV01, còn [Mẫu 05](forms/mau-05-bao-cao-thang.md) minh họa số liệu sĩ số đầu ra. Quyết định xếp hoặc chuyển lớp vẫn nằm trong danh mục biểu mẫu cần đối chiếu dưới đây.
+
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
 | XL-01 | Bảng danh mục lớp và chỉ tiêu xếp lớp | Năm học, tên lớp, nhóm tuổi, sức chứa và người quản lý. |

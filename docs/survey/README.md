@@ -1,23 +1,31 @@
 # Khảo sát nghiệp vụ và phân chia hệ thống con
 
-> Bản khảo sát sơ bộ. Cách phân chia hệ thống con dưới đây là phương án đề xuất, chờ cơ sở khảo sát xác nhận vai trò thực tế của từng bộ phận. Căn cứ lập hồ sơ khảo sát gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hồ sơ khảo sát theo kịch bản mô phỏng. Cách chia hệ thống con là phương án của nhóm. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Thông tin khảo sát
 
-Điền sau mỗi buổi phỏng vấn. Khi một giả định trong các tài liệu nghiệp vụ được xác nhận hoặc bác bỏ, cập nhật tài liệu đó và ghi lại ở bảng nhật ký.
+Do nhóm chưa thể khảo sát trực tiếp tại trường, phần hiện trạng mô tả quy trình giả định. Các ngày, tên và xác nhận trong biểu mẫu phục vụ minh họa và đối soát giữa các nghiệp vụ.
 
 | Mục | Nội dung |
 | --- | --- |
-| Cơ sở khảo sát | *(tên trường, địa chỉ)* |
-| Quy mô | *(số lớp, số trẻ, số giáo viên, số nhân viên)* |
+| Cơ sở mô phỏng | Trường Mầm non Hoa Hướng Dương (tên giả định), một trường tư thục tại Hà Nội. |
+| Quy mô | 135 trẻ. Năm lớp gồm Nhà trẻ 1 (20 trẻ), Mầm 1 (25), Mầm 2 (25), Chồi 1 (32) và Lá 1 (33). |
+| Nhân sự | 18 người gồm 1 hiệu trưởng, 1 phó hiệu trưởng chuyên môn kiêm điều phối nhân sự, 1 nhân viên văn phòng kiêm kế toán, 10 giáo viên, 3 cấp dưỡng và 2 bảo vệ hỗ trợ tại cổng. Giáo viên ghi nhận giao nhận trong các mẫu. |
 | Người thực hiện | TV1, TV2 |
-| Phương pháp | Phỏng vấn trực tiếp, xin biểu mẫu trắng, quan sát giờ đón trả trẻ |
+| Công cụ trong kịch bản | Sổ giấy để theo dõi giao nhận trẻ và suất ăn. Excel để theo dõi lớp và học phí. Zalo hoặc điện thoại để nhận báo nghỉ và thông tin người đón hộ. |
+| Phương pháp xây dựng hồ sơ | Tổng hợp mô tả quy trình đã có, dựng biểu mẫu và kiểm tra chéo theo mã trẻ, lớp, ngày và kỳ. Vai trò kiêm nhiệm thuộc kịch bản mô phỏng. Phương án tính tiền ăn của đồ án nêu tại NV06. |
 
-**Nhật ký phỏng vấn**
+**Phụ lục biểu mẫu mô phỏng**
 
-| Ngày | Người được phỏng vấn (vai trò) | Nghiệp vụ | Nội dung đã xác nhận hoặc thay đổi | Biểu mẫu đã nhận |
-| --- | --- | --- | --- | --- |
-| *(dd/MM/yyyy)* | *(ví dụ: phó hiệu trưởng)* | *(ví dụ: 05)* | | *(ví dụ: PC-01)* |
+| Mẫu | Nghiệp vụ có thể đối chiếu | Nội dung minh họa |
+| --- | --- | --- |
+| [01. Hồ sơ trẻ](forms/mau-01-ho-so-tre.md) | 01, 02, 07, 08 | Tiếp nhận, mốc bắt đầu học, lưu ý ăn uống và người được ủy quyền nhận trẻ. Với 02, mẫu chỉ minh họa đầu vào bàn giao xếp lớp. |
+| [02. Điểm danh và giao nhận](forms/mau-02-diem-danh-giao-nhan.md) | 03, 08 | Số bàn giao lúc 08:30, kết quả cuối ngày, đến muộn và xác minh người đón hộ. |
+| [03. Báo suất và giao nhận](forms/mau-03-bao-suat-va-giao-nhan.md) | 07 | Số chốt riêng theo bữa, điều chỉnh sau chốt và số thực nhận. |
+| [04. Thông báo phải thu và biên lai](forms/mau-04-hoc-phi-va-bien-lai.md) | 06 | Tạm thu theo lịch học, giảm trừ kỳ trước và một lần thanh toán chuyển khoản. |
+| [05. Báo cáo tổng hợp tháng](forms/mau-05-bao-cao-thang.md) | 02, 09 | Tổng hợp chỉ tiêu từ các bản nguồn đã duyệt trong kịch bản. |
+
+Các mẫu trên cung cấp dữ liệu kiểm tra cho phân tích. Tại tiêu chí **biểu mẫu thật** (checklist mục 3.1), hồ sơ hiện có biểu mẫu do nhóm mô phỏng và chưa có biểu mẫu thu trực tiếp từ cơ sở.
 
 ## 2. Danh sách nghiệp vụ khảo sát
 
@@ -41,8 +49,9 @@ Tất cả tài liệu khảo sát của hai thành viên nằm chung trong thư
 | --- | --- |
 | Đón trẻ | Giáo viên nhận trẻ từ phụ huynh vào lớp, thường buổi sáng. |
 | Trả trẻ | Giáo viên giao trẻ cho người đón về. |
-| Người đón | Phụ huynh hoặc người được ủy quyền đến đón trẻ về, thuộc danh sách người đưa đón ở nghiệp vụ 01. |
-| Giờ chốt | Mốc trong ngày mà trẻ chưa được đón bị chuyển sang vắng, đồng thời là mốc chốt số báo bếp ở nghiệp vụ 03 và 07. |
+| Người nhận trẻ | Người giám hộ chính hoặc người có ủy quyền cố định còn hiệu lực theo NV01, hoặc người được duyệt đón hộ cho một lượt theo NV08. Người nhận trên lượt trả là người thực tế đã nhận trẻ. |
+| Mốc bàn giao buổi sáng | Mặc định 08:30, kết thúc khung đón chính 07:00–08:30 và lưu số buổi sáng gửi NV07. Giờ đến thực tế từ mốc này được đánh dấu đến muộn. |
+| Mốc khóa chuyên cần | Mặc định 09:00. Từ mốc này, NV03 thay đổi kết quả qua luồng điều chỉnh có duyệt. NV08 tiếp tục ghi giao nhận thực tế. Khung trả thường lệ là 16:00–17:30. |
 | Đã chốt | Số liệu đã được người có quyền xác nhận và khóa. Bộ phận khác chỉ dùng số đã chốt. Muốn sửa phải theo quy trình điều chỉnh. |
 | Ngày hiệu lực | Ngày một quyết định bắt đầu có tác dụng, ghi riêng với thời điểm nhập. Dùng chung quy ước của QT-XL-02: ngày bắt đầu tính hiệu lực, ngày kết thúc là ngày đầu tiên không còn hiệu lực. |
 | Ghi hồi tố | Nhập một thay đổi sau ngày hiệu lực của nó. Cần lý do, người duyệt và đối chiếu dữ liệu đã chốt. |
@@ -68,6 +77,7 @@ Mỗi hệ thống con phục vụ **một bộ phận** và chỉ chứa nhữn
 | Quản lý tài khoản và phân quyền người dùng. Khóa tài khoản khi nhân sự nghỉ việc (nghiệp vụ 04). | Nhập điểm danh, đón trả trẻ. |
 | Danh mục dùng chung: năm học, nhóm tuổi, ca làm việc, định mức giáo viên theo nhóm tuổi (mục 6). | Lập bảng phải thu, ghi thu tiền, in biên lai. |
 | Duyệt: tiếp nhận hồ sơ trẻ, phương án xếp lớp, phân công giáo viên, biểu phí và miễn giảm, thực đơn, biến động nhân sự. | Lập thực đơn, chốt suất ăn. |
+| Duyệt hoặc từ chối yêu cầu đón hộ đột xuất sau khi đối chiếu căn cứ xác minh (NV08). Có thể giao quyền duyệt ngoại lệ cho người được chỉ định. | Ghi lượt trả thuộc quyền giao nhận. |
 | Hộp báo cáo nhận được từ các bộ phận: xem, phản hồi, yêu cầu bổ sung, duyệt (nghiệp vụ 09). | Tự sinh báo cáo thay cho bộ phận. |
 | Bảng tổng hợp toàn trường lấy từ các báo cáo **đã duyệt**. | Lập phương án phân công (chỉ duyệt). |
 
@@ -87,8 +97,8 @@ Chỉ thấy **lớp mình được phân công trong ngày** (nghiệp vụ 05)
 
 | Có | Không có |
 | --- | --- |
-| Đón trẻ, trả trẻ bằng cách chọn trẻ rồi xác nhận một lần. Ghi nhận báo nghỉ của phụ huynh lớp mình (nghiệp vụ 08). | Học phí, công nợ, biên lai, thông báo học phí. |
-| Điểm danh được tự động ghi nhận từ đón trẻ. Xác minh vắng, chốt điểm danh (nghiệp vụ 03). | Lập thực đơn. Chỉ xem thực đơn của lớp mình và lưu ý dị ứng của trẻ. |
+| Đón, trả trẻ theo nhóm. Khi trả, xác nhận riêng người nhận thực tế và giờ giao từng trẻ. Ghi báo nghỉ, tiếp nhận và trình duyệt đón hộ (NV08). | Học phí, công nợ, biên lai, thông báo học phí. |
+| Ghi có mặt từ lượt đón theo mốc khóa. Xác minh vắng và đề nghị điều chỉnh chuyên cần (nghiệp vụ 03). | Lập thực đơn. Chỉ xem thực đơn của lớp mình và lưu ý dị ứng của trẻ. |
 | Xác nhận danh sách ăn và số suất của lớp (nghiệp vụ 07). | Hồ sơ nhân sự, xếp lớp. |
 | Xem lịch phân công của mình, gửi báo nghỉ của bản thân (nghiệp vụ 05). | Lập phân công. |
 | Lập, ghi chú và gửi báo cáo lớp: chuyên cần, tình hình trẻ. | |
@@ -100,7 +110,7 @@ Chỉ thấy **lớp mình được phân công trong ngày** (nghiệp vụ 05)
 | Biểu phí, danh mục miễn giảm (trình duyệt). | **Thực đơn, chế độ ăn, chốt suất ăn.** |
 | Lập bảng phải thu theo kỳ, phát hành thông báo học phí cho phụ huynh (nghiệp vụ 06). | Điểm danh, đón trả trẻ. |
 | Ghi thu tiền, biên lai, điều chỉnh, hoàn tiền, công nợ. | Hồ sơ trẻ, xếp lớp, phân công giáo viên. |
-| Nhận **chỉ đọc**: danh sách trẻ theo lớp trong kỳ, số ngày có mặt đã chốt, số suất ăn đã chốt. | |
+| Nhận **chỉ đọc** lịch học, danh sách trẻ thuộc diện đi học trong kỳ và số ngày có mặt đã xác nhận để tạm thu và đối soát tiền ăn. | |
 | Lập, ghi chú và gửi báo cáo thu, công nợ. | |
 
 ### 5.5. Hệ thống con Bếp và dinh dưỡng
@@ -120,6 +130,7 @@ Phụ huynh **không có hệ thống con** trong phạm vi đề xuất. Mọi 
 | --- | --- | --- |
 | Hồ sơ trẻ, người đưa đón | Nộp tại văn phòng | Văn phòng (nghiệp vụ 01) |
 | Báo nghỉ cho trẻ | Zalo, điện thoại, sổ liên lạc | Giáo viên lớp, hoặc văn phòng nếu phụ huynh báo qua văn phòng (nghiệp vụ 08) |
+| Báo đón hộ đột xuất | Điện thoại hoặc tin nhắn qua kênh đã đăng ký | Giáo viên hoặc nhân sự trực được giao quyền NV08 ghi nhận căn cứ và chuyển duyệt |
 | Đơn miễn giảm | Nộp tại văn phòng hoặc kế toán | Kế toán (nghiệp vụ 06) |
 | Nộp học phí | Tiền mặt, chuyển khoản | Kế toán (nghiệp vụ 06) |
 
@@ -136,9 +147,11 @@ Các danh mục này không thuộc riêng nghiệp vụ nào nhưng nhiều ngh
 | Lớp | Văn phòng (nghiệp vụ 02) | Ban giám hiệu | 03, 05, 06, 07, 08 |
 | Ca làm việc và khung giờ | Ban giám hiệu | — | 05 |
 | Định mức giáo viên theo lớp hoặc nhóm tuổi | Ban giám hiệu | — | 05 |
-| Giờ chốt đón trẻ và báo bếp | Ban giám hiệu | — | 03, 07, 08 |
+| Khung đón, mốc bàn giao buổi sáng, giờ khóa chuyên cần, khung trả và giờ chốt từng bữa | Ban giám hiệu | — | 03, 07, 08 theo từng mốc |
 | Biểu phí, danh mục miễn giảm | Kế toán (nghiệp vụ 06) | Ban giám hiệu | 06 |
 | Tài khoản và vai trò người dùng | Ban giám hiệu | — | Tất cả |
+| Người giám hộ và ủy quyền cố định nhận trẻ | Văn phòng (NV01) | Theo quy trình xác nhận hồ sơ NV01 | NV08 tra quyền tại thời điểm trả |
+| Hồ sơ đón hộ đột xuất và lượt trả | Giáo viên hoặc nhân sự trực được giao quyền (NV08) | Ban giám hiệu hoặc người được giao duyệt đối với yêu cầu đón hộ đột xuất | NV08, NV09 dùng số liệu tổng hợp theo quyền |
 
 **Tài khoản gắn với hồ sơ nhân sự.** Mỗi tài khoản thuộc một hồ sơ nhân sự ở nghiệp vụ 04. Khi nhân sự tạm nghỉ hoặc nghỉ việc có hiệu lực, Ban giám hiệu khóa tài khoản từ ngày hiệu lực. Hệ thống con được cấp theo vị trí công việc.
 
@@ -151,19 +164,21 @@ Ký hiệu: **T** tạo và sửa, **D** duyệt, **X** chỉ xem hoặc nhận 
 | 00 Danh mục dùng chung, tài khoản | T | T (lớp) | — | T (biểu phí) | — |
 | 01 Hồ sơ trẻ | D | T | X (lớp mình) | — | X (dị ứng) |
 | 02 Xếp lớp | D | T | X (lớp mình) | X | — |
-| 03 Điểm danh | X | X | T (lớp mình) | X (số ngày đã chốt) | — |
+| 03 Điểm danh | X, D (điều chỉnh sau khóa) | X | T (xác minh, đề nghị điều chỉnh cho lớp mình) | X (tổng hợp chuyên cần theo kỳ) | X (căn cứ bàn giao cho NV07) |
 | 04 Hồ sơ nhân sự | D | T | — | — | — |
 | 05 Phân công giáo viên | D | T | X (lịch mình), T (báo nghỉ của mình) | — | — |
 | 06 Học phí | D (biểu phí, miễn giảm, điều chỉnh) | — | — | T | — |
-| 07 Suất ăn, thực đơn | D (thực đơn) | — | T (xác nhận suất lớp) | X (số suất đã chốt) | T |
-| 08 Đón trả trẻ | — | X, T (báo nghỉ qua văn phòng) | T (lớp mình) | — | — |
+| 07 Suất ăn, thực đơn | D (thực đơn) | X (tổng hợp suất khi cần) | T (xác nhận suất lớp) | — | T |
+| 08 Đón trả trẻ | X, D (duyệt hoặc từ chối ngoại lệ) | X, T (báo nghỉ qua văn phòng) | T (giao nhận, xác minh và trình duyệt trong phạm vi lớp) | — | — |
 | 09 Báo cáo | Nhận, D | T, gửi | T, gửi | T, gửi | T, gửi |
+
+Quyền bổ sung tại NV08 được cấp theo nhiệm vụ. Nhân sự trực được giao quyền giao nhận chỉ thao tác trong phạm vi lớp và thời gian được giao. Người được giao duyệt ngoại lệ có quyền D trong phạm vi được giao. Hai quyền này được cấp riêng.
 
 **Câu hỏi xác minh khi phỏng vấn ban giám hiệu**
 
 - Trường có những bộ phận nào? Một người có kiêm nhiều vai trò không (ví dụ văn phòng kiêm kế toán)?
 - Ai phân công giáo viên: văn phòng hay phó hiệu trưởng chuyên môn? Nếu là phó hiệu trưởng, người đó được cấp thêm hệ thống con Văn phòng để lập phân công, còn việc duyệt do hiệu trưởng.
-- Kế toán có cần xem chi tiết điểm danh từng ngày không, hay chỉ cần tổng số ngày có mặt đã chốt?
+- Tổng hợp chuyên cần theo trẻ và kỳ cần kèm thông tin nào để kế toán tra cứu căn cứ chênh lệch tiền ăn?
 - Trường có muốn phụ huynh tự báo nghỉ hoặc xem học phí qua ứng dụng không? Nếu có, cần thêm hệ thống con Phụ huynh ở giai đoạn sau.
 
 ## 8. Đối chiếu với checklist (mục 3.1 và 3.3)
@@ -193,7 +208,7 @@ flowchart TD
 | F1.4 Nhân sự | F1.4.1 Lập hồ sơ nhân sự. F1.4.2 Quản lý bằng cấp, chứng chỉ, giấy tờ. F1.4.3 Ghi nhận biến động nhân sự. F1.4.4 Tra cứu và xuất danh sách nhân sự. | Văn phòng, Ban giám hiệu duyệt |
 | F1.5 Phân công giáo viên | F1.5.1 Lập phương án phân công. F1.5.2 Duyệt phân công. F1.5.3 Báo nghỉ và phân công dạy thay. F1.5.4 Tra cứu lịch sử và tổng hợp ca. | Văn phòng, Ban giám hiệu, Giáo viên |
 | F1.6 Học phí | F1.6.1 Quản lý biểu phí và miễn giảm. F1.6.2 Lập bảng phải thu. F1.6.3 Thu tiền và in biên lai. F1.6.4 Điều chỉnh và hoàn tiền. F1.6.5 Theo dõi công nợ. | Kế toán, Ban giám hiệu duyệt |
-| F1.8 Đón trả trẻ | F1.8.1 Ghi nhận báo nghỉ. F1.8.2 Đón trẻ. F1.8.3 Chốt đón. F1.8.4 Trả trẻ. F1.8.5 Tra cứu đón trả. | Giáo viên, Văn phòng |
+| F1.8 Đón trả trẻ | F1.8.1 Ghi nhận báo nghỉ. F1.8.2 Đón trẻ và chuyển lượt đón sang NV03. F1.8.3 Xác minh và duyệt đón hộ. F1.8.4 Trả trẻ. F1.8.5 Tra cứu đón trả. | Giáo viên, Văn phòng, Ban giám hiệu và nhân sự có quyền NV08 |
 | F1.9 Báo cáo | F1.9.1 Lập và ghi chú báo cáo. F1.9.2 Gửi báo cáo. F1.9.3 Xem, phản hồi, duyệt. F1.9.4 Tổng hợp toàn trường. | Mọi hệ thống con, Ban giám hiệu duyệt |
 
 Checklist yêu cầu ≥6 nhánh cấp 2, mỗi thành viên ≥3. Bản đề xuất có 4 nhánh của TV1 và 5 nhánh của TV2.
@@ -206,10 +221,10 @@ Checklist yêu cầu ≥8 use case cho cả nhóm, mỗi thành viên ≥4, tron
 | --- | --- | --- | --- | --- |
 | UC-04 | Lập và cập nhật hồ sơ nhân sự | Văn phòng | Có: hồ sơ kèm danh sách chứng chỉ, giấy tờ | — |
 | UC-05 | Lập phân công giáo viên | Văn phòng, Ban giám hiệu | Có: kết thúc phân công cũ và mở phân công mới trong một lần | Dùng danh sách lớp của nghiệp vụ 02 (TV1) |
-| UC-06 | Lập bảng phải thu theo kỳ | Kế toán | Có: tính nhiều khoản cho nhiều trẻ | Dùng nghiệp vụ 02, 03, 07 (TV1) |
+| UC-06 | Lập bảng phải thu theo kỳ | Kế toán | Có: tạm thu tiền ăn và bù trừ kỳ trước cho nhiều trẻ | Dùng lịch trường và NV02, NV03 (TV1). NV07 tổng hợp suất ăn cho báo cáo vận hành. |
 | UC-07 | Ghi thu tiền và in biên lai | Kế toán | Có: biên lai, cập nhật công nợ | — |
 | UC-08 | Đón trẻ theo nhóm | Giáo viên | Có: ghi đón nhiều trẻ trong một lần xác nhận | Tạo kết quả có mặt cho nghiệp vụ 03 (TV1) |
-| UC-09 | Trả trẻ theo nhóm | Giáo viên | Có | — |
+| UC-09 | Trả trẻ theo nhóm | Giáo viên, nhân sự trực được cấp quyền. Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ. | Có: kiểm tra người nhận và giờ trả từng trẻ, ghi các lượt hợp lệ và giữ dòng chờ xử lý | Tra quyền nhận trẻ theo NV01 (TV1) |
 | UC-10 | Gửi, phản hồi và duyệt báo cáo | Mọi bộ phận, Ban giám hiệu | Có: lưu phiên bản và ảnh chụp số liệu | Lấy số liệu đã chốt từ nghiệp vụ của TV1 |
 
 ### 8.3. Quy tắc nghiệp vụ liên phân hệ
@@ -219,8 +234,9 @@ Checklist yêu cầu ≥8 quy tắc cho cả nhóm, mỗi thành viên ≥4, tro
 | Quy tắc | Phân hệ TV2 | Phân hệ TV1 | Nội dung nối |
 | --- | --- | --- | --- |
 | QT-PC-01 | 05 Phân công | 02 Xếp lớp | Chỉ phân công vào lớp đang hoạt động tại ngày hiệu lực. |
-| QT-HP-02 | 06 Học phí | 02 Xếp lớp, 03 Điểm danh | Khoản tính theo ngày chỉ dùng ngày có mặt đã chốt và khoảng thời gian trẻ thuộc lớp. |
+| QT-HP-02, QT-HP-05 | 06 Học phí | 02 Xếp lớp, 03 Điểm danh | Tạm thu tiền ăn theo lịch học và diện đi học. Cuối kỳ đối soát theo số ngày có mặt đã xác nhận và bù trừ có tham chiếu kỳ phát sinh. |
 | QT-DT-01 | 08 Đón trả trẻ | 03 Điểm danh | Đón trẻ là nguồn duy nhất tạo kết quả có mặt. |
-| QT-DT-05 | 08 Đón trả trẻ, 05 Phân công | 03 Điểm danh | Chỉ giáo viên được phân công lớp trong ngày mới đón trả và điểm danh lớp đó. |
+| QT-DT-04, QT-HS-05 | 08 Đón trả trẻ | 01 Hồ sơ trẻ | Kiểm tra hiệu lực quyền nhận trẻ tại thời điểm trả. Người ngoài danh sách đang có hiệu lực phải qua xác minh và duyệt cho từng lượt. |
+| QT-DT-05 | 08 Đón trả trẻ, 05 Phân công | 03 Điểm danh | NV08 dùng phân công hoặc quyền trực được giao để kiểm tra giao nhận. NV03 kiểm tra quyền làm việc trên lớp theo quy tắc chuyên cần. |
 
-**Cần thống nhất với TV1.** Nghiệp vụ 03, bước 2, đang mô tả giáo viên tự ghi có mặt vào sổ hoặc phần mềm. Nghiệp vụ 08 đề xuất có mặt được ghi tự động từ đón trẻ (QT-DT-01). Hai tài liệu cần thống nhất: quy trình hiện tại giữ như nghiệp vụ 03 mô tả, còn hệ thống mới theo QT-DT-01.
+**Luồng thống nhất cho hệ thống mới.** NV08 ghi báo nghỉ và lượt giao nhận thực tế. NV03 dùng báo nghỉ để xác minh vắng và dùng lượt đón làm nguồn tạo có mặt. Trước giờ khóa, chuyên cần cập nhật trực tiếp. Từ giờ khóa, lượt đón phát sinh đề nghị điều chỉnh có duyệt. Danh sách trả căn cứ vào lượt đón và lượt trả. Quy trình ghi sổ thủ công thuộc hiện trạng mô phỏng ở mục 3 của từng nghiệp vụ.

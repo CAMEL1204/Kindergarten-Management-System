@@ -59,7 +59,7 @@ flowchart LR
 | --- | --- | --- |
 | Bảng phân công theo lớp | Lớp, giáo viên, vai trò (chủ nhiệm, phụ, dạy thay), ca, ngày bắt đầu và kết thúc | Giáo viên, văn phòng và ban giám hiệu |
 | Lịch làm việc của giáo viên | Giáo viên, lớp, ca theo ngày hoặc tuần | Giáo viên tra cứu lịch của mình |
-| Danh sách giáo viên phụ trách lớp theo ngày | Lớp, ngày, giáo viên có quyền đón trả trẻ và điểm danh | Nghiệp vụ 08 và 03 kiểm tra quyền của giáo viên |
+| Danh sách giáo viên phụ trách lớp theo ngày | Lớp, ngày, giáo viên phụ trách làm căn cứ kiểm tra quyền đón trả trẻ và điểm danh | NV08 và NV03 kiểm tra quyền của giáo viên. Quyền trực giao nhận bổ sung thuộc NV08 theo QT-DT-05. |
 | Cảnh báo | Lớp thiếu giáo viên, giáo viên bị trùng ca | Người phân công xử lý trước khi trình duyệt |
 | Báo cáo phân công | Tổng số ca đứng lớp và dạy thay theo giáo viên và tháng, kèm ghi chú | Người phân công lập và gửi Ban giám hiệu theo nghiệp vụ 09 |
 

@@ -64,6 +64,8 @@ flowchart LR
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
+Phụ lục mô phỏng: [Mẫu 05 · Báo cáo tổng hợp tháng](forms/mau-05-bao-cao-thang.md), minh họa BC-05 và các nhóm chỉ tiêu nhận từ báo cáo đã duyệt của từng bộ phận.
+
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
 | BC-01 | Mẫu báo cáo chuyên cần hoặc tình hình lớp của giáo viên | Chỉ tiêu, kỳ, cách ghi chú trẻ vắng nhiều hoặc sự việc cần lưu ý. |
@@ -128,7 +130,7 @@ stateDiagram-v2
 
 | Bước | Ai, khi nào | Công việc | Kết quả |
 | --- | --- | --- | --- |
-| 1. Tạo báo cáo | Người lập, cuối kỳ hoặc khi có sự việc | Chọn loại báo cáo và kỳ. Hệ thống lấy **số liệu đã chốt** trong phạm vi của người lập (ví dụ giáo viên chỉ lấy được lớp mình). Cảnh báo nếu kỳ còn dữ liệu chưa chốt. | Báo cáo nháp có số liệu. |
+| 1. Tạo báo cáo | Người lập, cuối kỳ hoặc khi có sự việc | Chọn loại báo cáo và kỳ. Hệ thống lấy **số liệu đã chốt** trong phạm vi của người lập (ví dụ giáo viên chỉ lấy được lớp mình). Với chuyên cần, hiển thị riêng lượt chờ xác minh và đánh dấu kỳ còn lượt chưa khóa hoặc điều chỉnh đang chờ duyệt. | Báo cáo nháp có số liệu. |
 | 2. Ghi chú | Người lập | Thêm **ghi chú chung** cho cả báo cáo và **ghi chú theo từng dòng** (ví dụ giải thích vì sao một trẻ vắng nhiều, vì sao một khoản còn nợ). Đính kèm minh chứng nếu cần. | Báo cáo nháp có ghi chú. |
 | 3. Gửi | Người lập | Xem lại rồi bấm "Gửi Ban giám hiệu". Hệ thống lưu **ảnh chụp số liệu tại lúc gửi**, ghi người gửi, thời điểm và khóa nội dung. | Báo cáo đã gửi, xuất hiện trong hộp báo cáo của Ban giám hiệu. |
 | 4. Xem và phản hồi | Ban giám hiệu | Mở báo cáo trong hộp báo cáo nhận được, lọc theo bộ phận, loại, kỳ và trạng thái. Đọc số liệu và ghi chú, viết phản hồi. | Phản hồi gắn với báo cáo. |
