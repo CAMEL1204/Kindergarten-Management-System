@@ -4,7 +4,7 @@
 
 ## 1. Mục đích nghiệp vụ
 
-Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón trẻ) và giao trẻ cho người đón (trả trẻ), để nhà trường biết tại mỗi thời điểm trẻ nào đang ở trường và ai đã đón trẻ về. Trong hệ thống mới, **đón trẻ và điểm danh là một luồng dữ liệu**, không phải hai việc ghi riêng:
+Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón trẻ) và giao trẻ cho người nhận trẻ (trả trẻ), để nhà trường biết tại mỗi thời điểm trẻ nào đang ở trường và ai đã nhận trẻ về. Trong hệ thống mới, **đón trẻ và điểm danh là một luồng dữ liệu**, không phải hai việc ghi riêng:
 
 - Lượt đón là căn cứ duy nhất tạo kết quả **có mặt** ở NV03. Trước giờ khóa, kết quả cập nhật tự động. Từ giờ khóa, lượt đón tạo đề nghị điều chỉnh chuyên cần.
 - Trẻ chưa được đón có kết quả chuyên cần theo xác minh của NV03. Ghi báo nghỉ chỉ cung cấp căn cứ xác minh.
@@ -14,9 +14,9 @@ Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón tr
 
 | Đối tượng | Công việc |
 | --- | --- |
-| Giáo viên được phân công lớp trong ngày (NV05) | Ghi báo nghỉ, đón và trả trẻ trong phạm vi lớp. Tiếp nhận báo đón hộ, đối chiếu người nhận thực tế và trình duyệt ngoại lệ. Xác minh vắng và đề nghị điều chỉnh chuyên cần tại NV03. |
-| Nhân sự trực được giao quyền tại NV08 | Tiếp nhận báo đón hộ, đối chiếu CCCD và ghi nhận giao nhận trong phạm vi lớp và thời gian được giao. |
-| Người giám hộ hoặc người được ủy quyền | Người giám hộ báo nghỉ hoặc báo trước việc đón hộ. Người được ủy quyền xuất trình giấy tờ để đối chiếu khi đến nhận trẻ. |
+| Giáo viên được phân công lớp trong ngày (NV05) | Ghi báo nghỉ, đón và trả trẻ trong phạm vi lớp. Tiếp nhận báo nhận trẻ hộ, đối chiếu người nhận thực tế và trình duyệt ngoại lệ. Xác minh vắng và đề nghị điều chỉnh chuyên cần tại NV03. |
+| Nhân sự trực được giao quyền tại NV08 | Tiếp nhận báo nhận trẻ hộ, đối chiếu CCCD và ghi nhận giao nhận trong phạm vi lớp và thời gian được giao. |
+| Người giám hộ hoặc người được ủy quyền | Người giám hộ báo nghỉ hoặc báo trước việc nhận trẻ hộ. Người được ủy quyền xuất trình giấy tờ để đối chiếu khi đến nhận trẻ. |
 | Văn phòng | Cập nhật danh sách người đưa đón (nghiệp vụ 01). Ghi nhận báo nghỉ khi phụ huynh báo qua văn phòng. Xem tình hình đón trả toàn trường. |
 | Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ | Kiểm tra căn cứ và duyệt hoặc từ chối yêu cầu nhận trẻ ngoài danh sách đang có hiệu lực. Phối hợp bố trí người trông trẻ trong thời gian chờ hoặc sau giờ trả. |
 
@@ -27,8 +27,8 @@ Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón tr
 | 1. Nhận báo nghỉ | Giáo viên qua Zalo, điện thoại hoặc sổ liên lạc; văn phòng qua điện thoại, trước hoặc đầu ngày | Ghi tên trẻ, ngày nghỉ và lý do vào sổ hoặc ghi nhớ. Văn phòng nhận báo nghỉ thì nhắn lại giáo viên lớp. | Danh sách trẻ báo nghỉ trong ngày, nằm rải rác ở nhiều kênh. |
 | 2. Đón trẻ | Giáo viên tại cửa lớp hoặc cổng trường, khoảng 6h45–8h00 | Nhận trẻ từ phụ huynh, hỏi nhanh tình trạng sức khỏe. Đánh dấu vào sổ đón trẻ hoặc nhớ để điểm danh sau. | Trẻ vào lớp, sổ đón trẻ được đánh dấu. |
 | 3. Điểm danh và báo số | Giáo viên tại lớp, khoảng 8h00–8h30 | Đếm trẻ trong lớp, ghi sổ điểm danh theo nghiệp vụ 03. Gọi phụ huynh của trẻ chưa đến mà chưa báo nghỉ. Báo số có mặt cho bếp. | Sổ điểm danh và số báo bếp. |
-| 4. Trả trẻ | Giáo viên tại lớp, khoảng 16h30–17h30, hoặc khi phụ huynh đón sớm | Đối chiếu người đón với người giáo viên biết mặt hoặc danh sách người đưa đón. Người lạ đến đón thì gọi phụ huynh xác nhận. Một số trường cho người đón ký sổ. | Trẻ được giao cho người đón. |
-| 5. Cuối ngày | Giáo viên và bảo vệ, sau giờ trả | Kiểm tra lớp không còn trẻ. Trẻ chưa có người đón thì gọi phụ huynh và báo ban giám hiệu, giáo viên ở lại trông. | Lớp trống hoặc trẻ được trông muộn. |
+| 4. Trả trẻ | Giáo viên tại lớp, khoảng 16h30–17h30, hoặc khi phụ huynh nhận trẻ sớm | Đối chiếu người nhận trẻ với người giáo viên biết mặt hoặc danh sách người đưa đón. Người lạ đến nhận trẻ thì gọi phụ huynh xác nhận. Một số trường cho người nhận trẻ ký sổ. | Trẻ được giao cho người nhận trẻ. |
+| 5. Cuối ngày | Giáo viên và bảo vệ, sau giờ trả | Kiểm tra lớp không còn trẻ. Trẻ chưa có người nhận thì gọi phụ huynh và báo ban giám hiệu, giáo viên ở lại trông. | Lớp trống hoặc trẻ được trông muộn. |
 
 ```mermaid
 flowchart LR
@@ -44,8 +44,8 @@ flowchart LR
 - Giờ đón trẻ, giờ chốt và giờ trả trẻ của trường là mấy giờ? Giờ chốt đón có trùng với giờ báo bếp ở nghiệp vụ 03 và 07 không?
 - Đón trẻ và điểm danh hiện ghi ở một sổ hay hai sổ? Có lúc nào hai sổ lệch nhau không?
 - Phụ huynh báo nghỉ qua những kênh nào? Ai ghi lại và ghi ở đâu?
-- Khi trả trẻ, giáo viên đối chiếu người đón bằng cách nào? Có danh sách người được ủy quyền hay chỉ nhận mặt? Người đón có phải ký sổ không?
-- Trẻ chưa có người đón sau giờ trả thì xử lý thế nào? Có thu phí trông muộn không?
+- Khi trả trẻ, giáo viên đối chiếu người nhận trẻ bằng cách nào? Có danh sách người được ủy quyền hay chỉ nhận mặt? Người nhận trẻ có phải ký sổ không?
+- Trẻ chưa có người nhận sau giờ trả thì xử lý thế nào? Có thu phí trông muộn không?
 
 ## 4. Dữ liệu đầu vào
 
@@ -55,7 +55,7 @@ flowchart LR
 | Giáo viên phụ trách lớp trong ngày | Lớp, ngày, ca, giáo viên, vai trò (chủ nhiệm, phụ, dạy thay) | Nghiệp vụ 05 |
 | Báo nghỉ của phụ huynh | Trẻ, ngày hoặc khoảng nghỉ, lý do, kênh báo, thời điểm nhận, người ghi nhận | Phụ huynh báo, giáo viên hoặc văn phòng ghi |
 | Danh sách người có quyền nhận trẻ | Người giám hộ chính đã xác nhận, người được ủy quyền cố định, thông tin đối chiếu và thời hạn hiệu lực | NV01, tra cứu theo từng trẻ và thời điểm trả |
-| Yêu cầu đón hộ đột xuất | Trẻ, người đến nhận, người giám hộ xác nhận, kênh và thời điểm báo, thông tin đối chiếu CCCD tại cổng hoặc lớp, người xác minh | Người giám hộ báo trước khi giao trẻ qua điện thoại hoặc tin nhắn có lưu vết. Giáo viên hoặc nhân sự trực được giao quyền tiếp nhận. |
+| Yêu cầu nhận trẻ hộ đột xuất | Trẻ, người đến nhận, người giám hộ xác nhận, kênh và thời điểm báo, thông tin đối chiếu CCCD tại cổng hoặc lớp, người xác minh | Người giám hộ báo trước khi giao trẻ qua điện thoại hoặc tin nhắn có lưu vết. Giáo viên hoặc nhân sự trực được giao quyền tiếp nhận. |
 | Mốc vận hành | Khung đón chính, mốc bàn giao buổi sáng, giờ khóa chuyên cần, khung trả trẻ thông thường | Danh mục dùng chung do Ban giám hiệu quy định, xem NV03 §9 |
 
 ## 5. Dữ liệu đầu ra
@@ -75,10 +75,10 @@ Phụ lục mô phỏng: [Mẫu 02 · Sổ điểm danh và giao nhận trẻ](f
 
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
-| DT-01 | Sổ đón trẻ hoặc sổ giao nhận trẻ hằng ngày | Cột trẻ, giờ đến, giờ về, người đón, chữ ký nếu có. |
-| DT-02 | Danh sách hoặc giấy ủy quyền người đưa đón | Người được đón, quan hệ, ảnh hoặc giấy tờ đối chiếu, thời hạn ủy quyền. |
+| DT-01 | Sổ đón trẻ hoặc sổ giao nhận trẻ hằng ngày | Cột trẻ, giờ đến, giờ về, người nhận trẻ, chữ ký nếu có. |
+| DT-02 | Danh sách hoặc giấy ủy quyền người đưa đón | Người được ủy quyền nhận trẻ, quan hệ, ảnh hoặc giấy tờ đối chiếu, thời hạn ủy quyền. |
 | DT-03 | Sổ hoặc tin nhắn ghi nhận báo nghỉ | Kênh báo, thời điểm báo, người ghi nhận. |
-| DT-04 | Sổ theo dõi trẻ về muộn hoặc biên bản bàn giao trẻ ngoài giờ | Giờ bàn giao, người trông, người đón, phí trông muộn nếu có. |
+| DT-04 | Sổ theo dõi trẻ về muộn hoặc biên bản bàn giao trẻ ngoài giờ | Giờ bàn giao, người trông, người nhận trẻ, phí trông muộn nếu có. |
 | DT-05 | Phiếu xác minh người nhận trẻ đột xuất | Căn cứ người giám hộ xác nhận, đối chiếu danh tính tại chỗ, kết quả duyệt ngoại lệ hoặc lý do chưa thể giao trẻ. |
 
 Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân. Xin quan sát một buổi đón trẻ để đo thời gian giờ cao điểm.
@@ -99,7 +99,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 - Đón trẻ ghi một nơi, điểm danh ghi một nơi khác, nên trẻ đã đón vẫn có thể bị ghi vắng hoặc ngược lại.
 - Báo nghỉ nằm ở nhiều kênh, giáo viên dễ bỏ sót và gọi nhầm phụ huynh đã báo.
 - Danh sách trả trẻ in sẵn gồm cả trẻ vắng, dễ ghi nhầm là đã trả.
-- Đối chiếu người đón dựa vào trí nhớ của giáo viên, khó kiểm soát khi giáo viên dạy thay không biết mặt phụ huynh.
+- Đối chiếu người nhận trẻ dựa vào trí nhớ của giáo viên, khó kiểm soát khi giáo viên dạy thay không biết mặt phụ huynh.
 - Đón từng trẻ một rất chậm vào giờ cao điểm buổi sáng.
 
 ## 9. Yêu cầu đối với hệ thống mới
@@ -108,13 +108,13 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 | Trạng thái giao nhận | Khi nào | Dữ liệu chuyển cho chuyên cần (NV03) | Có trong danh sách trả trẻ |
 | --- | --- | --- | --- |
-| Chưa đón | Chưa có lượt đón thực tế | Nếu có báo nghỉ, chuyển thông tin làm căn cứ xác minh. NV03 quản lý kết quả vắng hoặc chờ xác minh. | Không |
+| Chưa đón | Chưa có lượt đón thực tế | Nếu có báo nghỉ, chuyển thông tin làm căn cứ xác minh. NV03 quản lý kết quả vắng hoặc chờ xác minh. Ngày thuộc nghỉ dài ngày đã xác nhận ở NV02 hiển thị nhãn nghỉ dài ngày, NV03 tự ghi vắng có phép theo QT-DD-06. | Không |
 | Đã đón | Người có quyền NV08 ghi nhận lượt đón, kể cả khi trước đó có báo nghỉ | Mã lượt đón và giờ thực tế. NV03 cập nhật có mặt hoặc tiếp nhận đề nghị điều chỉnh theo giờ khóa. | **Có**, kể cả khi chuyên cần đang chờ duyệt |
 | Đã trả | Người có quyền NV08 ghi nhận đã giao trẻ cho người đủ điều kiện | Giờ về thực tế. Lượt trả không làm mất kết quả có mặt hoặc hủy đề nghị điều chỉnh đang chờ duyệt. | Không |
 
 Hiển thị báo nghỉ và đến muộn dưới dạng nhãn theo dữ liệu đã ghi. Các nhãn này không thay đổi quy tắc chuyển trạng thái giao nhận.
 
-Khi chưa đủ căn cứ giao trẻ, hồ sơ xác minh người nhận hiển thị `Chờ xác minh` hoặc `Chờ duyệt`. Trẻ vẫn ở trạng thái `Đã đón`, xuất hiện trong danh sách chưa trả và tiếp tục được người trực trông tại trường. Từ chối một yêu cầu đón hộ cũng giữ trẻ trong danh sách này. Chỉ chuyển sang `Đã trả` khi giao trẻ thực tế cho người nhận đủ điều kiện.
+Khi chưa đủ căn cứ giao trẻ, hồ sơ xác minh người nhận hiển thị `Chờ xác minh` hoặc `Chờ duyệt`. Trẻ vẫn ở trạng thái `Đã đón`, xuất hiện trong danh sách chưa trả và tiếp tục được người trực trông tại trường. Từ chối một yêu cầu nhận trẻ hộ cũng giữ trẻ trong danh sách này. Chỉ chuyển sang `Đã trả` khi giao trẻ thực tế cho người nhận đủ điều kiện.
 
 ```mermaid
 stateDiagram-v2

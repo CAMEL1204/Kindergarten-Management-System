@@ -83,8 +83,8 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | QT-BC-01 | Ban giám hiệu chỉ thấy báo cáo ở trạng thái đã gửi trở đi. Báo cáo nháp chỉ người lập thấy. | Giáo viên lưu nháp, Ban giám hiệu không thấy trong hộp báo cáo. |
 | QT-BC-02 | Người lập chỉ lấy được số liệu trong phạm vi của mình. | Giáo viên lớp A không tạo được báo cáo chuyên cần lớp B. |
 | QT-BC-03 | Sau khi gửi, nội dung bị khóa. Muốn sửa phải được yêu cầu bổ sung và gửi lại thành phiên bản mới. Giữ đủ các phiên bản cũ và phản hồi. | Kế toán phát hiện sai sau khi gửi. |
-| QT-BC-04 | Số liệu được chụp tại lúc gửi. Nếu dữ liệu gốc thay đổi sau đó (ví dụ điều chỉnh điểm danh), báo cáo đã gửi không tự đổi; hệ thống cảnh báo để người lập gửi lại nếu cần. | Điểm danh được sửa sau khi báo cáo chuyên cần đã gửi. |
-| QT-BC-05 | Tổng hợp toàn trường chỉ dùng báo cáo đã duyệt. Kỳ còn bộ phận chưa duyệt được đánh dấu chưa đầy đủ. | Kế toán chưa gửi báo cáo tháng. |
+| QT-BC-04 | Số liệu được chụp tại lúc gửi. Nếu dữ liệu gốc thay đổi sau đó (ví dụ điều chỉnh điểm danh), báo cáo đã gửi hoặc đã duyệt không tự đổi; hệ thống cảnh báo người lập. Báo cáo đang ở `Đã gửi` được Ban giám hiệu xử lý như yêu cầu bổ sung nếu cần. Báo cáo đã duyệt chuyển sang `Cần cập nhật` để người lập gửi phiên bản mới từ số liệu hiện hành. | Điểm danh được sửa sau khi báo cáo chuyên cần đã gửi. Một quyết định chuyển lớp ghi hồi tố sau khi báo cáo sĩ số tháng đã duyệt. |
+| QT-BC-05 | Tổng hợp toàn trường chỉ dùng phiên bản đã duyệt mới nhất của từng báo cáo. Kỳ còn bộ phận chưa duyệt được đánh dấu chưa đầy đủ. Kỳ có báo cáo ở trạng thái `Cần cập nhật` được đánh dấu số liệu đang cập nhật cho tới khi phiên bản mới được duyệt. | Kế toán chưa gửi báo cáo tháng. Báo cáo chuyên cần lớp Mầm 1 đã duyệt nhưng có điều chỉnh được duyệt sau đó. |
 | QT-BC-06 | Mỗi bộ phận có tối đa một báo cáo cho mỗi loại, phạm vi và kỳ (trừ báo cáo đột xuất). Báo cáo gửi sau hạn vẫn được nhận nhưng được đánh dấu trễ hạn. | Văn phòng gửi báo cáo sĩ số tháng 10 vào ngày 8 tháng 11 khi hạn là ngày 5. |
 
 ## 8. Hạn chế của quy trình hiện tại
@@ -115,6 +115,7 @@ Mỗi bộ phận chỉ thấy loại báo cáo của mình. Ví dụ, kế toá
 | Đã gửi | Đã gửi cho Ban giám hiệu, khóa nội dung. | Không ai |
 | Yêu cầu bổ sung | Ban giám hiệu trả lại kèm phản hồi. | Người lập sửa rồi gửi lại |
 | Đã duyệt | Ban giám hiệu chấp nhận, được dùng để tổng hợp toàn trường. | Không ai |
+| Cần cập nhật | Báo cáo đã duyệt nhưng số liệu nguồn thay đổi sau đó (QT-BC-04). Phiên bản đã duyệt vẫn được giữ và dùng cho tổng hợp, có đánh dấu đang cập nhật. | Người lập tạo phiên bản mới từ số liệu hiện hành rồi gửi lại |
 
 ```mermaid
 stateDiagram-v2
@@ -123,6 +124,8 @@ stateDiagram-v2
     DaGui --> YeuCauBoSung: ban giám hiệu yêu cầu bổ sung
     YeuCauBoSung --> DaGui: người lập gửi lại, tạo phiên bản mới
     DaGui --> DaDuyet: ban giám hiệu duyệt
+    DaDuyet --> CanCapNhat: số liệu nguồn thay đổi sau khi duyệt
+    CanCapNhat --> DaGui: người lập gửi phiên bản mới
     DaDuyet --> [*]
 ```
 
@@ -135,7 +138,7 @@ stateDiagram-v2
 | 3. Gửi | Người lập | Xem lại rồi bấm "Gửi Ban giám hiệu". Hệ thống lưu **ảnh chụp số liệu tại lúc gửi**, ghi người gửi, thời điểm và khóa nội dung. | Báo cáo đã gửi, xuất hiện trong hộp báo cáo của Ban giám hiệu. |
 | 4. Xem và phản hồi | Ban giám hiệu | Mở báo cáo trong hộp báo cáo nhận được, lọc theo bộ phận, loại, kỳ và trạng thái. Đọc số liệu và ghi chú, viết phản hồi. | Phản hồi gắn với báo cáo. |
 | 5. Yêu cầu bổ sung hoặc duyệt | Ban giám hiệu | Nếu cần sửa, chọn "Yêu cầu bổ sung" kèm nội dung; người lập nhận thông báo, sửa và gửi lại thành **phiên bản mới**. Nếu đạt, chọn "Duyệt". | Báo cáo đã duyệt hoặc chờ bổ sung. |
-| 6. Tổng hợp | Ban giám hiệu | Xem bảng tổng hợp toàn trường được ghép từ các báo cáo **đã duyệt**. Theo dõi bộ phận chưa gửi hoặc gửi trễ hạn. | Báo cáo toàn trường. |
+| 6. Tổng hợp | Ban giám hiệu | Xem bảng tổng hợp toàn trường được ghép từ phiên bản **đã duyệt** mới nhất của từng báo cáo. Theo dõi bộ phận chưa gửi, gửi trễ hạn hoặc có báo cáo `Cần cập nhật`. | Báo cáo toàn trường. |
 
 ### 9.4. Dữ liệu của một báo cáo
 
@@ -153,6 +156,6 @@ stateDiagram-v2
 | --- | --- |
 | YC-BC-01 | Ở mỗi hệ thống con: mục "Báo cáo của tôi" để tạo báo cáo theo loại và kỳ từ số liệu đã chốt, lưu nháp, ghi chú chung và theo dòng, đính kèm và gửi. |
 | YC-BC-02 | Ở hệ thống con Ban giám hiệu: "Hộp báo cáo nhận được" có lọc theo bộ phận, loại, kỳ, trạng thái; xem, phản hồi, yêu cầu bổ sung, duyệt. |
-| YC-BC-03 | Lưu phiên bản, lịch sử phản hồi và ảnh chụp số liệu tại lúc gửi. Thông báo cho người lập khi có phản hồi hoặc yêu cầu bổ sung. |
+| YC-BC-03 | Lưu phiên bản, lịch sử phản hồi và ảnh chụp số liệu tại lúc gửi. Thông báo cho người lập khi có phản hồi hoặc yêu cầu bổ sung. Khi số liệu nguồn của báo cáo đã duyệt thay đổi, chuyển báo cáo sang `Cần cập nhật`, báo người lập và đánh dấu kỳ trên bảng tổng hợp theo QT-BC-04, QT-BC-05. |
 | YC-BC-04 | Theo dõi hạn gửi, cảnh báo báo cáo trễ hạn. Tổng hợp toàn trường từ báo cáo đã duyệt và xuất Excel hoặc PDF. |
 | YC-BC-05 | Ban giám hiệu quản lý danh mục loại báo cáo: bộ phận lập, kỳ, hạn gửi và các chỉ tiêu. |

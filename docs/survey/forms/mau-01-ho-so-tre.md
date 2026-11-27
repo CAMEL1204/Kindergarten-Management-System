@@ -25,7 +25,7 @@
 | ND-042-01 | Lê Thị Lan | Bà ngoại | ••••1111 | ••••••••5042 | 07/09/2026 | 31/05/2027 |
 | ND-042-02 | Trần Văn Nam | Cậu ruột | ••••2222 | ••••••••6042 | 07/09/2026 | 30/11/2026 |
 
-Người giám hộ chính đã xác nhận trong mục 1 được nhận trẻ trong thời gian trẻ theo học theo hồ sơ giám hộ đang có hiệu lực. Với ủy quyền cố định, văn phòng giữ lịch sử và NV08 kiểm tra hiệu lực vào thời điểm giao trẻ. ND-042-02 được dùng đến hết 30/11/2026. Từ 01/12/2026, nếu người này đến nhận thì cần hồ sơ đón hộ đột xuất cho lượt trả theo QT-DT-04.
+Người giám hộ chính đã xác nhận trong mục 1 được nhận trẻ trong thời gian trẻ theo học theo hồ sơ giám hộ đang có hiệu lực. Với ủy quyền cố định, văn phòng giữ lịch sử và NV08 kiểm tra hiệu lực vào thời điểm giao trẻ. ND-042-02 được dùng đến hết 30/11/2026. Từ 01/12/2026, nếu người này đến nhận thì cần hồ sơ nhận trẻ hộ đột xuất cho lượt trả theo QT-DT-04.
 
 ## 3. Lưu ý ăn uống và xác nhận tiếp nhận
 

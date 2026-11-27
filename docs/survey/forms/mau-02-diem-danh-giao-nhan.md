@@ -55,6 +55,6 @@ Ngày 01/12/2026, giáo viên chọn hai trẻ trong cùng một lần xác nh�
 | Trẻ | Người tới nhận | Kết quả đối chiếu trước khi giao | Kết quả khi xác nhận nhóm |
 | --- | --- | --- | --- |
 | HS2026-001 | Mẹ, người giám hộ chính đã xác nhận trong hồ sơ | Giáo viên đã chọn đúng người thực tế nhận và giao trẻ lúc 16:35. | Lưu lượt trả lúc 16:35 cùng người đã chọn. |
-| HS2026-042 | Trần Văn Nam, ND-042-02 | Ủy quyền đã hết hạn từ 01/12. Lúc 16:32 chưa liên hệ được người giám hộ nên yêu cầu đón hộ đang `Chờ xác minh`. | Báo lý do, chưa có giờ trả, chưa tạo lượt trả. Trẻ vẫn ở trạng thái `Đã đón` và tiếp tục được người trực trông. |
+| HS2026-042 | Trần Văn Nam, ND-042-02 | Ủy quyền đã hết hạn từ 01/12. Lúc 16:32 chưa liên hệ được người giám hộ nên yêu cầu nhận trẻ hộ đang `Chờ xác minh`. | Báo lý do, chưa có giờ trả, chưa tạo lượt trả. Trẻ vẫn ở trạng thái `Đã đón` và tiếp tục được người trực trông. |
 
 Sau đó, bà ngoại Lê Thị Lan (ND-042-01) đến lúc 17:05. Giáo viên đối chiếu ủy quyền còn hiệu lực, ghi người thực tế nhận và giờ giao 17:05. Hồ sơ của lần yêu cầu trước được lưu với kết quả chưa thực hiện.

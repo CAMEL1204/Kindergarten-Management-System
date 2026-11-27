@@ -23,7 +23,7 @@ Phân trẻ vào lớp phù hợp với nhóm tuổi và khả năng tiếp nh�
 | 1. Chuẩn bị danh sách | Văn phòng, đầu năm học hoặc khi có trẻ mới | Nhận danh sách đủ điều kiện từ nghiệp vụ 01. Tính nhóm tuổi theo mốc của kỳ tuyển sinh hoặc đầu năm học. Với nhóm nhà trẻ, đối chiếu tháng tuổi thực tế nếu trường áp dụng. Tra chỉ tiêu năm học và số chỗ trống. | Danh sách trẻ cần xếp và các lớp có thể tiếp nhận. |
 | 2. Lập phương án | Văn phòng, trước ngày trẻ vào lớp hoặc dự kiến chuyển lớp | Ghi lớp dự kiến, ngày hiệu lực và lý do nếu có. Đối chiếu nhóm tuổi, định mức, chỉ tiêu, điều kiện phòng học và bố trí giáo viên. Hồ sơ cần xếp lớp ghép hoặc trường hợp đặc biệt được trình người có thẩm quyền theo quy định áp dụng. | Phương án xếp lớp và trường hợp cần quyết định. |
 | 3. Duyệt và bàn giao | Ban giám hiệu và văn phòng, khi có phương án | Ban giám hiệu duyệt lớp và ngày hiệu lực. Văn phòng cập nhật danh sách, báo phụ huynh, giáo viên lớp cũ và lớp mới khi chuyển lớp, cùng bếp hoặc kế toán nếu có ảnh hưởng. | Danh sách lớp đã duyệt dùng cho nghiệp vụ 03 và thông báo cho các bên. |
-| 4. Cập nhật biến động | Văn phòng và người duyệt, khi có đề nghị hoặc quyết định | Ghi lý do, ngày hiệu lực và thời điểm nhập. Khi chuyển lớp, kết thúc xếp lớp cũ và mở xếp lớp mới cùng mốc. Nghỉ dài ngày được đánh dấu trên danh sách lớp. Bảo lưu được theo dõi riêng và xử lý danh sách theo chính sách trường. Thôi học kết thúc xếp lớp. Khi quay lại, đối chiếu hồ sơ với nghiệp vụ 01 và sức chứa tại ngày quay lại. | Lịch sử biến động, danh sách lớp cập nhật và các trường hợp cần đối chiếu do nhập muộn. |
+| 4. Cập nhật biến động | Văn phòng và người duyệt, khi có đề nghị hoặc quyết định | Ghi lý do, ngày hiệu lực và thời điểm nhập. Khi chuyển lớp, kết thúc xếp lớp cũ và mở xếp lớp mới cùng mốc. Nghỉ dài ngày được đánh dấu trên danh sách lớp, kèm ngày bắt đầu, ngày kết thúc dự kiến và người xác nhận. Bảo lưu được theo dõi riêng và xử lý danh sách theo chính sách trường. Thôi học kết thúc xếp lớp. Khi quay lại, đối chiếu hồ sơ với nghiệp vụ 01 và sức chứa tại ngày quay lại. | Lịch sử biến động, danh sách lớp cập nhật và các trường hợp cần đối chiếu do nhập muộn. |
 | 5. Tổng hợp | Văn phòng tại sổ hoặc bảng tính, vào cuối kỳ báo cáo hoặc khi được yêu cầu | Đối chiếu sĩ số ở đầu kỳ, số tăng, số giảm và sĩ số cuối kỳ. Phân biệt chuyển lớp nội bộ với trẻ nhập học hoặc thôi học khi tổng hợp toàn trường. | Báo cáo sĩ số và biến động theo lớp, khối hoặc toàn trường. |
 
 **Mốc tuổi và giới hạn sĩ số.** Điều 15 của Điều lệ Trường mầm non quy định các nhóm nhà trẻ 3–12, 13–24 và 25–36 tháng, cùng các lớp mẫu giáo 3–4, 4–5 và 5–6 tuổi. Chỉ tiêu vận hành của từng lớp còn phụ thuộc vào kế hoạch năm học, điều kiện phòng học và bố trí giáo viên. Cần xác nhận mốc tính tuổi thực tế và chính sách xếp lớp ghép của trường. [Văn bản hợp nhất 09/2026/VBHN-TT-BGDĐT, Điều 15](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/09-vbhn-bgddt.signed.pdf)
@@ -77,7 +77,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | --- | --- | --- |
 | Đã xếp lớp, đang chờ đủ điều kiện bắt đầu học | Chưa, theo dõi ở danh sách dự kiến | Chưa |
 | Đang học | Có | Có |
-| Nghỉ dài ngày đã được xác nhận, vẫn thuộc lớp | Có | Có, ghi vắng theo căn cứ nghỉ đã xác nhận |
+| Nghỉ dài ngày đã được xác nhận, vẫn thuộc lớp | Có | Có. NV03 tự ghi vắng có phép cho các ngày trong khoảng nghỉ theo QT-DD-06 |
 | Bảo lưu đã có hiệu lực | Không, theo dõi ở danh sách bảo lưu | Không |
 | Thôi học đã có hiệu lực | Không, lưu lịch sử xếp lớp | Không |
 

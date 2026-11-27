@@ -30,7 +30,7 @@ Tổng toàn trường ở mục 1 là **số sau điều chỉnh**. Mục 2 ch�
 
 ## 3. Ví dụ riêng về thực đơn cần đối chiếu
 
-Trong kịch bản ngày 15/10, giáo viên phát hiện thực đơn trưa có món liên quan đến lưu ý của HS2026-042. Phụ huynh xác nhận sẽ đón trẻ trước bữa. Giáo viên ghi **không ăn trưa tại trường** vào danh sách theo bữa và đối chiếu lượt trả thực tế. Kết quả chuyên cần trong ngày vẫn là **có mặt**. Việc đối chiếu học phí dùng chính sách của [mẫu 04](mau-04-hoc-phi-va-bien-lai.md).
+Trong kịch bản ngày 15/10, giáo viên phát hiện thực đơn trưa có món liên quan đến lưu ý của HS2026-042. Phụ huynh xác nhận sẽ nhận trẻ về trước bữa. Giáo viên ghi **không ăn trưa tại trường** vào danh sách theo bữa và đối chiếu lượt trả thực tế. Kết quả chuyên cần trong ngày vẫn là **có mặt**. Việc đối chiếu học phí dùng chính sách của [mẫu 04](mau-04-hoc-phi-va-bien-lai.md).
 
 ## 4. Hai ca đối soát giao nhận riêng
 
@@ -38,7 +38,7 @@ Hai tình huống dưới đây được tính riêng, ngoài bảng ngày 14/10
 
 | Tình huống | Chốt ban đầu | Điều chỉnh được duyệt | Số cần giao | Bếp giao | Lớp nhận | Kết quả |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| Phụ huynh báo đón sớm sau mốc chốt. Tổ trưởng bếp xác nhận còn kịp giảm một suất. | 23 | −1 | 22 | 22 | 22 | Giao đủ theo số cần giao. Lưu lý do và người xác nhận giảm suất. |
+| Phụ huynh báo nhận trẻ về sớm sau mốc chốt. Tổ trưởng bếp xác nhận còn kịp giảm một suất. | 23 | −1 | 22 | 22 | 22 | Giao đủ theo số cần giao. Lưu lý do và người xác nhận giảm suất. |
 | Bếp thiếu một suất khi chia khẩu phần. Bếp và giáo viên xác nhận tại lúc bàn giao. | 23 | 0 | 23 | 22 | 22 | Thiếu 1 suất so với số cần giao. Lưu nguyên nhân và xác nhận của hai bên. |
 
 Tiền ăn vẫn được đối soát theo ngày có mặt của NV03. Trẻ về sớm trong ca thứ nhất vẫn tính một ngày nếu kết quả chuyên cần là có mặt.
