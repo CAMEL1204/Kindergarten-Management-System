@@ -44,12 +44,13 @@ Do nhóm chưa thể khảo sát trực tiếp tại trường, phần hiện tr
 | [05. Báo cáo tổng hợp tháng](forms/mau-05-bao-cao-thang.md) | 02, 09 | Tổng hợp chỉ tiêu từ các bản nguồn đã duyệt trong kịch bản. |
 | [06. Hồ sơ nhân sự và biến động](forms/mau-06-ho-so-nhan-su.md) | 04, 05 | Hồ sơ kèm bằng cấp, chứng chỉ, giấy tờ và một lần tạm nghỉ làm thiếu giáo viên. |
 | [07. Phân công và dạy thay](forms/mau-07-phan-cong-va-day-thay.md) | 05, 03, 08 | Bảng phân công năm học, phiếu dạy thay khi không có giáo viên trống ca và tổng hợp ca tháng. |
+| [08. Sổ giao nhận trẻ hằng ngày](forms/mau-08-so-giao-nhan-tre.md) | 08, 03 | Mẫu trắng của sổ giao nhận hiện trạng: báo nghỉ, đón, trả, người ngoài danh sách, trẻ về muộn, kèm bảng đối chiếu cột với dữ liệu NV08. |
 
 Các mẫu trên cung cấp dữ liệu kiểm tra cho phân tích. Mẫu 02, 03 và 05 có thêm phần ghi theo luồng của hệ thống mới, được ghi rõ ở đầu từng mẫu.
 
-**Tình trạng minh chứng.** Tất cả biểu mẫu trong phụ lục do nhóm mô phỏng. Tại tiêu chí **biểu mẫu thật** (checklist mục 3.1), hồ sơ chưa có biểu mẫu thu trực tiếp từ cơ sở. Tiêu chí này **chưa đạt**. Việc còn mở: xin mẫu trắng hoặc bản đã che thông tin của các mẫu có mã HS, XL, DD, SA, HP, NS, PC, DT và BC ghi ở mục 6 từng nghiệp vụ, rồi đối chiếu tên cột, người lập và người xác nhận với phụ lục mô phỏng.
+**Tình trạng minh chứng.** Tất cả biểu mẫu trong phụ lục do nhóm mô phỏng. Giảng viên cho phép nhóm dùng biểu mẫu mô phỏng thay cho biểu mẫu thu trực tiếp từ cơ sở, nên tiêu chí **biểu mẫu thật** (checklist mục 3.1) được đáp ứng bằng phụ lục này. Các mã biểu mẫu ở mục 6 từng nghiệp vụ vẫn được giữ làm danh mục đối chiếu nếu sau này có cơ sở thực tế.
 
-**Đối chiếu với hồ sơ theo quy định.** Điều 21 Điều lệ Trường mầm non ([Văn bản hợp nhất 09/2026/VBHN-TT-BGDĐT](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/09-vbhn-bgddt.signed.pdf)) quy định các loại hồ sơ mà nhà trường và giáo viên phải lưu. Bảng dưới gắn mã biểu mẫu của đề tài với các loại hồ sơ đó. Điều 21 chỉ nêu tên loại hồ sơ, không ban hành mẫu cột, nên bảng này chứng minh biểu mẫu thuộc hồ sơ bắt buộc của trường, không thay cho biểu mẫu thật. Khoản 4 Điều 21 cho phép dùng hồ sơ điện tử thay hồ sơ giấy theo lộ trình của địa phương.
+**Đối chiếu với hồ sơ theo quy định.** Điều 21 Điều lệ Trường mầm non ([Văn bản hợp nhất 09/2026/VBHN-TT-BGDĐT](https://datafiles.chinhphu.vn/cpp/files/vbpq/2026/7/09-vbhn-bgddt.signed.pdf)) quy định các loại hồ sơ mà nhà trường và giáo viên phải lưu. Bảng dưới gắn mã biểu mẫu của đề tài với các loại hồ sơ đó. Điều 21 chỉ nêu tên loại hồ sơ, không ban hành mẫu cột, nên bảng này cho thấy biểu mẫu mô phỏng thuộc loại hồ sơ nào mà trường phải lưu. Khoản 4 Điều 21 cho phép dùng hồ sơ điện tử thay hồ sơ giấy theo lộ trình của địa phương.
 
 | Hồ sơ theo Điều 21 | Mã biểu mẫu của đề tài | Nghiệp vụ |
 | --- | --- | --- |

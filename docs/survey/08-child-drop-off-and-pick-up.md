@@ -23,7 +23,7 @@ Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón tr
 | 1. Nhận báo nghỉ | Giáo viên qua Zalo, điện thoại hoặc sổ liên lạc; văn phòng qua điện thoại, trước hoặc đầu ngày | Ghi tên trẻ, ngày nghỉ và lý do vào sổ hoặc ghi nhớ. Văn phòng nhận báo nghỉ thì nhắn lại giáo viên lớp. | Danh sách trẻ báo nghỉ trong ngày, nằm rải rác ở nhiều kênh. |
 | 2. Đón trẻ | Giáo viên tại cửa lớp hoặc cổng trường, khoảng 6h45–8h00 | Nhận trẻ từ phụ huynh, hỏi nhanh tình trạng sức khỏe. Đánh dấu vào sổ đón trẻ hoặc nhớ để điểm danh sau. | Trẻ vào lớp, sổ đón trẻ được đánh dấu. |
 | 3. Điểm danh và báo số | Giáo viên tại lớp, khoảng 8h00–8h30 | Đếm trẻ trong lớp, ghi sổ điểm danh theo nghiệp vụ 03. Gọi phụ huynh của trẻ chưa đến mà chưa báo nghỉ. Báo số có mặt cho bếp. | Sổ điểm danh và số báo bếp. |
-| 4. Trả trẻ | Giáo viên tại lớp, khoảng 16h30–17h30, hoặc khi phụ huynh nhận trẻ sớm | Đối chiếu người nhận trẻ với người giáo viên biết mặt hoặc danh sách người đưa đón. Người lạ đến nhận trẻ thì gọi phụ huynh xác nhận. Một số trường cho người nhận trẻ ký sổ. | Trẻ được giao cho người nhận trẻ. |
+| 4. Trả trẻ | Giáo viên tại lớp, khoảng 16h30–17h30, hoặc khi phụ huynh nhận trẻ sớm | Đối chiếu người nhận trẻ với người giáo viên biết mặt hoặc danh sách người đưa đón. Người lạ đến nhận trẻ thì gọi phụ huynh xác nhận. Người nhận trẻ và giáo viên ký vào sổ giao nhận (Mẫu 08). | Trẻ được giao cho người nhận trẻ. |
 | 5. Cuối ngày | Giáo viên và bảo vệ, sau giờ trả | Kiểm tra lớp không còn trẻ. Trẻ chưa có người nhận thì gọi phụ huynh và báo ban giám hiệu, giáo viên ở lại trông. | Lớp trống hoặc trẻ được trông muộn. |
 
 ```mermaid
@@ -60,7 +60,7 @@ flowchart LR
 
 | Đầu ra | Nội dung chính | Nơi sử dụng |
 | --- | --- | --- |
-| Lượt đón | Trẻ, lớp, ngày, giờ đón, người ghi nhận, đến muộn hay không. Nếu bị hủy do ghi nhầm: lý do, người hủy và thời điểm hủy | Hiện trạng: giáo viên đánh dấu sổ đón rồi điểm danh lại. *(Đề xuất)* NV03 cập nhật có mặt hoặc nhận đề nghị điều chỉnh theo mốc khóa |
+| Lượt đón | Trẻ, lớp, ngày, giờ đón, người đưa trẻ đến nếu có ghi, ghi chú khi nhận trẻ, người ghi nhận, đến muộn hay không. Nếu bị hủy do ghi nhầm: lý do, người hủy và thời điểm hủy | Hiện trạng: giáo viên đánh dấu sổ đón rồi điểm danh lại. *(Đề xuất)* NV03 cập nhật có mặt hoặc nhận đề nghị điều chỉnh theo mốc khóa |
 | Lượt trả | Trẻ, lớp, giờ giao thực tế của trẻ, người thực tế nhận, người giao và mã căn cứ ủy quyền hoặc mã duyệt ngoại lệ nếu có. Nếu bị hủy do ghi nhầm: lý do, người hủy và người duyệt | Văn phòng tra cứu theo quyền |
 | Hồ sơ xác minh người nhận *(đề xuất)* | Trẻ, danh tính người được đề nghị nhận, căn cứ người giám hộ xác nhận, kết quả đối chiếu CCCD, trạng thái, lý do, người và thời điểm xác minh, người và thời điểm duyệt hoặc từ chối | Giáo viên, nhân sự trực và người có quyền duyệt |
 | Căn cứ chuyên cần *(đề xuất)* | Mã lượt đón hoặc trả, giờ thực tế, báo nghỉ và thời điểm ghi nhận | NV03 sở hữu kết quả chuyên cần, lưu bản bàn giao cho NV07 và tổng hợp kết quả chuyên cần theo kỳ |
@@ -69,7 +69,7 @@ flowchart LR
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
-Phụ lục mô phỏng: [Mẫu 02 · Sổ điểm danh và giao nhận trẻ](forms/mau-02-diem-danh-giao-nhan.md), kèm [thông tin người được ủy quyền ở Mẫu 01](forms/mau-01-ho-so-tre.md).
+Phụ lục mô phỏng: [Mẫu 08 · Sổ giao nhận trẻ hằng ngày](forms/mau-08-so-giao-nhan-tre.md) là mẫu trắng của sổ hiện trạng, minh họa DT-01, DT-03, DT-04 và DT-05, kèm bảng đối chiếu từng cột với dữ liệu ở mục 4 và 5. [Mẫu 02 · Sổ điểm danh và giao nhận trẻ](forms/mau-02-diem-danh-giao-nhan.md) minh họa cách ghi trong một ngày cụ thể, kèm [thông tin người được ủy quyền ở Mẫu 01](forms/mau-01-ho-so-tre.md).
 
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
