@@ -14,9 +14,8 @@ Hệ thống thông tin quản lý trường mầm non: hồ sơ trẻ, xếp l�
 | Tài liệu | Vị trí |
 | --- | --- |
 | Tổng quan khảo sát, phân chia hệ thống con, BFD và ma trận phân quyền | [docs/survey/README.md](docs/survey/README.md) |
-| Khảo sát nghiệp vụ 01, 02, 03, 07 | `docs/khao-sat/` (nhánh `survey/member-1`) |
-| Khảo sát nghiệp vụ 04, 05, 06, 08, 09 | `docs/survey/` (nhánh `survey/member-2`) |
-| Hướng dẫn xây dựng HTTTQL và checklist chấm bài | `HuongdanXDHTTTQLv1_1 (1).pdf`, `Checklist_BTL_HTTTQL_v2026 (1).xlsx` (nhánh `survey/member-1`) |
+| Khảo sát nghiệp vụ 01 đến 09 | [docs/survey/](docs/survey/) |
+| Hướng dẫn xây dựng HTTTQL và checklist chấm bài | `HuongdanXDHTTTQLv1_1 (1).pdf`, `Checklist_BTL_HTTTQL_v2026 (1).xlsx` |
 
 ## Quy ước làm việc
 

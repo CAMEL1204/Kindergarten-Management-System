@@ -23,17 +23,17 @@
 
 | STT | Nghiệp vụ | Thành viên | Tài liệu |
 | --- | --- | --- | --- |
-| 01 | Tiếp nhận và quản lý hồ sơ trẻ | TV1 | [01-tiep-nhan-va-quan-ly-ho-so-tre.md](../khao-sat/01-tiep-nhan-va-quan-ly-ho-so-tre.md) (nhánh `survey/member-1`) |
-| 02 | Xếp lớp và quản lý biến động sĩ số | TV1 | [02-xep-lop-va-quan-ly-bien-dong-si-so.md](../khao-sat/02-xep-lop-va-quan-ly-bien-dong-si-so.md) (nhánh `survey/member-1`) |
-| 03 | Điểm danh và theo dõi chuyên cần | TV1 | [03-diem-danh-va-theo-doi-chuyen-can.md](../khao-sat/03-diem-danh-va-theo-doi-chuyen-can.md) (nhánh `survey/member-1`) |
+| 01 | Tiếp nhận và quản lý hồ sơ trẻ | TV1 | [01-tiep-nhan-va-quan-ly-ho-so-tre.md](01-tiep-nhan-va-quan-ly-ho-so-tre.md) |
+| 02 | Xếp lớp và quản lý biến động sĩ số | TV1 | [02-xep-lop-va-quan-ly-bien-dong-si-so.md](02-xep-lop-va-quan-ly-bien-dong-si-so.md) |
+| 03 | Điểm danh và theo dõi chuyên cần | TV1 | [03-diem-danh-va-theo-doi-chuyen-can.md](03-diem-danh-va-theo-doi-chuyen-can.md) |
 | 04 | Quản lý hồ sơ giáo viên và nhân viên | TV2 | [04-staff-management.md](04-staff-management.md) |
 | 05 | Phân công giáo viên theo lớp và thời gian | TV2 | [05-teacher-assignment.md](05-teacher-assignment.md) |
 | 06 | Lập khoản phải thu và thu học phí | TV2 | [06-tuition-management.md](06-tuition-management.md) |
-| 07 | Quản lý suất ăn và chế độ ăn của trẻ | TV1 | [07-quan-ly-suat-an-va-che-do-an-cua-tre.md](../khao-sat/07-quan-ly-suat-an-va-che-do-an-cua-tre.md) (nhánh `survey/member-1`) |
+| 07 | Quản lý suất ăn và chế độ ăn của trẻ | TV1 | [07-quan-ly-suat-an-va-che-do-an-cua-tre.md](07-quan-ly-suat-an-va-che-do-an-cua-tre.md) |
 | 08 | Đón trẻ, trả trẻ và tự động ghi nhận có mặt | TV2 | [08-child-drop-off-and-pick-up.md](08-child-drop-off-and-pick-up.md) |
 | 09 | Lập, ghi chú và gửi báo cáo | TV2 | [09-reporting.md](09-reporting.md) |
 
-Tài liệu của TV1 nằm ở `docs/khao-sat/`, của TV2 ở `docs/survey/`. Các liên kết tương đối ở trên chỉ mở được sau khi hai nhánh được gộp vào `main`. Nhóm cần thống nhất một thư mục chung trước khi gộp.
+Tất cả tài liệu khảo sát của hai thành viên nằm chung trong thư mục `docs/survey/`.
 
 ## 3. Thuật ngữ
 
