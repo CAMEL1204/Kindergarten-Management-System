@@ -32,7 +32,8 @@ Tiếp nhận đăng ký nhập học, kiểm tra giấy tờ, xác nhận kết
 | Nhóm dữ liệu | Trường cần khảo sát | Nguồn |
 | --- | --- | --- |
 | Thông tin trẻ | Họ tên, ngày sinh, mã học sinh hoặc số định danh nếu có, ngày dự kiến bắt đầu học | Phiếu đăng ký, giấy tờ đối chiếu và hồ sơ cũ nếu trẻ quay lại |
-| Người liên hệ và người đưa đón | Họ tên, quan hệ với trẻ, số điện thoại, người liên hệ chính và thông tin người đưa đón theo yêu cầu | Phụ huynh hoặc người giám hộ khai báo |
+| Người liên hệ và người giám hộ | Họ tên, quan hệ với trẻ, số điện thoại đã xác nhận, người giám hộ chính và tình trạng còn hiệu lực của thông tin giám hộ | Phụ huynh hoặc người giám hộ khai báo, văn phòng đối chiếu |
+| Người được ủy quyền cố định nhận trẻ | Họ tên, quan hệ với trẻ, số điện thoại, số CCCD, ngày bắt đầu, ngày kết thúc, người giám hộ xác nhận và thông tin thu hồi nếu có | Người giám hộ đăng ký, văn phòng đối chiếu và cập nhật |
 | Giấy tờ hồ sơ | Kênh và ngày nhận, loại giấy tờ, mốc yêu cầu, tình trạng, ngày hẹn bổ sung và căn cứ đối chiếu. Hồ sơ sức khỏe, tiêm chủng, cư trú hoặc ưu tiên tùy trường và diện tuyển sinh | Hồ sơ phụ huynh nộp và danh mục của trường |
 | Lưu ý chăm sóc | Dị ứng, chế độ ăn, giấc ngủ hoặc thông tin sức khỏe cần thiết | Phụ huynh, giáo viên và người phụ trách chăm sóc |
 | Yêu cầu cập nhật | Trẻ được cập nhật, nội dung thay đổi, ngày tiếp nhận và căn cứ xác nhận nếu trường yêu cầu | Thông báo hoặc phiếu cập nhật |
@@ -45,10 +46,13 @@ Tiếp nhận đăng ký nhập học, kiểm tra giấy tờ, xác nhận kết
 | Danh sách hồ sơ chờ bổ sung | Hồ sơ, giấy tờ còn thiếu, ngày yêu cầu bổ sung và tình trạng phản hồi | Văn phòng theo dõi và liên hệ phụ huynh |
 | Danh sách trẻ chờ xếp lớp | Mã hoặc định danh hồ sơ, họ tên, ngày sinh hoặc nhóm tuổi, ngày dự kiến học | Nghiệp vụ 02 dùng để lập danh sách xếp lớp |
 | Thông tin cập nhật cần bàn giao | Liên hệ hiện hành, thông tin đưa đón và lưu ý chăm sóc phù hợp với nhiệm vụ | Giáo viên, văn phòng, y tế hoặc bếp theo phân công |
+| Danh sách người có quyền nhận trẻ | Người giám hộ chính đang có hiệu lực, người được ủy quyền còn hiệu lực và thông tin cần đối chiếu danh tính | NV08 tra cứu theo trẻ và ngày trả, theo quyền được cấp |
 
 **Bàn giao cho nghiệp vụ 02 và 07.** Theo phương án đề xuất, văn phòng đối chiếu điều kiện nhập học rồi ghi ngày được bắt đầu học và người xác nhận. Trẻ đã xếp lớp nhưng đang chờ xác nhận vẫn nằm trong danh sách xếp lớp dự kiến. Với lưu ý ăn uống, giáo viên hoặc văn phòng ghi nhận thông báo của phụ huynh. Nhân viên y tế hoặc người phụ trách được trường phân công xác nhận nội dung, thời điểm bắt đầu và thời điểm kết thúc nếu có. Giáo viên dùng lưu ý còn hiệu lực theo mã trẻ để đối chiếu với thực đơn tuần ở nghiệp vụ 07 và trao đổi với phụ huynh về bữa bị ảnh hưởng. Thông báo mới đang chờ xác nhận được chuyển ngay cho người phụ trách để rà soát các bữa liên quan.
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
+
+Phụ lục mô phỏng: [Mẫu 01 · Đăng ký nhập học và tiếp nhận hồ sơ trẻ](forms/mau-01-ho-so-tre.md), minh họa HS-01 đến HS-03 và thông tin người được ủy quyền nhận trẻ.
 
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
@@ -67,6 +71,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | QT-HS-02 | Văn phòng đối chiếu mã học sinh hoặc số định danh nếu có cùng dữ liệu trẻ và người giám hộ. Khi xác nhận trẻ quay lại, dùng cùng hồ sơ trẻ và ghi nhận đợt tiếp nhận mới nếu cần. | Hai trẻ trùng tên và ngày sinh, hoặc một trẻ quay lại với số liên hệ đã đổi. |
 | QT-HS-03 | Chuyển nghiệp vụ 02 các hồ sơ đã được duyệt tiếp nhận và đủ điều kiện xếp lớp theo chính sách trường. Dùng cùng mã hồ sơ khi bàn giao và theo dõi riêng giấy tờ còn hẹn bổ sung. | Trẻ đã được duyệt, còn giấy tờ được phép nộp sau và đã có ngày dự kiến học. |
 | QT-HS-04 | Văn phòng sửa ngày sinh và người giám hộ dựa trên căn cứ đối chiếu, trình duyệt theo chính sách. Người được giao nhiệm vụ cập nhật lưu ý chăm sóc. Ghi giá trị trước và sau, nguồn đối chiếu, người thực hiện, thời điểm và người duyệt nếu có. | Ngày sinh trong Excel lệch với giấy tờ đã đối chiếu, hoặc giáo viên bổ sung lưu ý dị ứng. |
+| QT-HS-05 | Người giám hộ chính đã xác nhận được nhận trẻ trong thời gian trẻ theo học, theo hồ sơ giám hộ đang có hiệu lực. Với ủy quyền cố định, văn phòng ghi đủ họ tên, quan hệ, số điện thoại, số CCCD và khoảng `Từ ngày`–`Đến ngày`. Cả hai ngày đều tính hiệu lực, ngày bắt đầu không được sau ngày kết thúc. Quyền hết hiệu lực từ ngày kế tiếp hoặc từ lúc thu hồi có hiệu lực. Giữ lịch sử để tra cứu. Yêu cầu đón đột xuất được xử lý theo từng lượt tại NV08. | Ủy quyền đến hết 30/11, còn hiệu lực ngày 30/11 và hết hạn ngày 01/12. |
 
 ## 8. Hạn chế của quy trình hiện tại
 
@@ -82,3 +87,4 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | YC-HS-02 | Trong một màn hình hồ sơ, theo dõi giấy tờ theo từng mốc, tách kết quả duyệt khỏi tình trạng hoàn thiện, lưu hẹn bổ sung và cho phép lọc, xuất danh sách cần theo dõi. |
 | YC-HS-03 | Cung cấp trực tiếp danh sách trẻ đã được duyệt, đủ điều kiện và còn chờ xếp lớp cho nghiệp vụ 02. Dùng cùng định danh hồ sơ khi bàn giao. |
 | YC-HS-04 | Dùng hồ sơ điện tử đã xác nhận làm nguồn dữ liệu vận hành chung. Lưu căn cứ giấy tờ khi hiệu chỉnh, ghi lịch sử thay đổi và phân quyền lập, duyệt, cập nhật và xem theo loại thông tin và nhiệm vụ. |
+| YC-HS-05 | Cho văn phòng quản lý hồ sơ giám hộ và đăng ký, gia hạn hoặc thu hồi ủy quyền cố định. Tự xác định hiệu lực theo QT-HS-05 và cung cấp cho NV08 thông tin cần đối chiếu theo quyền. Số CCCD được che trên danh sách và báo cáo thông thường. |

@@ -34,8 +34,8 @@ Ghi nhận tình trạng đi học của từng trẻ theo lớp và ngày học
 | --- | --- | --- |
 | Danh sách điểm danh | Mã lớp, ngày, mã và họ tên trẻ, tình trạng lớp và diện phải điểm danh tại ngày đó | Nghiệp vụ 02 |
 | Lịch học thực tế | Ngày hoặc buổi có tổ chức học, kỳ nghỉ, ngày nghỉ theo lịch trường và lịch học bù nếu có | Lịch của trường hoặc lớp |
-| Kết quả quan sát | Trạng thái, giờ đến hoặc giờ về nếu có ghi, ghi chú đến muộn hoặc về sớm, người ghi và thời điểm ghi | Giáo viên phụ trách |
-| Thông báo nghỉ | Trẻ, ngày hoặc khoảng nghỉ, kênh báo, lý do, thời điểm nhận và người xác nhận | Phụ huynh và giáo viên |
+| Kết quả quan sát | Hiện trạng mô phỏng ghi nhận trạng thái, giờ đến hoặc về và người ghi. Hệ thống mới nhận mã lượt đón hoặc trả, giờ thực tế và người ghi nhận. | Giáo viên phụ trách trong hiện trạng. Nghiệp vụ 08 trong hệ thống mới. |
+| Thông báo nghỉ | Trẻ, ngày hoặc khoảng nghỉ, kênh báo, lý do, thời điểm nhận, người ghi và căn cứ xác minh | Trong hệ thống mới, giáo viên hoặc văn phòng ghi vào cùng nguồn báo nghỉ của nghiệp vụ 08. Nghiệp vụ 03 đọc và xác minh. |
 | Đề nghị điều chỉnh | Dòng cần sửa, trạng thái trước và sau, lý do, thời điểm, người cập nhật và người duyệt nếu cần | Giáo viên hoặc người phụ trách |
 
 ## 5. Dữ liệu đầu ra
@@ -45,11 +45,14 @@ Ghi nhận tình trạng đi học của từng trẻ theo lớp và ngày học
 | Bảng điểm danh theo lớp và ngày | Danh sách trẻ, kết quả từng trẻ, tổng có mặt và vắng, trạng thái chốt và người chốt | Giáo viên, văn phòng và ban giám hiệu theo quyền |
 | Danh sách chờ xác minh | Trẻ chưa rõ tình trạng, ngày, lớp, lịch sử liên hệ và người tiếp tục xử lý | Giáo viên, văn phòng hoặc ban giám hiệu |
 | Báo cáo chuyên cần | Số ngày hoặc buổi có mặt, vắng có phép, vắng không phép theo trẻ, lớp và kỳ. Có thể tách theo lớp khi trẻ chuyển trong tháng | Giáo viên, văn phòng và ban giám hiệu |
+| Số ngày có mặt để đối soát tiền ăn | Số ngày có mặt theo trẻ và kỳ từ chuyên cần đã khóa, gồm điều chỉnh đã duyệt. Kèm cảnh báo về ngày chưa khóa, lượt còn chờ xác minh hoặc đang chờ duyệt điều chỉnh. | NV06 nhận ở chế độ chỉ đọc để đối soát tiền ăn cuối kỳ |
 | Danh sách bàn giao theo trẻ | Mã trẻ, lớp có hiệu lực, ngày học, trạng thái tại thời điểm bàn giao, giờ đến và giờ về nếu có ghi | Nghiệp vụ 07 lập danh sách ăn dự kiến theo bữa và rà soát khi điểm danh thay đổi |
-| Số có mặt tại mốc chốt buổi sáng | Lớp, ngày, giờ chốt, tổng có mặt và thông tin điều chỉnh cần bàn giao nếu phát sinh | Bếp hoặc bộ phận tổng hợp suất ăn |
-| Lịch sử điều chỉnh | Dòng đã sửa, giá trị trước và sau, lý do, thời điểm và người sửa | Người có thẩm quyền đối chiếu |
+| Số có mặt tại mốc bàn giao buổi sáng | Lớp, ngày, giờ bàn giao, danh sách và tổng có mặt tại mốc bàn giao. Phát sinh ảnh hưởng từng bữa được chuyển riêng cho nghiệp vụ 07. | Giáo viên và bộ phận tổng hợp suất ăn |
+| Lịch sử điều chỉnh | Trẻ, ngày, giá trị trước và sau, căn cứ hoặc mã lượt đón, lý do, người đề nghị, thời điểm đề nghị, người duyệt và thời điểm duyệt | Người có thẩm quyền đối chiếu |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
+
+Phụ lục mô phỏng: [Mẫu 02 · Sổ điểm danh và giao nhận trẻ](forms/mau-02-diem-danh-giao-nhan.md), minh họa báo nghỉ, đến muộn và đối chiếu số bàn giao với kết quả cuối ngày.
 
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
@@ -65,9 +68,10 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | Mã | Quy tắc cần xác nhận | Trường hợp cần thử |
 | --- | --- | --- |
 | QT-DD-01 | Phạm vi đề xuất dùng một kết quả chính cho mỗi trẻ trong mỗi ngày học, thuộc lớp có hiệu lực từ nghiệp vụ 02. Nếu trường quản lý chính thức theo buổi, xác định đơn vị theo trẻ, ngày và buổi cùng quy tắc lớp tương ứng. | Trẻ đổi lớp ngày 15, ngày 14 ghi ở lớp cũ và ngày 15 ghi ở lớp mới. |
-| QT-DD-02 | Giáo viên chủ nhiệm xác nhận vắng có phép khi có căn cứ. Đến mốc báo bếp, trường hợp chưa liên hệ được vẫn ở trạng thái chờ xác minh. Hoàn tất phân loại theo nội quy trước khi khóa báo cáo chuyên cần. | Tới giờ chốt buổi sáng trẻ chưa đến và chưa có phản hồi từ phụ huynh. |
-| QT-DD-03 | Giáo viên được phân quyền ghi bổ sung trong ngày theo chính sách trường. Sửa ảnh hưởng suất ăn đã chốt, báo cáo đã khóa hoặc qua ngày cần chuyển người có thẩm quyền kiểm soát. Ghi giá trị trước và sau, lý do, thời điểm, người sửa và người duyệt nếu có. | Trẻ đến sau giờ báo bếp hoặc chuyển lớp được nhập hồi tố sau khi đã khóa báo cáo. |
+| QT-DD-02 | Báo nghỉ là căn cứ xác minh và được giữ trong lịch sử. Khi chưa có lượt đón và chưa có kết luận về việc vắng, kết quả là `Chờ xác minh`, kể cả khi đã nhận báo nghỉ. Giáo viên có quyền xác minh theo nội quy để kết luận `Vắng có phép` hoặc `Vắng không phép`. Nếu tới giờ khóa vẫn chưa có căn cứ kết luận, khóa với `Chờ xác minh`. | Lúc 09:00 chưa liên hệ được người giám hộ, lúc 10:05 mới nhận được phản hồi. Bổ sung kết luận qua điều chỉnh. |
+| QT-DD-03 | Trước giờ khóa, giáo viên được phân quyền xác minh vắng và hệ thống cập nhật có mặt từ lượt đón. Từ giờ khóa, thay đổi kết quả chuyên cần phải có đề nghị và được Ban giám hiệu hoặc người được phân quyền duyệt. Ghi giá trị trước và sau, căn cứ, lý do, người đề nghị, người duyệt và các thời điểm liên quan. Việc ghi nhận lượt giao nhận thực tế và điều chỉnh suất ăn theo quy trình riêng của NV08 và NV07. | Một lượt đón đúng 09:00 tạo đề nghị điều chỉnh. Giáo viên vẫn ghi trả trẻ khi người nhận đủ điều kiện. |
 | QT-DD-04 | Tỷ lệ chuyên cần đề xuất bằng lượt có mặt chia cho lượt phải điểm danh trong kỳ, nhân 100%. Căn cứ lịch học thực tế, lớp có hiệu lực và diện phải điểm danh. Loại ngày nghỉ theo lịch trường và ngày trẻ không thuộc diện điểm danh. Báo riêng lượt chờ xác minh hoặc ngày chưa hoàn tất. Nếu mẫu số bằng 0, hiển thị không áp dụng. | Trẻ chuyển lớp giữa tháng, trường nghỉ một ngày và còn một lượt chờ xác minh. |
+| QT-DD-05 | Lượt đón hợp lệ tại NV08 là nguồn tạo kết quả `Có mặt`. Trước giờ khóa, lượt đón cập nhật trực tiếp kết quả trong ngày. Từ giờ khóa, lượt đón tạo đề nghị điều chỉnh, chỉ có hiệu lực lên chuyên cần khi được duyệt. `Đến muộn` là cờ dựa trên giờ đón thực tế. Lượt trả không làm mất kết quả `Có mặt`. | Trẻ đã được xác nhận vắng có phép rồi đến lúc 08:50. Hệ thống cập nhật có mặt và giữ lịch sử báo nghỉ. |
 
 ## 8. Hạn chế của quy trình hiện tại
 
@@ -78,9 +82,13 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 ## 9. Yêu cầu đối với hệ thống mới
 
+**Mốc mặc định của phương án mô phỏng.** Ban giám hiệu cấu hình mốc theo lịch học. Đón chính từ 07:00 đến trước 08:30. Lúc 08:30, lưu bản bàn giao buổi sáng cho NV07. Lượt đón có giờ đến thực tế từ 08:30 được đánh dấu đến muộn. Lúc 09:00, khóa chuyên cần trong ngày, kể cả các lượt còn chờ xác minh. Khung trả thông thường là 16:00–17:30. Bản bàn giao giữ nguyên khi có phát sinh sau mốc 08:30.
+
+Nếu lượt đón được nhập bổ sung sau giờ khóa, hệ thống vẫn lưu giờ đến thực tế và thời điểm ghi nhận riêng. Cờ đến muộn dùng giờ đến thực tế. Việc cập nhật chuyên cần dùng tình trạng khóa tại lúc ghi nhận.
+
 | Mã | Yêu cầu đề xuất |
 | --- | --- |
 | YC-DD-01 | Tạo bảng từ danh sách phải điểm danh của lớp theo ngày ở nghiệp vụ 02. Kiểm tra lịch học, quyền phụ trách và kết quả đã tồn tại. |
-| YC-DD-02 | Ghi kết quả, giờ đến hoặc về khi cần, căn cứ báo nghỉ và tình trạng chờ xác minh. Lưu riêng số có mặt đã chốt buổi sáng và trạng thái hoàn tất chuyên cần. |
-| YC-DD-03 | Hỗ trợ ghi bổ sung trong ngày theo quyền, chuyển duyệt khi số đã chốt bị ảnh hưởng và lưu lịch sử sửa. Cảnh báo các ngày phải đối chiếu khi xếp lớp được ghi hồi tố. |
-| YC-DD-04 | Lọc và xuất chuyên cần theo trẻ, lớp và kỳ. Tổng hợp theo lịch thực tế, hiển thị lượt chưa hoàn tất và tránh đếm trùng khi trẻ chuyển lớp trong tháng. |
+| YC-DD-02 | Tiếp nhận lượt đón và trả từ NV08. Tạo kết quả có mặt theo QT-DD-05, lưu giờ giao nhận thực tế và cờ đến muộn. Cho phép giáo viên xác minh vắng dựa trên nguồn báo nghỉ của NV08. Lưu riêng bản bàn giao 08:30 và kết quả chuyên cần khóa 09:00. |
+| YC-DD-03 | Hỗ trợ đề nghị và duyệt điều chỉnh sau khóa theo QT-DD-03. Thông báo cho bên liên quan khi thay đổi ảnh hưởng đến dữ liệu đã sử dụng. Cảnh báo ngày phải đối chiếu khi xếp lớp được ghi hồi tố. |
+| YC-DD-04 | Lọc và xuất chuyên cần theo trẻ, lớp và kỳ. Tổng hợp theo lịch thực tế, tách số lượt chờ xác minh và đánh dấu kỳ có lượt chưa hoàn tất hoặc điều chỉnh đang chờ duyệt. Tránh đếm trùng khi trẻ chuyển lớp trong tháng. |
