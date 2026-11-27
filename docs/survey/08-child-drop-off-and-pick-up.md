@@ -33,21 +33,21 @@ Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón tr
 | Bước | Ai, ở đâu và khi nào | Công việc và cách thực hiện | Kết quả |
 | --- | --- | --- | --- |
 | 1. Mở danh sách đón | Giáo viên tại lớp, đầu giờ đón | Hệ thống lấy danh sách trẻ thuộc lớp trong ngày (nghiệp vụ 02). Trẻ đã báo nghỉ được tách sẵn sang trạng thái báo nghỉ. | Danh sách trẻ chưa đón. |
-| 2. Đón trẻ | Giáo viên, khi phụ huynh đưa trẻ đến | Đón **một trẻ** bằng nút đón trên dòng của trẻ, hoặc **tích chọn nhiều trẻ** rồi bấm "Đón các trẻ đã chọn" (mục 5). Hệ thống ghi giờ đón và tự chuyển điểm danh của trẻ sang có mặt. | Trẻ ở trạng thái đã đón, có mặt. |
+| 2. Đón trẻ | Giáo viên, khi phụ huynh đưa trẻ đến | Tích chọn các trẻ vừa được đưa đến (một hay nhiều trẻ đều làm cùng một cách) rồi bấm "Đón các trẻ đã chọn" (mục 5). Không có nút đón riêng trên từng dòng. Hệ thống ghi giờ đón và tự chuyển điểm danh của trẻ sang có mặt. | Trẻ ở trạng thái đã đón, có mặt. |
 | 3. Chốt đón | Hệ thống và giáo viên, đến giờ chốt của trường | Trẻ còn chưa đón chuyển sang vắng. Giáo viên xác minh lý do theo nghiệp vụ 03 rồi chốt điểm danh. | Điểm danh đã chốt, lấy từ kết quả đón. |
 | 4. Đón muộn | Giáo viên, khi trẻ đến sau giờ chốt | Nếu bảng chưa chốt, đón bình thường, trẻ có mặt và được đánh dấu đến muộn. Nếu bảng đã chốt, ghi đề nghị điều chỉnh theo quy tắc QT-DD-03 của nghiệp vụ 03. | Trẻ có mặt (đến muộn) hoặc đề nghị điều chỉnh. |
-| 5. Trả trẻ | Giáo viên, giờ trả trẻ hoặc khi phụ huynh đón sớm | Danh sách trả **chỉ gồm trẻ đã đón và chưa trả**. Trả một trẻ hoặc tích chọn nhiều trẻ rồi bấm "Trả các trẻ đã chọn". Ghi giờ trả và người đón, đối chiếu với danh sách người được đón trẻ. | Trẻ ở trạng thái đã trả. |
+| 5. Trả trẻ | Giáo viên, giờ trả trẻ hoặc khi phụ huynh đón sớm | Danh sách trả **chỉ gồm trẻ đã đón và chưa trả**. Tích chọn các trẻ được đón về rồi bấm "Trả các trẻ đã chọn". Ghi giờ trả và người đón, đối chiếu với danh sách người được đón trẻ. | Trẻ ở trạng thái đã trả. |
 | 6. Kết thúc ngày | Giáo viên, sau giờ trả | Hệ thống cảnh báo nếu còn trẻ đã đón mà chưa trả. Giáo viên xử lý trước khi kết thúc ca. | Không còn trẻ ở lớp mà chưa được ghi trả. |
 
-## 5. Đón hoặc trả nhiều trẻ cùng lúc
+## 5. Chọn trẻ để đón hoặc trả
 
-Dùng khi nhiều phụ huynh đưa con đến cùng lúc hoặc xe đưa đón trả cả nhóm trẻ.
+Đây là **cách duy nhất** để đón và trả trẻ. Không có nút đón hoặc trả riêng trên từng dòng. Muốn đón một trẻ thì chỉ chọn một trẻ, muốn đón cả nhóm thì chọn cả nhóm, nên giáo viên chỉ cần học một thao tác.
 
 1. Mỗi dòng trẻ có **ô chọn**. Đầu danh sách có ô **"Chọn tất cả"**, chọn tất cả các trẻ **đang hiển thị** theo bộ lọc (ví dụ lọc "Chưa đón").
 2. Khi đã chọn, thanh thao tác hiện **"Đã chọn n trẻ"** và nút **"Đón n trẻ đã chọn"** (hoặc **"Trả n trẻ đã chọn"** ở màn hình trả).
 3. Bấm nút, hộp xác nhận liệt kê tên các trẻ. Xác nhận một lần thì hệ thống ghi đón (hoặc trả) cho tất cả trẻ đã chọn, cùng giờ và cùng người thực hiện.
 4. Trẻ không hợp lệ được **bỏ qua và báo lại**, không làm hỏng cả nhóm. Ví dụ: trẻ đã đón rồi, trẻ đã báo nghỉ khi đón; trẻ vắng hoặc đã trả khi trả.
-5. Khi trả nhiều trẻ, người đón mặc định là người giám hộ chính đã đăng ký. Trẻ do người khác đón thì giáo viên bỏ chọn và trả riêng để ghi đúng người đón.
+5. Khi trả trẻ, hộp xác nhận hiện người đón của từng trẻ, mặc định là người giám hộ chính đã đăng ký. Nếu trẻ do người khác đón, giáo viên đổi người đón ngay trong hộp xác nhận rồi mới xác nhận.
 
 ## 6. Dữ liệu đầu vào và đầu ra
 
@@ -67,7 +67,7 @@ Dùng khi nhiều phụ huynh đưa con đến cùng lúc hoặc xe đưa đón 
 | --- | --- | --- |
 | QT-DT-01 | Đón trẻ là nguồn duy nhất tạo kết quả có mặt. Không có màn hình điểm danh có mặt riêng song song với đón trẻ. | Giáo viên đón trẻ xong, mở điểm danh thấy trẻ đã có mặt. |
 | QT-DT-02 | Chỉ trẻ ở trạng thái đã đón mới được trả. Trẻ vắng hoặc báo nghỉ không có trong danh sách trả và không thể ghi trả. | Thử trả một trẻ vắng: không có nút trả. |
-| QT-DT-03 | Đón hoặc trả nhiều trẻ được ghi trong một lần xác nhận. Trẻ không hợp lệ được bỏ qua và liệt kê lại cho giáo viên. | Chọn 5 trẻ, trong đó 1 trẻ đã đón trước đó. Kết quả: đón 4 trẻ, báo 1 trẻ bị bỏ qua. |
+| QT-DT-03 | Đón và trả trẻ chỉ thực hiện qua thao tác chọn trẻ rồi xác nhận, không có nút riêng trên từng dòng. Các trẻ đã chọn được ghi trong một lần xác nhận. Trẻ không hợp lệ được bỏ qua và liệt kê lại cho giáo viên. | Chọn 5 trẻ, trong đó 1 trẻ đã đón trước đó. Kết quả: đón 4 trẻ, báo 1 trẻ bị bỏ qua. |
 | QT-DT-04 | Người đón phải thuộc danh sách người được đón trẻ. Trường hợp khác cần xác nhận của phụ huynh hoặc người có thẩm quyền và được ghi chú. | Ông bà chưa đăng ký đến đón trẻ. |
 | QT-DT-05 | Chỉ giáo viên được phân công lớp trong ngày mới đón trả trẻ của lớp đó. | Giáo viên dạy thay đón trẻ lớp được giao dạy thay. |
 
@@ -82,6 +82,6 @@ Dùng khi nhiều phụ huynh đưa con đến cùng lúc hoặc xe đưa đón 
 | Mã | Yêu cầu đề xuất |
 | --- | --- |
 | YC-DT-01 | Màn hình đón trẻ theo lớp và ngày, có bộ lọc theo trạng thái. Đón trẻ tự động tạo kết quả có mặt ở nghiệp vụ 03. |
-| YC-DT-02 | Chọn nhiều trẻ bằng ô chọn và "Chọn tất cả", đón hoặc trả các trẻ đã chọn trong một lần xác nhận, báo lại các trẻ bị bỏ qua. |
+| YC-DT-02 | Đón và trả trẻ bằng một thao tác duy nhất: chọn trẻ bằng ô chọn hoặc "Chọn tất cả", rồi bấm "Đón/Trả các trẻ đã chọn" và xác nhận một lần. Không có nút đón trả riêng trên từng dòng. Báo lại các trẻ bị bỏ qua. |
 | YC-DT-03 | Danh sách trả trẻ chỉ gồm trẻ đã đón và chưa trả. Trẻ vắng hiển thị trong nhóm riêng, không thao tác được. |
 | YC-DT-04 | Tự chuyển trẻ chưa đón sang vắng khi đến giờ chốt. Cảnh báo trẻ đã đón mà chưa trả khi kết thúc ngày. |

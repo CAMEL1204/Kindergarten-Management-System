@@ -50,7 +50,7 @@ Chỉ thấy **lớp mình được phân công trong ngày** (nghiệp vụ 05)
 
 | Có | Không có |
 | --- | --- |
-| Đón trẻ, trả trẻ, chọn nhiều trẻ để đón hoặc trả cùng lúc (nghiệp vụ 08). | Học phí, công nợ, biên lai. |
+| Đón trẻ, trả trẻ bằng cách chọn trẻ rồi xác nhận một lần (nghiệp vụ 08). | Học phí, công nợ, biên lai. |
 | Điểm danh được tự động ghi nhận từ đón trẻ. Xác minh vắng, chốt điểm danh (nghiệp vụ 03). | Lập thực đơn. Chỉ xem thực đơn của lớp mình và lưu ý dị ứng của trẻ. |
 | Xác nhận danh sách ăn và số suất của lớp (nghiệp vụ 07). | Hồ sơ nhân sự, xếp lớp. |
 | Lập, ghi chú và gửi báo cáo lớp: chuyên cần, tình hình trẻ. | |
