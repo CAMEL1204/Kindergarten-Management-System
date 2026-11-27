@@ -32,7 +32,8 @@ Người giám hộ chính đã xác nhận trong mục 1 được nhận trẻ 
 | Nội dung | Giá trị minh họa |
 | --- | --- |
 | Lưu ý ăn uống | Phụ huynh báo trẻ dị ứng tôm và cua |
-| Xác nhận lưu ý | Người phụ trách chăm sóc rà soát và xác nhận ngày 04/09/2026, áp dụng từ ngày 07/09/2026 |
+| Người ghi lưu ý | Phạm Thu Hà (văn phòng), theo phiếu đăng ký của phụ huynh |
+| Xác nhận lưu ý | Phó hiệu trưởng chuyên môn rà soát và xác nhận ngày 04/09/2026, áp dụng từ ngày 07/09/2026 |
 | Kết quả tiếp nhận | Đã duyệt ngày 04/09/2026 |
 | Người duyệt | Lê Minh Tâm (hiệu trưởng trong kịch bản) |
 | Tình trạng hồ sơ | Đủ điều kiện bắt đầu học, không có giấy tờ đến hạn chưa bổ sung |

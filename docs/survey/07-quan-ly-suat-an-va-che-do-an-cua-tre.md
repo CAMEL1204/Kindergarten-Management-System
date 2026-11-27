@@ -11,7 +11,7 @@ Xác định số suất ăn theo lớp và theo bữa, thông báo thực đơn
 | Đối tượng | Vai trò |
 | --- | --- |
 | Giáo viên chủ nhiệm hoặc giáo viên phụ trách lớp đầu ca | Xác nhận danh sách trẻ ăn từng bữa, chốt số suất, báo thay đổi và kiểm tra khi nhận suất. |
-| Nhân viên văn phòng, nhân viên y tế hoặc bếp trưởng | Rà soát và tổng hợp số suất từ các lớp theo phân công của trường. |
+| Bếp trưởng | Rà soát và tổng hợp số suất từ các lớp. |
 | Bếp trưởng và người duyệt thực đơn | Bếp trưởng lập hoặc cập nhật thực đơn theo ngày, bữa. Ban giám hiệu hoặc người được ủy quyền xác nhận thực đơn áp dụng. |
 | Nhân viên bếp hoặc cấp dưỡng | Tiếp nhận phiếu và các điều chỉnh, chuẩn bị suất ăn, giao cho từng lớp và đối chiếu với giáo viên. |
 | Phụ huynh | Xem thực đơn đầu tuần, báo cho giáo viên bữa có món liên quan đến dị ứng của trẻ và đón trẻ về trước bữa đó. |
@@ -25,7 +25,7 @@ Xác định số suất ăn theo lớp và theo bữa, thông báo thực đơn
 | 2. Thông báo thực đơn tuần | Nhà trường, giáo viên và phụ huynh | Đầu tuần, qua kênh liên lạc của trường | Nhà trường gửi thực đơn theo ngày và bữa. Phụ huynh báo lại nếu thực đơn có món liên quan đến dị ứng của trẻ và thống nhất giờ đón với giáo viên trước bữa đó. | Phản hồi và lịch đón theo trẻ, ngày và bữa |
 | 3. Lập danh sách dự kiến | Giáo viên | Tại lớp, trước mỗi bữa | Nếu bữa sáng chốt trước điểm danh, dùng đăng ký ăn sáng và thông báo nghỉ đã nhận. Đối chiếu khi trẻ đến. Giáo viên dựa vào điểm danh và thông tin phát sinh trong ngày để xác nhận trẻ ăn từng bữa. Giáo viên đối chiếu phản hồi của phụ huynh với lưu ý trong hồ sơ và ghi nhận các bữa trẻ không ăn tại trường do được đón về. | Danh sách dự kiến |
 | 4. Chốt suất | Giáo viên | Tại lớp, theo giờ chốt từng bữa | Giáo viên xác nhận tổng số suất theo danh sách trẻ ăn bữa đó. Tùy trường, các bữa áp dụng gồm bữa sáng, bữa trưa và bữa xế. Khoảng **8h00–8h30** là mốc chốt đầu ngày tham khảo. Bữa sáng phục vụ sớm hoặc bữa phụ có nhiều biến động có thể có giờ chốt riêng. | Phiếu theo lớp và bữa |
-| 5. Chuyển phiếu | Giáo viên, y tế hoặc bếp trưởng | Từ lớp đến bếp, sau khi chốt | Giáo viên gửi phiếu trực tiếp hoặc qua bộ phận tổng hợp. Tùy trường, thông tin được chuyển bằng phiếu hoặc sổ báo cơm, nhóm trao đổi (chẳng hạn Zalo), file tổng hợp hoặc phần mềm. | Phiếu bếp tiếp nhận |
+| 5. Chuyển phiếu | Giáo viên hoặc bếp trưởng | Từ lớp đến bếp, sau khi chốt | Giáo viên gửi phiếu trực tiếp hoặc qua bộ phận tổng hợp. Tùy trường, thông tin được chuyển bằng phiếu hoặc sổ báo cơm, nhóm trao đổi (chẳng hạn Zalo), file tổng hợp hoặc phần mềm. | Phiếu bếp tiếp nhận |
 | 6. Điều chỉnh | Giáo viên và bếp | Tại lớp và bếp, khi có thay đổi | Khi trẻ đến muộn, báo nghỉ hoặc được đón sớm làm thay đổi bữa ăn, giáo viên báo cho bếp qua điện thoại, tin nhắn hoặc trao đổi trực tiếp. Bếp xác nhận số suất còn có thể thêm hoặc bớt theo tiến độ chuẩn bị và ghi nhận thời điểm báo. | Điều chỉnh đã xác nhận |
 | 7. Giao nhận | Bếp và giáo viên | Khi giao tại lớp | Bếp chuẩn bị theo số lượng đã xác nhận. Khi nhận, giáo viên và nhân viên bếp đối chiếu số suất theo lớp và bữa. Hai bên ghi nhận chênh lệch nếu có. | Số giao, thực nhận và chênh lệch |
 | 8. Đối chiếu | Bếp và giáo viên, văn phòng tổng hợp khi cần | Sau giao nhận hoặc cuối tháng | Đối chiếu phiếu chốt từng bữa, các điều chỉnh được xác nhận, số đã giao và số thực nhận. Kiểm tra nguyên nhân thiếu hoặc thừa nếu có. | Bảng kê suất ăn phục vụ vận hành và báo cáo |
@@ -34,7 +34,7 @@ Xác định số suất ăn theo lớp và theo bữa, thông báo thực đơn
 
 - Thực đơn đã duyệt theo ngày và bữa, đăng ký ăn sáng và thông báo nghỉ nếu bữa sáng chốt trước điểm danh.
 - Danh sách trẻ theo lớp và kết quả điểm danh từ **nghiệp vụ 03 – Điểm danh và theo dõi chuyên cần**.
-- Thông tin dị ứng hoặc kiêng ăn từ **nghiệp vụ 01 – Tiếp nhận và quản lý hồ sơ trẻ**, cùng các lưu ý áp dụng trong ngày.
+- Thông tin dị ứng hoặc kiêng ăn từ **nghiệp vụ 01 – Tiếp nhận và quản lý hồ sơ trẻ** (chỉ xem). Gồm lưu ý đã được phó hiệu trưởng chuyên môn xác nhận và cảnh báo lưu ý đang chờ xác nhận theo QT-HS-06. Giáo viên và bếp không sửa lưu ý tại NV07. Thông tin mới từ phụ huynh được chuyển văn phòng cập nhật ở NV01.
 - Phản hồi của phụ huynh về thực đơn và lịch đón, gồm mã trẻ, ngày, bữa và giờ dự kiến đón.
 - Thông báo làm thay đổi số suất, gồm trẻ liên quan, bữa bị ảnh hưởng, lý do và thời điểm báo.
 

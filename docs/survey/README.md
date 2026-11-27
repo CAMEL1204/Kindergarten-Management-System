@@ -76,7 +76,7 @@ Mỗi hệ thống con phục vụ **một bộ phận** và chỉ chứa nhữn
 | --- | --- |
 | Quản lý tài khoản và phân quyền người dùng. Khóa tài khoản khi nhân sự nghỉ việc (nghiệp vụ 04). | Nhập điểm danh, đón trả trẻ. |
 | Danh mục dùng chung: năm học, nhóm tuổi, ca làm việc, định mức giáo viên theo nhóm tuổi (mục 6). | Lập bảng phải thu, ghi thu tiền, in biên lai. |
-| Duyệt: tiếp nhận hồ sơ trẻ, phương án xếp lớp, phân công giáo viên, biểu phí và miễn giảm, thực đơn, biến động nhân sự. | Lập thực đơn, chốt suất ăn. |
+| Duyệt: tiếp nhận hồ sơ trẻ, lưu ý chăm sóc của trẻ (phó hiệu trưởng chuyên môn xác nhận), phương án xếp lớp, phân công giáo viên, biểu phí và miễn giảm, thực đơn, biến động nhân sự. | Lập thực đơn, chốt suất ăn. Ghi hoặc sửa lưu ý chăm sóc. |
 | Duyệt hoặc từ chối yêu cầu đón hộ đột xuất sau khi đối chiếu căn cứ xác minh (NV08). Có thể giao quyền duyệt ngoại lệ cho người được chỉ định. | Ghi lượt trả thuộc quyền giao nhận. |
 | Hộp báo cáo nhận được từ các bộ phận: xem, phản hồi, yêu cầu bổ sung, duyệt (nghiệp vụ 09). | Tự sinh báo cáo thay cho bộ phận. |
 | Bảng tổng hợp toàn trường lấy từ các báo cáo **đã duyệt**. | Lập phương án phân công (chỉ duyệt). |
@@ -85,7 +85,7 @@ Mỗi hệ thống con phục vụ **một bộ phận** và chỉ chứa nhữn
 
 | Có | Không có |
 | --- | --- |
-| Tiếp nhận và quản lý hồ sơ trẻ, danh sách người đưa đón trẻ (nghiệp vụ 01). | Thu tiền, công nợ. |
+| Tiếp nhận và quản lý hồ sơ trẻ, danh sách người đưa đón trẻ, lưu ý chăm sóc của trẻ (dị ứng, ăn uống, sức khỏe) theo thông báo của phụ huynh hoặc đề nghị của giáo viên (nghiệp vụ 01). | Thu tiền, công nợ. |
 | Xếp lớp, chuyển lớp, thôi học (nghiệp vụ 02). | Thực đơn, suất ăn. |
 | Hồ sơ giáo viên và nhân viên (nghiệp vụ 04). Lập phương án phân công và sắp xếp dạy thay (nghiệp vụ 05). | Điểm danh từng trẻ. |
 | Ghi nhận báo nghỉ của phụ huynh khi phụ huynh báo qua văn phòng (nghiệp vụ 08). Xem tình hình đón trả toàn trường. | |
@@ -99,7 +99,7 @@ Chỉ thấy **lớp mình được phân công trong ngày** (nghiệp vụ 05)
 | --- | --- |
 | Đón, trả trẻ theo nhóm. Khi trả, xác nhận riêng người nhận thực tế và giờ giao từng trẻ. Ghi báo nghỉ, tiếp nhận và trình duyệt đón hộ (NV08). | Học phí, công nợ, biên lai, thông báo học phí. |
 | Ghi có mặt từ lượt đón theo mốc khóa. Xác minh vắng và đề nghị điều chỉnh chuyên cần (nghiệp vụ 03). | Lập thực đơn. Chỉ xem thực đơn của lớp mình và lưu ý dị ứng của trẻ. |
-| Xác nhận danh sách ăn và số suất của lớp (nghiệp vụ 07). | Hồ sơ nhân sự, xếp lớp. |
+| Xác nhận danh sách ăn và số suất của lớp (nghiệp vụ 07). Gửi đề nghị cập nhật lưu ý chăm sóc của trẻ lớp mình (nghiệp vụ 01). | Hồ sơ nhân sự, xếp lớp. Sửa trực tiếp lưu ý chăm sóc. |
 | Xem lịch phân công của mình, gửi báo nghỉ của bản thân (nghiệp vụ 05). | Lập phân công. |
 | Lập, ghi chú và gửi báo cáo lớp: chuyên cần, tình hình trẻ. | |
 
@@ -119,7 +119,7 @@ Chỉ thấy **lớp mình được phân công trong ngày** (nghiệp vụ 05)
 | --- | --- |
 | Lập thực đơn theo ngày, bữa, trình duyệt (nghiệp vụ 07). | Tiền ăn, học phí, công nợ. |
 | Tổng hợp số suất từ các lớp, giao nhận suất ăn. | Điểm danh, đón trả trẻ. |
-| Xem danh sách trẻ dị ứng hoặc chế độ ăn riêng. | Hồ sơ nhân sự. |
+| Xem danh sách trẻ dị ứng hoặc chế độ ăn riêng, gồm cảnh báo lưu ý đang chờ xác nhận. | Hồ sơ nhân sự. Ghi hoặc sửa lưu ý chăm sóc. |
 | Lập, ghi chú và gửi báo cáo suất ăn. | |
 
 ### 5.6. Đối tượng ngoài hệ thống
@@ -129,6 +129,7 @@ Phụ huynh **không có hệ thống con** trong phạm vi đề xuất. Mọi 
 | Thông tin từ phụ huynh | Kênh hiện tại | Ai nhập vào hệ thống |
 | --- | --- | --- |
 | Hồ sơ trẻ, người đưa đón | Nộp tại văn phòng | Văn phòng (nghiệp vụ 01) |
+| Dị ứng, chế độ ăn, lưu ý sức khỏe | Nộp tại văn phòng hoặc báo giáo viên | Văn phòng ghi. Giáo viên chỉ gửi đề nghị cập nhật (nghiệp vụ 01) |
 | Báo nghỉ cho trẻ | Zalo, điện thoại, sổ liên lạc | Giáo viên lớp, hoặc văn phòng nếu phụ huynh báo qua văn phòng (nghiệp vụ 08) |
 | Báo đón hộ đột xuất | Điện thoại hoặc tin nhắn qua kênh đã đăng ký | Giáo viên hoặc nhân sự trực được giao quyền NV08 ghi nhận căn cứ và chuyển duyệt |
 | Đơn miễn giảm | Nộp tại văn phòng hoặc kế toán | Kế toán (nghiệp vụ 06) |
@@ -150,6 +151,7 @@ Các danh mục này không thuộc riêng nghiệp vụ nào nhưng nhiều ngh
 | Khung đón, mốc bàn giao buổi sáng, giờ khóa chuyên cần, khung trả và giờ chốt từng bữa | Ban giám hiệu | — | 03, 07, 08 theo từng mốc |
 | Biểu phí, danh mục miễn giảm | Kế toán (nghiệp vụ 06) | Ban giám hiệu | 06 |
 | Tài khoản và vai trò người dùng | Ban giám hiệu | — | Tất cả |
+| Lưu ý chăm sóc của trẻ (dị ứng, chế độ ăn, sức khỏe) | Văn phòng (NV01). Giáo viên gửi đề nghị cập nhật | Phó hiệu trưởng chuyên môn (Ban giám hiệu) | NV07 và giáo viên lớp xem theo QT-HS-06 |
 | Người giám hộ và ủy quyền cố định nhận trẻ | Văn phòng (NV01) | Theo quy trình xác nhận hồ sơ NV01 | NV08 tra quyền tại thời điểm trả |
 | Hồ sơ đón hộ đột xuất và lượt trả | Giáo viên hoặc nhân sự trực được giao quyền (NV08) | Ban giám hiệu hoặc người được giao duyệt đối với yêu cầu đón hộ đột xuất | NV08, NV09 dùng số liệu tổng hợp theo quyền |
 
@@ -162,7 +164,7 @@ Ký hiệu: **T** tạo và sửa, **D** duyệt, **X** chỉ xem hoặc nhận 
 | Nghiệp vụ | Ban giám hiệu | Văn phòng | Giáo viên | Kế toán | Bếp |
 | --- | --- | --- | --- | --- | --- |
 | 00 Danh mục dùng chung, tài khoản | T | T (lớp) | — | T (biểu phí) | — |
-| 01 Hồ sơ trẻ | D | T | X (lớp mình) | — | X (dị ứng) |
+| 01 Hồ sơ trẻ | D (gồm xác nhận lưu ý chăm sóc) | T (gồm lưu ý chăm sóc) | X (lớp mình), T (đề nghị cập nhật lưu ý) | — | X (dị ứng, chế độ ăn riêng) |
 | 02 Xếp lớp | D | T | X (lớp mình) | X | — |
 | 03 Điểm danh | X, D (điều chỉnh sau khóa) | X | T (xác minh, đề nghị điều chỉnh cho lớp mình) | X (tổng hợp chuyên cần theo kỳ) | X (căn cứ bàn giao cho NV07) |
 | 04 Hồ sơ nhân sự | D | T | — | — | — |
