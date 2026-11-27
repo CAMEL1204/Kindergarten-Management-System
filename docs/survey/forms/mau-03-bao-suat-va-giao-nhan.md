@@ -1,6 +1,8 @@
 # Mẫu 03 · Phiếu báo suất ăn và giao nhận
 
 > Biểu mẫu minh họa do nhóm xây dựng. Các mốc giờ, thực đơn, số suất và xác nhận đều là dữ liệu mô phỏng.
+>
+> **Cách đọc mẫu.** Mục 1 và mục 2 tương ứng sổ báo cơm và sổ giao nhận suất ăn hiện trạng. Cột số chốt ban đầu, điều chỉnh được xác nhận và số cần giao theo QT-SA-04, QT-SA-05 là cách ghi đề xuất cho hệ thống mới, dùng làm dữ liệu kiểm thử.
 
 **Mã mẫu:** SA-01 / SA-02 / SA-03  
 **Ngày:** 14/10/2026  

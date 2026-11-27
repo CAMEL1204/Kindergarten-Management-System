@@ -2,6 +2,24 @@
 
 > Hồ sơ khảo sát theo kịch bản mô phỏng. Cách chia hệ thống con là phương án của nhóm. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
+## Đặt vấn đề và ý nghĩa của hệ thống
+
+**Đặt vấn đề.** Trong kịch bản, Trường Mầm non Hoa Hướng Dương có 135 trẻ, 5 lớp và 18 nhân sự. Thông tin được ghi ở nhiều nơi: sổ giấy cho điểm danh, giao nhận trẻ và báo cơm, Excel cho lớp và học phí, Zalo và điện thoại cho báo nghỉ và nhận trẻ hộ. Cách làm này gây ra các vấn đề sau:
+
+- Cùng một sự việc được ghi nhiều lần ở nhiều sổ nên số liệu lệch nhau: trẻ đã đón vẫn bị ghi vắng, số báo bếp khác số có mặt, danh sách lớp in sẵn chưa cập nhật chuyển lớp.
+- Kế toán tính tiền ăn bằng tay từ sổ điểm danh, dễ sai khi có ngày nghỉ, chuyển lớp hoặc ngày chưa chốt.
+- Việc giao trẻ dựa vào trí nhớ của giáo viên, khó kiểm soát khi người nhận lạ hoặc giáo viên dạy thay không biết mặt phụ huynh.
+- Lưu ý dị ứng, phân công giáo viên và hồ sơ nhân sự không có một nơi cập nhật chung, nên bộ phận khác dễ dùng thông tin cũ.
+- Báo cáo gửi qua tin nhắn hoặc giấy, Ban giám hiệu khó biết bản nào là bản cuối và số liệu do ai xác nhận.
+
+**Ý nghĩa của hệ thống.** Hệ thống thông tin quản lý nhà trẻ giúp trường:
+
+- Có **một nguồn dữ liệu** cho mỗi loại thông tin, các bộ phận nhận số liệu đã chốt thay vì chép lại.
+- **Giao trẻ an toàn hơn** nhờ kiểm tra người nhận theo danh sách còn hiệu lực và lưu vết mọi ngoại lệ.
+- **Tính tiền đúng và giải thích được** nhờ đối soát tiền ăn theo chuyên cần đã khóa và giữ căn cứ trên từng dòng.
+- **Tra lại lịch sử** lớp, phân công, hồ sơ và điều chỉnh tại một ngày bất kỳ.
+- **Báo cáo có người chịu trách nhiệm**, tổng hợp toàn trường từ các báo cáo đã duyệt.
+
 ## 1. Thông tin khảo sát
 
 Do nhóm chưa thể khảo sát trực tiếp tại trường, phần hiện trạng mô tả quy trình giả định. Các ngày, tên và xác nhận trong biểu mẫu phục vụ minh họa và đối soát giữa các nghiệp vụ.
@@ -10,7 +28,7 @@ Do nhóm chưa thể khảo sát trực tiếp tại trường, phần hiện tr
 | --- | --- |
 | Cơ sở mô phỏng | Trường Mầm non Hoa Hướng Dương (tên giả định), một trường tư thục tại Hà Nội. |
 | Quy mô | 135 trẻ. Năm lớp gồm Nhà trẻ 1 (20 trẻ), Mầm 1 (25), Mầm 2 (25), Chồi 1 (32) và Lá 1 (33). |
-| Nhân sự | 18 người gồm 1 hiệu trưởng, 1 phó hiệu trưởng chuyên môn kiêm điều phối nhân sự, 1 nhân viên văn phòng kiêm kế toán, 10 giáo viên, 3 cấp dưỡng và 2 bảo vệ hỗ trợ tại cổng. Giáo viên ghi nhận giao nhận trong các mẫu. |
+| Nhân sự | 18 người gồm 1 hiệu trưởng, 1 phó hiệu trưởng chuyên môn kiêm điều phối nhân sự (có bằng giáo dục mầm non, dạy thay khi thiếu giáo viên), 1 nhân viên văn phòng kiêm kế toán, 10 giáo viên, 3 cấp dưỡng và 2 bảo vệ hỗ trợ tại cổng. Giáo viên ghi nhận giao nhận trong các mẫu. |
 | Người thực hiện | TV1, TV2 |
 | Công cụ trong kịch bản | Sổ giấy để theo dõi giao nhận trẻ và suất ăn. Excel để theo dõi lớp và học phí. Zalo hoặc điện thoại để nhận báo nghỉ và thông tin người nhận trẻ hộ. |
 | Phương pháp xây dựng hồ sơ | Tổng hợp mô tả quy trình đã có, dựng biểu mẫu và kiểm tra chéo theo mã trẻ, lớp, ngày và kỳ. Vai trò kiêm nhiệm thuộc kịch bản mô phỏng. Phương án tính tiền ăn của đồ án nêu tại NV06. |
@@ -24,8 +42,12 @@ Do nhóm chưa thể khảo sát trực tiếp tại trường, phần hiện tr
 | [03. Báo suất và giao nhận](forms/mau-03-bao-suat-va-giao-nhan.md) | 07 | Số chốt riêng theo bữa, điều chỉnh sau chốt và số thực nhận. |
 | [04. Thông báo phải thu và biên lai](forms/mau-04-hoc-phi-va-bien-lai.md) | 06 | Tạm thu theo lịch học, giảm trừ kỳ trước và một lần thanh toán chuyển khoản. |
 | [05. Báo cáo tổng hợp tháng](forms/mau-05-bao-cao-thang.md) | 02, 09 | Tổng hợp chỉ tiêu từ các bản nguồn đã duyệt trong kịch bản. |
+| [06. Hồ sơ nhân sự và biến động](forms/mau-06-ho-so-nhan-su.md) | 04, 05 | Hồ sơ kèm bằng cấp, chứng chỉ, giấy tờ và một lần tạm nghỉ làm thiếu giáo viên. |
+| [07. Phân công và dạy thay](forms/mau-07-phan-cong-va-day-thay.md) | 05, 03, 08 | Bảng phân công năm học, phiếu dạy thay khi không có giáo viên trống ca và tổng hợp ca tháng. |
 
-Các mẫu trên cung cấp dữ liệu kiểm tra cho phân tích. Tại tiêu chí **biểu mẫu thật** (checklist mục 3.1), hồ sơ hiện có biểu mẫu do nhóm mô phỏng và chưa có biểu mẫu thu trực tiếp từ cơ sở.
+Các mẫu trên cung cấp dữ liệu kiểm tra cho phân tích. Mẫu 02, 03 và 05 có thêm phần ghi theo luồng của hệ thống mới, được ghi rõ ở đầu từng mẫu.
+
+**Tình trạng minh chứng.** Tất cả biểu mẫu trong phụ lục do nhóm mô phỏng. Tại tiêu chí **biểu mẫu thật** (checklist mục 3.1), hồ sơ chưa có biểu mẫu thu trực tiếp từ cơ sở. Việc còn mở: xin mẫu trắng hoặc bản đã che thông tin của các mẫu có mã HS, DD, SA, HP, NS và PC ghi ở mục 6 từng nghiệp vụ, rồi đối chiếu với phụ lục mô phỏng.
 
 ## 2. Danh sách nghiệp vụ khảo sát
 
@@ -243,3 +265,43 @@ Checklist yêu cầu ≥8 quy tắc cho cả nhóm, mỗi thành viên ≥4, tro
 | QT-DT-05 | 08 Đón trả trẻ, 05 Phân công | 03 Điểm danh | NV08 dùng phân công hoặc quyền trực được giao để kiểm tra giao nhận. NV03 kiểm tra quyền làm việc trên lớp theo quy tắc chuyên cần. |
 
 **Luồng thống nhất cho hệ thống mới.** NV08 ghi báo nghỉ và lượt giao nhận thực tế. NV03 dùng báo nghỉ để xác minh vắng và dùng lượt đón làm nguồn tạo có mặt. Trước giờ khóa, chuyên cần cập nhật trực tiếp. Từ giờ khóa, lượt đón phát sinh đề nghị điều chỉnh có duyệt. Danh sách trả căn cứ vào lượt đón và lượt trả. Quy trình ghi sổ thủ công thuộc hiện trạng mô phỏng ở mục 3 của từng nghiệp vụ.
+
+## 9. Phạm vi hệ thống mới
+
+**Trong phạm vi**
+
+| Nội dung | Phạm vi |
+| --- | --- |
+| Đơn vị sử dụng | Một trường mầm non, nhiều lớp, dữ liệu theo năm học |
+| Nghiệp vụ | 9 nghiệp vụ ở mục 2, cùng quản trị tài khoản và danh mục dùng chung (F1.0) |
+| Người dùng | Nhân sự của trường qua 5 hệ thống con ở mục 5. Một người kiêm nhiều vai trò được cấp nhiều hệ thống con. |
+| Dữ liệu từ phụ huynh | Do nhân viên nhà trường nhập theo mục 5.6 |
+| Đầu ra cho phụ huynh | Thông báo học phí, biên lai và thực đơn được in hoặc gửi qua kênh liên lạc hiện có của trường |
+
+**Ngoài phạm vi**
+
+| Nội dung | Lý do hoặc cách xử lý |
+| --- | --- |
+| Ứng dụng hoặc cổng thông tin cho phụ huynh | Phụ huynh không có hệ thống con. Có thể bổ sung ở giai đoạn sau (mục 7, câu hỏi xác minh). |
+| Lương, chấm công, bảo hiểm và hợp đồng lao động | NV04 chỉ quản lý hồ sơ, chứng chỉ và trạng thái làm việc. NV05 chỉ tổng hợp số ca đứng lớp làm căn cứ. |
+| Kho thực phẩm, nhập xuất nguyên liệu, định lượng dinh dưỡng | NV07 dừng ở thực đơn, số suất và giao nhận suất ăn. |
+| Theo dõi sức khỏe định kỳ, cân đo, tiêm chủng | NV01 chỉ lưu lưu ý chăm sóc cần cho vận hành hằng ngày. |
+| Chương trình học và đánh giá sự phát triển của trẻ | Không thuộc các nghiệp vụ đã khảo sát. |
+| Kết nối ngân hàng, cổng thanh toán, hóa đơn điện tử | Kế toán đối chiếu chuyển khoản thủ công theo mã nội dung (YC-HP-03). |
+| Liên thông cơ sở dữ liệu ngành giáo dục | Không thuộc phạm vi đồ án. |
+| Phí trông trẻ muộn | Chưa đưa vào biểu phí, chờ xác minh theo câu hỏi ở NV08. |
+
+## 10. Yêu cầu phi chức năng
+
+| Mã | Nhóm | Yêu cầu | Căn cứ |
+| --- | --- | --- | --- |
+| NFR-01 | Phân quyền | Mỗi người dùng chỉ thấy và thao tác chức năng của hệ thống con được cấp, trong phạm vi lớp, ngày hoặc dữ liệu được giao. Quyền được kiểm tra ở tầng nghiệp vụ, không chỉ ẩn nút trên giao diện. Tối thiểu 3 vai trò. | Mục 4, 5, 7. Checklist 1.1, 3.3 |
+| NFR-02 | Bảo mật | Mật khẩu lưu dạng băm. Tài khoản gắn với hồ sơ nhân sự và bị khóa từ ngày tạm nghỉ hoặc nghỉ việc có hiệu lực. | YC-NS-05. Checklist 2.2 |
+| NFR-03 | Riêng tư | Số CCCD được che trên danh sách và báo cáo thông thường. Thông tin nhân sự nhạy cảm chỉ người được phân quyền xem. | YC-HS-05, QT-NS-04 |
+| NFR-04 | Truy vết | Không xóa cứng hồ sơ, biên lai, lượt giao nhận và kết quả đã chốt. Mọi sửa đổi lưu giá trị trước và sau, lý do, người thực hiện, người duyệt và thời điểm. | QT-HS-04, QT-DD-03, QT-HP-04, QT-BC-03 |
+| NFR-05 | Toàn vẹn giao dịch | Các thao tác ghi nhiều bản ghi cùng lúc (chuyển lớp hai đầu, thay phân công, đón hoặc trả theo nhóm, lập bảng phải thu, phân bổ thanh toán) thành công trọn vẹn hoặc hoàn tác toàn bộ. | QT-XL-03, QT-PC-04, QT-DT-03, QT-HP-07. Checklist 2.2 |
+| NFR-06 | Kiểm tra dữ liệu | Dữ liệu sai được chặn ở cả giao diện và tầng nghiệp vụ, kể cả dữ liệu đi qua ranh giới giữa hai phân hệ. | Checklist 2.1 |
+| NFR-07 | Hiệu năng | Đón hoặc trả một lớp đông nhất (33 trẻ) trong một lần xác nhận. Tra cứu, lọc và báo cáo trên dữ liệu một năm học của toàn trường phản hồi không gây treo giao diện. | YC-DT-02. Checklist 2.3 |
+| NFR-08 | Cấu hình | Mốc giờ, bữa ăn, ca làm việc, định mức và biểu phí được cấu hình bởi người có quyền, không phải sửa chương trình. Chuỗi kết nối và tham số chung đặt trong một tệp cấu hình duy nhất. | Mục 6. Checklist 2.3 |
+| NFR-09 | Định dạng | Tiền hiển thị dạng `#,##0` đồng, ngày `dd/MM/yyyy`, giờ `HH:mm`. Xuất Excel hoặc PDF không lỗi phông tiếng Việt. | Checklist 1.2, 2.1 |
+| NFR-10 | Tính dễ dùng | Giao diện các hệ thống con dùng chung bố cục và cách thao tác. Thao tác nhiều trẻ dùng một cách chọn rồi xác nhận duy nhất. | NV08 §9.3. Checklist 2.1 |

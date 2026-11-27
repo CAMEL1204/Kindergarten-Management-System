@@ -1,17 +1,17 @@
 # 09. Lập, ghi chú và gửi báo cáo
 
-> Bản khảo sát sơ bộ để phỏng vấn. Quy trình gửi báo cáo bằng giấy và tin nhắn, loại báo cáo, hạn gửi và các trạng thái dưới đây là giả định làm việc và phương án đề xuất, chờ cơ sở khảo sát xác nhận. Căn cứ lập hồ sơ khảo sát gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
-Báo cáo đi **từ bộ phận lên Ban giám hiệu**. Mỗi bộ phận (giáo viên, văn phòng, kế toán, bếp) tự lập báo cáo trong phạm vi công việc của mình, thêm ghi chú để giải thích số liệu, rồi **gửi** cho Ban giám hiệu. Ban giám hiệu **không có báo cáo sẵn** của các bộ phận: Ban giám hiệu chỉ nhận các báo cáo đã gửi, xem, phản hồi, yêu cầu bổ sung hoặc duyệt. Số liệu toàn trường được tổng hợp từ các báo cáo đã duyệt, nên mỗi con số đều có bộ phận đứng tên xác nhận.
+Các bộ phận (giáo viên, văn phòng, kế toán, bếp) lập báo cáo định kỳ hoặc đột xuất về công việc của mình, giải thích số liệu bất thường và nộp cho Ban giám hiệu. Ban giám hiệu xem, yêu cầu sửa khi cần và cộng số liệu thành báo cáo toàn trường để họp hoặc gửi cấp trên.
 
 ## 2. Đối tượng tham gia
 
 | Đối tượng | Công việc |
 | --- | --- |
-| Người lập báo cáo (giáo viên, văn phòng, kế toán, bếp) | Tạo báo cáo từ số liệu đã chốt, thêm ghi chú, đính kèm minh chứng, gửi và sửa khi được yêu cầu bổ sung. |
-| Ban giám hiệu (admin) | Quy định loại báo cáo và hạn gửi. Nhận báo cáo, xem, phản hồi, yêu cầu bổ sung hoặc duyệt, theo dõi báo cáo nộp muộn. |
+| Người lập báo cáo (giáo viên, văn phòng, kế toán, bếp) | Cộng số liệu từ sổ và bảng tính của bộ phận, nhập vào mẫu Word hoặc Excel, gửi Ban giám hiệu và sửa khi được yêu cầu. |
+| Ban giám hiệu | Giao loại báo cáo và hạn nộp. Đọc báo cáo, yêu cầu sửa, cộng số liệu toàn trường. |
 
 ## 3. Quy trình nghiệp vụ hiện tại
 
@@ -96,6 +96,8 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 
 ## 9. Yêu cầu đối với hệ thống mới
 
+Trong hệ thống mới, báo cáo đi **từ bộ phận lên Ban giám hiệu**. Mỗi bộ phận tự lập báo cáo trong phạm vi của mình từ **số liệu đã chốt**, thêm ghi chú rồi **gửi**. Ban giám hiệu **không có báo cáo sẵn** của các bộ phận: Ban giám hiệu chỉ nhận các báo cáo đã gửi, xem, phản hồi, yêu cầu bổ sung hoặc duyệt. Số liệu toàn trường được tổng hợp từ các báo cáo đã duyệt, nên mỗi con số đều có bộ phận đứng tên xác nhận.
+
 ### 9.1. Loại báo cáo theo hệ thống con
 
 | Hệ thống con | Báo cáo | Kỳ | Hạn gửi đề xuất |
@@ -103,7 +105,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | Giáo viên | Chuyên cần của lớp, gồm đến muộn và trả muộn. Tình hình trẻ trong lớp (sức khỏe, sự việc cần lưu ý). | Tuần hoặc tháng; đột xuất khi có sự việc | Thứ hai tuần sau hoặc ngày 5 tháng sau; đột xuất trong ngày |
 | Văn phòng | Tuyển sinh, hồ sơ chờ bổ sung. Sĩ số và biến động. Nhân sự (vào làm, nghỉ việc, chứng chỉ hết hạn). Phân công và dạy thay. | Tháng | Ngày 5 tháng sau |
 | Kế toán | Thu học phí: phải thu, đã thu, còn nợ. Danh sách nợ quá hạn. Miễn giảm, hoàn tiền. | Tháng | Ngày 5 tháng sau |
-| Bếp | Số suất ăn đã giao theo lớp và bữa. Thực phẩm đã dùng nếu trường yêu cầu. | Tuần hoặc tháng | Thứ hai tuần sau hoặc ngày 5 tháng sau |
+| Bếp | Số suất ăn đã chốt, đã giao và chênh lệch theo lớp và bữa. | Tuần hoặc tháng | Thứ hai tuần sau hoặc ngày 5 tháng sau |
 
 Mỗi bộ phận chỉ thấy loại báo cáo của mình. Ví dụ, kế toán không có báo cáo suất ăn hay báo cáo chuyên cần. Hạn gửi là giả định, chờ ban giám hiệu xác nhận.
 

@@ -1,10 +1,10 @@
 # 06. Lập khoản phải thu và thu học phí
 
-> Quy trình dùng sổ giấy và bảng tính là hiện trạng mô phỏng. Quy tắc tạm thu và đối soát tiền ăn ở mục 7 là phương án của đồ án. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Quy tắc tạm thu, đối soát tiền ăn, tính khoản tháng và phân bổ thanh toán ở mục 7 là phương án của đồ án. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
-Lập các khoản phải thu của từng trẻ theo kỳ thu (thường là tháng), gồm học phí, tiền ăn và các khoản khác theo biểu phí của trường. Ghi nhận các lần thu, theo dõi công nợ và xuất biên lai cho phụ huynh. Tiền ăn tạm thu theo số ngày trẻ dự kiến đi học. Cuối kỳ, kế toán đối soát theo số ngày có mặt đã xác nhận của NV03 và chuyển chênh lệch sang kỳ sau.
+Lập các khoản phải thu của từng trẻ theo kỳ thu (thường là tháng), gồm học phí, tiền ăn và các khoản khác theo biểu phí của trường. Ghi nhận các lần thu, theo dõi công nợ và xuất biên lai cho phụ huynh. Tiền ăn tạm thu theo số ngày trẻ dự kiến đi học. Cuối kỳ, kế toán đối chiếu số ngày có mặt trên sổ chuyên cần và chuyển chênh lệch sang kỳ sau.
 
 ## 2. Đối tượng tham gia
 
@@ -12,8 +12,8 @@ Lập các khoản phải thu của từng trẻ theo kỳ thu (thường là th
 | --- | --- |
 | Kế toán hoặc nhân viên thu phí | Lập bảng phải thu theo kỳ, gửi thông báo, ghi nhận thu tiền, xuất biên lai và theo dõi công nợ. |
 | Ban giám hiệu hoặc người được phân quyền | Ban hành biểu phí, duyệt miễn giảm, duyệt điều chỉnh hoặc hoàn tiền và xem báo cáo thu. |
-| Phụ huynh hoặc người giám hộ | Nhận thông báo, nộp tiền bằng tiền mặt hoặc chuyển khoản, đề nghị miễn giảm và nhận biên lai. Không trực tiếp dùng hệ thống. |
-| Giáo viên và văn phòng | Cung cấp căn cứ tính tiền ăn: NV02 cung cấp lịch sử thuộc lớp, NV03 cung cấp chuyên cần đã khóa và các điều chỉnh đã duyệt. |
+| Phụ huynh hoặc người giám hộ | Nhận thông báo, nộp tiền bằng tiền mặt hoặc chuyển khoản, đề nghị miễn giảm và nhận biên lai. |
+| Giáo viên và văn phòng | Cung cấp căn cứ tính tiền ăn: văn phòng gửi danh sách trẻ theo lớp trong kỳ, giáo viên gửi sổ chuyên cần đã cộng của tháng. |
 
 ## 3. Quy trình nghiệp vụ hiện tại
 
@@ -112,4 +112,4 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | YC-HP-03 | Ghi nhận thu tiền theo nhiều hình thức, cho phép nộp thiếu hoặc nộp gộp, in biên lai. Tự phân bổ số tiền vào các bảng phải thu và ghi số dư có theo QT-HP-07. Hỗ trợ mã nội dung chuyển khoản theo trẻ và kỳ để đối chiếu. |
 | YC-HP-06 | Khi lập bảng phải thu, tự tính khoản tháng theo tỷ lệ cho trẻ vào học, thôi học hoặc bảo lưu trong kỳ theo QT-HP-06 và lưu số ngày dùng để tính trên từng dòng. |
 | YC-HP-04 | Theo dõi công nợ theo trẻ, lớp và kỳ. Xuất danh sách nhắc nợ. Lập báo cáo phải thu, đã thu, còn nợ, thêm ghi chú và gửi Ban giám hiệu theo nghiệp vụ 09. Lưu lịch sử điều chỉnh và hoàn tiền kèm người duyệt. |
-| YC-HP-05 | Hệ thống con Kế toán gồm chức năng thu phí, đối soát tiền ăn và công nợ. Kế toán nhận ở chế độ chỉ đọc lịch học, khoảng thời gian trẻ thuộc diện đi học và số liệu chuyên cần theo kỳ. |
+| YC-HP-05 | Hệ thống con Kế toán gồm chức năng thu phí, đối soát tiền ăn và công nợ. Kế toán nhận ở chế độ chỉ đọc lịch học, khoảng thời gian trẻ thuộc diện đi học (NV02) và số ngày có mặt đã khóa, gồm điều chỉnh đã duyệt (NV03). Phụ huynh không trực tiếp dùng hệ thống. |

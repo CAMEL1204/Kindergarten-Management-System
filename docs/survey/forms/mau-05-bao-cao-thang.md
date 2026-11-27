@@ -1,6 +1,8 @@
 # Mẫu 05 · Báo cáo tổng hợp tháng
 
 > Biểu mẫu minh họa do nhóm xây dựng. Số liệu tổng hợp, trạng thái và xác nhận đều là dữ liệu mô phỏng.
+>
+> **Cách đọc mẫu.** Các chỉ tiêu ở mục 2 và mục 3 tương ứng báo cáo tháng hiện trạng. Cột "Bản nguồn đã duyệt" và trạng thái `Đã duyệt` thuộc luồng báo cáo đề xuất ở NV09 §9, dùng làm dữ liệu kiểm thử cho bảng tổng hợp toàn trường.
 
 **Mã mẫu:** BC-05, nhận số liệu theo BC-01 đến BC-04  
 **Kỳ báo cáo:** Tháng 09/2026 · **Ngày chốt dữ liệu:** 30/09/2026  
@@ -40,6 +42,6 @@ Tỷ lệ toàn trường bằng 2.548 / 2.693, nhân 100 và làm tròn một c
 | Thực thu cho kỳ đến 30/09 | 461.200.000 đồng | Báo cáo kế toán tháng 09, tương đương 98,4% phải thu |
 | **Còn phải thu tại 30/09** | **7.300.000 đồng** | Phải thu trừ thực thu |
 
-**Người tổng hợp:** Phạm Thu Hà (vai trò văn phòng trong kịch bản). **Người duyệt bản tổng hợp:** Lê Minh Tâm (hiệu trưởng).
+**Ghép số liệu:** bảng tổng hợp toàn trường ghép từ các bản nguồn đã duyệt ở mục 1, không do bộ phận nào nhập lại (NV09 §9.3, bước 6). **Người xem và sử dụng:** Lê Minh Tâm (hiệu trưởng).
 
 [Mẫu 02](mau-02-diem-danh-giao-nhan.md) và [mẫu 03](mau-03-bao-suat-va-giao-nhan.md) minh họa cách ghi số liệu nguồn theo ngày trong **tháng 10**. Bảng tháng 09 ở trên dùng các số tổng hợp mô phỏng riêng cho đúng kỳ báo cáo.

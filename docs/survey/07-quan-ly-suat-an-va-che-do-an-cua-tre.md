@@ -1,6 +1,6 @@
 # 07. Quản lý suất ăn và chế độ ăn của trẻ
 
-> Bản khảo sát sơ bộ. Các vai trò lập và duyệt thực đơn, cách dự kiến bữa sáng và mốc chốt dưới đây là phương án đề xuất để đối chiếu với trường.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -22,13 +22,20 @@ Xác định số suất ăn theo lớp và theo bữa, thông báo thực đơn
 | Bước | Người thực hiện | Địa điểm và thời điểm | Cách thực hiện | Kết quả |
 | --- | --- | --- | --- | --- |
 | 1. Lập, duyệt thực đơn | Bếp trưởng và người duyệt | Tại bếp và văn phòng, trước kỳ áp dụng | Bếp trưởng lập thực đơn theo ngày, bữa. Người được giao duyệt xác nhận bản áp dụng và chuyển tới lớp, bếp. | Thực đơn đã duyệt |
-| 2. Thông báo thực đơn tuần | Nhà trường, giáo viên và phụ huynh | Đầu tuần, qua kênh liên lạc của trường | Nhà trường gửi thực đơn theo ngày và bữa. Phụ huynh báo lại nếu thực đơn có món liên quan đến dị ứng của trẻ và thống nhất giờ nhận trẻ về với giáo viên trước bữa đó. | Phản hồi và lịch về sớm theo trẻ, ngày và bữa |
+| 2. Thông báo thực đơn tuần | Nhà trường, giáo viên và phụ huynh | Đầu tuần, qua kênh liên lạc của trường | Giáo viên gửi thực đơn tuần theo ngày và bữa vào nhóm Zalo của lớp. Phụ huynh báo lại nếu thực đơn có món liên quan đến dị ứng của trẻ và thống nhất giờ nhận trẻ về với giáo viên trước bữa đó. | Phản hồi và lịch về sớm theo trẻ, ngày và bữa |
 | 3. Lập danh sách dự kiến | Giáo viên | Tại lớp, trước mỗi bữa | Nếu bữa sáng chốt trước điểm danh, dùng đăng ký ăn sáng và thông báo nghỉ đã nhận. Đối chiếu khi trẻ đến. Giáo viên dựa vào điểm danh và thông tin phát sinh trong ngày để xác nhận trẻ ăn từng bữa. Giáo viên đối chiếu phản hồi của phụ huynh với lưu ý trong hồ sơ và ghi nhận các bữa trẻ không ăn tại trường do được nhận về sớm. | Danh sách dự kiến |
-| 4. Chốt suất | Giáo viên | Tại lớp, theo giờ chốt từng bữa | Giáo viên xác nhận tổng số suất theo danh sách trẻ ăn bữa đó. Tùy trường, các bữa áp dụng gồm bữa sáng, bữa trưa và bữa xế. Khoảng **8h00–8h30** là mốc chốt đầu ngày tham khảo. Bữa sáng phục vụ sớm hoặc bữa phụ có nhiều biến động có thể có giờ chốt riêng. | Phiếu theo lớp và bữa |
-| 5. Chuyển phiếu | Giáo viên hoặc bếp trưởng | Từ lớp đến bếp, sau khi chốt | Giáo viên gửi phiếu trực tiếp hoặc qua bộ phận tổng hợp. Tùy trường, thông tin được chuyển bằng phiếu hoặc sổ báo cơm, nhóm trao đổi (chẳng hạn Zalo), file tổng hợp hoặc phần mềm. | Phiếu bếp tiếp nhận |
+| 4. Chốt suất | Giáo viên | Tại lớp, theo giờ chốt từng bữa | Giáo viên xác nhận tổng số suất theo danh sách trẻ ăn bữa đó. Trường phục vụ ba bữa: sáng, trưa và xế. Giáo viên báo số bữa sáng khoảng **07:30** và số bữa trưa, bữa xế khoảng **08:30**. | Phiếu theo lớp và bữa |
+| 5. Chuyển phiếu | Giáo viên hoặc bếp trưởng | Từ lớp đến bếp, sau khi chốt | Giáo viên ghi số vào sổ báo cơm đặt tại bếp. Khi không kịp xuống bếp, giáo viên nhắn số vào nhóm Zalo của bếp rồi ghi bổ sung vào sổ. Bếp trưởng cộng số của các lớp. | Phiếu bếp tiếp nhận |
 | 6. Điều chỉnh | Giáo viên và bếp | Tại lớp và bếp, khi có thay đổi | Khi trẻ đến muộn, báo nghỉ hoặc được nhận về sớm làm thay đổi bữa ăn, giáo viên báo cho bếp qua điện thoại, tin nhắn hoặc trao đổi trực tiếp. Bếp xác nhận số suất còn có thể thêm hoặc bớt theo tiến độ chuẩn bị và ghi nhận thời điểm báo. | Điều chỉnh đã xác nhận |
 | 7. Giao nhận | Bếp và giáo viên | Khi giao tại lớp | Bếp chuẩn bị theo số lượng đã xác nhận. Khi nhận, giáo viên và nhân viên bếp đối chiếu số suất theo lớp và bữa. Hai bên ghi nhận chênh lệch nếu có. | Số giao, thực nhận và chênh lệch |
 | 8. Đối chiếu | Bếp và giáo viên, văn phòng tổng hợp khi cần | Sau giao nhận hoặc cuối tháng | Đối chiếu phiếu chốt từng bữa, các điều chỉnh được xác nhận, số đã giao và số thực nhận. Kiểm tra nguyên nhân thiếu hoặc thừa nếu có. | Bảng kê suất ăn phục vụ vận hành và báo cáo |
+
+**Câu hỏi xác minh khi phỏng vấn bếp, giáo viên và ban giám hiệu**
+
+- Trường phục vụ những bữa nào? Giờ báo số của từng bữa là mấy giờ?
+- Khi thực đơn có món trẻ bị dị ứng, bếp nấu suất thay thế hay phụ huynh nhận trẻ về trước bữa? Kịch bản đồ án dùng phương án ở QT-SA-03.
+- Ai cộng số suất của các lớp: bếp trưởng hay văn phòng? Số liệu được lưu ở sổ báo cơm hay bảng tính?
+- Sau giờ báo số, bếp còn nhận tăng hoặc giảm suất đến mấy giờ?
 
 ## 4. Dữ liệu đầu vào
 
@@ -68,11 +75,11 @@ Phụ lục mô phỏng: [Mẫu 03 · Phiếu báo suất ăn và giao nhận](f
 
 - **QT-SA-06** Nếu thực đơn hoặc thông tin dị ứng thay đổi sau thông báo đầu tuần, giáo viên liên hệ lại với phụ huynh của trẻ bị ảnh hưởng để xác nhận lịch về sớm trước bữa. Nếu bữa đã chốt, giáo viên gửi điều chỉnh cho bếp và giữ số chốt ban đầu để đối chiếu.
 
-**Ví dụ.** Lớp có 23 trẻ dự kiến ăn trưa. Một phụ huynh báo sẽ nhận trẻ về trước bữa trưa vì thực đơn có món liên quan đến dị ứng của trẻ. Nếu các đăng ký còn lại giữ nguyên, giáo viên chốt 22 suất trưa. Nghiệp vụ 03 vẫn ghi nhận trẻ có mặt trong ngày và giờ về nếu trường có theo dõi.
+**Ví dụ.** Lớp có 23 trẻ dự kiến ăn trưa. Một phụ huynh báo sẽ nhận trẻ về trước bữa trưa vì thực đơn có món liên quan đến dị ứng của trẻ. Nếu các đăng ký còn lại giữ nguyên, giáo viên chốt 22 suất trưa. Nghiệp vụ 03 vẫn ghi nhận trẻ có mặt trong ngày, NV08 ghi giờ về thực tế.
 
 ## 8. Hạn chế của quy trình hiện tại
 
-Các hạn chế dưới đây có thể phát sinh ở trường gửi thông tin qua nhiều kênh hoặc đối chiếu thủ công.
+Trong kịch bản, trường dùng sổ báo cơm, tin nhắn và đối chiếu thủ công nên phát sinh các hạn chế sau.
 
 - Khi điểm danh, hồ sơ trẻ và phiếu báo cơm được lưu ở các nơi khác nhau, giáo viên phải đối chiếu nhiều nguồn để lập danh sách theo bữa.
 - Khi điều chỉnh được báo qua điện thoại hoặc tin nhắn, số liệu trên phiếu ban đầu có thể khác số bếp đang chuẩn bị nếu thay đổi chưa được ghi lại.

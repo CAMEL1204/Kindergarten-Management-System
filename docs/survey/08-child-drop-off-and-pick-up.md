@@ -1,24 +1,20 @@
 # 08. Đón trẻ, trả trẻ và tự động ghi nhận có mặt
 
-> Quy trình dùng sổ giấy là hiện trạng mô phỏng. Các mốc giờ, trạng thái và cách thao tác ở mục 9 là phương án cho hệ thống mới. Căn cứ lập hồ sơ khảo sát gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Mục 9.3 ghi cách thao tác nhóm đã thống nhất, sẽ chuyển sang tài liệu thiết kế khi bắt đầu giai đoạn thiết kế. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
-Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón trẻ) và giao trẻ cho người nhận trẻ (trả trẻ), để nhà trường biết tại mỗi thời điểm trẻ nào đang ở trường và ai đã nhận trẻ về. Trong hệ thống mới, **đón trẻ và điểm danh là một luồng dữ liệu**, không phải hai việc ghi riêng:
-
-- Lượt đón là căn cứ duy nhất tạo kết quả **có mặt** ở NV03. Trước giờ khóa, kết quả cập nhật tự động. Từ giờ khóa, lượt đón tạo đề nghị điều chỉnh chuyên cần.
-- Trẻ chưa được đón có kết quả chuyên cần theo xác minh của NV03. Ghi báo nghỉ chỉ cung cấp căn cứ xác minh.
-- Danh sách trả gồm trẻ **đã đón và chưa trả**, kể cả khi điều chỉnh chuyên cần đang chờ duyệt.
+Ghi nhận lúc giáo viên nhận trẻ từ phụ huynh buổi sáng (đón trẻ) và giao trẻ cho người nhận trẻ (trả trẻ), để nhà trường biết tại mỗi thời điểm trẻ nào đang ở trường và ai đã nhận trẻ về. Việc giao trẻ phải đúng người được phụ huynh cho phép.
 
 ## 2. Đối tượng tham gia
 
 | Đối tượng | Công việc |
 | --- | --- |
-| Giáo viên được phân công lớp trong ngày (NV05) | Ghi báo nghỉ, đón và trả trẻ trong phạm vi lớp. Tiếp nhận báo nhận trẻ hộ, đối chiếu người nhận thực tế và trình duyệt ngoại lệ. Xác minh vắng và đề nghị điều chỉnh chuyên cần tại NV03. |
-| Nhân sự trực được giao quyền tại NV08 | Tiếp nhận báo nhận trẻ hộ, đối chiếu CCCD và ghi nhận giao nhận trong phạm vi lớp và thời gian được giao. |
-| Người giám hộ hoặc người được ủy quyền | Người giám hộ báo nghỉ hoặc báo trước việc nhận trẻ hộ. Người được ủy quyền xuất trình giấy tờ để đối chiếu khi đến nhận trẻ. |
-| Văn phòng | Cập nhật danh sách người đưa đón (nghiệp vụ 01). Ghi nhận báo nghỉ khi phụ huynh báo qua văn phòng. Xem tình hình đón trả toàn trường. |
-| Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ | Kiểm tra căn cứ và duyệt hoặc từ chối yêu cầu nhận trẻ ngoài danh sách đang có hiệu lực. Phối hợp bố trí người trông trẻ trong thời gian chờ hoặc sau giờ trả. |
+| Giáo viên phụ trách lớp trong ngày | Nhận báo nghỉ, đón và trả trẻ của lớp. Đối chiếu người đến nhận trẻ, gọi phụ huynh khi người nhận lạ. |
+| Bảo vệ | Hỗ trợ tại cổng giờ cao điểm. Cùng giáo viên trông trẻ chưa có người nhận sau giờ trả. |
+| Người giám hộ hoặc người được ủy quyền | Người giám hộ báo nghỉ hoặc báo trước khi nhờ người khác nhận trẻ. Người được ủy quyền đến nhận trẻ theo danh sách đã đăng ký. |
+| Văn phòng | Cập nhật danh sách người đưa đón (nghiệp vụ 01). Nhận báo nghỉ khi phụ huynh gọi văn phòng rồi nhắn lại giáo viên lớp. |
+| Ban giám hiệu | Quyết định khi người lạ đến nhận trẻ mà chưa liên hệ được phụ huynh. Bố trí người trông trẻ sau giờ trả. |
 
 ## 3. Quy trình nghiệp vụ hiện tại
 
@@ -103,6 +99,21 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 - Đón từng trẻ một rất chậm vào giờ cao điểm buổi sáng.
 
 ## 9. Yêu cầu đối với hệ thống mới
+
+Trong hệ thống mới, **đón trẻ và điểm danh là một luồng dữ liệu**, không phải hai việc ghi riêng:
+
+- Lượt đón là căn cứ duy nhất tạo kết quả **có mặt** ở NV03. Trước giờ khóa, kết quả cập nhật tự động. Từ giờ khóa, lượt đón tạo đề nghị điều chỉnh chuyên cần.
+- Trẻ chưa được đón có kết quả chuyên cần theo xác minh của NV03. Ghi báo nghỉ chỉ cung cấp căn cứ xác minh.
+- Danh sách trả gồm trẻ **đã đón và chưa trả**, kể cả khi điều chỉnh chuyên cần đang chờ duyệt.
+
+**Vai trò trong hệ thống mới**
+
+| Vai trò | Công việc |
+| --- | --- |
+| Giáo viên được phân công lớp trong ngày (NV05) | Ghi báo nghỉ, đón và trả trẻ trong phạm vi lớp. Tiếp nhận báo nhận trẻ hộ, đối chiếu người nhận thực tế và trình duyệt ngoại lệ. Xác minh vắng và đề nghị điều chỉnh chuyên cần tại NV03. |
+| Nhân sự trực được giao quyền tại NV08 | Tiếp nhận báo nhận trẻ hộ, đối chiếu CCCD và ghi nhận giao nhận trong phạm vi lớp và thời gian được giao. Dùng hệ thống con Giáo viên với quyền được Ban giám hiệu cấp theo lớp và thời gian. |
+| Văn phòng | Ghi nhận báo nghỉ khi phụ huynh báo qua văn phòng. Xem tình hình đón trả toàn trường. |
+| Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ | Kiểm tra căn cứ và duyệt hoặc từ chối yêu cầu nhận trẻ ngoài danh sách đang có hiệu lực. Phối hợp bố trí người trông trẻ trong thời gian chờ hoặc sau giờ trả. |
 
 ### 9.1. Trạng thái của trẻ trong ngày
 

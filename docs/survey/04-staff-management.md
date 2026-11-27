@@ -1,6 +1,6 @@
 # 04. Quản lý hồ sơ giáo viên và nhân viên
 
-> Bản khảo sát sơ bộ để phỏng vấn. Quy trình dùng sổ giấy và bảng tính, tên các vai trò, biểu mẫu và quy tắc dưới đây là giả định làm việc, chờ cơ sở khảo sát xác nhận. Căn cứ lập hồ sơ khảo sát gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -63,6 +63,8 @@ flowchart LR
 | Báo cáo nhân sự | Nhân sự vào làm, nghỉ việc, chứng chỉ sắp hết hạn trong kỳ, kèm ghi chú của văn phòng | Văn phòng lập và gửi Ban giám hiệu theo nghiệp vụ 09 |
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
+
+Phụ lục mô phỏng: [Mẫu 06 · Phiếu hồ sơ nhân sự và biến động](forms/mau-06-ho-so-nhan-su.md), minh họa NS-01, NS-02 và NS-04.
 
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |

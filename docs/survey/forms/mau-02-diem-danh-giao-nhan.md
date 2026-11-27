@@ -1,6 +1,8 @@
 # Mẫu 02 · Sổ điểm danh và giao nhận trẻ
 
 > Biểu mẫu minh họa do nhóm xây dựng. Số liệu, người thực hiện và các tình huống dưới đây đều là mô phỏng.
+>
+> **Cách đọc mẫu.** Mục 1 là các cột của sổ giấy hiện trạng. Mục 2–5 dùng mốc giờ và thuật ngữ của hệ thống mới (NV03, NV08) để làm dữ liệu kiểm thử cho giai đoạn phân tích, không phải nội dung sổ giấy hiện có.
 
 **Mã mẫu:** DD-01 / DD-02 / DD-03, kèm DT-01 / DT-03 / DT-05  
 **Ngày:** 14/10/2026 · **Lớp:** Mầm 1 · **Sĩ số phải điểm danh:** 25  

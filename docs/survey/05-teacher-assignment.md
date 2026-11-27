@@ -1,6 +1,6 @@
 # 05. Phân công giáo viên theo lớp và thời gian
 
-> Bản khảo sát sơ bộ để phỏng vấn. Quy trình dùng sổ giấy và bảng tính, tên các vai trò, biểu mẫu và quy tắc dưới đây là giả định làm việc, chờ cơ sở khảo sát xác nhận. Căn cứ lập hồ sơ khảo sát gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
+> Hiện trạng mô phỏng tại Trường Mầm non Hoa Hướng Dương (tên giả định) theo kịch bản ở README §1. Nhóm chưa khảo sát trực tiếp tại trường. Mục 1–8 mô tả cách trường đang làm trong kịch bản, mục 9 là đề xuất cho hệ thống mới. Điểm cần xác nhận khi có cơ sở thực tế được ghi ở phần câu hỏi xác minh. Căn cứ trình bày gồm *HuongdanXDHTTTQLv1_1 (1).pdf*, trang 5–7, và *Checklist_BTL_HTTTQL_v2026 (1).xlsx*, trang tính **Nhóm 02 người**, mục 3.1 và 3.3.
 
 ## 1. Mục đích nghiệp vụ
 
@@ -65,6 +65,8 @@ flowchart LR
 
 ## 6. Biểu mẫu và hồ sơ sử dụng
 
+Phụ lục mô phỏng: [Mẫu 07 · Bảng phân công giáo viên và phiếu dạy thay](forms/mau-07-phan-cong-va-day-thay.md), minh họa PC-01, PC-03 và PC-04.
+
 | Mã tham chiếu | Biểu mẫu hoặc hồ sơ cần xin | Nội dung cần đối chiếu |
 | --- | --- | --- |
 | PC-01 | Bảng phân công giáo viên đầu năm học | Lớp, giáo viên, vai trò, ca, ngày hiệu lực, người lập và người duyệt. |
@@ -82,6 +84,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | QT-PC-02 | Một giáo viên không được phân công vào hai lớp trong cùng ca và cùng ngày, kể cả khi dạy thay. Mỗi lớp có tối đa một giáo viên chủ nhiệm có hiệu lực trong cùng ngày. | Giao dạy thay cho giáo viên đang đứng lớp khác cùng ca. |
 | QT-PC-03 | Mỗi lớp phải đạt số giáo viên tối thiểu theo định mức. Lớp chưa đủ được đưa vào danh sách cảnh báo cho ban giám hiệu. | Giáo viên phụ nghỉ việc, lớp chỉ còn một giáo viên. |
 | QT-PC-04 | Khi thay đổi phân công, kết thúc phân công cũ và bắt đầu phân công mới trong cùng một lần cập nhật theo quy ước ngày hiệu lực của nghiệp vụ 02. Giữ lịch sử để đối chiếu điểm danh và ngày công. | Đổi giáo viên chủ nhiệm có hiệu lực ngày 15. Ngày 14 giáo viên cũ điểm danh, ngày 15 giáo viên mới. |
+| QT-PC-05 | Khi không có giáo viên trống ca để dạy thay, người phân công trình hiệu trưởng chọn một nhân sự khác có trong danh sách đủ điều kiện đứng lớp của NV04. Nếu vẫn không có người, lớp được ghi vào danh sách cảnh báo thiếu giáo viên kèm khoảng ngày bị ảnh hưởng. | Giáo viên phụ Mầm 2 tạm nghỉ 10 ngày, cả 10 giáo viên đều đứng lớp cả ngày. Phó hiệu trưởng chuyên môn dạy thay (Mẫu 07). |
 
 ## 8. Hạn chế của quy trình hiện tại
 
