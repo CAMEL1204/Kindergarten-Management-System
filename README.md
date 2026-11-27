@@ -6,8 +6,8 @@ Hệ thống thông tin quản lý trường mầm non: hồ sơ trẻ, xếp l�
 
 | Thành viên | Nhánh khảo sát | Nghiệp vụ phụ trách |
 | --- | --- | --- |
-| TV1: *(MSSV – Họ tên)* | `survey/member-1` | 01 Hồ sơ trẻ, 02 Xếp lớp, 03 Điểm danh, 07 Suất ăn |
-| TV2: *(MSSV – Họ tên)* | `survey/member-2` | 04 Nhân sự, 05 Phân công giáo viên, 06 Học phí, 08 Đón trả trẻ, 09 Báo cáo |
+| TV1: *(202418896 – Mai Đức Hiếu)* | `survey/member-1` | 01 Hồ sơ trẻ, 02 Xếp lớp, 03 Điểm danh, 07 Suất ăn |
+| TV2: *(202418960 – Phạm Anh Phú)* | `survey/member-2` | 04 Nhân sự, 05 Phân công giáo viên, 06 Học phí, 08 Đón trả trẻ, 09 Báo cáo |
 
 ## Tài liệu
 
