@@ -4,16 +4,17 @@
 
 ## 1. Mục đích nghiệp vụ
 
-Phân công giáo viên phụ trách từng lớp theo năm học và khoảng thời gian hiệu lực, gồm giáo viên chủ nhiệm, giáo viên phụ và giáo viên dạy thay khi có người vắng. Bảo đảm mỗi lớp luôn có đủ giáo viên theo định mức và mỗi giáo viên không bị phân công chồng chéo. Kết quả phân công xác định giáo viên nào có quyền điểm danh lớp nào trong ngày ở nghiệp vụ 03.
+Phân công giáo viên phụ trách từng lớp theo năm học và khoảng thời gian hiệu lực, gồm giáo viên chủ nhiệm, giáo viên phụ và giáo viên dạy thay khi có người vắng. Bảo đảm mỗi lớp luôn có đủ giáo viên theo định mức và mỗi giáo viên không bị phân công chồng chéo. Kết quả phân công xác định giáo viên nào có quyền đón trả trẻ (nghiệp vụ 08) và điểm danh (nghiệp vụ 03) lớp nào trong ngày.
 
 ## 2. Đối tượng tham gia
 
 | Đối tượng | Công việc |
 | --- | --- |
-| Người phụ trách chuyên môn hoặc phó hiệu trưởng | Lập phương án phân công đầu năm, xử lý thay đổi và sắp xếp giáo viên dạy thay. |
-| Ban giám hiệu hoặc người được phân quyền | Xác nhận phương án phân công, ngày hiệu lực và các trường hợp ngoại lệ. |
-| Giáo viên | Nhận lịch phân công, báo nghỉ hoặc đề nghị thay đổi, nhận lớp dạy thay khi được giao. |
-| Văn phòng | Cập nhật danh sách nhân sự cho người phân công, thông báo phân công cho phụ huynh khi cần. |
+| Người phân công (văn phòng, phương án đề xuất) | Lập phương án phân công đầu năm, xử lý thay đổi, sắp xếp giáo viên dạy thay và lập báo cáo phân công. Nếu trường giao việc này cho phó hiệu trưởng chuyên môn, người đó được cấp thêm hệ thống con Văn phòng. |
+| Phó hiệu trưởng chuyên môn | Góp ý chuyên môn khi ghép giáo viên chủ nhiệm và giáo viên phụ. |
+| Hiệu trưởng hoặc ban giám hiệu | Duyệt phương án phân công, ngày hiệu lực và các trường hợp ngoại lệ. Người lập và người duyệt không là một người. |
+| Giáo viên | Nhận lịch phân công, gửi báo nghỉ của bản thân hoặc đề nghị thay đổi, nhận lớp dạy thay khi được giao. |
+| Văn phòng | Cập nhật danh sách nhân sự cho người phân công (nghiệp vụ 04), thông báo phân công cho phụ huynh khi cần. |
 
 ## 3. Quy trình nghiệp vụ hiện tại
 
@@ -24,6 +25,17 @@ Phân công giáo viên phụ trách từng lớp theo năm học và khoảng t
 | 3. Xác nhận và thông báo | Ban giám hiệu, sau khi nhận phương án | Duyệt phương án, chốt ngày hiệu lực. Thông báo cho giáo viên và văn phòng. | Bảng phân công chính thức. |
 | 4. Xử lý vắng và dạy thay | Giáo viên báo nghỉ, người phân công sắp xếp, trước hoặc trong ngày nghỉ | Nhận báo nghỉ, tìm giáo viên rảnh trong ca đó, giao dạy thay có thời hạn. Thông báo giáo viên dạy thay và lớp liên quan. | Phân công dạy thay theo ngày hoặc ca. |
 | 5. Điều chỉnh và tổng hợp | Người phân công và ban giám hiệu, khi giáo viên nghỉ việc, chuyển lớp hoặc lớp thay đổi | Kết thúc phân công cũ và ghi phân công mới theo cùng ngày hiệu lực. Cuối tháng tổng hợp số ngày hoặc ca đứng lớp và dạy thay của từng giáo viên. | Lịch sử phân công và bảng tổng hợp khối lượng công việc. |
+
+```mermaid
+flowchart LR
+    A["Lấy lớp từ nghiệp vụ 02, giáo viên đủ điều kiện từ nghiệp vụ 04"] --> B["Người phân công lập phương án"]
+    B --> C{"Trùng ca hoặc thiếu định mức?"}
+    C -- "Có" --> B
+    C -- "Không" --> D["Ban giám hiệu duyệt, chốt ngày hiệu lực"]
+    D --> E["Bảng phân công chính thức"]
+    E --> F["Giáo viên báo nghỉ"] --> G["Giao dạy thay có thời hạn"] --> E
+    E --> H["Danh sách giáo viên phụ trách lớp theo ngày cho nghiệp vụ 03 và 08"]
+```
 
 **Câu hỏi xác minh khi phỏng vấn ban giám hiệu và giáo viên**
 
@@ -83,5 +95,5 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | --- | --- |
 | YC-PC-01 | Lập phương án phân công theo năm học, lớp, vai trò và ca từ danh sách lớp của nghiệp vụ 02 và giáo viên đủ điều kiện của nghiệp vụ 04. |
 | YC-PC-02 | Kiểm tra trùng ca, định mức giáo viên và điều kiện của giáo viên trước khi lưu. Cảnh báo lớp thiếu giáo viên. |
-| YC-PC-03 | Ghi nhận báo nghỉ và phân công dạy thay có thời hạn. Gợi ý giáo viên còn trống trong ca. Cung cấp danh sách giáo viên phụ trách lớp theo ngày cho nghiệp vụ 03. |
+| YC-PC-03 | Ghi nhận báo nghỉ và phân công dạy thay có thời hạn. Gợi ý giáo viên còn trống trong ca. Cung cấp danh sách giáo viên phụ trách lớp theo ngày cho nghiệp vụ 03 và 08. |
 | YC-PC-04 | Tra cứu lịch sử phân công theo lớp, giáo viên và ngày. Tổng hợp và xuất số ca đứng lớp, dạy thay theo giáo viên và tháng. |

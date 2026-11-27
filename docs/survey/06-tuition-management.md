@@ -12,23 +12,38 @@ Lập các khoản phải thu của từng trẻ theo kỳ thu (thường là th
 | --- | --- |
 | Kế toán hoặc nhân viên thu phí | Lập bảng phải thu theo kỳ, gửi thông báo, ghi nhận thu tiền, xuất biên lai và theo dõi công nợ. |
 | Ban giám hiệu hoặc người được phân quyền | Ban hành biểu phí, duyệt miễn giảm, duyệt điều chỉnh hoặc hoàn tiền và xem báo cáo thu. |
-| Phụ huynh hoặc người giám hộ | Nhận thông báo, nộp tiền bằng tiền mặt hoặc chuyển khoản, đề nghị miễn giảm và nhận biên lai. |
-| Giáo viên và văn phòng | Cung cấp dữ liệu điểm danh đã chốt và biến động lớp. Nhắc phụ huynh khi được yêu cầu. |
+| Phụ huynh hoặc người giám hộ | Nhận thông báo, nộp tiền bằng tiền mặt hoặc chuyển khoản, đề nghị miễn giảm và nhận biên lai. Không trực tiếp dùng hệ thống. |
+| Giáo viên, văn phòng và bếp | Không tham gia thu phí. Chỉ là nguồn số liệu đã chốt: giáo viên chốt điểm danh (nghiệp vụ 03), văn phòng chốt biến động lớp (nghiệp vụ 02), bếp chốt suất ăn (nghiệp vụ 07). |
 
 ## 3. Quy trình nghiệp vụ hiện tại
 
 | Bước | Ai, ở đâu và khi nào | Công việc và cách thực hiện | Kết quả |
 | --- | --- | --- | --- |
-| 1. Chuẩn bị căn cứ | Kế toán tại văn phòng, cuối kỳ hoặc đầu kỳ thu | Lấy biểu phí đang áp dụng, danh sách trẻ theo lớp trong kỳ từ nghiệp vụ 02, số ngày có mặt đã chốt của kỳ trước từ nghiệp vụ 03 và danh sách miễn giảm đã duyệt. | Bộ căn cứ để tính phí. |
+| 1. Chuẩn bị căn cứ | Kế toán tại văn phòng, cuối kỳ hoặc đầu kỳ thu | Lấy biểu phí đang áp dụng, danh sách trẻ theo lớp trong kỳ từ nghiệp vụ 02, số ngày có mặt đã chốt của kỳ trước từ nghiệp vụ 03, số suất ăn đã chốt từ nghiệp vụ 07 nếu trường tính tiền ăn theo suất, và danh sách miễn giảm đã duyệt. | Bộ căn cứ để tính phí. |
 | 2. Lập bảng phải thu | Kế toán tại bảng tính thu phí | Tính từng khoản cho mỗi trẻ: học phí theo nhóm tuổi hoặc lớp, tiền ăn theo ngày, khoản khác. Trừ miễn giảm, cộng nợ cũ, trừ tiền hoàn hoặc dư kỳ trước nếu có. Kiểm tra trẻ vào học hoặc thôi học giữa kỳ. | Bảng phải thu theo trẻ và lớp. |
-| 3. Duyệt và thông báo | Ban giám hiệu duyệt, kế toán hoặc giáo viên gửi thông báo, đầu kỳ thu | Xem tổng phải thu và các trường hợp đặc biệt. Gửi thông báo học phí kèm hạn nộp cho phụ huynh. | Thông báo học phí đã gửi. |
+| 3. Duyệt và thông báo | Ban giám hiệu duyệt, kế toán gửi thông báo, đầu kỳ thu | Xem tổng phải thu và các trường hợp đặc biệt. Kế toán gửi thông báo học phí kèm hạn nộp trực tiếp cho phụ huynh (in giấy, tin nhắn hoặc email). Nếu trường nhờ giáo viên phát phiếu, giáo viên chỉ chuyển phiếu đã in sẵn, không xem dữ liệu học phí. | Thông báo học phí đã gửi. |
 | 4. Thu tiền | Kế toán tại văn phòng hoặc qua chuyển khoản, trong thời hạn thu | Nhận tiền mặt hoặc đối chiếu sao kê chuyển khoản với nội dung chuyển. Ghi số tiền, ngày, hình thức thu vào sổ và xuất biên lai. Nếu nộp thiếu, ghi số còn nợ. | Phiếu thu hoặc biên lai và công nợ cập nhật. |
 | 5. Theo dõi và tổng hợp | Kế toán, sau hạn nộp và cuối kỳ | Lập danh sách trẻ chưa nộp đủ để nhắc. Xử lý hoàn tiền hoặc điều chỉnh khi có sai sót đã được duyệt. Tổng hợp số phải thu, đã thu, còn nợ theo lớp và toàn trường. | Danh sách công nợ và báo cáo thu theo kỳ. |
+
+```mermaid
+flowchart LR
+    A["Biểu phí, miễn giảm đã duyệt"] --> D["Kế toán lập bảng phải thu"]
+    B["Danh sách lớp trong kỳ (02)"] --> D
+    C["Ngày có mặt, suất ăn đã chốt (03, 07)"] --> D
+    D --> E["Ban giám hiệu duyệt"]
+    E --> F["Kế toán gửi thông báo cho phụ huynh"]
+    F --> G["Thu tiền, in biên lai"]
+    G --> H{"Nộp đủ?"}
+    H -- "Chưa" --> I["Ghi công nợ, nhắc nợ, chuyển sang kỳ sau"]
+    H -- "Đủ" --> J["Tổng hợp, báo cáo thu theo nghiệp vụ 09"]
+    I --> J
+```
 
 **Câu hỏi xác minh khi phỏng vấn kế toán và ban giám hiệu**
 
 - Biểu phí gồm những khoản nào, tính theo tháng, theo ngày hay theo học kỳ? Học phí khác nhau theo nhóm tuổi hay theo lớp?
-- Tiền ăn tính theo số ngày có mặt thực tế hay thu trước rồi hoàn theo ngày vắng? Vắng có phép và không phép có khác nhau không?
+- Tiền ăn tính theo số ngày có mặt thực tế, theo số suất ăn đã chốt ở nghiệp vụ 07, hay thu trước rồi hoàn theo ngày vắng? Vắng có phép và không phép có khác nhau không?
+- Ai gửi thông báo học phí cho phụ huynh: kế toán trực tiếp hay nhờ giáo viên phát phiếu?
 - Có các chính sách miễn giảm nào (con thứ hai, hộ nghèo, con nhân viên)? Ai duyệt và áp dụng từ kỳ nào?
 - Trường thu tiền mặt, chuyển khoản hay cả hai? Đối chiếu chuyển khoản bằng cách nào? Biên lai có cần mẫu theo quy định thuế không?
 

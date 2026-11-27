@@ -23,7 +23,18 @@ Lập và duy trì hồ sơ của giáo viên và nhân viên trong suốt thờ
 | 2. Kiểm tra và lập hồ sơ | Người phụ trách nhân sự tại văn phòng, khi nhận hồ sơ hoặc giấy tờ bổ sung | Đối chiếu giấy tờ với thông tin khai báo. Tra sổ hoặc bảng tính theo họ tên, ngày sinh và giấy tờ tùy thân để tránh lập trùng khi nhân sự quay lại làm. Ghi vị trí, ngày bắt đầu làm việc, trình độ và chứng chỉ kèm ngày hết hạn nếu có. Đánh dấu giấy tờ còn thiếu. | Hồ sơ nhân sự có mã, trạng thái giấy tờ và danh sách cần bổ sung. |
 | 3. Xác nhận | Ban giám hiệu tại trường, sau khi hồ sơ đủ căn cứ | Xem hồ sơ, xác nhận vị trí công việc và ngày bắt đầu. Văn phòng chuyển trạng thái sang đang làm việc. | Hồ sơ đã xác nhận, có người và ngày xác nhận. |
 | 4. Bàn giao | Văn phòng, sau khi xác nhận hoặc khi có thay đổi | Cập nhật danh sách giáo viên đang làm việc và đủ điều kiện đứng lớp. Gửi cho người phân công giáo viên. | Danh sách giáo viên dùng cho nghiệp vụ 05. |
-| 5. Cập nhật và biến động | Nhân sự, văn phòng và ban giám hiệu, khi phát sinh thay đổi | Nhận đề nghị thay đổi thông tin hoặc bổ sung chứng chỉ, kiểm tra căn cứ rồi cập nhật. Với tạm nghỉ, nghỉ việc hoặc chuyển vị trí, ghi ngày hiệu lực và người xác nhận. Báo người phân công nếu thay đổi ảnh hưởng tới lớp đang phụ trách. | Hồ sơ cập nhật, lịch sử thay đổi và thông báo cho nghiệp vụ 05. |
+| 5. Cập nhật và biến động | Nhân sự, văn phòng và ban giám hiệu, khi phát sinh thay đổi | Nhận đề nghị thay đổi thông tin hoặc bổ sung chứng chỉ, kiểm tra căn cứ rồi cập nhật. Với tạm nghỉ, nghỉ việc hoặc chuyển vị trí, ghi ngày hiệu lực và người xác nhận. Báo người phân công nếu thay đổi ảnh hưởng tới lớp đang phụ trách. Với tạm nghỉ hoặc nghỉ việc, báo ban giám hiệu khóa tài khoản từ ngày hiệu lực. | Hồ sơ cập nhật, lịch sử thay đổi, thông báo cho nghiệp vụ 05 và yêu cầu khóa tài khoản. |
+
+```mermaid
+flowchart LR
+    A["Nhân sự nộp hồ sơ"] --> B["Văn phòng kiểm tra, tra trùng, lập hồ sơ"]
+    B --> C{"Đủ căn cứ?"}
+    C -- "Chưa" --> D["Ghi giấy tờ còn thiếu, nhắc bổ sung"] --> B
+    C -- "Đủ" --> E["Ban giám hiệu xác nhận vị trí, ngày bắt đầu"]
+    E --> F["Cập nhật danh sách giáo viên đủ điều kiện cho nghiệp vụ 05"]
+    F --> G["Biến động: tạm nghỉ, nghỉ việc, chuyển vị trí"]
+    G --> F
+```
 
 **Câu hỏi xác minh khi phỏng vấn văn phòng và ban giám hiệu**
 
@@ -85,3 +96,4 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | YC-NS-02 | Quản lý danh sách bằng cấp, chứng chỉ và giấy tờ trong một màn hình hồ sơ. Cảnh báo chứng chỉ sắp hết hạn và giấy tờ còn thiếu. |
 | YC-NS-03 | Ghi nhận tạm nghỉ, nghỉ việc và chuyển vị trí theo ngày hiệu lực. Cung cấp trực tiếp danh sách giáo viên đủ điều kiện tại một ngày cho nghiệp vụ 05 và cảnh báo lớp bị ảnh hưởng. |
 | YC-NS-04 | Phân quyền xem và sửa thông tin nhân sự. Lưu lịch sử thay đổi, cho phép lọc và xuất danh sách nhân sự theo vị trí, trạng thái cho người có quyền. |
+| YC-NS-05 | Mỗi tài khoản người dùng gắn với một hồ sơ nhân sự. Khi tạm nghỉ hoặc nghỉ việc có hiệu lực, nhắc ban giám hiệu khóa tài khoản và không cho tài khoản đó đăng nhập từ ngày hiệu lực. |
