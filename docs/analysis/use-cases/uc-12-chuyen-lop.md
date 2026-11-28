@@ -4,45 +4,54 @@
 | --- | --- |
 | Nghiệp vụ / nhánh chức năng | NV02 · F1.2.2, F1.2.4 |
 | Tác nhân chính | Văn phòng |
-| Tác nhân phụ | Ban giám hiệu |
-| Mục tiêu | Chuyển trẻ đang học sang lớp đích đúng ngày hiệu lực trong cùng một giao dịch nguyên tử và bảo toàn lịch sử sĩ số. |
-| Điều kiện trước | Trẻ có hồ sơ đã tiếp nhận và đang thuộc một lớp nguồn có hiệu lực (trạng thái `Đang học` hoặc `Nghỉ dài ngày`, không ở trạng thái `Bảo lưu` hoặc `Thôi học`). Có danh mục năm học, lớp, nhóm tuổi, mốc tính tuổi và chỉ tiêu đã thiết lập. |
-| Điều kiện sau | Từ ngày hiệu lực, trẻ thuộc duy nhất lớp đích; khoảng xếp lớp nguồn được đóng tại cùng ngày hiệu lực theo quy ước `QT-XL-02`. Tổng sĩ số toàn trường không đổi. |
+| Tác nhân phụ | Ban giám hiệu (duyệt chuyển lớp) |
+| Mục tiêu | Chuyển trẻ đang học sang lớp đích đúng ngày hiệu lực trong một giao dịch và giữ nguyên lịch sử sĩ số. |
+| Điều kiện trước | Trẻ đã được tiếp nhận và đang thuộc một lớp nguồn có hiệu lực, ở trạng thái `Đang học` hoặc `Nghỉ dài ngày`. Trẻ không ở trạng thái `Bảo lưu` hay `Thôi học`. Danh mục năm học, lớp, nhóm tuổi, mốc tính tuổi và chỉ tiêu đã có. |
+| Điều kiện sau | Từ ngày hiệu lực, trẻ chỉ thuộc lớp đích. Khoảng xếp lớp ở lớp nguồn kết thúc tại ngày hiệu lực theo QT-XL-02. Tổng sĩ số toàn trường không đổi. |
 
 ## Luồng sự kiện chính
 
-1. Văn phòng chọn trẻ, lớp nguồn hiện hành, lớp đích, ngày hiệu lực chuyển lớp và nhập lý do.
-2. Hệ thống kiểm tra tại ngày hiệu lực: trẻ đang thuộc lớp nguồn, lớp đích khác lớp nguồn và đang hoạt động trong cùng năm học, phù hợp nhóm tuổi, chưa vượt chỉ tiêu vận hành và giới hạn tối đa theo Điều 15 Điều lệ Trường mầm non (`QT-XL-01`), không trùng khoảng xếp lớp khác, đồng thời tra cứu trạng thái phân công giáo viên của lớp đích từ NV05 để cảnh báo nếu lớp thiếu giáo viên (`QT-PC-03`).
-3. Ban giám hiệu xem phương án chuyển lớp, ngày hiệu lực và các cảnh báo (nếu có) rồi ghi quyết định duyệt.
-4. Khi xác nhận duyệt, hệ thống kiểm tra lại sức chứa lớp đích và khoảng xếp lớp. Trong **cùng một giao dịch nguyên tử (`NFR-05`)**, hệ thống đóng khoảng xếp lớp tại lớp nguồn (ngày kết thúc = ngày hiệu lực) và mở khoảng xếp lớp tại lớp đích (ngày bắt đầu = ngày hiệu lực); lưu riêng thời điểm nhập, người lập và người duyệt (`QT-XL-03`, `QT-XL-05`).
-5. Cập nhật danh sách lớp theo ngày cho NV03, NV05, NV08, thông báo cho giáo viên hai lớp và ghi nhận biến động giảm/tăng nội bộ phục vụ đối chiếu sĩ số tại NV09.
+1. Văn phòng chọn trẻ, lớp nguồn, lớp đích, ngày hiệu lực và nhập lý do.
+2. Hệ thống kiểm tra tại ngày hiệu lực: trẻ đang thuộc lớp nguồn, lớp đích khác lớp nguồn và đang hoạt động trong cùng năm học, phù hợp nhóm tuổi, chưa vượt chỉ tiêu vận hành và trần Điều 15 (QT-XL-01), không trùng khoảng xếp lớp khác. Hệ thống đọc phân công của lớp đích từ NV05 và cảnh báo nếu lớp thiếu giáo viên (QT-PC-03).
+3. Ban giám hiệu xem phương án, ngày hiệu lực và các cảnh báo, rồi ghi quyết định duyệt.
+4. Khi xác nhận, hệ thống kiểm tra lại sức chứa lớp đích và khoảng xếp lớp. Trong một giao dịch (NFR-05), hệ thống kết thúc khoảng xếp lớp ở lớp nguồn (ngày kết thúc bằng ngày hiệu lực) và mở khoảng xếp lớp ở lớp đích (ngày bắt đầu bằng ngày hiệu lực). Hệ thống lưu riêng thời điểm nhập, người lập và người duyệt (QT-XL-03, QT-XL-05).
+5. Hệ thống cập nhật danh sách lớp theo ngày cho NV03, NV05, NV08, thông báo cho giáo viên hai lớp và ghi biến động giảm, tăng nội bộ cho NV09.
 
 ## Luồng thay thế và ngoại lệ
 
-- **Bước 2 (dữ liệu đầu vào không hợp lệ):** Nếu lớp đích trùng lớp nguồn, lớp đích đã đóng, ngày hiệu lực nằm ngoài năm học hoặc trẻ đang ở trạng thái `Bảo lưu`/`Thôi học`, hệ thống chặn thao tác và nêu rõ lý do.
-- **Bước 2 (chỉ tiêu và nhóm tuổi theo `QT-XL-01`):**
-  - Nếu tổng sĩ số lớp đích tại ngày hiệu lực đạt **mức tối đa theo Điều 15 Điều lệ Trường mầm non** (3–12 tháng: 15; 13–24 tháng: 20; 25–36 tháng: 25; 3–4 tuổi: 25; 4–5 tuổi: 30; 5–6 tuổi: 35), hệ thống **chặn cứng**, không cho trình duyệt.
-  - Nếu chỉ vượt chỉ tiêu vận hành của trường (vẫn trong trần Điều 15) hoặc trẻ lệch nhóm tuổi, hệ thống hiển thị cảnh báo trường hợp đặc biệt để Ban giám hiệu xem xét quyết định theo thẩm quyền.
-- **Bước 2 & Bước 5 (ghi hồi tố `QT-XL-05`):** Nếu `ngày hiệu lực < ngày nhập hiện tại`, hệ thống đánh dấu ghi hồi tố, bắt buộc nhập lý do, liệt kê các ngày đã khóa điểm danh/suất ăn/báo cáo chịu ảnh hưởng trước khi trình duyệt. Sau khi Ban giám hiệu duyệt hồi tố:
-  - Gắn cờ các ngày đã khóa chuyên cần bị ảnh hưởng để giáo viên/người có quyền đối chiếu qua [UC-14](uc-14-dieu-chinh-chuyen-can-sau-khoa.md) (`NV03`);
-  - Thông báo cho `NV06` nếu lớp đích khác nhóm tuổi/đơn giá biểu phí cần đối soát lại (`QT-HP-02`);
-  - Với báo cáo sĩ số `NV09` đã nộp của kỳ tương ứng: giữ nguyên ảnh chụp và cảnh báo người lập (`Đã gửi` để Ban giám hiệu xử lý yêu cầu bổ sung nếu cần; `Đã duyệt` chuyển sang `Cần cập nhật` theo `QT-BC-04`).
-- **Bước 3–4 (từ chối hoặc lỗi giao dịch):** Nếu Ban giám hiệu từ chối, lớp đích vừa đủ chỗ hoặc trùng khoảng xếp lớp tại thời điểm xác nhận, giữ nguyên lớp nguồn. Nếu một đầu cập nhật thất bại, hệ thống hoàn tác toàn bộ cả hai đầu (`QT-XL-03`).
+- **Bước 2 (đầu vào không hợp lệ):** Lớp đích trùng lớp nguồn, lớp đích đã đóng, ngày hiệu lực ngoài năm học, hoặc trẻ đang `Bảo lưu` hay `Thôi học`. Hệ thống chặn và nêu lý do.
+- **Bước 2 (lớp đích đã đạt trần Điều 15):** Sĩ số lớp đích tại ngày hiệu lực đã bằng mức tối đa của nhóm tuổi: 3–12 tháng là 15, 13–24 tháng là 20, 25–36 tháng là 25, 3–4 tuổi là 25, 4–5 tuổi là 30, 5–6 tuổi là 35. Hệ thống chặn, không cho trình duyệt (QT-XL-01).
+- **Bước 2 (vượt chỉ tiêu vận hành hoặc lệch nhóm tuổi):** Vẫn trong trần Điều 15. Hệ thống cảnh báo trường hợp đặc biệt để Ban giám hiệu quyết định.
+- **Bước 2 và 5 (ghi hồi tố):** Ngày hiệu lực trước ngày nhập. Hệ thống đánh dấu hồi tố, bắt buộc nhập lý do và liệt kê các ngày đã khóa điểm danh, suất ăn, báo cáo bị ảnh hưởng (QT-XL-05). Sau khi Ban giám hiệu duyệt:
+  - Các ngày đã khóa chuyên cần bị ảnh hưởng được gắn cờ để đối chiếu tại [UC-14](uc-14-dieu-chinh-chuyen-can-sau-khoa.md).
+  - NV06 được thông báo nếu lớp đích khác nhóm tuổi hoặc đơn giá cần đối soát lại (QT-HP-02).
+  - Báo cáo sĩ số NV09 đã nộp của kỳ đó giữ ảnh chụp, người lập được cảnh báo. Báo cáo `Đã gửi` do Ban giám hiệu xử lý yêu cầu bổ sung nếu cần. Báo cáo `Đã duyệt` chuyển sang `Cần cập nhật` (QT-BC-04).
+- **Bước 3–4 (từ chối hoặc lỗi giao dịch):** Ban giám hiệu từ chối, lớp đích vừa hết chỗ hoặc trùng khoảng xếp lớp lúc xác nhận: trẻ ở lại lớp nguồn. Nếu một đầu cập nhật thất bại, hệ thống hoàn tác cả hai đầu (QT-XL-03).
 
 ## Dữ liệu giao dịch
 
 | Dữ liệu vào | Dữ liệu ra |
 | --- | --- |
-| Mã trẻ, lớp nguồn, lớp đích, năm học, nhóm tuổi, ngày hiệu lực, thời điểm nhập, lý do, chỉ tiêu/trần Điều 15, quyết định duyệt. | Hai khoảng xếp lớp (đóng lớp nguồn và mở lớp đích cùng ngày hiệu lực), danh sách lớp theo ngày, biến động giảm/tăng nội bộ hai lớp, danh sách ngày đã khóa cần đối chiếu nếu hồi tố, cảnh báo tới NV03/NV06/NV09. |
+| Mã trẻ, lớp nguồn, lớp đích, năm học, nhóm tuổi, ngày hiệu lực, thời điểm nhập, lý do. Chỉ tiêu và trần Điều 15. Quyết định duyệt. | Hai khoảng xếp lớp: kết thúc ở lớp nguồn, bắt đầu ở lớp đích cùng ngày hiệu lực. Danh sách lớp theo ngày. Biến động giảm, tăng nội bộ của hai lớp. Danh sách ngày đã khóa cần đối chiếu nếu hồi tố. Cảnh báo cho NV03, NV06, NV09. |
+
+## Ca kiểm thử từ kịch bản
+
+| Ca | Dữ liệu | Kết quả mong đợi |
+| --- | --- | --- |
+| Chuyển đúng ngày hiệu lực | Trẻ chuyển từ lớp A sang lớp B cùng nhóm tuổi, hiệu lực ngày 15 | Ngày 14 trẻ ở lớp A, ngày 15 trẻ ở lớp B. Sĩ số A giảm 1, B tăng 1, tổng 135 của trường không đổi (QT-XL-02, QT-XL-04). |
+| Lớp đích đã đạt trần | Chuyển một trẻ 3–4 tuổi từ Mầm 1 sang Mầm 2 đang có 25 trẻ (README khảo sát §1) | Chặn, vì Mầm 2 đã bằng trần 25 của nhóm 3–4 tuổi (QT-XL-01). |
+| Lớp đích đầy lúc xác nhận | Lúc trình còn chỗ, lúc Ban giám hiệu xác nhận lớp đích đã đầy | Không ghi. Trẻ vẫn thuộc lớp nguồn (QT-XL-03). |
+| Ghi hồi tố | Ngày 18 nhập quyết định chuyển lớp hiệu lực ngày 15, ngày 15 đã khóa điểm danh | Bắt buộc lý do. Ngày 15–17 được gắn cờ đối chiếu tại `UC-14`. Báo cáo sĩ số đã duyệt của kỳ chuyển sang `Cần cập nhật` (QT-XL-05, QT-BC-04). |
+| Trẻ đang bảo lưu | Văn phòng chọn chuyển lớp cho trẻ `Bảo lưu` | Chặn, báo trẻ không thuộc lớp nguồn đang học. |
 
 ## Liên phân hệ và truy vết
 
-- **NV02 → NV05:** Cung cấp trạng thái hoạt động và sĩ số thực tế của lớp theo ngày hiệu lực cho NV05 lập phân công; đọc cảnh báo thiếu định mức giáo viên của lớp đích khi chuyển lớp.
-- **NV02 → NV03, NV08:** Cung cấp lớp có hiệu lực theo từng ngày học (ví dụ chuyển hiệu lực ngày 15 thì ngày 14 trẻ ở lớp nguồn, ngày 15 trẻ ở lớp đích).
-- **NV02 → NV06:** Giữ nguyên diện đi học của trẻ (do chuyển lớp nội bộ không làm trẻ thôi học), đồng thời thông báo nếu chuyển lớp hồi tố hoặc đổi nhóm tuổi làm thay đổi biểu phí áp dụng (`QT-HP-02`).
-- **NV02 → NV09:** Cung cấp biến động chuyển lớp nội bộ để giải thích sĩ số đầu kỳ/cuối kỳ từng lớp mà không cộng nhầm thành nhập học/thôi học toàn trường, và kích hoạt `Cần cập nhật` khi ghi hồi tố (`QT-BC-04`).
+- **NV02 → NV05:** Trạng thái hoạt động và sĩ số của lớp theo ngày hiệu lực cho [UC-05](uc-05-lap-phan-cong-giao-vien.md). Khi chuyển lớp, NV02 đọc cảnh báo thiếu định mức giáo viên của lớp đích (QT-PC-03).
+- **NV02 → NV03, NV08:** Lớp có hiệu lực theo từng ngày học. Chuyển lớp hiệu lực ngày 15 thì ngày 14 trẻ ở lớp nguồn, ngày 15 ở lớp đích.
+- **NV02 → NV06:** Chuyển lớp nội bộ không đổi diện đi học. NV06 được thông báo khi chuyển lớp hồi tố hoặc đổi nhóm tuổi làm đổi biểu phí áp dụng (QT-HP-02).
+- **NV02 → NV09:** Biến động chuyển lớp nội bộ giải thích sĩ số đầu kỳ, cuối kỳ từng lớp mà không bị tính là nhập học hay thôi học. Ghi hồi tố kích hoạt `Cần cập nhật` (QT-BC-04).
 
 | Yêu cầu | Quy tắc áp dụng | Phạm vi |
 | --- | --- | --- |
-| YC-XL-02 | QT-XL-01, QT-XL-02, QT-XL-03, QT-XL-04, NFR-05 | Kiểm tra trần Điều 15/chỉ tiêu, ghi nguyên tử hai đầu chuyển lớp, bảo toàn lịch sử và sĩ số toàn trường. |
-| YC-XL-03 | QT-XL-05, QT-HP-02, QT-PC-03, QT-BC-04 | NV02 → NV03, NV05, NV06, NV08, NV09 · Tra cứu lớp theo ngày, cảnh báo thiếu giáo viên lớp đích và xử lý hậu kiểm khi ghi hồi tố. |
+| YC-XL-02 | QT-XL-01, QT-XL-02, QT-XL-03, QT-XL-04, NFR-05 | NV02 · Kiểm tra trần Điều 15 và chỉ tiêu, ghi hai đầu chuyển lớp trong một giao dịch, giữ lịch sử và sĩ số toàn trường. |
+| YC-XL-03 | QT-XL-05, QT-HP-02, QT-PC-03, QT-BC-04 | NV02 → NV03, NV05, NV06, NV08, NV09 · Tra cứu lớp theo ngày, cảnh báo thiếu giáo viên ở lớp đích, xử lý hậu kiểm khi ghi hồi tố. |

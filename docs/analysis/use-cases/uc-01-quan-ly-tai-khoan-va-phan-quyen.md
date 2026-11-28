@@ -5,34 +5,46 @@
 | Nghiệp vụ / nhánh chức năng | F1.0 · F1.0.1 |
 | Tác nhân chính | Ban giám hiệu |
 | Tác nhân phụ | Văn phòng (cung cấp biến động nhân sự NV04) |
-| Mục tiêu | Cấp phát, phân quyền và kiểm soát vòng đời tài khoản gắn với hồ sơ nhân sự, bảo đảm phân tách vai trò hệ thống con, quyền trực giao nhận và quyền duyệt ngoại lệ `NV08`. |
-| Điều kiện trước | Nhân sự đã có hồ sơ hợp lệ được xác nhận tại `NV04` (trạng thái làm việc hiện hành). Người thực hiện có quyền quản trị hệ thống `F1.0`. |
-| Điều kiện sau | Tài khoản được tạo/cập nhật vai trò đúng phạm vi hệ thống con (`NFR-01`, `NFR-02`), quyền trực/duyệt ngoại lệ `NV08` được ghi nhận theo lớp và khoảng thời gian, hoặc tài khoản bị khóa/mở lại đúng ngày hiệu lực biến động nhân sự (`YC-NS-05`, `QT-NS-03`). |
+| Mục tiêu | Mỗi tài khoản gắn một hồ sơ nhân sự và được cấp hệ thống con theo vị trí công việc. Quyền trực giao nhận và quyền duyệt ngoại lệ NV08 được cấp riêng. Tài khoản bị khóa và mở lại đúng ngày hiệu lực của biến động nhân sự. |
+| Điều kiện trước | Nhân sự có hồ sơ đã xác nhận tại NV04 và đang làm việc. Người thực hiện có quyền quản trị F1.0. |
+| Điều kiện sau | Tài khoản có vai trò đúng phạm vi hệ thống con (NFR-01, NFR-02). Quyền trực và quyền duyệt ngoại lệ NV08 được lưu theo lớp và khoảng thời gian. Tài khoản bị khóa hoặc mở lại theo ngày hiệu lực của biến động (YC-NS-05, QT-NS-03). |
 
 ## Luồng sự kiện chính
 
-1. Ban giám hiệu chọn hồ sơ nhân sự từ `NV04` để tạo mới tài khoản (mật khẩu lưu dạng băm theo `NFR-02`) hoặc điều chỉnh vai trò hệ thống con theo vị trí công việc (một người kiêm nhiều vị trí được cấp nhiều hệ thống con mà không gộp chức năng).
-2. Khi phát sinh nhu cầu trực cổng/trực lớp hoặc ủy quyền duyệt ngoại lệ trả trẻ tại `NV08`, Ban giám hiệu cấp riêng **quyền trực giao nhận** (chọn nhân sự, danh sách lớp và khoảng thời gian áp dụng) hoặc **quyền duyệt ngoại lệ NV08** (`QT-DT-05`).
-3. Khi `NV04` ghi nhận biến động `Tạm nghỉ` (từ 6 ngày làm việc liên tục trở lên hoặc nghỉ theo chế độ) hoặc `Nghỉ việc` có hiệu lực (`QT-NS-03`), hệ thống nhắc Ban giám hiệu khóa tài khoản gắn với hồ sơ nhân sự đó. Ban giám hiệu xác nhận khóa, khả năng đăng nhập bị chặn từ đúng ngày hiệu lực (`YC-NS-05`).
-4. Khi hết thời hạn `Tạm nghỉ` đã ghi tại `NV04`, hệ thống nhắc và Ban giám hiệu mở lại tài khoản từ ngày kết thúc theo quy ước chung.
+1. Ban giám hiệu chọn hồ sơ nhân sự từ NV04 để tạo tài khoản. Mật khẩu được lưu dạng băm (NFR-02).
+2. Ban giám hiệu cấp hệ thống con theo vị trí công việc. Người kiêm nhiều vị trí được cấp nhiều hệ thống con, chức năng của từng hệ thống con không bị gộp.
+3. Khi cần người trực cổng, trực lớp hoặc người duyệt ngoại lệ trả trẻ, Ban giám hiệu cấp riêng **quyền trực giao nhận** (nhân sự, lớp, khoảng thời gian) hoặc **quyền duyệt ngoại lệ NV08** (QT-DT-05).
+4. Khi NV04 ghi `Tạm nghỉ` hoặc `Nghỉ việc` có hiệu lực (QT-NS-03), hệ thống nhắc Ban giám hiệu khóa tài khoản gắn với hồ sơ đó. Ban giám hiệu xác nhận khóa. Tài khoản không đăng nhập được từ đúng ngày hiệu lực (YC-NS-05).
+5. Khi NV04 ghi `Hết tạm nghỉ`, hệ thống nhắc Ban giám hiệu mở lại tài khoản. Tài khoản đăng nhập lại được từ ngày kết thúc tạm nghỉ.
 
 ## Luồng thay thế và ngoại lệ
 
-- **Bước 1 (nhân sự chưa xác nhận hoặc đã nghỉ việc):** Nếu nhân sự chưa có hồ sơ `NV04` đã xác nhận hoặc đang ở trạng thái `Nghỉ việc`, hệ thống chặn tạo mới hoặc kích hoạt tài khoản.
-- **Bước 2 (phân tách hai quyền NV08):** Hệ thống kiểm tra tại tầng nghiệp vụ (`NFR-01`) để quyền trực giao nhận không tự động bao gồm quyền duyệt ngoại lệ hoặc quyền duyệt hủy lượt trả (`QT-DT-05`, `QT-DT-07`); hết thời hạn được cấp, quyền trực tự động hết hiệu lực.
-- **Bước 3 (đơn nghỉ ngắn ngày tại NV05):** Nếu giáo viên chỉ có đơn nghỉ ngắn ngày tối đa 5 ngày làm việc liên tục được duyệt tại `NV05` (`QT-PC-06`), hệ thống **không khóa tài khoản** và chỉ giới hạn thao tác lớp trong ngày nghỉ theo phân công `NV05`.
+- **Bước 1 (nhân sự chưa xác nhận hoặc đã nghỉ việc):** Hệ thống chặn tạo hoặc kích hoạt tài khoản.
+- **Bước 3 (tách hai quyền NV08):** Hệ thống kiểm tra ở tầng nghiệp vụ (NFR-01). Quyền trực giao nhận không bao gồm quyền duyệt ngoại lệ hay quyền duyệt hủy lượt trả (QT-DT-05, QT-DT-07). Hết khoảng thời gian được cấp, quyền trực tự hết hiệu lực.
+- **Bước 4 (đơn nghỉ ngắn ngày ở NV05):** Giáo viên có đơn nghỉ tối đa 5 ngày làm việc liên tục đã duyệt (QT-PC-06) không bị khóa tài khoản. Hệ thống chỉ chặn thao tác trên lớp trong những ngày nghỉ.
 
 ## Dữ liệu giao dịch
 
 | Dữ liệu vào | Dữ liệu ra |
 | --- | --- |
-| Mã hồ sơ nhân sự (`NV04`), tên đăng nhập, mật khẩu (lưu băm), danh sách hệ thống con/vai trò, phạm vi quyền trực giao nhận (`NV08`: lớp, từ ngày/giờ – đến ngày/giờ), quyền duyệt ngoại lệ `NV08`, sự kiện biến động (`Tạm nghỉ`/`Nghỉ việc`/`Hết tạm nghỉ`) và ngày hiệu lực. | Tài khoản và trạng thái (`Hoạt động` / `Khóa`), quyền hệ thống con, lịch sử phân quyền trực/ngoại lệ `NV08`, nhật ký khóa/mở tài khoản gắn mã nhân sự. |
+| Mã hồ sơ nhân sự (NV04), tên đăng nhập, mật khẩu, hệ thống con và vai trò. Phạm vi quyền trực NV08: lớp, từ ngày giờ, đến ngày giờ. Quyền duyệt ngoại lệ NV08. Biến động `Tạm nghỉ`, `Nghỉ việc`, `Hết tạm nghỉ` kèm ngày hiệu lực. | Tài khoản và trạng thái `Hoạt động` hoặc `Khóa`. Quyền hệ thống con. Lịch sử cấp quyền trực và quyền duyệt ngoại lệ NV08. Nhật ký khóa và mở tài khoản theo mã nhân sự. |
+
+## Ca kiểm thử từ kịch bản
+
+| Ca | Dữ liệu | Kết quả mong đợi |
+| --- | --- | --- |
+| Khóa khi tạm nghỉ | NS-006 Trần Thu Trang tạm nghỉ hiệu lực 19/10/2026, trở lại 02/11/2026 ([Mẫu 06](../../survey/forms/mau-06-ho-so-nhan-su.md)) | Hệ thống nhắc Ban giám hiệu. Sau khi Lê Minh Tâm xác nhận, tài khoản bị khóa từ 19/10 và mở lại từ 02/11/2026. |
+| Đơn nghỉ ngắn ngày | Giáo viên có đơn nghỉ 2 ngày làm việc đã duyệt | Tài khoản vẫn mở. Thao tác trên lớp trong 2 ngày nghỉ bị chặn (QT-PC-06). |
+| Nhân sự chưa xác nhận | Hồ sơ nhân sự đang `Chờ xác nhận` tại NV04 | Chặn tạo tài khoản. |
+| Kiêm nhiệm | Nhân viên văn phòng kiêm kế toán (README khảo sát §1) | Được cấp hai hệ thống con Văn phòng và Kế toán. Mỗi hệ thống con giữ đúng chức năng của mình. |
+| Quyền trực có thời hạn | Nhân sự trực được cấp quyền giao nhận một lớp trong một khoảng giờ | Thao tác được trong phạm vi lớp và giờ được cấp. Ngoài khoảng đó bị chặn. Không duyệt được ngoại lệ nhận trẻ hộ. |
+| Quyền duyệt ngoại lệ | Hiệu trưởng Lê Minh Tâm duyệt DT05-MP-1014-058 lúc 17:05 ngày 14/10/2026 ([Mẫu 02](../../survey/forms/mau-02-diem-danh-giao-nhan.md)) | Người có quyền duyệt ngoại lệ duyệt được. Giáo viên chỉ có quyền giao nhận thì không duyệt được. |
 
 ## Liên phân hệ và truy vết
 
-- **NV04 → F1.0:** Mỗi tài khoản bắt buộc gắn một mã hồ sơ nhân sự `NV04`; biến động `Tạm nghỉ` hoặc `Nghỉ việc` kích hoạt khóa/mở tài khoản (`YC-NS-05`, `QT-NS-03`).
-- **F1.0 → Tất cả phân hệ:** Kiểm tra quyền tại tầng nghiệp vụ (`NFR-01`), đặc biệt cấp tách biệt quyền trực giao nhận và quyền duyệt ngoại lệ cho `NV08` (`UC-08`, `UC-09`, `QT-DT-05`).
+- **NV04 → F1.0:** Mỗi tài khoản gắn một mã hồ sơ nhân sự. Biến động `Tạm nghỉ`, `Nghỉ việc`, `Hết tạm nghỉ` tại [UC-04](uc-04-lap-va-cap-nhat-ho-so-nhan-su.md) kích hoạt nhắc khóa hoặc mở tài khoản (YC-NS-05, QT-NS-03).
+- **F1.0 → mọi phân hệ:** Kiểm tra quyền ở tầng nghiệp vụ (NFR-01). Quyền trực giao nhận và quyền duyệt ngoại lệ được cấp riêng cho [UC-08](uc-08-don-tre-theo-nhom.md), [UC-09](uc-09-tra-tre-theo-nhom.md) (QT-DT-05).
 
 | Yêu cầu / NFR | Quy tắc áp dụng | Phạm vi |
 | --- | --- | --- |
-| YC-NS-05, NFR-01, NFR-02 | QT-NS-03, QT-PC-06, QT-DT-05, QT-DT-07 | Cấp tài khoản gắn hồ sơ nhân sự, khóa/mở theo biến động `NV04` và phân quyền trực/ngoại lệ/duyệt hủy `NV08`. |
+| YC-NS-05, NFR-01, NFR-02 | QT-NS-03, QT-PC-06, QT-DT-05, QT-DT-07 | NV04 → F1.0 → NV08 · Cấp tài khoản gắn hồ sơ nhân sự, khóa và mở theo biến động NV04, tách quyền trực, quyền duyệt ngoại lệ và quyền duyệt hủy lượt trả NV08. |
