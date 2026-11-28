@@ -87,7 +87,7 @@ Khi phỏng vấn, xin mẫu trắng hoặc bản đã che thông tin cá nhân.
 | QT-BC-03 | Đề xuất | Sau khi gửi, nội dung bị khóa. Muốn sửa phải được yêu cầu bổ sung và gửi lại thành phiên bản mới. Giữ đủ các phiên bản cũ và phản hồi. | Kế toán phát hiện sai sau khi gửi. |
 | QT-BC-04 | Đề xuất | Số liệu được chụp tại lúc gửi. Nếu dữ liệu gốc thay đổi sau đó (ví dụ điều chỉnh điểm danh), báo cáo đã gửi hoặc đã duyệt không tự đổi; hệ thống cảnh báo người lập. Báo cáo đang ở `Đã gửi` được Ban giám hiệu xử lý như yêu cầu bổ sung nếu cần. Báo cáo đã duyệt chuyển sang `Cần cập nhật` để người lập gửi phiên bản mới từ số liệu hiện hành. | Điểm danh được sửa sau khi báo cáo chuyên cần đã gửi. Một quyết định chuyển lớp ghi hồi tố sau khi báo cáo sĩ số tháng đã duyệt. |
 | QT-BC-05 | Đề xuất | Tổng hợp toàn trường chỉ dùng phiên bản đã duyệt mới nhất của từng báo cáo. Kỳ còn bộ phận chưa duyệt được đánh dấu chưa đầy đủ. Kỳ có báo cáo ở trạng thái `Cần cập nhật` được đánh dấu số liệu đang cập nhật cho tới khi phiên bản mới được duyệt. | Kế toán chưa gửi báo cáo tháng. Báo cáo chuyên cần lớp Mầm 1 đã duyệt nhưng có điều chỉnh được duyệt sau đó. |
-| QT-BC-06 | Đề xuất | Mỗi bộ phận có tối đa một báo cáo cho mỗi loại, phạm vi và kỳ (trừ báo cáo đột xuất). Báo cáo gửi sau hạn vẫn được nhận nhưng được đánh dấu trễ hạn. | Văn phòng gửi báo cáo sĩ số tháng 10 vào ngày 8 tháng 11 khi hạn là ngày 5. |
+| QT-BC-06 | Đề xuất | Với báo cáo định kỳ, mỗi bộ phận có tối đa một báo cáo cho mỗi loại, phạm vi và kỳ. Mỗi sự việc đột xuất có mã báo cáo riêng và bộ phiên bản riêng. Báo cáo gửi sau hạn vẫn được nhận nhưng được đánh dấu trễ hạn. | Văn phòng gửi báo cáo sĩ số tháng 10 vào ngày 8 tháng 11 khi hạn là ngày 5. |
 
 ## 8. Hạn chế của quy trình hiện tại
 

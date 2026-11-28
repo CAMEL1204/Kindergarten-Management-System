@@ -140,10 +140,10 @@ flowchart TD
 
 | Mã | Chức năng lá | Công việc chính | Thực hiện / duyệt | YC, QT | Use Case |
 | --- | --- | --- | --- | --- | --- |
-| F1.7.1 | Lập và duyệt thực đơn theo ngày, bữa | Bếp lập thực đơn theo ngày và bữa, trình Ban giám hiệu duyệt. | Bếp lập. Ban giám hiệu duyệt. | YC-SA-01, YC-SA-02, YC-SA-04, QT-SA-01, QT-SA-03, QT-SA-06 | [UC-18](../use-cases/uc-18-lap-duyet-va-thong-bao-thuc-don.md) |
+| F1.7.1 | Lập và duyệt thực đơn theo ngày, bữa | Bộ phận bếp lập thực đơn theo ngày và bữa, trình Ban giám hiệu duyệt. | Bộ phận bếp lập. Ban giám hiệu duyệt. | YC-SA-01, YC-SA-02, YC-SA-04, QT-SA-01, QT-SA-03, QT-SA-06 | [UC-18](../use-cases/uc-18-lap-duyet-va-thong-bao-thuc-don.md) |
 | F1.7.2 | Thông báo thực đơn tuần, đối chiếu dị ứng và ghi lịch về sớm | Giáo viên thông báo thực đơn tuần, đối chiếu lưu ý dị ứng/chế độ ăn, ghi phản hồi và lịch về sớm trước bữa. | Giáo viên. | YC-SA-01, YC-SA-02, YC-SA-04, QT-SA-01, QT-SA-03, QT-SA-06 | [UC-18](../use-cases/uc-18-lap-duyet-va-thong-bao-thuc-don.md) |
-| F1.7.3 | Chốt danh sách và số suất ăn theo bữa | Rà soát danh sách dự kiến. Khi đủ dữ liệu đến hết mốc có hiệu lực, Giáo viên lưu số chốt ban đầu và gửi Bếp. | Giáo viên chốt. Bếp nhận số chốt. | YC-SA-01, YC-SA-02, YC-SA-03, QT-SA-01, QT-SA-02, QT-SA-03 | [UC-15](../use-cases/uc-15-chot-va-doi-chieu-suat-an.md) |
-| F1.7.4 | Điều chỉnh suất sau chốt và đối chiếu giao nhận | Ghi đề nghị điều chỉnh sau chốt và lưu số chốt ban đầu. Bếp xác nhận thay đổi, ghi giao suất và đối chiếu với Giáo viên. | Giáo viên đề nghị. Bếp xác nhận và giao. | YC-SA-04, YC-SA-05, QT-SA-04, QT-SA-05, QT-SA-06 | [UC-15](../use-cases/uc-15-chot-va-doi-chieu-suat-an.md) |
+| F1.7.3 | Chốt danh sách và số suất ăn theo bữa | Rà soát danh sách dự kiến. Khi đủ dữ liệu đến hết mốc có hiệu lực, Giáo viên lưu số chốt ban đầu và gửi Bộ phận bếp. | Giáo viên chốt. Bộ phận bếp nhận số chốt. | YC-SA-01, YC-SA-02, YC-SA-03, QT-SA-01, QT-SA-02, QT-SA-03 | [UC-15](../use-cases/uc-15-chot-va-doi-chieu-suat-an.md) |
+| F1.7.4 | Điều chỉnh suất sau chốt và đối chiếu giao nhận | Ghi đề nghị điều chỉnh sau chốt và lưu số chốt ban đầu. Bộ phận bếp xác nhận thay đổi, ghi giao suất và đối chiếu với Giáo viên. | Giáo viên đề nghị. Bộ phận bếp xác nhận và giao. | YC-SA-04, YC-SA-05, QT-SA-04, QT-SA-05, QT-SA-06 | [UC-15](../use-cases/uc-15-chot-va-doi-chieu-suat-an.md) |
 
 **Liên phân hệ**
 

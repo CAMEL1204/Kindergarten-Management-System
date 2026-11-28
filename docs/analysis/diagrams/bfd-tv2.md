@@ -29,12 +29,12 @@ flowchart TD
 | F1.1 Hồ sơ trẻ | TV1 | 5 | Văn phòng |
 | F1.2 Xếp lớp | TV1 | 4 | Văn phòng |
 | F1.3 Điểm danh | TV1 | 4 | Giáo viên |
-| F1.7 Suất ăn | TV1 | 4 | Bếp, Giáo viên |
+| F1.7 Suất ăn | TV1 | 4 | Bộ phận bếp, Giáo viên |
 | F1.4 Nhân sự | TV2 | 4 | Văn phòng |
 | F1.5 Phân công giáo viên | TV2 | 4 | Văn phòng, Giáo viên |
 | F1.6 Học phí | TV2 | 5 | Kế toán |
 | F1.8 Đón trả trẻ | TV2 | 6 | Giáo viên, Văn phòng |
-| F1.9 Báo cáo | TV2 | 4 | Mọi hệ thống con, Ban giám hiệu |
+| F1.9 Báo cáo | TV2 | 4 | Người lập báo cáo của bộ phận, Ban giám hiệu |
 
 TV2 có 5 nhánh cấp 2 và 23 chức năng lá. Hệ thống con ghi theo README §5 và ma trận T/D/X ở README §7.
 
@@ -163,7 +163,7 @@ flowchart TD
 
 | Mã | Chức năng lá | Công việc chính | Thực hiện / duyệt | YC, QT | Biểu mẫu |
 | --- | --- | --- | --- | --- | --- |
-| F1.9.1 | Lập và ghi chú báo cáo | Chọn loại báo cáo và kỳ của bộ phận mình. Lấy số liệu đã chốt trong phạm vi người lập. Hiển thị riêng lượt chờ xác minh, đánh dấu kỳ còn ngày chưa khóa hoặc điều chỉnh chờ duyệt. Thêm ghi chú chung, ghi chú theo dòng, tệp đính kèm. Lưu nháp, chỉ người lập thấy. | Người lập ở mọi hệ thống con: Giáo viên, Văn phòng, Kế toán, Bếp. | YC-BC-01. QT-BC-01, QT-BC-02, QT-BC-06. | BC-01 đến BC-04 |
+| F1.9.1 | Lập và ghi chú báo cáo | Chọn loại báo cáo và kỳ của bộ phận mình. Lấy số liệu đã chốt trong phạm vi người lập. Hiển thị riêng lượt chờ xác minh, đánh dấu kỳ còn ngày chưa khóa hoặc điều chỉnh chờ duyệt. Thêm ghi chú chung, ghi chú theo dòng, tệp đính kèm. Lưu nháp, chỉ người lập thấy. | Người lập báo cáo của bộ phận: Giáo viên, Văn phòng, Kế toán, Bộ phận bếp. | YC-BC-01. QT-BC-01, QT-BC-02, QT-BC-06. | BC-01 đến BC-04 |
 | F1.9.2 | Gửi báo cáo | Bấm "Gửi Ban giám hiệu". Chụp số liệu tại lúc gửi, ghi người gửi, thời điểm và khóa nội dung. Đánh dấu trễ hạn khi gửi sau hạn. Sau yêu cầu bổ sung hoặc `Cần cập nhật`, gửi lại thành phiên bản mới. | Người lập. | YC-BC-01, YC-BC-03, YC-BC-04. QT-BC-03, QT-BC-04, QT-BC-06. | BC-01 đến BC-04 |
 | F1.9.3 | Xem, phản hồi, duyệt | Mở hộp báo cáo nhận được, lọc theo bộ phận, loại, kỳ, trạng thái. Viết phản hồi gắn với phiên bản. Chọn "Yêu cầu bổ sung" hoặc "Duyệt". Khi số liệu nguồn thay đổi sau khi gửi, báo cáo không tự đổi và hệ thống cảnh báo người lập. Báo cáo `Đã gửi` được Ban giám hiệu xử lý bằng yêu cầu bổ sung nếu cần. Báo cáo `Đã duyệt` chuyển sang `Cần cập nhật`. | Ban giám hiệu. | YC-BC-02, YC-BC-03. QT-BC-01, QT-BC-03, QT-BC-04. | — |
 | F1.9.4 | Tổng hợp toàn trường | Ghép chỉ tiêu từ phiên bản đã duyệt mới nhất của từng báo cáo. Đánh dấu kỳ chưa đầy đủ và kỳ có số liệu đang cập nhật. Theo dõi bộ phận chưa gửi, gửi trễ hạn. Xuất Excel hoặc PDF. | Ban giám hiệu. | YC-BC-04. QT-BC-05, QT-BC-06. | BC-05 (Mẫu 05) |

@@ -3,7 +3,7 @@
 | Thuộc tính | Đặc tả |
 | --- | --- |
 | Nghiệp vụ / nhánh chức năng | NV09 · F1.9.1, F1.9.2, F1.9.3, F1.9.4 |
-| Tác nhân chính | Người lập báo cáo ở mọi hệ thống con: Giáo viên, Văn phòng, Kế toán, Bếp |
+| Tác nhân chính | Người lập báo cáo của bộ phận: Giáo viên, Văn phòng, Kế toán, Bộ phận bếp |
 | Tác nhân phụ | Ban giám hiệu (xem, phản hồi, yêu cầu bổ sung, duyệt, tổng hợp toàn trường) |
 | Mục tiêu | Mỗi bộ phận lập báo cáo trong phạm vi của mình từ số liệu đã chốt, ghi chú và gửi Ban giám hiệu. Ban giám hiệu duyệt và tổng hợp toàn trường từ các phiên bản đã duyệt, nên mỗi con số có bộ phận đứng tên. |
 | Điều kiện trước | Người lập đăng nhập hệ thống con của mình. Danh mục loại báo cáo, bộ phận lập, kỳ, hạn gửi và chỉ tiêu đã có tại `UC-02` (YC-BC-05). Số liệu nguồn của kỳ đã được bộ phận sở hữu chốt. |

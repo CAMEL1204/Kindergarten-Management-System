@@ -36,9 +36,9 @@ Màu xám là nền tảng dùng chung do TV1 đặc tả, màu xanh lá là nh�
 | F1.4 Nhân sự | TV2 | 4 | Văn phòng | UC-04 |
 | F1.5 Phân công giáo viên | TV2 | 4 | Văn phòng, Giáo viên | UC-05 |
 | F1.6 Học phí | TV2 | 5 | Kế toán | UC-02 (F1.6.1), UC-06, UC-07 |
-| F1.7 Suất ăn | TV1 | 4 | Bếp, Giáo viên | UC-15, UC-18 |
+| F1.7 Suất ăn | TV1 | 4 | Bộ phận bếp, Giáo viên | UC-15, UC-18 |
 | F1.8 Đón trả trẻ | TV2 | 6 | Giáo viên, Văn phòng | UC-08, UC-09 |
-| F1.9 Báo cáo | TV2 | 4 | Mọi hệ thống con, Ban giám hiệu | UC-10 |
+| F1.9 Báo cáo | TV2 | 4 | Người lập báo cáo của bộ phận, Ban giám hiệu | UC-10 |
 | **Tổng** | | **43** | | **18 UC** |
 
 ## 2. BFD đầy đủ ba cấp
@@ -151,17 +151,17 @@ flowchart LR
 | F1.6.3 | Thu tiền và in biên lai | Kế toán. | UC-07 |
 | F1.6.4 | Điều chỉnh và hoàn tiền | Kế toán lập. Ban giám hiệu duyệt. | UC-07 |
 | F1.6.5 | Theo dõi công nợ | Kế toán. Ban giám hiệu xem. | UC-07 |
-| F1.7.1 | Lập và duyệt thực đơn theo ngày, bữa | Bếp lập. Ban giám hiệu duyệt. | UC-18 |
+| F1.7.1 | Lập và duyệt thực đơn theo ngày, bữa | Bộ phận bếp lập. Ban giám hiệu duyệt. | UC-18 |
 | F1.7.2 | Thông báo thực đơn tuần, đối chiếu dị ứng và ghi lịch về sớm | Giáo viên. | UC-18 |
-| F1.7.3 | Chốt danh sách và số suất ăn theo bữa | Giáo viên chốt. Bếp nhận số chốt. | UC-15 |
-| F1.7.4 | Điều chỉnh suất sau chốt và đối chiếu giao nhận | Giáo viên đề nghị. Bếp xác nhận và giao. | UC-15 |
+| F1.7.3 | Chốt danh sách và số suất ăn theo bữa | Giáo viên chốt. Bộ phận bếp nhận số chốt. | UC-15 |
+| F1.7.4 | Điều chỉnh suất sau chốt và đối chiếu giao nhận | Giáo viên đề nghị. Bộ phận bếp xác nhận và giao. | UC-15 |
 | F1.8.1 | Ghi nhận báo nghỉ | Giáo viên (lớp mình) hoặc Văn phòng. | UC-08 |
 | F1.8.2 | Đón trẻ và chuyển lượt đón sang NV03 | Giáo viên phụ trách lớp hoặc nhân sự trực được cấp quyền. | UC-08 |
 | F1.8.3 | Xác minh và duyệt nhận trẻ hộ | Giáo viên hoặc nhân sự trực xác minh. Ban giám hiệu hoặc người được giao quyền duyệt. | UC-09 |
 | F1.8.4 | Trả trẻ | Giáo viên phụ trách lớp hoặc nhân sự trực được cấp quyền. | UC-09 |
 | F1.8.5 | Tra cứu đón trả | Giáo viên (lớp mình). Văn phòng (toàn trường). Ban giám hiệu. | UC-08, UC-09 |
 | F1.8.6 | Hủy lượt giao nhận ghi nhầm | Giáo viên phụ trách lớp hoặc người đã ghi. Ban giám hiệu hoặc người được giao duyệt hủy lượt trả. | UC-08, UC-09 |
-| F1.9.1 | Lập và ghi chú báo cáo | Người lập ở mọi hệ thống con. | UC-10 |
+| F1.9.1 | Lập và ghi chú báo cáo | Người lập báo cáo của bộ phận. | UC-10 |
 | F1.9.2 | Gửi báo cáo | Người lập. | UC-10 |
 | F1.9.3 | Xem, phản hồi, duyệt | Ban giám hiệu. | UC-10 |
 | F1.9.4 | Tổng hợp toàn trường | Ban giám hiệu. | UC-10 |

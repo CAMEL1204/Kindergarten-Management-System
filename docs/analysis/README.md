@@ -18,11 +18,21 @@ Giai đoạn này chuyển kết quả khảo sát của nền tảng `F1.0` và
 | `F1.0` Quản trị hệ thống → Tất cả | `UC-01` cấp tài khoản gắn hồ sơ nhân sự `NV04`, khóa/mở theo biến động `Tạm nghỉ`/`Nghỉ việc` (`QT-NS-03`), và cấp tách biệt quyền trực với quyền duyệt ngoại lệ `NV08` (`QT-DT-05`). `UC-02` quản trị năm học, kỳ học, lịch nghỉ, nhóm tuổi, lớp, ca, định mức, biểu phí, miễn giảm và loại báo cáo. `UC-03` cấu hình động các mốc giờ vận hành có hiệu lực (mặc định `07:30`, `08:30`, `09:00`, khung đón/trả), bữa ăn, định mức khẩu phần và giờ chốt bữa (`YC-SA-03`). |
 | `NV08` Đón trẻ → `NV03` Chuyên cần | Trên `UC-08`, đồng bộ 3 vai trò theo `QT-DT-05` và `YC-DT-05`: `Giáo viên` hoặc `Nhân sự trực được cấp quyền` ghi lượt đón; `Giáo viên` hoặc `Văn phòng` tiếp nhận báo nghỉ. Lượt đón tạo kết quả `Có mặt` trực tiếp trước **mốc khóa có hiệu lực của ngày học** (mặc định `09:00`) theo **thời điểm ghi nhận**. Cờ `Đến muộn` tính từ **mốc bàn giao sáng có hiệu lực** (mặc định `08:30`) theo **giờ đến thực tế**. Từ mốc khóa có hiệu lực trở đi, phát sinh hoặc hủy lượt đón chuyển sang đề nghị điều chỉnh có duyệt tại `UC-14`. |
 | `NV01` Hồ sơ trẻ → `NV08` Trả trẻ | `UC-09` tra người giám hộ chính và ủy quyền cố định còn hiệu lực (`Đến ngày + 1`, hoặc hết hiệu lực tức thời khi thu hồi sớm tại `UC-16`) tại thời điểm trả (`QT-HS-05`, `QT-DT-04`), che CCCD trên danh sách thông thường. |
-| `NV02` Xếp lớp → `NV05` Phân công | `UC-12` và `UC-17` cung cấp danh sách lớp đang hoạt động và sĩ số theo ngày hiệu lực cho `UC-05` (`QT-PC-01`), đồng thời kiểm tra cảnh báo định mức giáo viên `NV05` của lớp đích khi xếp lớp, quay lại hoặc chuyển lớp (`QT-PC-03`). |
+| `NV02` Xếp lớp → `NV05` Phân công | `UC-12` và `UC-17` cung cấp lịch sử xếp lớp để tính sĩ số theo ngày hiệu lực. Trạng thái hoạt động của lớp do D1 quản lý, lịch đã phân công và nghỉ do D6 quản lý. Ba nguồn này cùng phục vụ `UC-05` (`QT-PC-01`), đồng thời kiểm tra cảnh báo định mức giáo viên `NV05` của lớp đích khi xếp lớp, quay lại hoặc chuyển lớp (`QT-PC-03`). |
 | `NV02` Xếp lớp và `NV03` Chuyên cần → `NV06` Học phí | `UC-17`/`UC-12` cung cấp diện đi học theo ngày (`Nghỉ dài ngày` thu đủ khoản tháng; `Bảo lưu`/`Thôi học` tính tỷ lệ theo `QT-HP-06`). `UC-13`/`UC-14` cung cấp số ngày `Có mặt` đã khóa cuối kỳ; `Chờ xác minh` tính 0 ngày (`QT-DD-07`). **Treo đối soát của trẻ trong kỳ khi trẻ còn ngày chưa khóa hoặc còn ít nhất một đề nghị chờ duyệt có thể đổi kết quả `Có mặt`. Chỉ gỡ treo khi mọi ngày liên quan của trẻ trong kỳ đã khóa và không còn đề nghị nào thỏa điều kiện đó** (`QT-DD-07`, `QT-HP-05`). Xếp lớp hồi tố hoặc đổi nhóm tuổi thông báo đối soát lại sang `NV06`. |
 | Các phân hệ → `NV09` Báo cáo | `UC-10` nhận bảng tổng hợp sĩ số đầu kỳ/tăng/giảm/cuối kỳ từ `UC-17` (`YC-XL-04`), số liệu tuyển sinh từ `UC-11`, chuyên cần từ `UC-13` và suất ăn từ `UC-15`. Khi **bất kỳ thay đổi nguồn nào** ảnh hưởng đến báo cáo đã nộp (`UC-12`/`UC-17` hồi tố, `UC-14` duyệt sau khóa, hoặc điều chỉnh/đối chiếu suất ăn `UC-15`), hệ thống giữ nguyên ảnh chụp và cảnh báo người lập theo `QT-BC-04`: báo cáo ở trạng thái `Đã gửi` do Ban giám hiệu xử lý yêu cầu bổ sung; báo cáo ở trạng thái `Đã duyệt` chuyển sang `Cần cập nhật`. |
 
 Bảng chi tiết từng luồng (bên cung cấp, bên sử dụng, điều kiện dữ liệu hợp lệ, xử lý khi dữ liệu thay đổi) ở phần 5 của [ma trận truy vết](traceability.md).
+
+### Đối chiếu mô hình phân tích
+
+DFD có 10 tiến trình chính, 43 tiến trình con và 179 cạnh phân biệt ở mức đỉnh. Bảng thành phần gói ở cuối DFD cho biết mỗi cạnh được phân rã thế nào. Người lập báo cáo của bộ phận thao tác UC-10. D2–D9 cung cấp số liệu. Phụ huynh / người nhận trẻ trao đổi với nhân sự nhà trường khi đăng ký, cập nhật hồ sơ, báo nghỉ, phản hồi thực đơn, giao nhận trẻ hoặc nhận thông báo thu phí.
+
+| Ca đối chiếu | Kết quả theo mô hình |
+| --- | --- |
+| Trẻ T01 đã có đợt TN01, quay lại trong đợt TN02. Văn phòng sửa số liên hệ và trình sửa ngày sinh nhưng bị từ chối. | Hai đợt cùng tham chiếu T01, mỗi đợt giữ riêng giấy tờ và lịch hẹn. Hai dòng lịch sử giữ giá trị trước và đề nghị, người xử lý và kết quả. Chỉ số liên hệ thay đổi trên hồ sơ hiện hành. |
+| Thứ Sáu, phụ huynh báo trẻ sẽ về trước bữa trưa thứ Hai tuần sau. | 8.2 lưu phản hồi theo trẻ và bữa trên thực đơn đã duyệt. Đến mốc chốt, 8.3 dùng phản hồi còn hiệu lực để xác định suất và lưu căn cứ trên chi tiết suất. |
+| Cùng lớp, cùng kỳ có hai sự việc cần báo cáo đột xuất. | Mỗi sự việc mở một mã báo cáo với phiên 1 riêng. Việc gửi lại sự việc thứ nhất tạo phiên mới thuộc đúng mã đó. Quy tắc duy nhất theo loại/kỳ/bộ phận/phạm vi chỉ áp dụng cho báo cáo định kỳ. |
 
 ## 3. Thứ tự thực hiện
 
@@ -36,7 +46,7 @@ Bảng chi tiết từng luồng (bên cung cấp, bên sử dụng, điều ki�
 | --- | --- |
 | `README.md` | Phân công, tiến độ, quy ước liên phân hệ và mục lục. |
 | `use-cases/` | Mỗi use case một file Markdown (`uc-01-...md` đến `uc-18-...md`). |
-| `diagrams/` | Sơ đồ use case toàn hệ thống, [BFD toàn hệ thống](diagrams/bfd-toan-he-thong.md) ba cấp và BFD chi tiết [phần TV1](diagrams/bfd-tv1.md), [phần TV2](diagrams/bfd-tv2.md). |
+| `diagrams/` | Sơ đồ use case toàn hệ thống, [BFD toàn hệ thống](diagrams/bfd-toan-he-thong.md) ba cấp và BFD chi tiết [phần TV1](diagrams/bfd-tv1.md), [phần TV2](diagrams/bfd-tv2.md). [DFD hệ thống từ mức ngữ cảnh đến 43 xử lý mức dưới](diagrams/dfd-he-thong.md). [ERD logic gồm 47 thực thể theo 10 kho dữ liệu](diagrams/erd-he-thong.md). |
 | `traceability.md` | Ma trận nối mã NV, chức năng `F1.x.y`, `YC`, `QT` và `UC`, kèm luồng liên phân hệ. |
 
 ## 5. Danh mục đặc tả nền tảng (`F1.0`) và TV1
