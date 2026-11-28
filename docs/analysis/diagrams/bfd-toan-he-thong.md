@@ -1,6 +1,6 @@
 # Sơ đồ phân rã chức năng (BFD) toàn hệ thống
 
-Tài liệu này ghép đủ ba cấp của BFD: cấp 1 là hệ thống, cấp 2 là nền tảng `F1.0` và 9 nhánh nghiệp vụ, cấp 3 là 43 chức năng lá `F1.x.y`. Mã và tên chức năng giữ nguyên theo [mục 8.1 của khảo sát](../../survey/README.md). Công việc chính bên trong từng chức năng lá của TV2 ở [BFD phần TV2](bfd-tv2.md). Truy vết `YC-*`, `QT-*` của từng chức năng lá ở [ma trận truy vết](../traceability.md).
+Tài liệu này ghép đủ ba cấp của BFD: cấp 1 là hệ thống, cấp 2 là nền tảng `F1.0` và 9 nhánh nghiệp vụ, cấp 3 là 43 chức năng lá `F1.x.y`. Mã và tên chức năng giữ nguyên theo [mục 8.1 của khảo sát](../../survey/README.md). Công việc chính của từng chức năng lá được trình bày trong [BFD phần TV1](bfd-tv1.md) và [BFD phần TV2](bfd-tv2.md). Truy vết `YC-*`, `QT-*` của từng chức năng lá ở [ma trận truy vết](../traceability.md).
 
 ## 1. Cấp 1 và cấp 2
 

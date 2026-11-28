@@ -36,7 +36,7 @@ Bảng chi tiết từng luồng (bên cung cấp, bên sử dụng, điều ki�
 | --- | --- |
 | `README.md` | Phân công, tiến độ, quy ước liên phân hệ và mục lục. |
 | `use-cases/` | Mỗi use case một file Markdown (`uc-01-...md` đến `uc-18-...md`). |
-| `diagrams/` | Sơ đồ use case toàn hệ thống, [BFD toàn hệ thống](diagrams/bfd-toan-he-thong.md) ba cấp và BFD chi tiết phần TV2. |
+| `diagrams/` | Sơ đồ use case toàn hệ thống, [BFD toàn hệ thống](diagrams/bfd-toan-he-thong.md) ba cấp và BFD chi tiết [phần TV1](diagrams/bfd-tv1.md), [phần TV2](diagrams/bfd-tv2.md). |
 | `traceability.md` | Ma trận nối mã NV, chức năng `F1.x.y`, `YC`, `QT` và `UC`, kèm luồng liên phân hệ. |
 
 ## 5. Danh mục đặc tả nền tảng (`F1.0`) và TV1
@@ -68,5 +68,7 @@ Thứ tự theo mục 3: nhóm ưu tiên `UC-05`, `UC-06`, `UC-08`, `UC-09`, r�
 | NV04 | F1.4.1–F1.4.4 | [UC-04 · Lập và cập nhật hồ sơ nhân sự](use-cases/uc-04-lap-va-cap-nhat-ho-so-nhan-su.md) |
 | NV06 | F1.6.3–F1.6.5 | [UC-07 · Ghi thu tiền và in biên lai](use-cases/uc-07-ghi-thu-tien-va-in-bien-lai.md) |
 | NV09 | F1.9.1–F1.9.4 | [UC-10 · Gửi, phản hồi và duyệt báo cáo](use-cases/uc-10-gui-phan-hoi-va-duyet-bao-cao.md) |
+
+[BFD phần TV1](diagrams/bfd-tv1.md) chi tiết hóa 4 nhánh nghiệp vụ với 17 chức năng lá và 3 chức năng lá của nền tảng dùng chung F1.0.
 
 Sơ đồ dùng chung của TV2: [BFD phần TV2](diagrams/bfd-tv2.md), chi tiết hóa 5 nhánh cấp 2 và 23 chức năng lá.
