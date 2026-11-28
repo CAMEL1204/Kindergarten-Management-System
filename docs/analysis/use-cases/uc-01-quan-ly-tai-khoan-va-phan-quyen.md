@@ -13,7 +13,7 @@
 
 1. Ban giám hiệu chọn hồ sơ nhân sự từ `NV04` để tạo mới tài khoản (mật khẩu lưu dạng băm theo `NFR-02`) hoặc điều chỉnh vai trò hệ thống con theo vị trí công việc (một người kiêm nhiều vị trí được cấp nhiều hệ thống con mà không gộp chức năng).
 2. Khi phát sinh nhu cầu trực cổng/trực lớp hoặc ủy quyền duyệt ngoại lệ trả trẻ tại `NV08`, Ban giám hiệu cấp riêng **quyền trực giao nhận** (chọn nhân sự, danh sách lớp và khoảng thời gian áp dụng) hoặc **quyền duyệt ngoại lệ NV08** (`QT-DT-05`).
-3. Khi `NV04` ghi nhận biến động `Tạm nghỉ` (từ 6 ngày làm việc liên tục trở lên hoặc nghỉ theo chế độ) hoặc `Nghỉ việc` có hiệu lực (`QT-NS-03`), hệ thống nhắc Ban giám hiệu và khóa khả năng đăng nhập của tài khoản gắn với hồ sơ nhân sự đó từ đúng ngày hiệu lực (`YC-NS-05`).
+3. Khi `NV04` ghi nhận biến động `Tạm nghỉ` (từ 6 ngày làm việc liên tục trở lên hoặc nghỉ theo chế độ) hoặc `Nghỉ việc` có hiệu lực (`QT-NS-03`), hệ thống nhắc Ban giám hiệu khóa tài khoản gắn với hồ sơ nhân sự đó. Ban giám hiệu xác nhận khóa, khả năng đăng nhập bị chặn từ đúng ngày hiệu lực (`YC-NS-05`).
 4. Khi hết thời hạn `Tạm nghỉ` đã ghi tại `NV04`, hệ thống nhắc và Ban giám hiệu mở lại tài khoản từ ngày kết thúc theo quy ước chung.
 
 ## Luồng thay thế và ngoại lệ

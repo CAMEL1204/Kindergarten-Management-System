@@ -26,7 +26,7 @@
 
 | Dữ liệu vào | Dữ liệu ra |
 | --- | --- |
-| Tuần/ngày áp dụng, bữa (`Sáng`, `Trưa`, `Xế`), danh sách món ăn, quyết định duyệt thực đơn, lưu ý dị ứng từ NV01, phản hồi phụ huynh (mã trẻ, ngày, bữa, giờ dự kiến đón về sớm). | Thực đơn theo ngày/bữa (`Nháp` / `Chờ duyệt` / `Đã duyệt`), bản xuất thông báo thực đơn tuần, danh sách phản hồi và lịch về sớm theo trẻ/ngày/bữa chuyển sang `UC-15`. |
+| Tuần/ngày áp dụng, bữa (`Sáng`, `Trưa`, `Xế`), danh sách món ăn, quyết định duyệt thực đơn, lưu ý dị ứng từ NV01, phản hồi phụ huynh (mã trẻ, ngày, bữa, giờ dự kiến nhận trẻ về sớm). | Thực đơn theo ngày/bữa (`Nháp` / `Chờ duyệt` / `Đã duyệt`), bản xuất thông báo thực đơn tuần, danh sách phản hồi và lịch về sớm theo trẻ/ngày/bữa chuyển sang `UC-15`. |
 
 ## Liên phân hệ và truy vết
 

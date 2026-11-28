@@ -6,7 +6,7 @@
 | Tác nhân chính | Giáo viên |
 | Tác nhân phụ | Bếp (Bếp trưởng và nhân viên bếp/cấp dưỡng) |
 | Mục tiêu | Chốt đúng số suất ăn theo lớp, ngày và từng bữa dựa trên chuyên cần và lịch về sớm do dị ứng; xử lý điều chỉnh sau chốt và đối chiếu số thực nhận với số cần giao. |
-| Điều kiện trước | Thực đơn ngày đã được duyệt và thông báo qua [UC-18](uc-18-lap-duyet-va-thong-bao-thuc-don.md). Ban giám hiệu đã cấu hình bữa ăn và mốc chốt có hiệu lực cho ngày được chọn tại [UC-03](uc-03-cau-hinh-moc-gio-va-bua-an.md). Giáo viên có quyền phân công lớp trong ngày (`NV05`) và nhận được danh sách từ `NV03`. |
+| Điều kiện trước | Thực đơn ngày đã được duyệt và thông báo qua [UC-18](uc-18-lap-duyet-va-thong-bao-thuc-don.md). Ban giám hiệu đã cấu hình bữa ăn và mốc chốt có hiệu lực cho ngày được chọn tại [UC-03](uc-03-cau-hinh-moc-gio-va-bua-an.md). Giáo viên được phân công lớp trong ngày (`NV05`) và nhận được danh sách từ `NV03`. |
 | Điều kiện sau | Lưu tách biệt danh sách ăn theo bữa, số chốt ban đầu, các yêu cầu điều chỉnh và phần bếp xác nhận, số cần giao, số bếp giao, số lớp thực nhận và chênh lệch (kèm lý do) cho vận hành và báo cáo `NV09`. |
 
 ## Luồng sự kiện chính

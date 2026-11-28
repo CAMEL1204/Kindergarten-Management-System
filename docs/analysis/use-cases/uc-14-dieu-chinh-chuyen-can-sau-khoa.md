@@ -11,7 +11,7 @@
 
 ## Luồng sự kiện chính
 
-1. Khởi tạo đề nghị điều chỉnh theo một trong ba nguồn:
+1. Khởi tạo đề nghị điều chỉnh theo một trong hai cách:
    - **Tự động từ NV08:** Khi giáo viên hoặc nhân sự trực được cấp quyền ghi nhận lượt đón mới hoặc hủy lượt đón từ mốc khóa có hiệu lực của ngày học trở đi (mặc định `09:00`, theo cấu hình `UC-03`), hệ thống tự tạo đề nghị điều chỉnh gắn mã sự kiện NV08.
    - **Thủ công từ giáo viên:** Giáo viên chọn dòng đã khóa (ví dụ `Chờ xác minh` khi phụ huynh phản hồi sau mốc khóa, hoặc ngày bị ảnh hưởng bởi xếp lớp hồi tố), chọn trạng thái đề xuất và đính kèm/nhập căn cứ.
 2. Hệ thống lưu bản ghi đề nghị gồm kết quả trước và sau đề xuất, lý do, mã lượt đón/căn cứ, người đề nghị và thời điểm đề nghị ở trạng thái `Chờ duyệt`. Kết quả chuyên cần hiện hành vẫn giữ nguyên hiệu lực cho tới khi được duyệt.

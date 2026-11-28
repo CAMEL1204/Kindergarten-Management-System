@@ -2,7 +2,7 @@
 
 Tài liệu này chi tiết hóa năm nhánh cấp 2 của TV2: `F1.4` Nhân sự, `F1.5` Phân công giáo viên, `F1.6` Học phí, `F1.8` Đón trả trẻ và `F1.9` Báo cáo. Căn cứ là các file khảo sát [NV04](../../survey/04-staff-management.md), [NV05](../../survey/05-teacher-assignment.md), [NV06](../../survey/06-tuition-management.md), [NV08](../../survey/08-child-drop-off-and-pick-up.md) và [NV09](../../survey/09-reporting.md).
 
-Mã chức năng giữ nguyên theo [mục 8.1 của khảo sát](../../survey/README.md). Phần truy vết của TV1 (nhánh `docs/analysis/member-1`) đã dùng các mã này, nên không đánh số lại. Truy vết đầy đủ của từng chức năng lá TV2 ở phần 4 của [ma trận truy vết](../traceability.md). BFD có ba cấp: cấp 1 là hệ thống, cấp 2 là nhánh theo nghiệp vụ, cấp 3 là chức năng lá `F1.x.y`. Cột "Công việc chính" mô tả các bước bên trong một chức năng lá, không phải cấp phân rã thứ tư.
+Mã chức năng giữ nguyên theo [mục 8.1 của khảo sát](../../survey/README.md). Phần 1–3 của ma trận truy vết (phần TV1) đã dùng các mã này, nên không đánh số lại. Truy vết đầy đủ của từng chức năng lá TV2 ở phần 4 của [ma trận truy vết](../traceability.md). BFD có ba cấp: cấp 1 là hệ thống, cấp 2 là nhánh theo nghiệp vụ, cấp 3 là chức năng lá `F1.x.y`. Cột "Công việc chính" mô tả các bước bên trong một chức năng lá, không phải cấp phân rã thứ tư.
 
 ## 1. Vị trí trong BFD toàn hệ thống
 
@@ -143,7 +143,7 @@ flowchart TD
 
 - F1.2.4 → F1.8.2: danh sách trẻ thuộc lớp trong ngày, nhãn nghỉ dài ngày.
 - F1.5.3 → F1.8.2, F1.8.4: giáo viên phụ trách lớp theo ngày. F1.0.1 → F1.8: quyền trực giao nhận và quyền duyệt ngoại lệ, cấp riêng (QT-DT-05).
-- F1.0.3 → F1.8.2, F1.8.4: khung đón, mốc bàn giao, mốc khóa chuyên cần và khung trả có hiệu lực. Mã F1.0.3 chưa có ở mục 8.1 của khảo sát. Mã này theo phân tích của TV1 (`UC-03`).
+- F1.0.3 → F1.8.2, F1.8.4: khung đón, mốc bàn giao, mốc khóa chuyên cần và khung trả có hiệu lực. F1.0.3 do TV1 đặc tả tại `UC-03`.
 - F1.1.4 → F1.8.3, F1.8.4: người giám hộ chính và ủy quyền cố định còn hiệu lực tại thời điểm trả (QT-HS-05, QT-DT-04).
 - F1.8.1, F1.8.2, F1.8.6 → F1.3.2, F1.3.3: báo nghỉ là căn cứ xác minh. Lượt đón là nguồn duy nhất của `Có mặt` (QT-DT-01).
 - F1.8.4, F1.8.6 → F1.7.4: giờ về thực tế và thay đổi ảnh hưởng bữa ăn (QT-SA-04).
