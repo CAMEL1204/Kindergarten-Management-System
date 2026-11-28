@@ -243,7 +243,7 @@ Quyền bổ sung tại NV08 được cấp theo nhiệm vụ. Nhân sự trực
 
 ## 8. Đối chiếu với checklist (mục 3.1 và 3.3)
 
-Phần này là bản nháp để hai thành viên thống nhất. Mã chức năng dùng dạng `F1.x.y`, với `x` là số nghiệp vụ. TV1 bổ sung chức năng lá cho các nhánh của mình.
+Mã chức năng dùng dạng `F1.x.y`, với `x` là số nghiệp vụ. Hai thành viên đã bổ sung đầy đủ chức năng lá cho cả phần nền tảng `F1.0` và 9 nghiệp vụ.
 
 ### 8.1. Sơ đồ phân rã chức năng (BFD) đề xuất
 
@@ -264,10 +264,14 @@ flowchart TD
 
 | Nhánh cấp 2 | Chức năng lá (cấp 3) | Hệ thống con |
 | --- | --- | --- |
-| F1.0 Quản trị hệ thống | F1.0.1 Quản lý tài khoản và vai trò. F1.0.2 Quản lý danh mục dùng chung. | Ban giám hiệu |
+| F1.0 Quản trị hệ thống | F1.0.1 Quản lý tài khoản, vai trò và phân quyền trực. F1.0.2 Quản lý danh mục dùng chung. F1.0.3 Cấu hình khung giờ vận hành, bữa ăn và mốc chốt. | Ban giám hiệu (Văn phòng, Kế toán lập danh mục trình duyệt) |
+| F1.1 Hồ sơ trẻ | F1.1.1 Tiếp nhận, đối chiếu trùng và duyệt hồ sơ trẻ. F1.1.2 Theo dõi bổ sung giấy tờ và bàn giao danh sách chờ xếp lớp. F1.1.3 Cập nhật thông tin nhân thân, giám hộ chính và lịch sử hồ sơ. F1.1.4 Quản lý ủy quyền cố định nhận trẻ. F1.1.5 Đề nghị, ghi nhận và xác nhận lưu ý chăm sóc. | Văn phòng, Ban giám hiệu duyệt, Giáo viên đề nghị lưu ý |
+| F1.2 Xếp lớp | F1.2.1 Xếp lớp ban đầu và quản lý danh sách chờ. F1.2.2 Chuyển lớp và giữ lịch sử hai đầu. F1.2.3 Quản lý nghỉ dài ngày, bảo lưu, thôi học và quay lại. F1.2.4 Tra cứu danh sách theo ngày, đối chiếu hồi tố và tổng hợp sĩ số. | Văn phòng, Ban giám hiệu duyệt |
+| F1.3 Điểm danh | F1.3.1 Tạo bảng điểm danh và tự động ghi nhận nghỉ dài ngày. F1.3.2 Tiếp nhận lượt đón/trả, xác minh vắng và chốt mốc 07:30, 08:30, 09:00. F1.3.3 Đề nghị và duyệt điều chỉnh chuyên cần sau khóa. F1.3.4 Tổng hợp, khóa kỳ và xuất chuyên cần. | Giáo viên, Ban giám hiệu hoặc người được phân quyền duyệt điều chỉnh |
 | F1.4 Nhân sự | F1.4.1 Lập hồ sơ nhân sự. F1.4.2 Quản lý bằng cấp, chứng chỉ, giấy tờ. F1.4.3 Ghi nhận biến động nhân sự. F1.4.4 Tra cứu và xuất danh sách nhân sự. | Văn phòng, Ban giám hiệu duyệt |
 | F1.5 Phân công giáo viên | F1.5.1 Lập phương án phân công. F1.5.2 Duyệt phân công. F1.5.3 Đơn nghỉ ngắn ngày và phân công dạy thay. F1.5.4 Tra cứu lịch sử và tổng hợp ca. | Văn phòng, Ban giám hiệu, Giáo viên |
 | F1.6 Học phí | F1.6.1 Quản lý biểu phí và miễn giảm. F1.6.2 Lập bảng phải thu. F1.6.3 Thu tiền và in biên lai. F1.6.4 Điều chỉnh và hoàn tiền. F1.6.5 Theo dõi công nợ. | Kế toán, Ban giám hiệu duyệt |
+| F1.7 Suất ăn | F1.7.1 Lập và duyệt thực đơn theo ngày, bữa. F1.7.2 Thông báo thực đơn tuần, đối chiếu dị ứng và ghi lịch về sớm. F1.7.3 Chốt danh sách và số suất ăn theo bữa. F1.7.4 Điều chỉnh suất sau chốt và đối chiếu giao nhận. | Bếp, Giáo viên, Ban giám hiệu duyệt thực đơn |
 | F1.8 Đón trả trẻ | F1.8.1 Ghi nhận báo nghỉ. F1.8.2 Đón trẻ và chuyển lượt đón sang NV03. F1.8.3 Xác minh và duyệt nhận trẻ hộ. F1.8.4 Trả trẻ. F1.8.5 Tra cứu đón trả. F1.8.6 Hủy lượt giao nhận ghi nhầm. | Giáo viên, Văn phòng, Ban giám hiệu và nhân sự có quyền NV08 |
 | F1.9 Báo cáo | F1.9.1 Lập và ghi chú báo cáo. F1.9.2 Gửi báo cáo. F1.9.3 Xem, phản hồi, duyệt. F1.9.4 Tổng hợp toàn trường. | Mọi hệ thống con, Ban giám hiệu duyệt |
 
@@ -275,7 +279,7 @@ Checklist yêu cầu ≥6 nhánh cấp 2, mỗi thành viên ≥3. Bản đề x
 
 ### 8.2. Use case cốt lõi của TV2
 
-Checklist yêu cầu ≥8 use case cho cả nhóm, mỗi thành viên ≥4, trong đó ≥4 giao dịch phức hợp và ≥2 luồng liên phân hệ TV1↔TV2.
+Bảng dưới đây là **danh mục use case của TV2 tại thời điểm khảo sát**; danh mục đầy đủ **18 use case toàn hệ thống** (`UC-01`–`UC-03` nền tảng `F1.0`, `UC-04`–`UC-10` của TV2 và `UC-11`–`UC-18` của TV1) được tổng hợp tại [tài liệu phân tích](../analysis/README.md). Checklist yêu cầu ≥8 use case cho cả nhóm, mỗi thành viên ≥4, trong đó ≥4 giao dịch phức hợp và ≥2 luồng liên phân hệ TV1↔TV2.
 
 | Mã | Use case | Tác nhân | Giao dịch phức hợp | Liên phân hệ |
 | --- | --- | --- | --- | --- |
@@ -283,7 +287,7 @@ Checklist yêu cầu ≥8 use case cho cả nhóm, mỗi thành viên ≥4, tron
 | UC-05 | Lập phân công giáo viên | Văn phòng, Ban giám hiệu | Có: kết thúc phân công cũ và mở phân công mới trong một lần | Dùng danh sách lớp của nghiệp vụ 02 (TV1) |
 | UC-06 | Lập bảng phải thu theo kỳ | Kế toán | Có: tạm thu tiền ăn và bù trừ kỳ trước cho nhiều trẻ | Dùng lịch trường và NV02, NV03 (TV1). NV07 tổng hợp suất ăn cho báo cáo vận hành. |
 | UC-07 | Ghi thu tiền và in biên lai | Kế toán | Có: biên lai, cập nhật công nợ | — |
-| UC-08 | Đón trẻ theo nhóm | Giáo viên | Có: ghi đón nhiều trẻ trong một lần xác nhận | Tạo kết quả có mặt cho nghiệp vụ 03 (TV1) |
+| UC-08 | Đón trẻ theo nhóm | Giáo viên hoặc nhân sự trực được cấp quyền ghi lượt đón; giáo viên hoặc văn phòng tiếp nhận báo nghỉ. | Có: ghi đón nhiều trẻ trong một lần xác nhận | Tạo kết quả có mặt cho nghiệp vụ 03 (TV1) |
 | UC-09 | Trả trẻ theo nhóm | Giáo viên, nhân sự trực được cấp quyền. Ban giám hiệu hoặc người được giao quyền duyệt ngoại lệ. | Có: kiểm tra người nhận và giờ trả từng trẻ, ghi các lượt hợp lệ và giữ dòng chờ xử lý | Tra quyền nhận trẻ theo NV01 (TV1) |
 | UC-10 | Gửi, phản hồi và duyệt báo cáo | Mọi bộ phận, Ban giám hiệu | Có: lưu phiên bản và ảnh chụp số liệu | Lấy số liệu đã chốt từ nghiệp vụ của TV1 |
 
