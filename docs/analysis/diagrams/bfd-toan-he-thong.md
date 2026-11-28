@@ -180,7 +180,7 @@ BFD chỉ thể hiện quan hệ phân rã. Bảng dưới đây tóm tắt các
 | F1.2 | F1.3, F1.5, F1.6, F1.8 | Lớp đang hoạt động, sĩ số, diện đi học theo ngày, khoảng nghỉ dài ngày đã xác nhận | QT-DD-01, QT-DD-06, QT-PC-01, QT-HP-02, QT-HP-06 |
 | F1.4 | F1.5, F1.0 | Nhân sự đủ điều kiện đứng lớp, biến động khóa và mở tài khoản | QT-NS-02, QT-NS-03 |
 | F1.5 | F1.3, F1.7, F1.8 | Giáo viên phụ trách lớp theo ngày, gồm dạy thay | QT-PC-06, QT-DT-05 |
-| F1.8 | F1.3 | Lượt đón là nguồn duy nhất của `Có mặt`, báo nghỉ là căn cứ xác minh | QT-DT-01, QT-DT-07 |
+| F1.8 | F1.3 | Lượt đón là nguồn duy nhất của `Có mặt`, báo nghỉ là căn cứ xác minh, lượt trả và giờ về thực tế | QT-DT-01, QT-DT-07 |
 | F1.8 | F1.7 | Báo nghỉ, giờ về thực tế | QT-SA-04 |
 | F1.3 | F1.7 | Danh sách có mặt theo mốc chốt bữa sáng, bản bàn giao buổi sáng | QT-SA-01 |
 | F1.3 | F1.6 | Số ngày `Có mặt` đã khóa, treo và gỡ treo đối soát | QT-DD-07, QT-HP-05 |
