@@ -7,7 +7,7 @@ Giai đoạn này chuyển kết quả khảo sát của nền tảng `F1.0` và
 | Đầu việc | Phụ trách | Review | Đầu ra | Trạng thái |
 | --- | --- | --- | --- | --- |
 | Đặc tả nền tảng `F1.0` (`UC-01`–`UC-03`) và `NV01`, `NV02`, `NV03`, `NV07` (`UC-11`–`UC-18`) | TV1 | TV2 | Mười một đặc tả `UC-01`–`UC-03` và `UC-11`–`UC-18` tại mục 5. | Hoàn thành |
-| Phân tích `NV04` Nhân sự, `NV05` Phân công, `NV06` Học phí, `NV08` Đón trả trẻ, `NV09` Báo cáo (`UC-04`–`UC-10`) | TV2 | TV1 | Bảy đặc tả `UC-04`–`UC-10` tại mục 6 và [BFD phần TV2](diagrams/bfd-tv2.md). | Đã có bản nháp đủ 7 UC, chờ TV1 review |
+| Phân tích `NV04` Nhân sự, `NV05` Phân công, `NV06` Học phí, `NV08` Đón trả trẻ, `NV09` Báo cáo (`UC-04`–`UC-10`) | TV2 | TV1 | Bảy đặc tả `UC-04`–`UC-10` tại mục 6 và [BFD phần TV2](diagrams/bfd-tv2.md). | Đủ 7 UC và BFD phần TV2, chờ TV1 review qua pull request |
 | Tổng hợp sơ đồ Use Case toàn hệ thống | TV1 | TV2 | [Sơ đồ 18 UC thuộc F1.0 và 9 nghiệp vụ](diagrams/use-case-toan-he-thong.md) | Hoàn thành |
 | Tổng hợp ma trận truy vết và đối chiếu checklist | TV1 (phần 1–3: `F1.0` và `UC-11`–`UC-18`), TV2 (phần 4–6: `UC-04`–`UC-10`) | Chéo | [Ma trận truy vết](traceability.md) | Đã ghép phần của cả hai thành viên |
 

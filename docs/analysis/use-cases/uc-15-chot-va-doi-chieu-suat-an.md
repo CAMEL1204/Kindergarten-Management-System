@@ -22,7 +22,7 @@
 - **Bước 2 (thực đơn hoặc thông tin dị ứng thay đổi):** Giáo viên liên hệ phụ huynh và cập nhật lịch về sớm tại `UC-18`. Nếu bữa đã chốt, giáo viên gửi yêu cầu điều chỉnh cho bếp và giữ nguyên số chốt ban đầu (QT-SA-06).
 - **Bước 3–4 (điều chỉnh tăng hoặc giảm sau giờ chốt):** Trẻ đến sau giờ chốt của bữa, báo nghỉ muộn hoặc về sớm đột xuất. Giáo viên gửi yêu cầu tăng hoặc giảm suất kèm lý do và thời điểm (QT-SA-04).
   - Bếp xem tiến độ chế biến rồi xác nhận toàn bộ, xác nhận một phần hoặc từ chối (số xác nhận bằng 0). Việc này không phụ thuộc đề nghị chuyên cần tương ứng ở NV03 đang chờ duyệt.
-  - Hệ thống chặn xác nhận giảm vượt số chốt ban đầu, để số cần giao không âm. Số chốt ban đầu không bị ghi đè.
+  - Hệ thống chặn xác nhận giảm vượt số cần giao hiện tại, tức số chốt ban đầu cộng các điều chỉnh đã xác nhận trước đó, để số cần giao không âm. Số chốt ban đầu không bị ghi đè.
 - **Bước 5 (phân biệt giảm được xác nhận với thiếu suất):** Xem hai ca cuối trong bảng ca kiểm thử (QT-SA-05).
 
 ## Dữ liệu giao dịch
@@ -41,7 +41,8 @@
 | Về trước bữa do dị ứng | Ngày 15/10, thực đơn trưa có món liên quan lưu ý của HS2026-042, phụ huynh nhận trẻ về trước bữa | Trẻ ghi không ăn trưa tại trường. Chuyên cần trong ngày vẫn `Có mặt`. |
 | Giảm được bếp xác nhận | Chốt 23, giảm 1 được xác nhận, bếp giao 22, lớp nhận 22 | Số cần giao 22. Ghi đã giao đủ. |
 | Thiếu suất | Chốt 23, không có điều chỉnh, bếp giao 22, lớp nhận 22 | Số cần giao 23. Ghi thiếu 1 suất, lưu nguyên nhân và xác nhận của hai bên. |
-| Giảm vượt số chốt | Lớp chốt 22 suất, giáo viên đề nghị giảm 23 | Hệ thống chặn xác nhận, số cần giao không âm. |
+| Giảm vượt số cần giao | Lớp chốt 22 suất, giáo viên đề nghị giảm 23 | Hệ thống chặn xác nhận, số cần giao không âm. |
+| Giảm sau một lần giảm | Lớp chốt 22 suất, bếp đã xác nhận giảm 20, giáo viên đề nghị giảm tiếp 5 | Số cần giao hiện tại là 2. Hệ thống chặn xác nhận giảm 5 dù 5 nhỏ hơn số chốt ban đầu. |
 
 ## Liên phân hệ và truy vết
 

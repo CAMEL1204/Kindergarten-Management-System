@@ -3,8 +3,8 @@
 | Thuộc tính | Đặc tả |
 | --- | --- |
 | Nghiệp vụ / nhánh chức năng | F1.0 · F1.0.2. NV06 · F1.6.1 (biểu phí và miễn giảm) |
-| Tác nhân chính | Ban giám hiệu |
-| Tác nhân phụ | Văn phòng (lập danh mục lớp NV02). Kế toán (lập biểu phí và danh mục miễn giảm NV06) |
+| Tác nhân chính | Ban giám hiệu (lập danh mục của trường, duyệt mọi danh mục). Văn phòng (lập danh mục lớp NV02). Kế toán (lập biểu phí và danh mục miễn giảm NV06, chức năng F1.6.1) |
+| Tác nhân phụ | Không có |
 | Mục tiêu | Lập, duyệt và duy trì các danh mục dùng chung của trường. Không có danh mục trùng lặp. Không sửa trực tiếp dữ liệu đã phát sinh giao dịch. |
 | Điều kiện trước | Người dùng có tài khoản thuộc hệ thống con tương ứng (Ban giám hiệu, Văn phòng, Kế toán). Quy định nền của trường đã có: Điều 15 Điều lệ Trường mầm non, kế hoạch năm học. |
 | Điều kiện sau | Danh mục ở trạng thái `Đã duyệt` hoặc `Đang áp dụng` được cung cấp chỉ đọc cho các phân hệ NV01–NV09 (NFR-08). |

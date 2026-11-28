@@ -51,7 +51,7 @@
 - **NV02 → NV06:** Chuyển lớp nội bộ không đổi diện đi học. NV06 được thông báo khi chuyển lớp hồi tố hoặc đổi nhóm tuổi làm đổi biểu phí áp dụng (QT-HP-02).
 - **NV02 → NV09:** Biến động chuyển lớp nội bộ giải thích sĩ số đầu kỳ, cuối kỳ từng lớp mà không bị tính là nhập học hay thôi học. Ghi hồi tố kích hoạt `Cần cập nhật` (QT-BC-04).
 
-| Yêu cầu | Quy tắc áp dụng | Phạm vi |
+| Yêu cầu / NFR | Quy tắc áp dụng | Phạm vi |
 | --- | --- | --- |
-| YC-XL-02 | QT-XL-01, QT-XL-02, QT-XL-03, QT-XL-04, NFR-05 | NV02 · Kiểm tra trần Điều 15 và chỉ tiêu, ghi hai đầu chuyển lớp trong một giao dịch, giữ lịch sử và sĩ số toàn trường. |
+| YC-XL-02, NFR-05 | QT-XL-01, QT-XL-02, QT-XL-03, QT-XL-04 | NV02 · Kiểm tra trần Điều 15 và chỉ tiêu, ghi hai đầu chuyển lớp trong một giao dịch, giữ lịch sử và sĩ số toàn trường. |
 | YC-XL-03 | QT-XL-05, QT-HP-02, QT-PC-03, QT-BC-04 | NV02 → NV03, NV05, NV06, NV08, NV09 · Tra cứu lớp theo ngày, cảnh báo thiếu giáo viên ở lớp đích, xử lý hậu kiểm khi ghi hồi tố. |

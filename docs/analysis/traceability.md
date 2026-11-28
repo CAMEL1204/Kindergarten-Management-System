@@ -14,7 +14,7 @@ Ma trận gồm hai phần ghép từ hai nhánh phân tích. Phần 1–3 do TV
 
 Mỗi dòng tách rõ **Quy tắc thực thi trực tiếp** trong giao dịch và **Ràng buộc liên phân hệ** được viện dẫn để đối chiếu đầy đủ giữa thân đặc tả và ma trận.
 
-| NV | Chức năng | Yêu cầu | Quy tắc thực thi trực tiếp | Ràng buộc liên phân hệ | Use Case | Phạm vi và luồng liên phân hệ |
+| NV | Chức năng | Yêu cầu / NFR | Quy tắc thực thi trực tiếp | Ràng buộc liên phân hệ | Use Case | Phạm vi và luồng liên phân hệ |
 | --- | --- | --- | --- | --- | --- | --- |
 | NV01 | F1.1.1, F1.1.2 | YC-HS-01, YC-HS-02 | QT-HS-01, QT-HS-02 | — | [UC-11 · Tiếp nhận hồ sơ trẻ](use-cases/uc-11-tiep-nhan-ho-so-tre.md) | Đối chiếu trẻ trùng/quay lại, duyệt đợt tiếp nhận, theo dõi giấy tờ theo mốc và lịch hẹn bổ sung. |
 | NV01 | F1.1.2 | YC-HS-03 | QT-HS-03 | — | [UC-11 · Tiếp nhận hồ sơ trẻ](use-cases/uc-11-tiep-nhan-ho-so-tre.md) | NV01 → NV02, NV09 · Bàn giao hồ sơ đủ điều kiện cùng mã; cung cấp số liệu tuyển sinh và hồ sơ chờ bổ sung. |
@@ -23,7 +23,7 @@ Mỗi dòng tách rõ **Quy tắc thực thi trực tiếp** trong giao dịch v
 | NV01 | F1.1.5 | YC-HS-06 | QT-HS-06 | — | [UC-16 · Cập nhật hồ sơ trẻ, ủy quyền nhận trẻ và lưu ý chăm sóc](use-cases/uc-16-cap-nhat-ho-so-va-luu-y-cham-soc.md) | NV01 → NV07 · Giáo viên đề nghị, văn phòng ghi, phó hiệu trưởng chuyên môn xác nhận lưu ý chăm sóc và cảnh báo sớm. |
 | NV02 | F1.2.1, F1.2.3 | YC-XL-01, YC-XL-02 | QT-XL-01, QT-XL-02, QT-XL-04 | QT-PC-01, QT-PC-03, QT-DD-06, QT-HP-06 | [UC-17 · Xếp lớp ban đầu và quản lý biến động sĩ số](use-cases/uc-17-xep-lop-va-bien-dong-si-so.md) | NV01 → NV02 → NV03, NV05, NV06, NV08 · Xếp lớp lần đầu, nghỉ dài ngày, bảo lưu, thôi học, quay lại theo trần Điều 15 và cảnh báo định mức `NV05`. |
 | NV02 | F1.2.4 | YC-XL-03, YC-XL-04 | QT-XL-04, QT-XL-05 | QT-HP-02, QT-HP-05, QT-BC-04 | [UC-17 · Xếp lớp ban đầu và quản lý biến động sĩ số](use-cases/uc-17-xep-lop-va-bien-dong-si-so.md) | NV02 → NV03, NV06, NV09 · Diện đi học theo ngày, hậu kiểm hồi tố (`Đã gửi` / `Cần cập nhật`) và tổng hợp sĩ số đầu/tăng/giảm/cuối kỳ chuyển `UC-10`. |
-| NV02 | F1.2.2, F1.2.4 | YC-XL-02, YC-XL-03 | QT-XL-01, QT-XL-02, QT-XL-03, QT-XL-04, QT-XL-05, NFR-05 | QT-PC-03, QT-HP-02, QT-BC-04 | [UC-12 · Chuyển lớp](use-cases/uc-12-chuyen-lop.md) | NV02 → NV03, NV05, NV06, NV08, NV09 · Chuyển lớp nguyên tử hai đầu, giữ nguyên tổng sĩ số trường và đối chiếu hồi tố. |
+| NV02 | F1.2.2, F1.2.4 | YC-XL-02, YC-XL-03, NFR-05 | QT-XL-01, QT-XL-02, QT-XL-03, QT-XL-04, QT-XL-05 | QT-PC-03, QT-HP-02, QT-BC-04 | [UC-12 · Chuyển lớp](use-cases/uc-12-chuyen-lop.md) | NV02 → NV03, NV05, NV06, NV08, NV09 · Chuyển lớp nguyên tử hai đầu, giữ nguyên tổng sĩ số trường và đối chiếu hồi tố. |
 | NV03 | F1.3.1 | YC-DD-01, YC-DD-05 | QT-DD-01, QT-DD-06 | QT-PC-06, QT-NS-03 | [UC-13 · Chốt chuyên cần theo lớp và ngày](use-cases/uc-13-chot-chuyen-can.md) | NV02, NV05 → NV03 · Lớp hiệu lực, quyền giáo viên/dạy thay theo ngày và tự ghi nghỉ dài ngày. |
 | NV03 | F1.3.2 | YC-DD-02 | QT-DD-02, QT-DD-05 | QT-DT-01, QT-DT-05, QT-DT-06, QT-DT-07 | [UC-13 · Chốt chuyên cần theo lớp và ngày](use-cases/uc-13-chot-chuyen-can.md) | NV08 → NV03 → NV07 · Tiếp nhận giao nhận/báo nghỉ, xác minh vắng, chốt theo mốc cấu hình có hiệu lực (mặc định `07:30`/`08:30`/`09:00`). |
 | NV03 | F1.3.4 | YC-DD-04, YC-DD-05 | QT-DD-04, QT-DD-07 | QT-HP-05 | [UC-13 · Chốt chuyên cần theo lớp và ngày](use-cases/uc-13-chot-chuyen-can.md) | NV03 → NV06, NV09 · Tổng hợp kỳ, khóa kỳ, nhắc duyệt trước lập bảng phải thu và xuất số liệu báo cáo. |
