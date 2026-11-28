@@ -51,9 +51,9 @@ flowchart TD
 
 | Mã | Chức năng lá | Công việc chính | Thực hiện / duyệt | YC, QT | Biểu mẫu |
 | --- | --- | --- | --- | --- | --- |
-| F1.4.1 | Lập hồ sơ nhân sự | Tra trùng theo họ tên, ngày sinh, giấy tờ tùy thân và dùng lại hồ sơ cũ khi nhân sự quay lại. Ghi thông tin cá nhân, vị trí, loại nhân sự, có được giao đứng lớp hoặc dạy thay, ngày bắt đầu, loại hợp đồng. Trình Ban giám hiệu xác nhận để chuyển sang đang làm việc. | Văn phòng lập. Ban giám hiệu xác nhận. | YC-NS-01. QT-NS-01. | NS-01, NS-03 (Mẫu 06) |
+| F1.4.1 | Lập hồ sơ nhân sự | Tra trùng theo họ tên, ngày sinh, giấy tờ tùy thân và dùng lại hồ sơ cũ khi nhân sự quay lại. Ghi thông tin cá nhân, vị trí, loại nhân sự, có được giao đứng lớp hoặc dạy thay, ngày bắt đầu, loại hợp đồng. Trình Ban giám hiệu xác nhận để chuyển sang đang làm việc. | Văn phòng lập. Ban giám hiệu xác nhận. | YC-NS-01. QT-NS-01. | NS-01 (Mẫu 06), NS-03 |
 | F1.4.2 | Quản lý bằng cấp, chứng chỉ, giấy tờ | Ghi bằng cấp, chuyên ngành, chứng chỉ, ngày cấp, ngày hết hạn. Đánh dấu giấy tờ còn thiếu. Đưa chứng chỉ vào danh sách cần xử lý từ 30 ngày trước ngày hết hạn. Chứng chỉ cấp lại ghi thành dòng mới, giữ dòng cũ. | Văn phòng. | YC-NS-02. QT-NS-02, QT-NS-05. | NS-02 (Mẫu 06) |
-| F1.4.3 | Ghi nhận biến động nhân sự | Ghi tạm nghỉ (từ 6 ngày làm việc liên tục hoặc nghỉ chế độ), nghỉ việc, chuyển vị trí, hết tạm nghỉ và sửa thông tin quan trọng. Lưu ngày hiệu lực, giá trị trước và sau, người xác nhận. Cảnh báo lớp bị ảnh hưởng cho người phân công. Nhắc Ban giám hiệu khóa hoặc mở tài khoản tại F1.0.1. | Văn phòng ghi. Ban giám hiệu xác nhận. | YC-NS-03, YC-NS-05. QT-NS-03, QT-NS-04. | NS-03, NS-04 (Mẫu 06) |
+| F1.4.3 | Ghi nhận biến động nhân sự | Ghi tạm nghỉ (từ 6 ngày làm việc liên tục hoặc nghỉ chế độ), nghỉ việc, chuyển vị trí, hết tạm nghỉ và sửa thông tin quan trọng. Lưu ngày hiệu lực, giá trị trước và sau, người xác nhận. Cảnh báo lớp bị ảnh hưởng cho người phân công. Nhắc Ban giám hiệu khóa hoặc mở tài khoản tại F1.0.1. | Văn phòng ghi. Ban giám hiệu xác nhận. | YC-NS-03, YC-NS-05. QT-NS-03, QT-NS-04. | NS-04 (Mẫu 06), NS-03 |
 | F1.4.4 | Tra cứu và xuất danh sách nhân sự | Tra theo mã, họ tên, vị trí, trạng thái. Lập danh sách đủ điều kiện đứng lớp tại một ngày. Xem lịch sử biến động. Lọc và xuất danh sách theo quyền, che thông tin nhạy cảm với người không có quyền. | Văn phòng. Ban giám hiệu xem. | YC-NS-03, YC-NS-04. QT-NS-02, QT-NS-04. | NS-02 (Mẫu 06) |
 
 **Liên phân hệ**
@@ -79,13 +79,13 @@ flowchart TD
 | F1.5.1 | Lập phương án phân công | Lấy lớp đang hoạt động và sĩ số tại ngày hiệu lực, nhân sự đủ điều kiện đứng lớp, định mức và ca. Ghi giáo viên chủ nhiệm, giáo viên phụ, ca, ngày bắt đầu và kết thúc. Kiểm tra trùng ca, tối đa một chủ nhiệm mỗi lớp, định mức tối thiểu. Khi thay đổi, kết thúc phân công cũ và mở phân công mới trong một lần cập nhật. | Người phân công (Văn phòng). | YC-PC-01, YC-PC-02. QT-PC-01, QT-PC-02, QT-PC-03, QT-PC-04. | PC-01 (Mẫu 07) |
 | F1.5.2 | Duyệt phân công | Xem phương án và danh sách cảnh báo lớp thiếu giáo viên. Duyệt hoặc trả lại, chốt ngày hiệu lực. Người lập và người duyệt không là một người. Thông báo cho giáo viên và văn phòng. | Ban giám hiệu. | YC-PC-02. QT-PC-03, QT-PC-04. | PC-01 (Mẫu 07) |
 | F1.5.3 | Đơn nghỉ ngắn ngày và phân công dạy thay | Giáo viên gửi đơn nghỉ tối đa 5 ngày làm việc, Ban giám hiệu duyệt. Đọc tạm nghỉ đã xác nhận từ F1.4.3. Gợi ý giáo viên còn trống ca. Giao dạy thay có thời hạn. Nếu không có người, trình hiệu trưởng chọn nhân sự đủ điều kiện khác hoặc ghi cảnh báo thiếu giáo viên kèm khoảng ngày. Lập danh sách giáo viên phụ trách lớp theo ngày. | Giáo viên gửi đơn. Người phân công xếp dạy thay. Ban giám hiệu duyệt. | YC-PC-03. QT-PC-02, QT-PC-05, QT-PC-06. | PC-03 (Mẫu 07) |
-| F1.5.4 | Tra cứu lịch sử và tổng hợp ca | Tra lịch sử phân công theo lớp, giáo viên và ngày. Giáo viên xem lịch làm việc của mình. Tổng hợp và xuất số ca đứng lớp, dạy thay theo giáo viên và tháng. | Người phân công. Giáo viên xem lịch mình. Ban giám hiệu xem. | YC-PC-04. QT-PC-04. | PC-02, PC-04 (Mẫu 07) |
+| F1.5.4 | Tra cứu lịch sử và tổng hợp ca | Tra lịch sử phân công theo lớp, giáo viên và ngày. Giáo viên xem lịch làm việc của mình. Tổng hợp và xuất số ca đứng lớp, dạy thay theo giáo viên và tháng. | Người phân công. Giáo viên xem lịch mình. Ban giám hiệu xem. | YC-PC-04. QT-PC-04. | PC-04 (Mẫu 07), PC-02 |
 
 **Liên phân hệ**
 
 - F1.2.4 → F1.5.1: lớp đang hoạt động và sĩ số theo ngày hiệu lực (QT-PC-01). Khi xếp lớp hoặc chuyển lớp, NV02 kiểm tra cảnh báo định mức của lớp đích (QT-PC-03).
 - F1.0.2 → F1.5.1: ca làm việc, khung giờ và định mức giáo viên theo nhóm tuổi.
-- F1.5.3 → F1.3.1, F1.8.2, F1.8.4: danh sách giáo viên phụ trách lớp theo ngày, gồm dạy thay, không gồm người có đơn nghỉ đã duyệt hoặc đang tạm nghỉ (QT-PC-06, QT-DT-05).
+- F1.5.3 → F1.3.1, F1.7.3, F1.8.2, F1.8.4: danh sách giáo viên phụ trách lớp theo ngày, gồm dạy thay, không gồm người có đơn nghỉ đã duyệt hoặc đang tạm nghỉ (QT-PC-06, QT-DT-05).
 - F1.5.4 → F1.9.1: số liệu báo cáo phân công và dạy thay của Văn phòng.
 
 ## 4. F1.6 Học phí (NV06)
@@ -143,7 +143,7 @@ flowchart TD
 
 - F1.2.4 → F1.8.2: danh sách trẻ thuộc lớp trong ngày, nhãn nghỉ dài ngày.
 - F1.5.3 → F1.8.2, F1.8.4: giáo viên phụ trách lớp theo ngày. F1.0.1 → F1.8: quyền trực giao nhận và quyền duyệt ngoại lệ, cấp riêng (QT-DT-05).
-- F1.0.3 → F1.8.2, F1.8.4: khung đón, mốc bàn giao, mốc khóa chuyên cần và khung trả có hiệu lực.
+- F1.0.3 → F1.8.2, F1.8.4: khung đón, mốc bàn giao, mốc khóa chuyên cần và khung trả có hiệu lực. Mã F1.0.3 chưa có ở mục 8.1 của khảo sát. Mã này theo phân tích của TV1 (`UC-03`).
 - F1.1.4 → F1.8.3, F1.8.4: người giám hộ chính và ủy quyền cố định còn hiệu lực tại thời điểm trả (QT-HS-05, QT-DT-04).
 - F1.8.1, F1.8.2, F1.8.6 → F1.3.2, F1.3.3: báo nghỉ là căn cứ xác minh. Lượt đón là nguồn duy nhất của `Có mặt` (QT-DT-01).
 - F1.8.4, F1.8.6 → F1.7.4: giờ về thực tế và thay đổi ảnh hưởng bữa ăn (QT-SA-04).
@@ -164,7 +164,7 @@ flowchart TD
 | --- | --- | --- | --- | --- | --- |
 | F1.9.1 | Lập và ghi chú báo cáo | Chọn loại báo cáo và kỳ của bộ phận mình. Lấy số liệu đã chốt trong phạm vi người lập. Hiển thị riêng lượt chờ xác minh, đánh dấu kỳ còn ngày chưa khóa hoặc điều chỉnh chờ duyệt. Thêm ghi chú chung, ghi chú theo dòng, tệp đính kèm. Lưu nháp, chỉ người lập thấy. | Người lập ở mọi hệ thống con: Giáo viên, Văn phòng, Kế toán, Bếp. | YC-BC-01. QT-BC-01, QT-BC-02, QT-BC-06. | BC-01 đến BC-04 |
 | F1.9.2 | Gửi báo cáo | Bấm "Gửi Ban giám hiệu". Chụp số liệu tại lúc gửi, ghi người gửi, thời điểm và khóa nội dung. Đánh dấu trễ hạn khi gửi sau hạn. Sau yêu cầu bổ sung hoặc `Cần cập nhật`, gửi lại thành phiên bản mới. | Người lập. | YC-BC-01, YC-BC-03, YC-BC-04. QT-BC-03, QT-BC-04, QT-BC-06. | BC-01 đến BC-04 |
-| F1.9.3 | Xem, phản hồi, duyệt | Mở hộp báo cáo nhận được, lọc theo bộ phận, loại, kỳ, trạng thái. Viết phản hồi gắn với phiên bản. Chọn "Yêu cầu bổ sung" hoặc "Duyệt". Khi số liệu nguồn của báo cáo đã duyệt thay đổi, chuyển sang `Cần cập nhật` và báo người lập. | Ban giám hiệu. | YC-BC-02, YC-BC-03. QT-BC-01, QT-BC-03, QT-BC-04. | — |
+| F1.9.3 | Xem, phản hồi, duyệt | Mở hộp báo cáo nhận được, lọc theo bộ phận, loại, kỳ, trạng thái. Viết phản hồi gắn với phiên bản. Chọn "Yêu cầu bổ sung" hoặc "Duyệt". Khi số liệu nguồn thay đổi sau khi gửi, báo cáo không tự đổi và hệ thống cảnh báo người lập. Báo cáo `Đã gửi` được Ban giám hiệu xử lý bằng yêu cầu bổ sung nếu cần. Báo cáo `Đã duyệt` chuyển sang `Cần cập nhật`. | Ban giám hiệu. | YC-BC-02, YC-BC-03. QT-BC-01, QT-BC-03, QT-BC-04. | — |
 | F1.9.4 | Tổng hợp toàn trường | Ghép chỉ tiêu từ phiên bản đã duyệt mới nhất của từng báo cáo. Đánh dấu kỳ chưa đầy đủ và kỳ có số liệu đang cập nhật. Theo dõi bộ phận chưa gửi, gửi trễ hạn. Xuất Excel hoặc PDF. | Ban giám hiệu. | YC-BC-04. QT-BC-05, QT-BC-06. | BC-05 (Mẫu 05) |
 
 Danh mục loại báo cáo, kỳ và hạn gửi (YC-BC-05) do Ban giám hiệu quản lý tại F1.0.2, theo phân tích của TV1 (`UC-02`). F1.9 chỉ đọc danh mục này.
@@ -182,7 +182,7 @@ Danh mục loại báo cáo, kỳ và hạn gửi (YC-BC-05) do Ban giám hiệu
 | --- | --- | --- |
 | Số nhánh cấp 2 của BFD | ≥6 cho cả nhóm, ≥3 mỗi thành viên | 9 nhánh nghiệp vụ và F1.0. TV1 có 4 nhánh, TV2 có 5 nhánh. |
 | Chức năng lá của TV2 | Mỗi nhánh có chức năng lá | 23 chức năng lá, mỗi lá có YC, QT và biểu mẫu tham chiếu. |
-| Luồng liên phân hệ TV1↔TV2 | ≥2 luồng (README §8.2, §8.3) | F1.2 → F1.5, F1.6, F1.8. F1.3 → F1.6. F1.1 → F1.6, F1.8. F1.8 → F1.3, F1.7. |
+| Luồng liên phân hệ TV1↔TV2 | ≥2 luồng (README §8.2, §8.3) | TV1 → TV2: F1.2 → F1.5, F1.6, F1.8. F1.3 → F1.6. F1.1 → F1.6, F1.8. TV2 → TV1: F1.8 → F1.3, F1.7. F1.5 → F1.3, F1.7. |
 
 Bảng dưới đây nối chức năng lá với use case theo danh mục ở README §8.2 và phần bàn giao TV2 trong ma trận truy vết của TV1.
 
