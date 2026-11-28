@@ -60,7 +60,7 @@
 | Đón trước mốc bàn giao | HS2026-001 đến 07:45 ngày 14/10/2026 | Lượt đón 07:45, NV03 ghi `Có mặt`, không đến muộn. |
 | Báo nghỉ rồi vẫn đến | HS2026-042 báo nghỉ 07:20, bà ngoại đưa đến 08:50 | Lượt đón 08:50, cờ `Đến muộn`. NV03 cập nhật `Có mặt`. Báo nghỉ và bản bàn giao 08:30 được giữ. |
 | Đến đúng mốc khóa | HS2026-042 đến 09:00 ngày 16/10/2026 | Lượt đón được ghi, trẻ có trong danh sách trả. NV03 giữ kết quả khóa và nhận đề nghị đổi sang `Có mặt`. |
-| Hủy trước mốc khóa | 07:40 chọn nhầm một trẻ đã báo nghỉ, phát hiện lúc 08:05 | Lượt đón `Đã hủy`, NV03 đưa trẻ về kết quả theo báo nghỉ. |
+| Hủy trước mốc khóa | 07:40 chọn nhầm một trẻ đã báo nghỉ, phát hiện lúc 08:05 | Lượt đón `Đã hủy`. NV03 tính lại từ căn cứ còn lại: trẻ về `Chờ xác minh`, hoặc về kết luận vắng mà giáo viên đã ghi trước đó. Báo nghỉ chỉ là căn cứ xác minh (QT-DD-02). |
 | Hủy sau mốc khóa | Cùng ca trên, phát hiện lúc 09:20 | Lượt đón `Đã hủy`, NV03 nhận đề nghị điều chỉnh, `Có mặt` giữ tới khi duyệt. |
 | Giáo viên đang tạm nghỉ | Lớp Mầm 2 ngày 20/10/2026, Trần Thu Trang tạm nghỉ | Tài khoản của Trần Thu Trang bị khóa từ 19/10 nên không thao tác được (YC-NS-05). Trịnh Thị Nga dạy thay được ghi lượt đón lớp Mầm 2 ([Mẫu 07](../../survey/forms/mau-07-phan-cong-va-day-thay.md)). |
 | Giáo viên có đơn nghỉ ngắn ngày | Giáo viên có đơn nghỉ đã duyệt mở lớp mình trong ngày nghỉ | Tài khoản vẫn mở nhưng thao tác trên lớp bị chặn (QT-PC-06). |
@@ -70,7 +70,7 @@
 - **NV02 → NV08:** Danh sách trẻ thuộc lớp trong ngày và nhãn nghỉ dài ngày từ `UC-12`, `UC-17`.
 - **NV05, F1.0 → NV08:** Giáo viên phụ trách lớp theo ngày từ [UC-05](uc-05-lap-phan-cong-giao-vien.md). Quyền trực NV08 từ `UC-01` (QT-DT-05). Mốc giờ có hiệu lực từ `UC-03`.
 - **NV08 → NV03:** Lượt đón là nguồn duy nhất của `Có mặt`. Trước mốc khóa cập nhật `UC-13`, từ mốc khóa chuyển `UC-14` (QT-DT-01, QT-DT-06, QT-DT-07). Báo nghỉ là căn cứ xác minh vắng.
-- **NV08 → NV07:** Báo nghỉ cho danh sách ăn dự kiến. Hủy hoặc đón muộn ảnh hưởng bữa ăn chuyển `UC-15` (QT-SA-04).
+- **NV08 → NV07:** Báo nghỉ cho danh sách ăn dự kiến. Hủy lượt đón hoặc trẻ đến muộn ảnh hưởng bữa ăn chuyển `UC-15` (QT-SA-04).
 - **NV08 → NV09:** Số lượt đến muộn cho báo cáo lớp tại [UC-10](uc-10-gui-phan-hoi-va-duyet-bao-cao.md).
 
 | Yêu cầu | Quy tắc áp dụng | Phạm vi |

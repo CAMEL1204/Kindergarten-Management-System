@@ -28,7 +28,7 @@
 ## Luồng con: theo dõi công nợ (F1.6.5)
 
 1. Kế toán mở danh sách công nợ, lọc theo lớp, kỳ, trạng thái quá hạn.
-2. Hệ thống hiển thị phải thu, đã thu, còn nợ và số ngày quá hạn theo trẻ. Còn nợ được chuyển sang kỳ sau khi lập bảng phải thu tiếp theo.
+2. Hệ thống hiển thị phải thu, đã thu, còn nợ và số ngày quá hạn theo trẻ. Còn nợ ở lại bảng phải thu của kỳ đó và được chuyển sang kỳ sau bằng cách hiện trên thông báo học phí kỳ kế tiếp, không cộng vào bảng mới (QT-HP-04).
 3. Kế toán xuất danh sách nhắc nợ. Tổng phải thu, đã thu, còn nợ, miễn giảm, hoàn tiền trong kỳ là số liệu cho báo cáo thu tại [UC-10](uc-10-gui-phan-hoi-va-duyet-bao-cao.md) (YC-HP-04).
 
 ## Luồng thay thế và ngoại lệ
@@ -53,7 +53,7 @@
 | --- | --- | --- |
 | Thu đủ một kỳ | PT202610-042 phải nộp 3.500.000 đồng, chuyển khoản CK-MP-20261005-042 ngày 05/10/2026 ([Mẫu 04](../../survey/forms/mau-04-hoc-phi-va-bien-lai.md)) | Biên lai BL202610-042 thực thu 3.500.000 đồng. Còn phải thu của bảng bằng 0. |
 | Nộp thừa, phân bổ kỳ cũ trước | Còn nợ tháng 09 là 200.000 đồng, thông báo tháng 10 là 3.500.000 đồng, phụ huynh chuyển 4.000.000 đồng | Phân bổ 200.000 cho tháng 09, 3.500.000 cho tháng 10, ghi số dư có 300.000 đồng (QT-HP-07). |
-| Nộp thiếu | Phải nộp 3.500.000 đồng, nộp 3.000.000 đồng | Còn nợ 500.000 đồng, chuyển sang kỳ sau. |
+| Nộp thiếu | Phải nộp 3.500.000 đồng, nộp 3.000.000 đồng | Bảng phải thu còn nợ 500.000 đồng. Khoản này hiện trên thông báo kỳ sau. Lần nộp tiếp theo được phân bổ vào khoản nợ này trước (QT-HP-07). |
 | Sửa biên lai | Kế toán ghi nhầm số tiền trên một biên lai | Không xóa được. Lập phiếu điều chỉnh, Ban giám hiệu duyệt, công nợ cập nhật. |
 | Hoàn số dư có khi thôi học | Trẻ thôi học còn số dư có 300.000 đồng | Phiếu hoàn tiền 300.000 đồng có duyệt, số dư có về 0. |
 

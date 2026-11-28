@@ -5,8 +5,8 @@
 | Nghiệp vụ / nhánh chức năng | NV06 · F1.6.2 (đọc F1.6.1) |
 | Tác nhân chính | Kế toán |
 | Tác nhân phụ | Ban giám hiệu (duyệt bảng phải thu) |
-| Mục tiêu | Lập một bảng phải thu cho mỗi trẻ trong kỳ thu: khoản tháng, tạm thu tiền ăn, bù trừ tiền ăn kỳ trước, miễn giảm, nợ cũ và số dư có. Sau khi duyệt, phát hành thông báo học phí cho phụ huynh. |
-| Điều kiện trước | Kế toán đăng nhập hệ thống con Kế toán. Biểu phí có hiệu lực tại kỳ thu và miễn giảm đã duyệt (F1.6.1, đặc tả màn hình tại `UC-02`). Lịch học của kỳ đã có. NV02 cung cấp khoảng thời gian trẻ thuộc diện đi học. Với phần đối soát, NV03 đã khóa chuyên cần kỳ trước (QT-DD-07). |
+| Mục tiêu | Lập một bảng phải thu cho mỗi trẻ trong kỳ thu: khoản tháng, tạm thu tiền ăn, bù trừ tiền ăn kỳ trước, miễn giảm và số dư có. Sau khi duyệt, phát hành thông báo học phí cho phụ huynh, kèm nợ kỳ trước còn lại. |
+| Điều kiện trước | Kế toán đăng nhập hệ thống con Kế toán. Biểu phí có hiệu lực tại kỳ thu và miễn giảm đã duyệt (F1.6.1, đặc tả màn hình tại `UC-02`). Lịch học của kỳ đã có. NV02 cung cấp khoảng thời gian trẻ thuộc diện đi học. Với phần đối soát, hệ thống đọc số ngày `Có mặt` đã khóa của kỳ trước từ NV03. Trẻ còn ngày chưa khóa được xử lý ở luồng thay thế bước 6 (QT-DD-07). |
 | Điều kiện sau | Mỗi trẻ thuộc diện đi học trong kỳ có tối đa một bảng phải thu (QT-HP-01). Mỗi dòng lưu căn cứ tính: số ngày, đơn giá, kỳ phát sinh. Khoản đối soát của trẻ còn ngày chưa khóa hoặc còn đề nghị chờ duyệt có thể đổi kết quả `Có mặt` ở trạng thái chờ xử lý. Bảng đã duyệt được phát hành thông báo và là căn cứ cho [UC-07](uc-07-ghi-thu-tien-va-in-bien-lai.md). |
 
 ## Luồng sự kiện chính
@@ -17,11 +17,11 @@
 4. Hệ thống tính khoản tháng. Trẻ thuộc diện đi học cả kỳ thu đủ. Trẻ vào học, thôi học, bắt đầu hoặc kết thúc bảo lưu trong kỳ tính theo tỷ lệ: đơn giá tháng × số ngày có lịch học thuộc diện đi học ÷ số ngày có lịch học của kỳ, làm tròn đến nghìn đồng. Nghỉ dài ngày thu đủ. Số ngày dùng để tính được lưu trên dòng (QT-HP-06, YC-HP-06).
 5. Hệ thống tạm thu tiền ăn theo số ngày có lịch học mà trẻ thuộc diện đi học trong kỳ (QT-HP-02).
 6. Hệ thống đối soát tiền ăn kỳ trước của từng trẻ. Chênh lệch bằng số ngày `Có mặt` đã khóa của NV03 nhân đơn giá kỳ phát sinh, trừ tiền đã tạm tính và các khoản bù trừ đã phát hành. Số âm giảm trừ, số dương thu bổ sung. Dòng bù trừ ghi tham chiếu kỳ phát sinh (QT-HP-05).
-7. Hệ thống áp miễn giảm đã duyệt còn hiệu lực trong kỳ. Tổng phải thu sau miễn giảm không âm (QT-HP-03). Hệ thống cộng nợ kỳ trước và trừ số dư có của trẻ (QT-HP-04, QT-HP-07).
+7. Hệ thống áp miễn giảm đã duyệt còn hiệu lực trong kỳ. Tổng phải thu sau miễn giảm không âm (QT-HP-03). Hệ thống trừ số dư có của trẻ vào bảng mới (QT-HP-07). Nợ kỳ trước vẫn thuộc bảng phải thu của kỳ đó, không thành dòng của bảng mới, để một khoản nợ không bị thu hai lần (QT-HP-04).
 8. Hệ thống lưu toàn bộ bảng phải thu của kỳ ở trạng thái `Nháp` trong một giao dịch (NFR-05). Màn hình hiển thị tổng theo lớp, toàn trường và danh sách trẻ có khoản chờ xử lý.
 9. Kế toán rà soát, sửa ghi chú hoặc chạy lại cho trẻ có căn cứ thay đổi, rồi trình duyệt.
 10. Ban giám hiệu xem tổng phải thu và các trường hợp đặc biệt, rồi duyệt. Hệ thống chuyển bảng sang `Đã duyệt` và khóa nội dung.
-11. Kế toán phát hành thông báo học phí (HP-03) cho từng trẻ: chi tiết khoản thu, tổng tiền, hạn nộp, mã nội dung chuyển khoản theo trẻ và kỳ (YC-HP-03). Thông báo được in hoặc gửi qua kênh liên lạc của trường.
+11. Kế toán phát hành thông báo học phí (HP-03) cho từng trẻ: chi tiết khoản thu, tổng tiền, nợ kỳ trước còn lại nếu có, hạn nộp, mã nội dung chuyển khoản theo trẻ và kỳ (YC-HP-03). Nợ kỳ trước chỉ hiển thị để phụ huynh biết tổng cần nộp. Tiền nộp được phân bổ vào bảng kỳ cũ trước tại [UC-07](uc-07-ghi-thu-tien-va-in-bien-lai.md) (QT-HP-07). Thông báo được in hoặc gửi qua kênh liên lạc của trường.
 
 ## Luồng thay thế và ngoại lệ
 
@@ -66,4 +66,4 @@
 | YC-HP-02 | QT-HP-02, QT-HP-05, QT-DD-07 | NV02, NV03 → NV06 · Tạm thu tiền ăn, đối soát và bù trừ có tham chiếu kỳ phát sinh, treo khi còn ngày chưa khóa hoặc đề nghị chờ duyệt, gỡ treo khi đã khóa đủ và hết đề nghị. |
 | YC-HP-06 | QT-HP-06 | NV02 → NV06 · Khoản tháng theo tỷ lệ khi vào học, thôi học, bảo lưu trong kỳ. |
 | YC-HP-01, YC-HP-05 | QT-HP-01, QT-HP-03 | F1.0, NV01 → NV06 · Biểu phí hiệu lực, miễn giảm đã duyệt, dữ liệu chỉ đọc. |
-| YC-HP-04 | QT-HP-04, QT-HP-07 | NV06 → NV09 · Cộng nợ cũ, trừ số dư có và tổng hợp phải thu. |
+| YC-HP-04 | QT-HP-04, QT-HP-07 | NV06 → NV09 · Hiển thị nợ cũ trên thông báo, trừ số dư có và tổng hợp phải thu. |
