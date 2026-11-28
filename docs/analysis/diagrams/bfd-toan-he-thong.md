@@ -55,7 +55,7 @@ flowchart LR
     F1 --> F11["F1.1 Hồ sơ trẻ"]
     F11 --> F111["F1.1.1 Tiếp nhận, đối chiếu trùng và duyệt hồ sơ trẻ"]
     F11 --> F112["F1.1.2 Theo dõi bổ sung giấy tờ và bàn giao danh sách chờ xếp lớp"]
-    F11 --> F113["F1.1.3 Cập nhật nhân thân, giám hộ chính và lịch sử hồ sơ"]
+    F11 --> F113["F1.1.3 Cập nhật thông tin nhân thân, giám hộ chính và lịch sử hồ sơ"]
     F11 --> F114["F1.1.4 Quản lý ủy quyền cố định nhận trẻ"]
     F11 --> F115["F1.1.5 Đề nghị, ghi nhận và xác nhận lưu ý chăm sóc"]
 
@@ -67,7 +67,7 @@ flowchart LR
 
     F1 --> F13["F1.3 Điểm danh"]
     F13 --> F131["F1.3.1 Tạo bảng điểm danh và tự động ghi nhận nghỉ dài ngày"]
-    F13 --> F132["F1.3.2 Tiếp nhận lượt đón, trả, xác minh vắng và chốt theo các mốc có hiệu lực"]
+    F13 --> F132["F1.3.2 Tiếp nhận lượt đón/trả, xác minh vắng và chốt theo các mốc có hiệu lực (mặc định 07:30, 08:30, 09:00)"]
     F13 --> F133["F1.3.3 Đề nghị và duyệt điều chỉnh chuyên cần sau khóa"]
     F13 --> F134["F1.3.4 Tổng hợp, khóa kỳ và xuất chuyên cần"]
 
@@ -123,11 +123,11 @@ flowchart LR
 | Mã | Chức năng lá | Thực hiện / duyệt | Use case |
 | --- | --- | --- | --- |
 | F1.0.1 | Quản lý tài khoản, vai trò và phân quyền trực | Ban giám hiệu. | UC-01 |
-| F1.0.2 | Quản lý danh mục dùng chung | Ban giám hiệu lập và duyệt. Văn phòng lập danh mục lớp. | UC-02 |
+| F1.0.2 | Quản lý danh mục dùng chung | Ban giám hiệu lập và duyệt. Văn phòng lập danh mục lớp. Kế toán lập biểu phí, miễn giảm. | UC-02 |
 | F1.0.3 | Cấu hình khung giờ vận hành, bữa ăn và mốc chốt | Ban giám hiệu. | UC-03 |
 | F1.1.1 | Tiếp nhận, đối chiếu trùng và duyệt hồ sơ trẻ | Văn phòng lập. Ban giám hiệu duyệt. | UC-11 |
 | F1.1.2 | Theo dõi bổ sung giấy tờ và bàn giao danh sách chờ xếp lớp | Văn phòng. | UC-11 |
-| F1.1.3 | Cập nhật nhân thân, giám hộ chính và lịch sử hồ sơ | Văn phòng. Hiệu trưởng duyệt sửa ngày sinh, giám hộ chính. | UC-16 |
+| F1.1.3 | Cập nhật thông tin nhân thân, giám hộ chính và lịch sử hồ sơ | Văn phòng. Hiệu trưởng duyệt sửa ngày sinh, giám hộ chính. | UC-16 |
 | F1.1.4 | Quản lý ủy quyền cố định nhận trẻ | Văn phòng. | UC-16 |
 | F1.1.5 | Đề nghị, ghi nhận và xác nhận lưu ý chăm sóc | Giáo viên đề nghị. Văn phòng ghi. Phó hiệu trưởng chuyên môn xác nhận. | UC-16 |
 | F1.2.1 | Xếp lớp ban đầu và quản lý danh sách chờ | Văn phòng lập. Ban giám hiệu duyệt. | UC-17 |
@@ -135,7 +135,7 @@ flowchart LR
 | F1.2.3 | Quản lý nghỉ dài ngày, bảo lưu, thôi học và quay lại | Văn phòng lập. Ban giám hiệu duyệt. | UC-17 |
 | F1.2.4 | Tra cứu danh sách theo ngày, đối chiếu hồi tố và tổng hợp sĩ số | Văn phòng. | UC-12, UC-17 |
 | F1.3.1 | Tạo bảng điểm danh và tự động ghi nhận nghỉ dài ngày | Giáo viên. | UC-13 |
-| F1.3.2 | Tiếp nhận lượt đón, trả, xác minh vắng và chốt theo các mốc có hiệu lực (mặc định 07:30, 08:30, 09:00) | Giáo viên. Hệ thống tự chốt theo mốc. | UC-13 |
+| F1.3.2 | Tiếp nhận lượt đón/trả, xác minh vắng và chốt theo các mốc có hiệu lực (mặc định 07:30, 08:30, 09:00) | Giáo viên. Hệ thống tự chốt theo mốc. | UC-13 |
 | F1.3.3 | Đề nghị và duyệt điều chỉnh chuyên cần sau khóa | Giáo viên đề nghị. Ban giám hiệu hoặc người được phân quyền duyệt. | UC-14 |
 | F1.3.4 | Tổng hợp, khóa kỳ và xuất chuyên cần | Giáo viên. | UC-13 |
 | F1.4.1 | Lập hồ sơ nhân sự | Văn phòng lập. Ban giám hiệu xác nhận. | UC-04 |
@@ -172,11 +172,12 @@ BFD chỉ thể hiện quan hệ phân rã. Bảng dưới đây tóm tắt các
 
 | Từ | Đến | Dữ liệu | Quy tắc |
 | --- | --- | --- | --- |
-| F1.0 | Mọi nhánh | Tài khoản, quyền, danh mục dùng chung, mốc giờ có hiệu lực | QT-DT-05, QT-XL-01, QT-PC-03 |
+| F1.0 | Mọi nhánh | Tài khoản, quyền, danh mục dùng chung, mốc giờ có hiệu lực | QT-DT-05, QT-PC-03, QT-DD-03 |
 | F1.1 | F1.2 | Hồ sơ đã duyệt, cùng mã trẻ | QT-HS-03 |
-| F1.1 | F1.6, F1.8 | Định danh, giám hộ chính, ủy quyền cố định nhận trẻ | QT-HS-04, QT-HS-05, QT-DT-04 |
+| F1.1 | F1.6 | Định danh, giám hộ chính. Kế toán không xem lưu ý chăm sóc và ủy quyền nhận trẻ | QT-HS-04 |
+| F1.1 | F1.8 | Giám hộ chính, ủy quyền cố định nhận trẻ còn hiệu lực | QT-HS-05, QT-DT-04 |
 | F1.1 | F1.7 | Lưu ý dị ứng, chế độ ăn, cảnh báo chờ xác nhận | QT-HS-06 |
-| F1.2 | F1.3, F1.5, F1.6, F1.8 | Lớp đang hoạt động, sĩ số, diện đi học theo ngày | QT-PC-01, QT-HP-02, QT-HP-06 |
+| F1.2 | F1.3, F1.5, F1.6, F1.8 | Lớp đang hoạt động, sĩ số, diện đi học theo ngày, khoảng nghỉ dài ngày đã xác nhận | QT-DD-01, QT-DD-06, QT-PC-01, QT-HP-02, QT-HP-06 |
 | F1.4 | F1.5, F1.0 | Nhân sự đủ điều kiện đứng lớp, biến động khóa và mở tài khoản | QT-NS-02, QT-NS-03 |
 | F1.5 | F1.3, F1.7, F1.8 | Giáo viên phụ trách lớp theo ngày, gồm dạy thay | QT-PC-06, QT-DT-05 |
 | F1.8 | F1.3 | Lượt đón là nguồn duy nhất của `Có mặt`, báo nghỉ là căn cứ xác minh | QT-DT-01, QT-DT-07 |
