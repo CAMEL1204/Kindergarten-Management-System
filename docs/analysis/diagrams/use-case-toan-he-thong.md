@@ -1,6 +1,6 @@
 # Sơ đồ Use Case toàn hệ thống
 
-Bốn hình dưới đây biểu diễn toàn bộ **18 use case** của hệ thống (`UC-01` đến `UC-03` cho nền tảng `F1.0`; `UC-04` đến `UC-10` của TV2; `UC-11` đến `UC-18` của TV1). Mỗi khung là một nghiệp vụ hoặc phân hệ. Đường liền nối tác nhân với giao dịch. Việc đọc dữ liệu và luồng liên phân hệ được đặc tả chi tiết trong [ma trận truy vết](../traceability.md). BFD và danh mục chức năng lá `F1.x.y` đầy đủ nằm tại [mục 8.1 của khảo sát](../../survey/README.md).
+Bốn hình dưới đây biểu diễn toàn bộ **18 use case** của hệ thống (`UC-01` đến `UC-03` cho nền tảng `F1.0`; `UC-04` đến `UC-10` của TV2; `UC-11` đến `UC-18` của TV1). Mỗi khung là một nghiệp vụ hoặc phân hệ. Đường liền nối tác nhân với giao dịch. Việc đọc dữ liệu và luồng liên phân hệ được đặc tả chi tiết trong [ma trận truy vết](../traceability.md). BFD ba cấp và danh mục 43 chức năng lá `F1.x.y` nối với use case nằm tại [BFD toàn hệ thống](bfd-toan-he-thong.md).
 
 ## Quản trị hệ thống (F1.0)
 

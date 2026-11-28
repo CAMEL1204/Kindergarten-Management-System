@@ -133,7 +133,7 @@ flowchart TD
 | Mã | Chức năng lá | Công việc chính | Thực hiện / duyệt | YC, QT | Biểu mẫu |
 | --- | --- | --- | --- | --- | --- |
 | F1.8.1 | Ghi nhận báo nghỉ | Ghi trẻ, ngày hoặc khoảng nghỉ, lý do, kênh báo, thời điểm nhận, người ghi nhận. Hiển thị nhãn báo nghỉ trên danh sách đón. Chuyển cho NV03 làm căn cứ xác minh vắng và cho NV07 lập danh sách ăn dự kiến. | Giáo viên (lớp mình) hoặc Văn phòng. | YC-DT-05. QT-DT-06. | DT-03 (Mẫu 08) |
-| F1.8.2 | Đón trẻ và chuyển lượt đón sang NV03 | Mở danh sách trẻ chưa đón của lớp trong ngày. Chọn trẻ hoặc "Chọn tất cả", bấm "Đón n trẻ đã chọn" và xác nhận một lần. Ghi giờ đón thực tế, kể cả trẻ đã báo nghỉ. Gắn cờ đến muộn từ mốc bàn giao có hiệu lực (mặc định 08:30). Trước mốc khóa (mặc định 09:00), NV03 cập nhật `Có mặt`. Từ mốc khóa, tạo đề nghị điều chỉnh. | Giáo viên phụ trách lớp hoặc nhân sự trực được cấp quyền. | YC-DT-01, YC-DT-02, YC-DT-04. QT-DT-01, QT-DT-05, QT-DT-06. | DT-01 (Mẫu 08, Mẫu 02) |
+| F1.8.2 | Đón trẻ và chuyển lượt đón sang NV03 | Mở danh sách trẻ chưa đón của lớp trong ngày. Chọn trẻ hoặc "Chọn tất cả", bấm "Đón n trẻ đã chọn" và xác nhận một lần. Ghi giờ đón thực tế, kể cả trẻ đã báo nghỉ. Gắn cờ đến muộn từ mốc bàn giao có hiệu lực (mặc định 08:30). Trước mốc khóa (mặc định 09:00), NV03 cập nhật `Có mặt`. Từ mốc khóa, tạo đề nghị điều chỉnh. | Giáo viên phụ trách lớp hoặc nhân sự trực được cấp quyền. | YC-DT-01, YC-DT-02, YC-DT-04. QT-DT-01, QT-DT-03, QT-DT-05, QT-DT-06. | DT-01 (Mẫu 08, Mẫu 02) |
 | F1.8.3 | Xác minh và duyệt nhận trẻ hộ | Tiếp nhận xác nhận của người giám hộ qua kênh đã đăng ký, có lưu vết. Đối chiếu CCCD người đến nhận tại cổng hoặc lớp. Lập hồ sơ xác minh ở trạng thái `Chờ xác minh` hoặc `Chờ duyệt`. Chuyển người có quyền duyệt ngoại lệ. Duyệt chỉ có giá trị cho trẻ, người nhận và lượt trả đã xác minh. Từ chối thì trẻ vẫn ở danh sách chưa trả. | Giáo viên hoặc nhân sự trực xác minh. Ban giám hiệu hoặc người được giao quyền duyệt. | YC-DT-07. QT-DT-04, QT-DT-05. | DT-05 (Mẫu 08) |
 | F1.8.4 | Trả trẻ | Mở danh sách trẻ đã đón và chưa trả. Chọn trẻ, bấm "Trả n trẻ đã chọn". Với từng trẻ, chọn người nhận thực tế trong danh sách đủ điều kiện và ghi giờ giao thực tế. Kiểm tra lại từng dòng khi lưu: dòng đủ điều kiện được ghi, dòng thiếu điều kiện báo lý do và ở lại danh sách chưa trả. Hết khung trả, cảnh báo trẻ còn ở trường và ghi người tiếp tục trông. | Giáo viên phụ trách lớp hoặc nhân sự trực được cấp quyền. | YC-DT-02, YC-DT-03, YC-DT-04, YC-DT-07. QT-DT-02, QT-DT-03, QT-DT-04, QT-DT-05. | DT-01, DT-04 (Mẫu 08) |
 | F1.8.5 | Tra cứu đón trả | Tra lượt đón trả theo trẻ, lớp, ngày, người nhận thực tế. Lọc lượt trả theo ngoại lệ đã duyệt, ca đang chờ xử lý và trả muộn. Tổng hợp số lượt đến muộn, trả theo ngoại lệ, trả muộn trong kỳ. | Giáo viên (lớp mình). Văn phòng (toàn trường). Ban giám hiệu. | YC-DT-06. QT-DT-05. | DT-01, DT-04 (Mẫu 08) |
@@ -144,9 +144,10 @@ flowchart TD
 - F1.2.4 → F1.8.2: danh sách trẻ thuộc lớp trong ngày, nhãn nghỉ dài ngày.
 - F1.5.3 → F1.8.2, F1.8.4: giáo viên phụ trách lớp theo ngày. F1.0.1 → F1.8: quyền trực giao nhận và quyền duyệt ngoại lệ, cấp riêng (QT-DT-05).
 - F1.0.3 → F1.8.2, F1.8.4: khung đón, mốc bàn giao, mốc khóa chuyên cần và khung trả có hiệu lực. F1.0.3 do TV1 đặc tả tại `UC-03`.
-- F1.1.4 → F1.8.3, F1.8.4: người giám hộ chính và ủy quyền cố định còn hiệu lực tại thời điểm trả (QT-HS-05, QT-DT-04).
+- F1.1.3, F1.1.4 → F1.8.3, F1.8.4: người giám hộ chính (F1.1.3) và ủy quyền cố định (F1.1.4) còn hiệu lực tại thời điểm trả (QT-HS-05, QT-DT-04).
 - F1.8.1, F1.8.2, F1.8.6 → F1.3.2, F1.3.3: báo nghỉ là căn cứ xác minh. Lượt đón là nguồn duy nhất của `Có mặt` (QT-DT-01).
-- F1.8.4, F1.8.6 → F1.7.4: giờ về thực tế và thay đổi ảnh hưởng bữa ăn (QT-SA-04).
+- F1.8.4 → F1.3.2: lượt trả và giờ về thực tế. Lượt trả không làm mất `Có mặt` và không hủy đề nghị đang chờ.
+- F1.8.1, F1.8.4, F1.8.6 → F1.7.3, F1.7.4: báo nghỉ, giờ về thực tế và thay đổi ảnh hưởng bữa ăn. Trước mốc chốt bữa cập nhật danh sách dự kiến tại F1.7.3, sau mốc chốt thành đề nghị điều chỉnh tại F1.7.4 (QT-SA-04).
 - F1.8.5 → F1.9.1: số lượt đến muộn, trả muộn cho báo cáo lớp của Giáo viên.
 
 ## 6. F1.9 Báo cáo (NV09)

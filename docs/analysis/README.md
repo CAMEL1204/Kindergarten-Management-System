@@ -36,7 +36,7 @@ Bảng chi tiết từng luồng (bên cung cấp, bên sử dụng, điều ki�
 | --- | --- |
 | `README.md` | Phân công, tiến độ, quy ước liên phân hệ và mục lục. |
 | `use-cases/` | Mỗi use case một file Markdown (`uc-01-...md` đến `uc-18-...md`). |
-| `diagrams/` | Sơ đồ use case toàn hệ thống và BFD phần TV2. |
+| `diagrams/` | Sơ đồ use case toàn hệ thống, [BFD toàn hệ thống](diagrams/bfd-toan-he-thong.md) ba cấp và BFD chi tiết phần TV2. |
 | `traceability.md` | Ma trận nối mã NV, chức năng `F1.x.y`, `YC`, `QT` và `UC`, kèm luồng liên phân hệ. |
 
 ## 5. Danh mục đặc tả nền tảng (`F1.0`) và TV1
