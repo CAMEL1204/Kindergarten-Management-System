@@ -2,7 +2,7 @@
 
 | Thuộc tính | Đặc tả |
 | --- | --- |
-| Nghiệp vụ / nhánh chức năng | F1.0 · F1.0.2 |
+| Nghiệp vụ / nhánh chức năng | F1.0 · F1.0.2; NV06 · F1.6.1 (biểu phí và miễn giảm) |
 | Tác nhân chính | Ban giám hiệu |
 | Tác nhân phụ | Văn phòng (lập/cập nhật danh mục lớp NV02), Kế toán (lập/cập nhật biểu phí và danh mục miễn giảm NV06) |
 | Mục tiêu | Thiết lập, phê duyệt và duy trì thống nhất các danh mục nền tảng dùng chung cho toàn trường mà không trùng lặp hoặc sửa trực tiếp dữ liệu đã phát sinh giao dịch. |
@@ -13,8 +13,8 @@
 
 1. Ban giám hiệu thiết lập và ban hành các danh mục dùng chung thuộc quyền quản trị: `năm học`, `kỳ học`, `lịch nghỉ của trường`, `nhóm tuổi` (kèm sĩ số tối đa theo Điều 15), `ca làm việc` (khung giờ), `định mức giáo viên` theo lớp/nhóm tuổi và `danh mục loại báo cáo` (`YC-BC-05`: bộ phận lập, kỳ, hạn gửi, chỉ tiêu).
 2. Văn phòng lập hoặc cập nhật `danh mục lớp` (mã lớp, tên lớp, năm học, nhóm tuổi, mốc tính tuổi, chỉ tiêu vận hành, tình trạng hoạt động) và trình Ban giám hiệu duyệt (`YC-XL-01`, `QT-XL-01`).
-3. Kế toán lập hoặc đề xuất ban hành mới `biểu phí` (khoản thu, đơn giá, đơn vị tính, nhóm tuổi/lớp áp dụng, ngày hiệu lực) và `danh mục miễn giảm` rồi trình Ban giám hiệu duyệt (`YC-HP-01`, `QT-HP-01`).
-4. Ban giám hiệu kiểm tra tính hợp lệ, ghi quyết định duyệt và phát hành danh mục áp dụng chung cho các phân hệ liên quan.
+3. Kế toán lập hoặc đề xuất ban hành mới `biểu phí` (khoản thu, đơn giá, đơn vị tính, nhóm tuổi/lớp áp dụng, ngày hiệu lực) và `danh mục miễn giảm` rồi trình Ban giám hiệu duyệt (`YC-HP-01`, `QT-HP-01`). Bước này thực hiện chức năng `F1.6.1` của NV06; dữ liệu biểu phí và miễn giảm do Kế toán làm chủ.
+4. Ban giám hiệu kiểm tra tính hợp lệ, ghi quyết định duyệt và phát hành danh mục áp dụng chung cho các phân hệ liên quan. Với biểu phí và miễn giảm, quyết định duyệt ở bước này hoàn tất `F1.6.1` và là căn cứ cho `UC-06` (`QT-HP-01`, `QT-HP-03`).
 
 ## Luồng thay thế và ngoại lệ
 

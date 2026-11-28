@@ -36,7 +36,7 @@
 - **NV02, NV05 → NV03:** NV02 xác định trẻ thuộc diện điểm danh và nghỉ dài ngày (`QT-DD-06`); NV05 xác định quyền thao tác của giáo viên chủ nhiệm/phụ/dạy thay trên lớp trong ngày (`QT-DT-05`, `QT-PC-06`).
 - **NV08 → NV03:** NV08 cung cấp nguồn báo nghỉ và lượt đón/trả thực tế (`QT-DT-01`, `QT-DT-06`, `QT-DT-07`).
 - **NV03 → NV07:** Cung cấp danh sách có mặt đến hết mốc chốt bữa sáng có hiệu lực (mặc định `07:30`) và bản bàn giao buổi sáng (mặc định `08:30`) cho bữa trưa, bữa xế.
-- **NV03 → NV06:** Sau khi khóa kỳ, cung cấp chỉ đọc số ngày `Có mặt` đã xác nhận theo từng trẻ. Mọi lượt `Chờ xác minh` không có lượt đón luôn tính `0` ngày có mặt và **không làm treo** đối soát tiền ăn; chỉ trẻ có đề nghị điều chỉnh chờ duyệt tại `UC-14` có thể làm thay đổi kết quả `Có mặt` mới bị treo đối soát (`QT-DD-07`, `QT-HP-05`).
+- **NV03 → NV06:** Sau khi khóa kỳ, cung cấp chỉ đọc số ngày `Có mặt` đã xác nhận theo từng trẻ. Mọi lượt `Chờ xác minh` không có lượt đón luôn tính `0` ngày có mặt và **không làm treo** đối soát tiền ăn; chỉ trẻ còn ngày chưa khóa hoặc còn đề nghị điều chỉnh chờ duyệt tại `UC-14` có thể làm thay đổi kết quả `Có mặt` mới bị treo đối soát, và chỉ được gỡ treo khi mọi ngày liên quan đã khóa và không còn đề nghị như vậy (`QT-DD-07`, `QT-HP-05`).
 - **NV03 → NV09:** Cung cấp số liệu chuyên cần đã khóa theo lớp và kỳ (kèm danh sách lượt chờ xác minh/chưa hoàn tất) để giáo viên lập báo cáo chuyên cần lớp tại `UC-10`.
 
 | Yêu cầu | Quy tắc áp dụng | Phạm vi |

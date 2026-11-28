@@ -23,7 +23,7 @@
 ## Luồng thay thế và ngoại lệ
 
 - **Bước 1 & Bước 3 (xếp lớp/chuyển lớp hồi tố từ NV02):** Khi NV02 duyệt quyết định hồi tố qua `UC-12` hoặc `UC-17`, các ngày đã khóa thuộc khoảng hồi tố được gắn cờ cần đối chiếu. Giáo viên lớp đích (hoặc lớp cũ đối với dòng thừa) rà soát lượt đón thực tế và tạo đề nghị gán đúng lớp có hiệu lực của trẻ trong ngày; nếu trẻ thuộc lớp mới theo hồi tố, dòng ở lớp cũ được xử lý tránh đếm trùng theo mã trẻ và ngày (`QT-DD-01`).
-- **Bước 2 (nhắc hạn trước khi lập bảng phải thu NV06):** Hệ thống nhắc người duyệt xử lý dứt điểm các đề nghị `Chờ duyệt` trước ngày học đầu kỳ kế tiếp (`QT-DD-07`). Nếu sang kỳ thu mới mà trẻ vẫn còn đề nghị `Chờ duyệt` có thể làm thay đổi kết quả `Có mặt`, chỉ trẻ đó bị treo đối soát tại NV06 (`QT-HP-05`).
+- **Bước 2 (nhắc hạn trước khi lập bảng phải thu NV06):** Hệ thống nhắc người duyệt xử lý dứt điểm các đề nghị `Chờ duyệt` trước ngày học đầu kỳ kế tiếp (`QT-DD-07`). Nếu sang kỳ thu mới mà trẻ vẫn còn đề nghị `Chờ duyệt` có thể làm thay đổi kết quả `Có mặt`, chỉ trẻ đó bị treo đối soát tại NV06 cho tới khi mọi ngày liên quan đã khóa và không còn đề nghị như vậy (`QT-HP-05`).
 - **Bước 3 (từ chối hoặc xung đột dữ liệu gốc):** Nếu chứng cứ không phù hợp hoặc điều kiện lượt đón tại NV08 không thỏa, người duyệt chọn `Từ chối` kèm lý do và giữ nguyên kết quả hiện hành. Nếu dòng gốc vừa thay đổi bởi một đề nghị khác trong lúc chờ duyệt, hệ thống cảnh báo để người duyệt đối chiếu lại trước khi xác nhận.
 
 ## Dữ liệu giao dịch
@@ -37,7 +37,7 @@
 - **NV08 → NV03:** NV08 tiếp tục ghi nhận giao nhận thực tế từ mốc khóa có hiệu lực trở đi (mặc định `09:00`) mà không bị chặn; mọi lượt đón hoặc hủy lượt đón từ mốc khóa tự động sinh đề nghị điều chỉnh tại `UC-14`.
 - **NV02 → NV03:** Quyết định xếp lớp/chuyển lớp hồi tố tạo danh sách ngày đã khóa cần đối chiếu tại `UC-14`.
 - **NV03 → NV07:** Thay đổi chuyên cần sau khóa không tự sửa bản bàn giao sáng có hiệu lực (mặc định `08:30`); các thay đổi ảnh hưởng bữa ăn được giáo viên và bếp xử lý riêng theo tiến độ thực tế tại `UC-15` (`QT-SA-04`).
-- **NV03 → NV06:** Lượt `Chờ xác minh` chưa có lượt đón tính `0` ngày có mặt và không treo đối soát. Chỉ treo đối soát của trẻ trong kỳ khi còn ít nhất một đề nghị chờ duyệt có thể đổi kết quả `Có mặt`. Gỡ treo khi không còn đề nghị nào thỏa điều kiện đó (`QT-DD-07`, `QT-HP-05`).
+- **NV03 → NV06:** Lượt `Chờ xác minh` chưa có lượt đón tính `0` ngày có mặt và không treo đối soát. Treo đối soát của trẻ trong kỳ khi trẻ còn ngày chưa khóa hoặc còn ít nhất một đề nghị chờ duyệt có thể đổi kết quả `Có mặt`. Chỉ gỡ treo khi mọi ngày liên quan của trẻ trong kỳ đã khóa và không còn đề nghị nào thỏa điều kiện đó (`QT-DD-07`, `QT-HP-05`).
 - **NV03 → NV09:** Khi đề nghị được duyệt làm thay đổi số liệu chuyên cần kỳ của báo cáo đã nộp tại `NV09`, hệ thống giữ ảnh chụp và cảnh báo người lập: nếu báo cáo đang `Đã gửi`, Ban giám hiệu xử lý yêu cầu bổ sung; nếu báo cáo đang `Đã duyệt`, chuyển sang trạng thái `Cần cập nhật` để lập phiên bản mới (`QT-BC-04`, `QT-BC-05`).
 
 | Yêu cầu | Quy tắc thực thi trực tiếp | Ràng buộc liên phân hệ | Phạm vi |
