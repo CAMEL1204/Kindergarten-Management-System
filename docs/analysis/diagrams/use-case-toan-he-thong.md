@@ -55,12 +55,13 @@ flowchart TD
     A1 --- U17
     A2 --- U17
     A1 --- U04
+    A2 --- U04
     A1 --- U05
     A2 --- U05
     A3 --- U05
 ```
 
-Trong `UC-05`, `Giáo viên` là tác nhân phụ: gửi đơn nghỉ ngắn ngày của bản thân và xem lịch phân công của mình (`QT-PC-06`).
+Trong `UC-04`, `Ban giám hiệu` là tác nhân phụ: xác nhận tiếp nhận nhân sự và biến động nhân sự (`QT-NS-03`). Trong `UC-05`, `Giáo viên` là tác nhân phụ: gửi đơn nghỉ ngắn ngày của bản thân và xem lịch phân công của mình (`QT-PC-06`).
 
 ## Giao nhận, chuyên cần và suất ăn
 
@@ -122,12 +123,13 @@ flowchart TD
     A2["Mọi bộ phận"]
     A3["Ban giám hiệu"]
     A1 --- U06
+    A3 --- U06
     A1 --- U07
     A3 --- U07
     A2 --- U10
     A3 --- U10
 ```
 
-Trong `UC-07`, `Ban giám hiệu` là tác nhân phụ: duyệt phiếu điều chỉnh và hoàn tiền (`QT-HP-04`).
+Trong `UC-06`, `Ban giám hiệu` là tác nhân phụ: duyệt bảng phải thu trước khi phát hành thông báo học phí. Trong `UC-07`, `Ban giám hiệu` là tác nhân phụ: duyệt phiếu điều chỉnh và hoàn tiền (`QT-HP-04`).
 
 `UC-10` nhận bảng tổng hợp sĩ số đầu kỳ/tăng/giảm/cuối kỳ từ `UC-17` (`YC-XL-04`), số liệu tuyển sinh từ `UC-11`, chuyên cần từ `UC-13` và suất ăn từ `UC-15`. Khi **bất kỳ thay đổi dữ liệu nguồn nào** ảnh hưởng đến báo cáo đã nộp (gồm xếp/chuyển lớp hồi tố ở `UC-12`/`UC-17`, duyệt điều chỉnh chuyên cần ở `UC-14`, hoặc điều chỉnh/đối chiếu suất ăn ở `UC-15`), `UC-10` giữ nguyên ảnh chụp số liệu và cảnh báo người lập theo `QT-BC-04`: nếu báo cáo đang ở `Đã gửi`, Ban giám hiệu xử lý yêu cầu bổ sung; nếu báo cáo ở `Đã duyệt`, chuyển sang trạng thái `Cần cập nhật`.
